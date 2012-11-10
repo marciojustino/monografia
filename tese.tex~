@@ -1,0 +1,45 @@
+\documentclass[dvips,ruledheader]{abnt}
+% \usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[pdftex]{graphicx}
+\usepackage{abnt-alf}
+\usepackage{latexsym}
+\usepackage{psfrag}
+\usepackage{cite}
+\usepackage[notintoc,portuguese]{nomencl}
+\makenomenclature
+
+\begin{document}
+
+\DeclareGraphicsRule{.eps.gz}{eps}{.eps.bb}{`gunzip -c #1}
+
+\include{capa}
+\include{folhaderosto}
+%\include{folhaaprovacao}
+\include{dedicatoria}
+\include{agradecimentos}
+% \include{epigrafe}
+% \include{resumo}
+% \include{abstract}
+
+\tableofcontents
+
+% \listoffigures
+
+% \listoftables
+
+% \printnomenclature
+
+% \include{introducao}
+% \include{cap1}
+% \include{cap2}
+% \include{cap3}
+% \include{cap4}
+% \include{conclusao}
+% \include{bibliografia}
+% \include{anexo}
+
+%\include{ferramentas}
+
+\end{document}

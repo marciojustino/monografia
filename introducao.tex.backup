@@ -1,0 +1,21 @@
+\chapter{Introdução}
+Juntamente com o avanço da tecnologia computacional e da internet veio o aumento do número de pessoas conectadas trocando informações, seja em nível pessoal ou organizacional. Nesse meio, existem usuários que promovem o cybercrime\footnote{crimes cibernéticos tendo sistemas informatizados como meio de ação} ou atividades ilegais na rede\footnote{o termo rede será usado ao longo deste texto podendo representar a internet como um todo ou a ligação de mais de computadores entre si.}. As informações computacionais são armazenadas em discos rígidos\footnote{unidade física de armazenamento de dados em um computador} usando apropriados sistemas de arquivos que são suportados pelo sistema operacional instalado no computador. Existem diversos sistemas de arquivos para armazenamento de arquivos no mercado, e um dos mais comuns atualmente é o NTFS. \cite{IRACST}
+
+A técnica de Data Carving é frequentemente utilizada durante investigações digitais quando o espaço não alocado de um sistema de arquivos é analisado para extração de arquivos. Quando um arquivo está disposto no espaço não alocado de um disco o mesmo pode ser sobrescrito ou ter partes de sua estrutura sobrescritas por outros arquivos determinados pelo sistema operacional na reutilização de espaço não mais alocado. Essa operação trás um enorme desafio para o processo de file carving que precisa assim identificar as partes do arquivo muitas vezes fragmentados pelo sistema de arquivos para identificar seu conteúdo ou seus metadados.
+
+``In forensic practice, file carving can recover files that have been deleted and have had their directory entries reallocated to other files, but for which the data sectors themselves have not yet been overwritten.'' \cite{digitalinvestigation}
+
+\section{Justificativa}
+O processo de "File Carving" é de suma importância para a investigação forense computacional e envolve a identificação de arquivos perdidos (deletados ou apagados) do equipamento investigado. A dispersão desses arquivos não mais indexados pela tabela de alocação de arquivos do sistema de arquivos NTFS torna o processo de identificação dos arquivos um desafio para a investigação e identificação de ilícitos.
+\begin{citacao}
+During a digital forensic investigation many diferent pieces of data are preserved for investigation, of which bit-copy images of hard drives are the most common. These images contain the data allocated to files as well as the unallocated data. The unallocated data may still contain information that is relevant to an investigation, in the form of (parts of) intentionally deleted les or automatically removed temporary files. Unfortunately, this data is not always easily accessible: a string search on the raw data might recover (parts of) interesting text documents, but it won't help to get to information present in for example images or compressed files. Besides that, the exact strings to look for may not be known beforehand. To get to this information, the deleted files have to be recovered. \cite{eindhoven}
+\end{citacao}
+
+\section{Problema e Questão de Pesquisa}
+Como identificar fragmentos de arquivos em file carving em sistemas de arquivos NTFS?
+
+\section{Objetivos}
+Determinar uma melhor metodologia de localização de fragmentos de arquivos no processo de file carving em sistemas de arquivos NTFS.
+
+\subsection{Objetivos Específicos}
+Verificar a forma como os arquivos são registrados nos sistemas de arquivos NTFS; Identificar o processo de diferenciação de tipos de arquivos para determinar o início e o fim do arquivo (cabeçalho, dados, metadados, fim de arquivo); Identificar a presença de padrões que possam permitir a identificação de partes de um arquivo fragmentado no sistema de arquivos; Definir, caso possível, uma metodologia de identificação de fragmentos de arquivos para o sistema de arquivos NTFS. 

@@ -1,0 +1,255 @@
+@book{Carissimi2008,
+author	= {Alexandre S Carissimi},
+title	= {Virtualização: da teoria a solução},
+edition = {1nd.},
+publisher = {SBC},
+address = {Porto Alegre},
+year = {2008}}
+
+@book{Laureano2006,
+author		= {Marcos Laureano},
+title		= {Máquinas Virtuais e Emuladores: Conceitos, Técnicas e Aplicações},
+edition		= {1ª},
+publisher	= {Novatec Editora},
+address		= {São Paulo},
+year		= {2006}}
+
+@www{Mafrim2010,
+editor		= {Alexandre Mafrim},
+title		= {História: conhecendo a origem da virtualização},
+url			= {http://www.vmworld.com.br/br/index.php/component/content/article/50-virtualizacao/80-historia-conhecendo-a-origem-da-virtualizacao.html},
+year		= {2010},
+urldate		= {10 de Dezembro de 2011}}
+
+@www{Citrix,
+author		= {Citrix},
+url		= {http://www.citrix.com.br/products/xenserver.php?tab=overview},
+urldate		= {17 de janeiro de 2012}}
+
+
+
+
+@www{Microsoft,
+author		= {Microsoft},
+title		= {Microsoft Hyper-V Server 2008 R2},
+url		= {http://www.microsoft.com/brasil/servidores/hyper-v-server/default.mspx},
+urldate		= {17 de jan de 2012}}
+
+@article{Okano2008,
+author		= {Okano},
+title		= {O impacto da virtualização nas empresas},
+publisher	= {IV Congresso Nacional de excelência em gestão},
+address		= {Rio de Janeiro},
+year		= {2008}}
+
+@www{Vmware,
+author		= {VMWARE},
+title		= {Benefícios da virtualização VMware: infraestrutura e gerenciamento virtual aprimorados.},
+url			= {http://www.vmware.com/br/virtualization},
+urldate		= {18 de jan de 2012}}
+
+@www{Citrix_x_Converter,
+author		= {Citrix Systems},
+title		= {XenConvert 2.3.1}
+url		= {http://www.citrix.com/English/SS/downloads/details.asp?downloadId=2306318&productId=683148},
+urldate		= {20 de dez de 2011}}
+
+@www{Vmware_v_center,
+author		= {VMWARE},
+title		= {VMware vCenter Converter},
+url		= {http://www.vmware.com/products/converter/},
+urldate		= {18 de dez de 2011}}
+
+@book{Veras2011,
+author		= {Manoel Veras, Rodrigo Kassick},
+title		= {Virtualização de Servidores},
+edition		= {1ª},
+publisher	= {Escola Superior de Redes},
+address		= {Rio de Janeiro},
+year		= {2011}}
+
+@www{Vmware_v_share,
+author		= {VMWare},
+title		= {VMware vSphere},
+url			= {http://www.vmware.com/br/products/datacenter-virtualization/vsphere/vmotion/overview.html},
+urldate		= {18 de dez de 2011}}
+
+@www{Microsoft_server2008,
+author		= {Microsoft},
+title		= {Microsoft Server 2008 R2},
+url		= {http://www.microsoft.com/windowsserver2008/pt/br/r2-virtualization.aspx},
+urldate		= {15 de dez de 2011}}
+
+@article{Rodrigo2007,
+author		= {Rodrigo Ferreira da Silva},
+title		= {Virtualização de Sistemas operacionais},
+publisher	= { INSTITUTO SUPERIOR DE TECNOLOGIA EM CIÊNCIAS DA COMPUTAÇÃO},
+address		= {Petrópolis},
+url		= {http://pt.scribd.com/doc/36025322/TCC-VIRTUALIZACAO},
+urldate		= {12 de jan de 2012}	
+year		= {2007}}
+
+@www{Mcafee,
+author		= {Mcafee},
+title		= {Mcafee VirusScan Enterprise for Offline Virtual Images},
+url		= {http://www.mcafee.com/br/products/virusscan-enterprise-for-offline-virtual-images.aspx},
+urldate		= {18 de dez de 2011}}
+
+@www{Computerworld,
+author		= {ComputerWorld},
+title		= {6 riscos mais comuns de segurança em virtualização},
+url		= {http://computerworld.uol.com.br/tecnologia/2010/03/16/6-riscos-mais-comuns-de-seguranca-em-virtualizacao/},
+urldate		= {22 de dez de 2011}}
+
+
+@www{Linha_defensiva,
+author		= {Linha Defensiva},
+title		= {Microsoft elimina 40 brechas na última atualização de 2010},
+url		= {http://www.linhadefensiva.org/2010/12/microsoft-elimina-40-brechas-na-ultima-atualizacao-de-2010/},
+year		= {2010},
+urldate		= {05 de jan de 2012}}
+
+
+@www{Microsoft_hyperv,
+author		= {Microsoft},
+title		= {MS10-102: Vulnerabilidade no Hyper-V pode permitir negação de serviço},
+url			= {http://support.microsoft.com/kb/2345316},
+urldate		= {12 de jan de 2012}}
+
+@www{Computerworld2009,
+author		= {ComputerWorld},
+title		= {Empresas não vêem o lado ruim da virtualização, diz estudo},
+url		= {http://computerworld.uol.com.br/gestao/2009/04/09/empresas-nao-veem-o-lado-ruim-da-virtualizacao-diz-estudo/},
+urldate		= {05 de janeiro de 2012}}
+
+@book{Taurion2009,
+author		= {Cezar Taurion},
+title		= {Cloud Computing},
+edition		= {1ª},
+publisher	= {Brasport},
+address		= {Rio de Janeiro},
+year		= {2009}}
+
+@www{Computerworld2011,
+author		= {ComputerWorld},
+Title		= {Virtualização: cinco diretrizes essenciais},
+url		= {http://computerworld.uol.com.br/gestao/2011/05/04/virtualizacao-cinco-diretrizes-essenciais/}
+urldate		= {29 de janeiro de 2012}}
+
+@www{SlideShare,
+author		=  {Ivan Luizio Magalhães},
+Title		=  {Gerenciamento de Serviços de TI},
+url		=  {http://www.slideshare.net/ivan_luizio/gerenciamento-de-servios-de-ti}
+urldate		=  {29 de janeiro de 2012}}
+
+@www{PortalGsi,
+author		=  {Fernando Palma},
+Title		=  {Benefícios da ITIL},
+url		=  {http://www.portalgsti.com.br/2009/08/os-beneficios-da-itil.html}
+urldate		=  {30 de janeiro de 2012}}
+
+@book{Itilv3,
+author		=  {Itil},
+Title		=  {Itil V3 Foundation Service Operation 2007}
+edition     	=  {3ª},
+year		=  {2007}}
+
+@www{ItilOracle,
+author		=  {Pedro F. Carvalho},
+Title		=  {TRANSIÇÃO DE SERVIÇO - ITIL FOUNDATION V3},
+url		=  {http://www.pedrofcarvalho.com.br/PDF/ITIL_TRANSICAO_SERVICOS.pdf}
+urldate		=  {01 de janeiro de 2012}}
+
+@book{Filho2011,
+author		= {Felicio Cesari Filho},
+title		= {Gerenciamento de Serviços de TI},
+edition		= {1ª},
+publisher	= {Escola Superior de Redes},
+address		= {Rio de Janeiro},
+year		= {2011}}
+
+@www{PMBK,
+author		=  {Ten Step},
+Title		=  {Definir o Escopo Claramente e Alinhar com os Objetivos do seu Projeto},
+url		=  {http://www.pmkb.com.br/artigos-mainmenu-25/115-definir-o-escopo-claramente-e-alinhar-com-os-objetivos-do-seu-projeto.html}
+urldate		=  {01 de fevereiro de 2012}}
+
+@book{IBGC,
+author		= {IBGC},
+title		= {Guia de Orientação para Gerenciamento de Riscos Corporativos},
+edition		= {1ª},
+publisher	= {Instituto Brasileiro de Governança Corporativa},
+address		= {São Paulo},
+year		= {2011}}
+
+@www{PMBK,
+author		=  {Jéri Luis Balconi},
+Title		=  {Alta Disponibilidade & Virtualização ou Virtualização e Alta Disponibilidade },
+url		=  {http://conectasw.com.br/nwk/arquivos/Alta%20Disponibilidade.pdf}
+urldate		=  {03 de fevereiro de 2012}}
+
+@www{ISO,
+author		=  {ISO27000},
+Title		=  {Contingência, Continuidade e Disponibilidade},
+url		=  {http://www.iso27000.com.br/index.php?option=com_content&view=article&id=55:contcontdisp&catid=34:seginfartgeral&Itemid=53}
+urldate		=  {03 de fevereiro de 2012}}
+
+@www{cscbrasil,
+author		=  {Rui Natal},
+Title		=  {Gerenciamento de ativos de TI e o Elo Perdido do ITIL},
+url		=  {http://www.cscbrasil.com.br/assinaturas/Artigo_Gerenciamento_de_Ativos_de_TI.pdf},
+urldate		=  {03 de fevereiro de 2012}}
+
+@www{technet,
+autor		=  {Microsoft},
+Title		=  {Itens de configuração no Service Manager},
+url		=  {http://technet.microsoft.com/pt-br/library/ff460987.aspx}
+year		=  {2010}
+urldate		=  {03 de fevereiro de 2012}}
+
+@www{Itil2009,
+autor		=  {Emerson Dorow};
+Title		=  {ITIL: Gerenciamento de Liberação},
+url		=  {http://www.profissionaisti.com.br/2009/07/itil-gerenciamento-de-liberacao/}
+year		=  {2009}
+urldate		=  {03 de fevereiro de 2012}}
+
+@article{Krticka2008,
+author		= {Mauro Krticka Sant'anna},
+title		= {Melhores Práticas em Gestão de TI},
+publisher	= {Universidade Federal do Rio Grande do Sul},
+address		= {Rio Grande do Sul},
+url		= {http://www.lume.ufrgs.br/bitstream/handle/10183/15977/000695281.pdf?sequence=1},
+urldate		= {04 de fevereiro de 2012}	
+year		= {2008}}
+
+@article{Zwicker2003,
+author		= {Cesar Alexandre de Souza; Ronaldo Zwicker},
+title		= {Big-bang, small-bangs ou fases: estudo dos aspectos relacionados ao modo de início de operação de sistemas ERP},
+publisher	= {Revista de Administração Contemporânea},
+address		= {Curitiba},
+url		= {http://www.scielo.br/scielo.php?pid=S1415-65552003000400002&script=sci_arttext},
+urldate		= {05 de fevereiro de 2012}	
+year		= {2008}}
+
+@www{Virtual,
+author		=  {Virtual EPM},
+url		=  {http://www.virtual.epm.br/material/tis/curr-med/sad_html/fig1.jpg},
+urldate		=  {05 de fevereiro de 2012}}
+
+@www{Tecnet_Alta,
+author		= {Microsoft},
+Title		= {Virtualização: Hyper-V e Alta Disponibilidade},
+url             = {http://technet.microsoft.com/pt-br/magazine/hh127064.aspx},
+year		= {2011},
+urldate		= {5 de janeiro de 2012}}
+
+
+@www{Dell,
+author		= {Dell},
+Title		= {Me Ajude a Escolher: RAID},
+url 		= {http://content.dell.com/br/pt/empresa/d/help-me-choose/hmc-11g-raid},
+urldate		= {10 de janeiro de 2012}
+
+
+

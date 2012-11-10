@@ -1,0 +1,4 @@
+\chapter{Hipótese e Resultados Esperados}
+Análise dos metadados de um arquivo quanto ao seu início e fim (cabeçalho e rodapé do arquivo), informações que determinam onde os dados de um determinado arquivo começam e onde eles terminam.
+Identificar um padrão de dados para localização dos fragmentados de forma consistente, reduzindo assim os falsos positivos comumente apresentados nesse processo.
+
