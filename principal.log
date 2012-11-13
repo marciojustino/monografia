@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  8 NOV 2012 22:07
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  13 NOV 2012 16:26
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -591,14 +591,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24.88> not available
 (./principal.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 2.
-)
-\tf@toc=\write4
-\openout4 = `principal.toc'.
-
  [3
 
 
-]
+])
+\tf@toc=\write4
+\openout4 = `principal.toc'.
+
+ [4]
 \openout2 = `introducao.aux'.
 
  (./introducao.tex
@@ -628,16 +628,32 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 
 (./levantamento_bibliografico.tex
 Cap\'{\i }tulo 2.
-) [4
+[4
 
 
+
+] [5]
+Cap\'{\i }tulo 3.
+[6
+
+]
+Cap\'{\i }tulo 4.
+[7
+
+]
+Cap\'{\i }tulo 5.
+[8
+
+]
+Cap\'{\i }tulo 6.
+) [9
 
 ]
 \openout2 = `consideracoes_finais.aux'.
 
  (./consideracoes_finais.tex
-Cap\'{\i }tulo 3.
-) [5
+Cap\'{\i }tulo 7.
+) [10
 
 
 
@@ -645,8 +661,8 @@ Cap\'{\i }tulo 3.
 \openout2 = `apendice.aux'.
 
  (./apendice.tex
-Cap\'{\i }tulo 4.
-) [6
+Cap\'{\i }tulo 8.
+) [11
 
 
 
@@ -654,8 +670,8 @@ Cap\'{\i }tulo 4.
 \openout2 = `anexos.aux'.
 
  (./anexos.tex
-Cap\'{\i }tulo 5.
-) [7
+Cap\'{\i }tulo 9.
+) [12
 
 
 
@@ -664,29 +680,29 @@ Cap\'{\i }tulo 5.
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-[8
+[13
 
 
 ] (./principal.aux (./capa.aux) (./folharosto.aux) (./dedicatoria.aux)
 (./resumo.aux) (./introducao.aux) (./levantamento_bibliografico.aux)
 (./consideracoes_finais.aux) (./apendice.aux) (./anexos.aux)) ) 
 Here is how much of TeX's memory you used:
- 2813 strings out of 495041
- 38400 string characters out of 1181897
- 97179 words of memory out of 3000000
- 5821 multiletter control sequences out of 15000+50000
+ 2815 strings out of 495041
+ 38416 string characters out of 1181897
+ 105183 words of memory out of 3000000
+ 5823 multiletter control sequences out of 15000+50000
  43557 words of font info for 86 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 31i,8n,41p,938b,228s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,8n,41p,938b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texm
 f-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb
 8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/
 texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (13 pages, 85819 bytes).
+Output written on principal.pdf (19 pages, 96162 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
