@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  13 NOV 2012 23:07
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  14 NOV 2012 17:31
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -259,11 +259,8 @@ Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
 \pfg@pcount=\count103
 \pfg@scount=\count104
 \pfg@temp=\write3
-) (./principal.aux
-(./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux) (./dedicatoria.aux)
-(./resumo.aux) (./abstract.aux) (./introducao.aux)
-(./levantamento_bibliografico.aux) (./cap1.aux) (./cap2.aux) (./cap3.aux)
-(./consideracoes_finais.aux) (./anexo.aux))
+)
+No file principal.aux.
 \openout1 = `principal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -279,7 +276,6 @@ LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 14.
-
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -341,182 +337,24 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20.74> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 10.
- [0
-Non-PDF special ignored!
 
+! I can't write on file `principal.pdf'.
+(Press Enter to retry, or Control-D to exit; default file extension is `.pdf')
+Please type another file name for output
+! Emergency stop.
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.10 \capa
+          
+*** (job aborted, file error in nonstop mode)
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
-\openout2 = `folharosto.aux'.
-
-
-(./folharosto.tex [1
-
-
-])
-\openout2 = `folha_aprovacao.aux'.
-
- (./folha_aprovacao.tex [1
-
-
-
-])
-\openout2 = `dedicatoria.aux'.
-
- (./dedicatoria.tex [2
-
-
-
-])
-\openout2 = `resumo.aux'.
-
-
-(./resumo.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1.
- [3
-
-
-
-
-
-])
-\openout2 = `abstract.aux'.
-
- (./abstract.tex [4
-
-
-
-
-]) (./principal.toc
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 2.
- [5
-
-
-])
-\tf@toc=\write4
-\openout4 = `principal.toc'.
-
- [6]
-(./principal.lof)
-\tf@lof=\write5
-\openout5 = `principal.lof'.
-
- [7
-
-
-] (./principal.lot)
-\tf@lot=\write6
-\openout6 = `principal.lot'.
-
- [8
-
-]
-\openout2 = `introducao.aux'.
-
- (./introducao.tex
-Cap\'{\i }tulo 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
-[1
-
-
-] [2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 28.
- (/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
-) [3]
-\openout2 = `levantamento_bibliografico.aux'.
-
-
-(./levantamento_bibliografico.tex
-Cap\'{\i }tulo 2.
-) [4
-
-
-
-] [5]
-\openout2 = `cap1.aux'.
-
- (./cap1.tex
-Cap\'{\i }tulo 3.
-) [6
-
-
-
-]
-\openout2 = `cap2.aux'.
-
- (./cap2.tex
-Cap\'{\i }tulo 4.
-) [7
-
-
-
-]
-\openout2 = `cap3.aux'.
-
- (./cap3.tex
-Cap\'{\i }tulo 5.
-) [8
-
-
-
-]
-\openout2 = `consideracoes_finais.aux'.
-
- (./consideracoes_finais.tex
-Cap\'{\i }tulo 6.
-) [9
-
-
-
-] (./principal.bbl) [10
-
-
-]
-\openout2 = `anexo.aux'.
-
- (./anexo.tex) [11
-
-
-]
-+-------------------------------------------------------------------+
-| Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
-|                  http://abntex.codigolivre.org.br                 |
-+-------------------------------------------------------------------+
-(./principal.aux (./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux)
-(./dedicatoria.aux) (./resumo.aux) (./abstract.aux) (./introducao.aux)
-(./levantamento_bibliografico.aux) (./cap1.aux) (./cap2.aux) (./cap3.aux)
-(./consideracoes_finais.aux) (./anexo.aux)) ) 
+ 
 Here is how much of TeX's memory you used:
- 2649 strings out of 495041
- 37053 string characters out of 1181897
- 102859 words of memory out of 3000000
- 5636 multiletter control sequences out of 15000+50000
- 45241 words of font info for 88 fonts, out of 3000000 for 9000
+ 2421 strings out of 495041
+ 33978 string characters out of 1181897
+ 87133 words of memory out of 3000000
+ 5530 multiletter control sequences out of 15000+50000
+ 15478 words of font info for 42 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 31i,9n,41p,920b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/en
-c/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share
-/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/font
-s/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/ut
-mri8a.pfb>
-Output written on principal.pdf (21 pages, 97051 bytes).
-PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 31i,4n,41p,264b,145s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
