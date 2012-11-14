@@ -1,18 +1,14 @@
 % \documentclass[dvips,plainheader,pnumromarab]{abnt}
 \documentclass[dvips,ruledheader]{abnt}
-\usepackage[latin1]{inputenc}
 \usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
 \usepackage[pdftex]{graphicx}
 \usepackage{abnt-alf}
 \usepackage{latexsym}
 \usepackage{psfrag}
 \usepackage{cite}
 \usepackage[notintoc,portuguese]{nomencl}
-
-% \usepackage[utf8]{inputenc}
-% % \usepackage[pdftex]{hyperref}
-% \usepackage{epigraph}
-% \usepackage{setspace}
+\usepackage{epigraph}
 
 \begin{document}
 
@@ -32,6 +28,7 @@
 \include{levantamento_bibliografico}
 \include{cap1}
 \include{cap2}
+\include{cap3}
 \include{consideracoes_finais}
 \include{bibliografia}
 \include{anexo}

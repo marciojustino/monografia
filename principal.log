@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  13 NOV 2012 22:13
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  13 NOV 2012 22:35
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -183,14 +183,6 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 (/usr/share/texmf-texlive/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
-
-(/usr/share/texmf-texlive/tex/latex/base/latin1.def
-File: latin1.def 2008/03/30 v1.1d Input encoding file
-))
 (/usr/share/texmf-texlive/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
@@ -204,6 +196,14 @@ File: babel.def 2008/07/06 v3.8l Babel common definitions
 )
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
+))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+(/usr/share/texmf-texlive/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
 ))
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -271,6 +271,13 @@ Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 \nomlabelwidth=\dimen116
 \nom@tempdim=\dimen117
 \nomitemsep=\skip55
+)
+(/usr/share/texmf-texlive/tex/latex/epigraph/epigraph.sty
+Package: epigraph 2009/09/02 v1.5c typesetting epigraphs
+\beforeepigraphskip=\skip56
+\afterepigraphskip=\skip57
+\epigraphwidth=\skip58
+\epigraphrule=\skip59
 ) (./principal.aux
 (./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux) (./dedicatoria.aux)
 (./resumo.aux) (./abstract.aux) (./introducao.aux)
@@ -278,19 +285,19 @@ Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 (./consideracoes_finais.aux) (./bibliografia.aux) (./anexo.aux))
 \openout1 = `principal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 13.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -495,10 +502,10 @@ Cap\'{\i }tulo 6.
 (./levantamento_bibliografico.aux) (./cap1.aux) (./cap2.aux) (./cap3.aux)
 (./consideracoes_finais.aux) (./bibliografia.aux) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2815 strings out of 495041
- 39191 string characters out of 1181897
- 105804 words of memory out of 3000000
- 5798 multiletter control sequences out of 15000+50000
+ 2859 strings out of 495041
+ 39830 string characters out of 1181897
+ 106589 words of memory out of 3000000
+ 5838 multiletter control sequences out of 15000+50000
  43024 words of font info for 85 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  31i,8n,41p,919b,246s stack positions out of 5000i,500n,10000p,200000b,50000s

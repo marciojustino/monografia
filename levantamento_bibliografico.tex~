@@ -10,18 +10,3 @@ Uma última colocação acerca do levantamento bibliográfico: atualmente, os alunos
 Outro cuidado diz respeito à ação ?copiar e colar?.  Nesta hora, o aluno deve ter amadurecimento necessário para não copiar trechos de obras, mesmo que contenha a citação da mesma, pois isso  se configura plágio. O trabalho deve ser o de ler e reformular o que foi dito pelo autor, dentro da perspectiva de seu tema. Um exemplo de reformulação: ?Segundo Coda (ano), a motivação pode ser definida como...?. Perceba que, desta forma, o trecho do autor Coda não esta sendo copiado, mas comentado pelo autor da monografia.
 Quando for absolutamente imprescindível copiar definições ou trechos de obras, este deve ser colocado entre aspas, de forma que fique clara a autoria de determinado trecho, e deve ser indicada a página do livro de onde foi retirada. Trechos com mais de 4 linhas devem vir em fonte menor e com margem esquerda de 4 cm.
 A seguir, devem ser desenvolvidos os capítulos. Um ponto importante é fazer a ligação entre um capítulo e o seguinte, de forma que o leitor entenda completamente a sequenciação.
-
-\chapter*{Capítulo 4 - File Carving Avançado}
-...
-
-\section{Conceito}
-...
-
-\section{Funcionamento}
-...
-
-\section{Fragmentação}
-...
-
-\section{Ponto de Fragmentação}
-...aqui serão incluídos também algoritmos de detecção de pontos de fragmentação como listado no mind map (Sequential Hypothesis Testing)...
