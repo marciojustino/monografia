@@ -1,37 +1,37 @@
-\chapter{Introdu√ß√£o}
-Juntamente com o avan√ßo da tecnologia computacional e da internet veio o aumento do n√∫mero de pessoas conectadas trocando informa√ß√µes, seja em n√≠vel pessoal ou organizacional. Nesse meio, existem usu√°rios que promovem o cybercrime\footnote{crimes cibern√©ticos tendo sistemas informatizados como meio de a√ß√£o} ou atividades ilegais na rede\footnote{o termo rede ser√° usado ao longo deste texto podendo representar a internet como um todo ou a liga√ß√£o de mais de computadores entre si.}. As informa√ß√µes computacionais s√£o armazenadas em discos r√≠gidos\footnote{unidade f√≠sica de armazenamento de dados em um computador} usando apropriados sistemas de arquivos que s√£o suportados pelo sistema operacional instalado no computador. Existem diversos sistemas de arquivos para armazenamento de arquivos no mercado, e um dos mais comuns atualmente √© o NTFS. \cite{iracst}
+\chapter{IntroduÁ„o}
+Juntamente com o avanÁo da tecnologia computacional e da internet veio o aumento do n˙mero de pessoas conectadas trocando informaÁıes, seja em nÌvel pessoal ou organizacional. Nesse meio, existem usu·rios que promovem o cybercrime\footnote{crimes cibernÈticos tendo sistemas informatizados como meio de aÁ„o} ou atividades ilegais na rede\footnote{o termo rede ser· usado ao longo deste texto podendo representar a internet como um todo ou a ligaÁ„o de mais de computadores entre si.}. As informaÁıes computacionais s„o armazenadas em discos rÌgidos\footnote{unidade fÌsica de armazenamento de dados em um computador} usando apropriados sistemas de arquivos que s„o suportados pelo sistema operacional instalado no computador. Existem diversos sistemas de arquivos para armazenamento de arquivos no mercado, e um dos mais comuns atualmente È o NTFS. \cite{iracst}
 
-A t√©cnica de file carving √© frequentemente utilizada durante investiga√ß√µes digitais. Conforme Nasir Memon (2011, p. S2) file carving √© uma t√©cnica em que os arquivos de dados s√£o extra√≠dos de um dispositivo digital sem o aux√≠lio de tabelas de arquivo ou outros meta-dados do disco. Um dos primeiros desafios em file carving pode ser encontrado na tentativa de se recuperar arquivos fragmentados.
+A tÈcnica de file carving È frequentemente utilizada durante investigaÁıes digitais. Conforme Nasir Memon (2011, p. S2) file carving È uma tÈcnica em que os arquivos de dados s„o extraÌdos de um dispositivo digital sem o auxÌlio de tabelas de arquivo ou outros meta-dados do disco. Um dos primeiros desafios em file carving pode ser encontrado na tentativa de se recuperar arquivos fragmentados.
 
 ``In forensic practice, file carving can recover files that have been deleted and have had their directory entries reallocated to other files, but for which the data sectors themselves have not yet been overwritten.'' \cite{digitalinvestigation}
 
 \section{Justificativa}
-O processo de "File Carving" √© de suma import√¢ncia para a investiga√ß√£o forense computacional e envolve a identifica√ß√£o de arquivos perdidos (deletados ou apagados) do equipamento investigado. A dispers√£o desses arquivos n√£o mais indexados pela tabela de aloca√ß√£o de arquivos do sistema de arquivos NTFS torna o processo de identifica√ß√£o dos arquivos um desafio para a investiga√ß√£o e identifica√ß√£o de il√≠citos.
+O processo de "File Carving" È de suma import‚ncia para a investigaÁ„o forense computacional e envolve a identificaÁ„o de arquivos perdidos (deletados ou apagados) do equipamento investigado. A dispers„o desses arquivos n„o mais indexados pela tabela de alocaÁ„o de arquivos do sistema de arquivos NTFS torna o processo de identificaÁ„o dos arquivos um desafio para a investigaÁ„o e identificaÁ„o de ilÌcitos.
 \begin{citacao}
 During a digital forensic investigation many diferent pieces of data are preserved for investigation, of which bit-copy images of hard drives are the most common. These images contain the data allocated to files as well as the unallocated data. The unallocated data may still contain information that is relevant to an investigation, in the form of (parts of) intentionally deleted les or automatically removed temporary files. Unfortunately, this data is not always easily accessible: a string search on the raw data might recover (parts of) interesting text documents, but it won't help to get to information present in for example images or compressed files. Besides that, the exact strings to look for may not be known beforehand. To get to this information, the deleted files have to be recovered. \cite{eindhoven}
 \end{citacao}
 
 \section{Problema de Pesquisa}
-Tendo em vista a fragmenta√ß√£o de arquivos como um dos desafios no processo de file carving esta pesquisa visa identificar qual a melhor metodologia para identificar fragmentos de arquivos em file carving em sistemas de arquivos NTFS.
+Tendo em vista a fragmentaÁ„o de arquivos como um dos desafios no processo de file carving esta pesquisa visa identificar qual a melhor metodologia para identificar fragmentos de arquivos em file carving em sistemas de arquivos NTFS.
 
-\section{Hip√≥tese(s)}
-An√°lise dos metadados de um arquivo quanto ao seu in√≠cio e fim (cabe√ßalho e rodap√© do arquivo), informa√ß√µes que determinam onde os dados de um determinado arquivo come√ßam e onde eles terminam.
-Identificar um padr√£o de dados para localiza√ß√£o dos fragmentados de forma consistente, reduzindo assim os falsos positivos comumente apresentados no processo de file carving e permitindo a identifica√ß√£o m√°xima do conte√∫do do arquivo no processo de investiga√ß√£o.
+\section{HipÛtese(s)}
+An·lise dos metadados de um arquivo quanto ao seu inÌcio e fim (cabeÁalho e rodapÈ do arquivo), informaÁıes que determinam onde os dados de um determinado arquivo comeÁam e onde eles terminam.
+Identificar um padr„o de dados para localizaÁ„o dos fragmentados de forma consistente, reduzindo assim os falsos positivos comumente apresentados no processo de file carving e permitindo a identificaÁ„o m·xima do conte˙do do arquivo no processo de investigaÁ„o.
 
 \section{Objetivo Geral}
-Determinar uma melhor metodologia de localiza√ß√£o de fragmentos de arquivos no processo de file carving em sistemas de arquivos NTFS.
+Determinar uma melhor metodologia de localizaÁ„o de fragmentos de arquivos no processo de file carving em sistemas de arquivos NTFS.
 
-\section{Objetivo Espec√≠fico}
-Para chegar ao objetivo principal e determinar uma melhor metodologia de localiza√ß√£o de fragmentos de arquivos √© necess√°rio entender primeiramente e de forma mais detalhada alguns items espec√≠ficos:
+\section{Objetivo EspecÌfico}
+Para chegar ao objetivo principal e determinar uma melhor metodologia de localizaÁ„o de fragmentos de arquivos È necess·rio entender primeiramente e de forma mais detalhada alguns items especÌficos:
 
 \begin{itemize}
- \item Verificar como s√£o identificados os arquivos no sistema de arquivo NTFS;
- \item Verificar como um arquivo fragmentado √© armazenado em um sistema NTFS;
- \item Levantar uma padroniza√ß√£o entre os fragmentos de arquivos para melhor localiza√ß√£o;
- \item Identificar formas de localiza√ß√£o de fragmentos dos arquivos n√£o alocados;
+ \item Verificar como s„o identificados os arquivos no sistema de arquivo NTFS;
+ \item Verificar como um arquivo fragmentado È armazenado em um sistema NTFS;
+ \item Levantar uma padronizaÁ„o entre os fragmentos de arquivos para melhor localizaÁ„o;
+ \item Identificar formas de localizaÁ„o de fragmentos dos arquivos n„o alocados;
 \end{itemize}
 
-Verificar assim a forma como os arquivos s√£o registrados nos sistemas de arquivos NTFS, o processo de diferencia√ß√£o de tipos de arquivos para determinar o in√≠cio e o fim de um arquivo (√°rea de cabe√ßalho, √°rea de dados, de metadados e ponto de fim de arquivo), podendo ent√£o encontrar certos padr√µes que possam permitir a identifica√ß√£o de partes de um arquivo fragmentado no sistema de arquivos.
+Verificar assim a forma como os arquivos s„o registrados nos sistemas de arquivos NTFS, o processo de diferenciaÁ„o de tipos de arquivos para determinar o inÌcio e o fim de um arquivo (·rea de cabeÁalho, ·rea de dados, de metadados e ponto de fim de arquivo), podendo ent„o encontrar certos padrıes que possam permitir a identificaÁ„o de partes de um arquivo fragmentado no sistema de arquivos.
 
 \section{Metodologia}
 ...em desenvolvimento...

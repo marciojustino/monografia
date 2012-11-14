@@ -1,42 +1,39 @@
-\documentclass[dvips,plainheader,pnumromarab]{abnt}
+% \documentclass[dvips,plainheader,pnumromarab]{abnt}
+\documentclass[dvips,ruledheader]{abnt}
+\usepackage[latin1]{inputenc}
 \usepackage[brazil]{babel}
-% \usepackage[latin1]{inputenc}
-\usepackage[utf8]{inputenc}
 \usepackage[pdftex]{graphicx}
-% \usepackage[pdftex]{hyperref}
 \usepackage{abnt-alf}
 \usepackage{latexsym}
 \usepackage{psfrag}
-\usepackage{setspace}
-% \usepackage[center]{caption2}
-\usepackage{epigraph}
+\usepackage{cite}
+\usepackage[notintoc,portuguese]{nomencl}
 
-% Glossário não utilizado
-% \usepackage{makeglo}
-% \renewcommand{\glossaryname}{Glossário}
-% \makeglossary
+% \usepackage[utf8]{inputenc}
+% % \usepackage[pdftex]{hyperref}
+% \usepackage{epigraph}
+% \usepackage{setspace}
 
 \begin{document}
 
 \DeclareGraphicsRule{.eps.gz}{eps}{.eps.bb}{`gunzip -c #1}
 
-% \include{encardenacao}
 \include{capa}
 \include{folharosto}
+\include{folha_aprovacao}
 \include{dedicatoria}
 \include{resumo}
-
-\tableofcontents
-
+\include{abstract}
+% \tableofcontents
+% \listoffigures
+% \listoftables
+% \printnomenclature
 \include{introducao}
 \include{levantamento_bibliografico}
+\include{cap1}
+\include{cap2}
 \include{consideracoes_finais}
-% \include{cronograma}
-% \include{projeto_tgi}
-\include{apendice}
-\include{anexos}
-
-\bibliography{bb}
-\bibliographystyle{abnt-alf}
+\include{bibliografia}
+\include{anexo}
 
 \end{document}
