@@ -2,14 +2,18 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: principal.aux
 A level-1 auxiliary file: capa.aux
 A level-1 auxiliary file: folharosto.aux
+A level-1 auxiliary file: folha_aprovacao.aux
 A level-1 auxiliary file: dedicatoria.aux
 A level-1 auxiliary file: resumo.aux
+A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: levantamento_bibliografico.aux
+A level-1 auxiliary file: cap1.aux
+A level-1 auxiliary file: cap2.aux
+A level-1 auxiliary file: cap3.aux
 A level-1 auxiliary file: consideracoes_finais.aux
-A level-1 auxiliary file: apendice.aux
-A level-1 auxiliary file: anexos.aux
 The style file: abnt-alf.bst
+A level-1 auxiliary file: anexo.aux
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: abnt-options.bib
 Database file #2: bb.bib
@@ -22,7 +26,7 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 +---------------------------------------------------------+
 You've used 4 entries,
             6522 wiz_defined-function locations,
-            1191 strings with 9814 characters,
+            1198 strings with 9859 characters,
 and the built_in function-call counts, 2969 in all, are:
 = -- 326
 > -- 47

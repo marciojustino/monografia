@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  13 NOV 2012 22:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  13 NOV 2012 23:07
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -259,61 +259,42 @@ Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
 \pfg@pcount=\count103
 \pfg@scount=\count104
 \pfg@temp=\write3
-)
-(/usr/share/texmf-texlive/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \citen on input line 81.
-LaTeX Info: Redefining \cite on input line 285.
-LaTeX Info: Redefining \nocite on input line 356.
-Package: cite 2009/08/29  v 5.2
-)
-(/usr/share/texmf-texlive/tex/latex/nomencl/nomencl.sty
-Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen116
-\nom@tempdim=\dimen117
-\nomitemsep=\skip55
-)
-(/usr/share/texmf-texlive/tex/latex/epigraph/epigraph.sty
-Package: epigraph 2009/09/02 v1.5c typesetting epigraphs
-\beforeepigraphskip=\skip56
-\afterepigraphskip=\skip57
-\epigraphwidth=\skip58
-\epigraphrule=\skip59
 ) (./principal.aux
 (./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux) (./dedicatoria.aux)
 (./resumo.aux) (./abstract.aux) (./introducao.aux)
 (./levantamento_bibliografico.aux) (./cap1.aux) (./cap2.aux) (./cap3.aux)
-(./consideracoes_finais.aux) (./bibliografia.aux) (./anexo.aux))
+(./consideracoes_finais.aux) (./anexo.aux))
 \openout1 = `principal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 14.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-\big@size=\dimen118
+\big@size=\dimen116
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
-\scratchdimen=\dimen119
+\scratchdimen=\dimen117
 \scratchbox=\box52
 \nofMPsegments=\count106
 \nofMParguments=\count107
 \everyMPshowfont=\toks18
 \MPscratchCnt=\count108
-\MPscratchDim=\dimen120
+\MPscratchDim=\dimen118
 \MPnumerator=\count109
 \everyMPtoPDFconversion=\toks19
 )
@@ -374,14 +355,14 @@ Non-PDF special ignored!
 ])
 \openout2 = `folha_aprovacao.aux'.
 
- (./folha_aprovacao.tex [2
+ (./folha_aprovacao.tex [1
 
 
 
 ])
 \openout2 = `dedicatoria.aux'.
 
- (./dedicatoria.tex [3
+ (./dedicatoria.tex [2
 
 
 
@@ -394,7 +375,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1.
- [4
+ [3
 
 
 
@@ -403,12 +384,36 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24.88> not available
 ])
 \openout2 = `abstract.aux'.
 
- (./abstract.tex [5
+ (./abstract.tex [4
 
 
+
+
+]) (./principal.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 2.
+ [5
 
 
 ])
+\tf@toc=\write4
+\openout4 = `principal.toc'.
+
+ [6]
+(./principal.lof)
+\tf@lof=\write5
+\openout5 = `principal.lof'.
+
+ [7
+
+
+] (./principal.lot)
+\tf@lot=\write6
+\openout6 = `principal.lot'.
+
+ [8
+
+]
 \openout2 = `introducao.aux'.
 
  (./introducao.tex
@@ -421,33 +426,32 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
-[6
+[1
 
 
-
-] [7]
+] [2]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 28.
  (/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
-) [8]
+) [3]
 \openout2 = `levantamento_bibliografico.aux'.
 
 
 (./levantamento_bibliografico.tex
 Cap\'{\i }tulo 2.
-) [9
+) [4
 
 
 
-] [10]
+] [5]
 \openout2 = `cap1.aux'.
 
  (./cap1.tex
 Cap\'{\i }tulo 3.
-) [11
+) [6
 
 
 
@@ -456,7 +460,7 @@ Cap\'{\i }tulo 3.
 
  (./cap2.tex
 Cap\'{\i }tulo 4.
-) [12
+) [7
 
 
 
@@ -465,7 +469,7 @@ Cap\'{\i }tulo 4.
 
  (./cap3.tex
 Cap\'{\i }tulo 5.
-) [13
+) [8
 
 
 
@@ -474,22 +478,17 @@ Cap\'{\i }tulo 5.
 
  (./consideracoes_finais.tex
 Cap\'{\i }tulo 6.
-) [14
+) [9
 
 
 
-]
-\openout2 = `bibliografia.aux'.
-
- (./bibliografia.tex (./principal.bbl)) [15
-
+] (./principal.bbl) [10
 
 
 ]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex) [16
-
+ (./anexo.tex) [11
 
 
 ]
@@ -500,24 +499,24 @@ Cap\'{\i }tulo 6.
 (./principal.aux (./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux)
 (./dedicatoria.aux) (./resumo.aux) (./abstract.aux) (./introducao.aux)
 (./levantamento_bibliografico.aux) (./cap1.aux) (./cap2.aux) (./cap3.aux)
-(./consideracoes_finais.aux) (./bibliografia.aux) (./anexo.aux)) ) 
+(./consideracoes_finais.aux) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2859 strings out of 495041
- 39830 string characters out of 1181897
- 106589 words of memory out of 3000000
- 5838 multiletter control sequences out of 15000+50000
- 43024 words of font info for 85 fonts, out of 3000000 for 9000
+ 2649 strings out of 495041
+ 37053 string characters out of 1181897
+ 102859 words of memory out of 3000000
+ 5636 multiletter control sequences out of 15000+50000
+ 45241 words of font info for 88 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 31i,8n,41p,919b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/t
-exmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
-tmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/sha
-re/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fon
-ts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (17 pages, 90937 bytes).
+ 31i,9n,41p,920b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/en
+c/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share
+/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/font
+s/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/ut
+mri8a.pfb>
+Output written on principal.pdf (21 pages, 97051 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
