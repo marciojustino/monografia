@@ -1,19 +1,14 @@
 \chapter{Introdução}
 Juntamente com o avanço da tecnologia computacional e da internet veio o aumento do número de pessoas conectadas trocando informações, seja em nível pessoal ou organizacional. Segundo o Centro de Estudos sobre as Tecnologias da Informação e da Comunicação (cetic.br), o número de usuários domésticos e no trabalho tem aumentado juntamente com o tempo em que os mesmos permanecem conectados à internet. A figura \ref{fig:fig01} mostra a evolução desses números até o presente momento.
 
-\begin{figure}[htb]
-  \begin{center}
-    \caption{INTERNAUTAS ATIVOS EM RESIDÊNCIAS E NO TRABALHO* E HORAS NAVEGADAS** - 2012}
-      \vspace{0.2cm}
-      \includegraphics[angle=0,scale=0.5]{Fig01}\\
-      \label{fig:f01}
-      {\scriptsize Fonte: Painel IBOPE/NetRatings}\\
-      {\scriptsize Nota: Alguma especificação geral.}
-  \end{center}
+\begin{figure}[htp]
+  \centering
+  \includegraphics[scale=0.6]{figuras/fig01.png}
+  \caption{INTERNAUTAS ATIVOS EM RESIDÊNCIAS E NO TRABALHO E HORAS NAVEGADAS - 2012 \cite{CeticBR}}
+  \label{fig:fig01}
 \end{figure}
 
-
-Nesse meio, existem usuários que promovem o cybercrime\footnote{crimes cibernéticos tendo sistemas informatizados como meio de ação} ou atividades ilegais na rede\footnote{o termo rede será usado ao longo deste texto podendo representar a internet como um todo ou a ligação de mais de computadores entre si.}. As informações computacionais são armazenadas em discos rígidos\footnote{unidade física de armazenamento de dados em um computador} usando apropriados sistemas de arquivos que são suportados pelo sistema operacional instalado no computador. Existem diversos sistemas de arquivos para armazenamento de arquivos no mercado, e um dos mais comuns atualmente é o NTFS \cite{IJCSITS}.
+Nesse meio, existem usuários que promovem o cibercrime\footnote{crimes cibernéticos tendo sistemas informatizados como meio de ação \cite{}} ou atividades ilegais na rede\footnote{o termo rede será usado ao longo deste texto podendo representar a internet como um todo ou a ligação de mais de computadores entre si.}. As informações computacionais são armazenadas em discos rígidos\footnote{unidade física de armazenamento de dados em um computador} usando apropriados sistemas de arquivos que são suportados pelo sistema operacional instalado no computador. Existem diversos sistemas de arquivos para armazenamento de arquivos no mercado, e um dos mais comuns atualmente é o NTFS \cite{IJCSITS}.
 
 Muitos criminosos se utilizam do artifício de excluir ou remover rastros de seus atos criminosos apagando os arquivos criados, manipulados ou alterados, acreditando que com isso seu crime seria um crime perfeito, sem possibilidade de identificação e assim da comprovação de seus atos. A técnica de file carving possibilita a análise de tais arquivos, provendo um avanço investigativo  com a possiblidade de extrair provas de arquivos não mais alocados porém que ainda estejam presentes fisicamente nos discos.
 

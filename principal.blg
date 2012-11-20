@@ -18,7 +18,9 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: abnt-options.bib
 Database file #2: bb.bib
 Warning--entry type for "CeticBR" isn't style-file defined
---line 29 of file bb.bib
+--line 39 of file bb.bib
+Warning--entry type for "CyberCitizen" isn't style-file defined
+--line 48 of file bb.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 +---------------------------------------------------------+
 | Estilo bibliografico abnt-alf.bst versao 1.53           |
@@ -26,45 +28,45 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 5 entries,
+You've used 6 entries,
             6522 wiz_defined-function locations,
-            1204 strings with 9985 characters,
-and the built_in function-call counts, 3596 in all, are:
-= -- 371
-> -- 62
+            1209 strings with 10093 characters,
+and the built_in function-call counts, 4223 in all, are:
+= -- 416
+> -- 77
 < -- 7
-+ -- 63
-- -- 20
-* -- 208
-:= -- 535
-add.period$ -- 13
-call.type$ -- 6
-change.case$ -- 29
-chr.to.int$ -- 11
-cite$ -- 4
-duplicate$ -- 149
-empty$ -- 300
-format.name$ -- 92
-if$ -- 850
++ -- 68
+- -- 25
+* -- 247
+:= -- 622
+add.period$ -- 17
+call.type$ -- 7
+change.case$ -- 35
+chr.to.int$ -- 12
+cite$ -- 5
+duplicate$ -- 178
+empty$ -- 367
+format.name$ -- 115
+if$ -- 1005
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 81
-newline$ -- 29
-num.names$ -- 20
-pop$ -- 104
+missing$ -- 98
+newline$ -- 34
+num.names$ -- 25
+pop$ -- 127
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 18
 quote$ -- 0
-skip$ -- 263
+skip$ -- 303
 stack$ -- 1
-substring$ -- 176
-swap$ -- 74
+substring$ -- 194
+swap$ -- 86
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 4
 warning$ -- 0
-while$ -- 32
+while$ -- 38
 width$ -- 0
-write$ -- 71
-(There was 1 warning)
+write$ -- 86
+(There were 2 warnings)

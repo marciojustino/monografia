@@ -5,6 +5,11 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.53 }
 
+\bibitem[CyberCitizen 2012]{CyberCitizen}
+\abntrefinfo{CyberCitizen}{CYBERCITIZEN}{2012}
+{CYBERCITIZEN. \emph{What is Cyber Crime?} cybercitizenship, 2012.
+Dispon{\'\i}vel em: $<$http://www.cybercitizenship.org/crime/crime.html$>$.}
+
 \bibitem[Garfinkel 2007]{DGI}
 \abntrefinfo{Garfinkel}{GARFINKEL}{2007}
 {GARFINKEL, S.~L. Carving contiguous and fragmented files with fast object

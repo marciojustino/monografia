@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  20 NOV 2012 20:03
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  20 NOV 2012 21:36
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -515,10 +515,10 @@ Cap\'{\i }tulo 6.
 (./levantamento_bibliografico.aux) (./cap1.aux) (./cap2.aux) (./cap3.aux)
 (./consideracoes_finais.aux) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2678 strings out of 495041
- 37460 string characters out of 1181897
- 102942 words of memory out of 3000000
- 5658 multiletter control sequences out of 15000+50000
+ 2683 strings out of 495041
+ 37557 string characters out of 1181897
+ 102999 words of memory out of 3000000
+ 5663 multiletter control sequences out of 15000+50000
  52638 words of font info for 105 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  31i,12n,41p,1079b,282s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -528,7 +528,7 @@ mi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texl
 ive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (22 pages, 113503 bytes).
+Output written on principal.pdf (22 pages, 114480 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
