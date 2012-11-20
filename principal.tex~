@@ -1,4 +1,4 @@
-\documentclass[dvips,plainheader,pnumromarab]{abnt}
+\documentclass[dvips,ruledheader,pnumromarab]{abnt}
 % \documentclass[dvips,ruledheader]{abnt}
 \usepackage[brazil]{babel}
 \usepackage[latin1]{inputenc}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  14 NOV 2012 20:09
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  20 NOV 2012 20:03
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -418,51 +418,54 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 
  (./introducao.tex
 Cap\'{\i }tulo 1.
+<figuras/fig01.png, id=37, 604.2575pt x 344.28625pt>
+File: figuras/fig01.png Graphic file (type png)
+ <use figuras/fig01.png>
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 10.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
+
 [1
 
 
-]
+ <./figuras/fig01.png (PNG copy)>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
-
-Overfull \hbox (1.85376pt too wide) in paragraph at lines 18--19
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+ [2]
+Overfull \hbox (1.85376pt too wide) in paragraph at lines 28--29
 []\OT1/ptm/m/n/12 Segundo Na-sir Me-nom (2011, p. S2), um dos pri-mei-ros de-sa
 -fios do pro-cesso de investiga[][]ao
  []
 
-[2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 31.
- (/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 41.
+(/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
-) [3]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
+ [3]) [4]
 \openout2 = `levantamento_bibliografico.aux'.
 
 
 (./levantamento_bibliografico.tex
 Cap\'{\i }tulo 2.
-) [4
+) [5
 
 
 
-] [5]
+] [6]
 \openout2 = `cap1.aux'.
 
  (./cap1.tex
 Cap\'{\i }tulo 3.
-) [6
+) [7
 
 
 
@@ -471,7 +474,7 @@ Cap\'{\i }tulo 3.
 
  (./cap2.tex
 Cap\'{\i }tulo 4.
-) [7
+) [8
 
 
 
@@ -480,7 +483,7 @@ Cap\'{\i }tulo 4.
 
  (./cap3.tex
 Cap\'{\i }tulo 5.
-) [8
+) [9
 
 
 
@@ -489,17 +492,17 @@ Cap\'{\i }tulo 5.
 
  (./consideracoes_finais.tex
 Cap\'{\i }tulo 6.
-) [9
+) [10
 
 
 
-] (./principal.bbl) [10
+] (./principal.bbl) [11
 
 
 ]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex) [11
+ (./anexo.tex) [12
 
 
 ]
@@ -512,22 +515,22 @@ Cap\'{\i }tulo 6.
 (./levantamento_bibliografico.aux) (./cap1.aux) (./cap2.aux) (./cap3.aux)
 (./consideracoes_finais.aux) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2662 strings out of 495041
- 37250 string characters out of 1181897
- 102859 words of memory out of 3000000
- 5647 multiletter control sequences out of 15000+50000
- 51910 words of font info for 103 fonts, out of 3000000 for 9000
+ 2678 strings out of 495041
+ 37460 string characters out of 1181897
+ 102942 words of memory out of 3000000
+ 5658 multiletter control sequences out of 15000+50000
+ 52638 words of font info for 105 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 31i,9n,41p,1806b,282s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,12n,41p,1079b,282s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/en
 c/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share
-/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/font
-s/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/ut
-mri8a.pfb>
-Output written on principal.pdf (21 pages, 99200 bytes).
+mi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texl
+ive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
+/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on principal.pdf (22 pages, 113503 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
