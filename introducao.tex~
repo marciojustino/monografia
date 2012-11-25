@@ -10,7 +10,9 @@ Juntamente com o avanço da tecnologia computacional e da internet veio o aumento
 
 Nesse meio, existem usuários que promovem o cibercrime\footnote{crimes cibernéticos tendo sistemas informatizados como meio de ação \cite{CyberCitizen}.} ou atividades ilegais na rede\footnote{o termo rede será usado ao longo deste texto podendo representar a internet como um todo ou a ligação de mais de computadores entre si.}. As informações computacionais são armazenadas em discos rígidos\footnote{unidade física de armazenamento de dados em um computador} usando apropriados sistemas de arquivos que são suportados pelo sistema operacional instalado no computador. Existem diversos sistemas de arquivos para armazenamento de arquivos no mercado, e um dos mais comuns atualmente é o NTFS \cite{IJCSITS}.
 
-Muitos criminosos se utilizam do artifício de excluir ou remover rastros de seus atos criminosos apagando os arquivos criados, manipulados ou alterados, acreditando que com isso seu crime seria um crime perfeito, sem possibilidade de identificação e assim da comprovação de seus atos. A técnica de file carving possibilita a análise de tais arquivos, provendo um avanço investigativo  com a possiblidade de extrair provas de arquivos não mais alocados porém que ainda estejam presentes fisicamente nos discos.
+Muitos criminosos se utilizam do artifício de excluir ou remover rastros de seus atos criminosos apagando os arquivos criados, manipulados ou alterados, acreditando que com isso seu crime seria perfeito, sem rastros da comprovação de seus atos. A técnica de file carving possibilita a análise de tais arquivos, provendo um avanço investigativo  com a possiblidade de extrair provas de arquivos não mais alocados porém que ainda estejam presentes fisicamente nos discos.
+
+Segundo Caloyannides (2004, p. 26)\nocite{Caloyannides}, a operação de remoção de um arquivo não faz absolutamente nada. Esta meramente altera um simples caracter na tabela de alocação do arquivo em questão indicando ao computador que o espaço desse arquivo foi tomado permitindo que os dados do arquivo possam ser sobrescritos no futuro, se necessário. Seguindo raciocínio semelhante, a operação de formatação não remove os dados sensíveis dos arquivos. A formatação faz com que os ponteiros da tabela de alocação que indicam onde os arquivos estão sejam liberados, perdendo assim sua localização pelo sistema de arquivos mas mantendo os dados intactos em seu sistema. De acordo com Caloyannides (2004, p. 33), os arquivos são alocados no disco em unidades mínimas chamadas clusters\footnote{Unidade mínima que pode ser acessada pelo sistema de arquivos, constituído de setores e de tamanho variável dependendo do sistema de arquivos e da opção de formatação.}. Se o sistema de arquivos não necessita de todo o cluster para armazenar as informações do arquivo, este irá marcar o final do arquivo na porção final de seus dados dentro do cluster, deixando uma porção do cluster com dados considerados lixo, não sobrescritos pelo sistema. Essa situação gera o que é chamado de slack space\footnote{Espaço não alocado em um cluster que pode conter informações de outros arquivos que não foram sobrescritas.}. Por fim, o processo de formatação e remoção de um arquivo, juntamente com as áreas de slack space do disco, provocam o surgimento de áreas não alocadas, o que caracteriza o processo de file carving.
 
 A técnica de file carving é frequentemente utilizada durante investigações digitais. Conforme Memon (2011, p. S2) essa é uma técnica em que arquivos de dados são extraídos de um dispositivo digital sem o auxílio de tabelas de arquivo ou outros meta-dados do disco. 
 
@@ -25,14 +27,14 @@ dados alocados para arquivos, bem como os dados não alocados. Os dados não aloca
 \end{citacao}
 
 \section{Fragmentação de Arquivos}
-Segundo Nasir Menom (2011, p. S2), um dos primeiros desafios do processo de investigação utilizando file carving é justamente a tentativa de recuperar os framentos de arquivos não alocados. A fragmentação de arquivos é um desafio para o processo de file carving e é de suma importância para a recuperação de arquivos perdidos em processos de investigação digital. Tendo em vista o presente desafio tem-se a necessidade de se determinar qual a melhor técnica para identificação de fragmentos de arquivos no processo de file carving.
+Conforme Menom (2011, p. S2)\nocite{Menon}, um dos primeiros desafios do processo de investigação utilizando file carving é justamente a tentativa de recuperar os framentos de arquivos não alocados. A fragmentação de arquivos é um desafio para o processo de file carving e é de suma importância para a recuperação de arquivos perdidos em processos de investigação digital. Tendo em vista o presente desafio, tem-se a necessidade de se determinar qual a melhor técnica para identificação de fragmentos de arquivos no processo de file carving.
 
 \section{Hipótese(s)}
 Análise dos metadados de um arquivo quanto ao seu início e fim (cabeçalho e rodapé do arquivo), informações que determinam onde os dados de um arquivo começam e onde terminam.
 Identificar um padrão de dados na localização dos fragmentados de forma consistente, reduzindo assim os falsos positivos comumente apresentados no processo de file carving permitirão a identificação máxima de conteúdo do arquivo no processo de investigação forense.
 
 \section{Objetivo Geral}
-Determinar uma melhor metodologia de localização de fragmentos de arquivos no processo de file carving em sistemas de arquivos NTFS.
+Visto a necessidade de mitigar o impacto da fragmentação no processo de file carving em uma investigação digital, busca-se determinar uma melhor metodologia de localização dos fragmentos de arquivos, esclarecer uma maneira de localização dos fragmentos de um arquivo dentro da área não alocada em sistemas de arquivos NTFS.
 
 \section{Objetivo Específico}
 Para chegar ao objetivo principal e determinar uma melhor metodologia de localização de fragmentos de arquivos é necessário entender primeiramente e de forma mais detalhada alguns items específicos:
@@ -40,11 +42,11 @@ Para chegar ao objetivo principal e determinar uma melhor metodologia de localiz
 \begin{itemize}
  \item Verificar como são identificados os arquivos no sistema de arquivo NTFS;
  \item Verificar como um arquivo fragmentado é armazenado em um sistema NTFS;
- \item Levantar uma padronização entre os fragmentos de arquivos para melhor localização;
- \item Identificar formas de localização de fragmentos dos arquivos não alocados;
+ \item Levantar uma padronização entre os fragmentos de arquivos para melhor localização; e
+ \item Identificar formas de localização de fragmentos dos arquivos não alocados.
 \end{itemize}
 
 Verificar assim a forma como os arquivos são registrados nos sistemas de arquivos NTFS, o processo de diferenciação de tipos de arquivos para determinar o início e o fim de um arquivo (área de cabeçalho, área de dados, de metadados e ponto de fim de arquivo), podendo então encontrar certos padrões que possam permitir a identificação de partes de um arquivo fragmentado no sistema de arquivos.
 
 \section{Metodologia}
-...em desenvolvimento...
+Pesquisar e descrever o funcionamento do sistema de arquivos NTFS e identificar em sua estrutura de armazenamento de arquivos o ponto de fragmentação dos arquivos podendo dessa forma atingir o objetivo de determinar uma melhor forma de recuperação dos fragmentos de arquivos em área não alocada.

@@ -5,6 +5,16 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.53 }
 
+\bibitem[Caloyannides 2004]{Caloyannides}
+\abntrefinfo{Caloyannides}{CALOYANNIDES}{2004}
+{CALOYANNIDES, M.~A. \emph{Privacy Protection and Computer Forensics}. 2. ed.
+  [S.l.]: Artech House, 2004.}
+
+\bibitem[Carrier 2005]{ForensicAnalysis}
+\abntrefinfo{Carrier}{CARRIER}{2005}
+{CARRIER, B. \emph{File System Forensic Analysis}. [S.l.]: Addison Wesley
+  Professional, 2005.}
+
 \bibitem[CyberCitizen 2012]{CyberCitizen}
 \abntrefinfo{CyberCitizen}{CYBERCITIZEN}{2012}
 {CYBERCITIZEN. \emph{What is Cyber Crime?} cybercitizenship, 2012.
@@ -33,5 +43,16 @@ Disserta\c{c}\~ao (Mestrado) --- Eindhoven University of Technology, 10 2007.}
 {MAHANT, B. S.~H. Ntfs deleted files recovery - forensics view.
 \emph{IRACST - International Journal of Computer Science and Information
   Technology and Security (IJCSITS)}, v.~2, n.~3, p. 491--497, 2012.}
+
+\bibitem[Pal Husrev T.~Sencar 2008]{Menon}
+\abntrefinfo{Pal Husrev T.~Sencar}{PAL HUSREV T.~SENCAR}{2008}
+{PAL HUSREV T.~SENCAR, N.~M. A. Detecting file fragmentation point using
+  sequential hypothesis testing.
+\emph{ELSEVIER}, n.~5, p. S2--S13, 2008.}
+
+\bibitem[Wikipédia 2012]{WikiBytes}
+\abntrefinfo{Wikipédia}{WIKIPéDIA}{2012}
+{WIKIPéDIA. \emph{Byte}. Wikipédia, 2012.
+Dispon{\'\i}vel em: $<$http://pt.wikipedia.org/wiki/Bytes$>$.}
 
 \end{thebibliography}

@@ -7,7 +7,6 @@ A level-1 auxiliary file: dedicatoria.aux
 A level-1 auxiliary file: resumo.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: introducao.aux
-A level-1 auxiliary file: levantamento_bibliografico.aux
 A level-1 auxiliary file: cap1.aux
 A level-1 auxiliary file: cap2.aux
 A level-1 auxiliary file: cap3.aux
@@ -21,6 +20,8 @@ Warning--entry type for "CeticBR" isn't style-file defined
 --line 39 of file bb.bib
 Warning--entry type for "CyberCitizen" isn't style-file defined
 --line 48 of file bb.bib
+Warning--entry type for "WikiBytes" isn't style-file defined
+--line 57 of file bb.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 +---------------------------------------------------------+
 | Estilo bibliografico abnt-alf.bst versao 1.53           |
@@ -28,45 +29,45 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 6 entries,
+You've used 10 entries,
             6522 wiz_defined-function locations,
-            1209 strings with 10093 characters,
-and the built_in function-call counts, 4223 in all, are:
-= -- 416
-> -- 77
-< -- 7
-+ -- 68
-- -- 25
-* -- 247
-:= -- 622
-add.period$ -- 17
-call.type$ -- 7
-change.case$ -- 35
-chr.to.int$ -- 12
-cite$ -- 5
-duplicate$ -- 178
-empty$ -- 367
-format.name$ -- 115
-if$ -- 1005
+            1231 strings with 10474 characters,
+and the built_in function-call counts, 6809 in all, are:
+= -- 598
+> -- 138
+< -- 10
++ -- 88
+- -- 45
+* -- 408
+:= -- 979
+add.period$ -- 31
+call.type$ -- 11
+change.case$ -- 61
+chr.to.int$ -- 19
+cite$ -- 9
+duplicate$ -- 324
+empty$ -- 617
+format.name$ -- 207
+if$ -- 1627
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 98
-newline$ -- 34
-num.names$ -- 25
-pop$ -- 127
+missing$ -- 172
+newline$ -- 52
+num.names$ -- 45
+pop$ -- 218
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 30
 quote$ -- 0
-skip$ -- 303
+skip$ -- 454
 stack$ -- 1
-substring$ -- 194
-swap$ -- 86
-text.length$ -- 5
+substring$ -- 291
+swap$ -- 151
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 4
 warning$ -- 0
-while$ -- 38
+while$ -- 65
 width$ -- 0
-write$ -- 86
-(There were 2 warnings)
+write$ -- 146
+(There were 3 warnings)

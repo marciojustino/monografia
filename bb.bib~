@@ -1,4 +1,4 @@
-@article{elsevier,
+@article{Menon,
     author  = "Anandabrata Pal, Husrev T. Sencar, Nasir Memon",
     title   = "Detecting file fragmentation point using sequential hypothesis testing",
     year    = "2008",
@@ -52,4 +52,28 @@
     publisher="cybercitizenship",
     url={http://www.cybercitizenship.org/crime/crime.html},
     urldate={{N}ovembro de 2012}
+}
+
+@WWW{WikiBytes,
+    author="Wikipédia",
+    title={Byte},
+    year="2012",
+    publisher="Wikipédia",
+    url={http://pt.wikipedia.org/wiki/Bytes},
+    urldate={{N}ovembro de 2012}
+}
+
+@BOOK{ForensicAnalysis,
+   author = "Brian Carrier",
+   title= "File System Forensic Analysis",
+   publisher = "Addison Wesley Professional",
+   year = 2005
+}
+
+@BOOK{Caloyannides,
+   author = "Michael A. Caloyannides",
+   title= "Privacy Protection and Computer Forensics",
+   publisher = "Artech House",
+   edition = "2",
+   year = 2004
 }
