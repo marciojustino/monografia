@@ -1,11 +1,14 @@
-\chapter{Sistemas de Arquivos NTFS}
-...
+\chapter{NTFS}
+Projetado pela Microsoft, é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT (1993) até as versões mais recentes como o Windows 8 (2012). Sendo o predecessor do antigo sistema FAT, é o sistema mais presente em investigações de sistemas Windows \cite{ForensicAnalysis}.
 
 \section{Conceito}
-...
+O sistema de arquivos NTFS foi projetado para melhor confiabilidade, segurança e suporte de grandes dispositivos de armazenamento de dados. Dispõe do uso de estruturas genéricas que servem de envoltório para estruturas de dados com conteúdo específico. Desta forma, o NTFS se torna um projeto escalável pois a estrutura interna de dados pode mudar inúmeras vezes enquanto que a sua casca (a estrutura genérica) permanece constante. Um bom exemplo desse modelo é que todos os bytes\footnote{Termo binário que representa 8 unidades da menor unidade de informação (bit) que pode ser armazenada ou transmitida \cite{WikiBytes}.} são alocados em arquivos no sistema \cite{ForensicAnalysis}.
 
-\section{Estrutura de Arquivos}
+\section{Estrutura de Dados}
 ...
 
 \section{Alocação de Arquivos}
+...
+
+\section{Análise NTFS}
 ...

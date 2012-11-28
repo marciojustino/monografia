@@ -1,0 +1,5 @@
+* NTFS Concepts
+
+Um arquivo NTFS não possui layout específico, onde todo o sistema de arquivos é considerado como área de dados\footnote{área onde estão armazenados os dados de um arquivo - um arquivo possui área de metadados\footnote{área onde estão situadas as informações do arquivo} e área de dados.} e qualquer setor pode ser alocado por um arquivo.
+
+
