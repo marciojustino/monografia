@@ -5,7 +5,26 @@ Projetado pela Microsoft, é o sistema de arquivos padrão de vários sistemas oper
 O sistema de arquivos NTFS foi projetado para melhor confiabilidade, segurança e suporte de grandes dispositivos de armazenamento de dados. Dispõe do uso de estruturas genéricas que servem de envoltório para estruturas de dados com conteúdo específico. Desta forma, o NTFS se torna um projeto escalável pois a estrutura interna de dados pode mudar inúmeras vezes enquanto que a sua casca (a estrutura genérica) permanece constante. Um bom exemplo desse modelo é que todos os bytes\footnote{Termo binário que representa 8 unidades da menor unidade de informação (bit) que pode ser armazenada ou transmitida \cite{WikiBytes}.} são alocados em arquivos no sistema \cite{ForensicAnalysis}.
 
 \section{Estrutura de Dados}
-...
+Segundo Carrier (2005, p. 199)\nocite{ForensicAnalysis}, a única estrutura consistente no NTFS está presente nos primeiros setores do disco, contendo os setores de boot e código.
+
+O coração do sistema de arquivos NTFS está na Master File Table (MFT) pois esta contém as informações de todos os diretórios. Todo arquivo e diretório existente possui uma entrada na MFT, sendo que esta é uma estrutura bem simples de 1 KB de tamanho. A Entrada na MFT possui:
+
+\begin{itemize}
+ \item Cabeçalho;
+ \item Atributos; e
+ \item Espaço não utilizado.
+\end{itemize}
+
+A figura \ref{fig:fig02} demonstra um registro de entrada na MFT.
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[scale=0.6]{figuras/fig02.png}
+  \caption{Entrada na MFT - Cabeçalho e espaço reservado aos diferentes tipos de atributos. Para o exemplo, a entrada possui 3 atributos.}
+  \label{fig:fig02}
+\end{figure}
+
+\subsection{Cluster}
 
 \section{Alocação de Arquivos}
 ...

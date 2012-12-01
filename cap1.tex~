@@ -15,7 +15,7 @@ O coração do sistema de arquivos NTFS está na Master File Table (MFT) pois esta 
  \item Espaço não utilizado.
 \end{itemize}
 
-A figura \ref{fig02} demonstra um registro de entrada na MFT.
+A figura \ref{fig:fig02} demonstra um registro de entrada na MFT.
 
 \begin{figure}[htp]
   \centering
@@ -23,6 +23,25 @@ A figura \ref{fig02} demonstra um registro de entrada na MFT.
   \caption{Entrada na MFT - Cabeçalho e espaço reservado aos diferentes tipos de atributos. Para o exemplo, a entrada possui 3 atributos.}
   \label{fig:fig02}
 \end{figure}
+
+\subsection{Cluster}
+De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores sendo que o sistema de arquivos se utiliza de setores para formar um cluster. O tamanho do cluster depende da formatação do disco. A tabela abaixo demonstra tamnhos padrões definidos para cluster para diferentes formas de formatação do disco NTFS:
+
+\begin{table}
+  \centering  
+  \begin{tabular}{ll}
+    \hline
+    Tamanho do Disco & Tamanho do Cluster Padrão \\
+    \hline
+    até 512 MB & 512 bytes \\
+    513 MB - 1024 MB & 1 KB \\
+    1025 MB - 2048 MB & 2 KB \\
+    acima de 2048 MB & 4 KB \\
+    \hline
+  \end{tabular}
+  \label{tab1}
+  \caption{Tamanho do Cluster Padrão Para Formatos NTFS.}
+\end{table}
 
 \section{Alocação de Arquivos}
 ...

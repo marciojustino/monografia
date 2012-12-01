@@ -11,6 +11,7 @@
 \contentsline {chapter}{\numberline {2}NTFS}{6}
 \contentsline {section}{\numberline {2.1}Conceito}{6}
 \contentsline {section}{\numberline {2.2}Estrutura de Dados}{6}
+\contentsline {subsection}{\numberline {2.2.1}Cluster}{7}
 \contentsline {section}{\numberline {2.3}Aloca\c c\~ao de Arquivos}{7}
 \contentsline {section}{\numberline {2.4}An\'alise NTFS}{7}
 \contentsline {chapter}{\numberline {3}File Carving}{8}
