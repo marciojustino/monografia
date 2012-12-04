@@ -25,7 +25,7 @@ A figura \ref{fig:fig02} demonstra um registro de entrada na MFT.
 \end{figure}
 
 \subsection{Cluster}
-De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores sendo que o sistema de arquivos se utiliza de setores para formar um cluster. O tamanho do cluster depende da formatação do disco. A tabela abaixo demonstra tamnhos padrões definidos para cluster para diferentes formas de formatação do disco NTFS:
+De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores sendo que o sistema de arquivos se utiliza de setores para formar um cluster. O tamanho do cluster depende da formatação do disco. A tabela \ref{tab:tab01} demonstra tamanhos padrões definidos de cluster para diferentes tamanhos e formas de formatação do disco NTFS:
 
 \begin{table}[htb]
   \centering  
@@ -39,13 +39,52 @@ De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores send
     acima de 2048 MB & 4 KB \\
     \hline
   \end{tabular}
-  \label{tab1}
   \caption{Tamanho do Cluster Padrão Para Formatos NTFS.}
+  \label{tab:tab01}
 \end{table}
 
 Como pode ser visto na tabela demonstrada por Svensson (2005, p. 25), quanto maior o tamanho do disco maior o tamanho do cluster.
 
-Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number (LCN)}. O LCN é um número sequencial que se apresenta na ordem dos clusters, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de arquivos.
+Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number (LCN)}. O LCN é um número sequencial que se apresenta na ordem dos clusters, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no disco), multiplicando o identificador LCN com o tamanho do cluster.
+
+\section{Master File Table}
+Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao menos uma entrada no registro da Master File Table (MFT)\footnote{Conjunto de registros que são continuamente modificados quando um arquivo ou diretório sofre alteração}. Os primeiros 16 registros da MFT são reservados pelo sistema de arquivos para manter metadados\footnote{Dados que definem ou descrevem uma outra parte dos dados \cite{Metadados}.} específicos do NTFS. A tabela \ref{tab:tab02} detalha os 16 primeiros registros reservados ao NTFS na MFT:
+
+\begin{table}[htb]
+  \centering  
+  \begin{tabular}{|l|c|p{10cm}|}
+    \hline
+    Nome MTF & Registro & Descrição \\
+    \hline
+    \$MFT & 0 & NTFS's Master File Table. Contém um arquivo base para cada arquivo ou diretório do disco. \\
+    \hline
+    \$MFTMIRR & 1 & Uma cópia parcial da MFT que serve como backup para casos de falhas de um setor. \\
+    \hline
+    \$LOGFILE & 2 & Log de transação de arquivos. \\
+    \hline
+    \$VOLUME & 3 & Contém o número serial do volume e data de criação. \\
+    \hline
+    \$ATTRDEF & 4 & Definição de atributos. \\
+    . & 5 & Diretório raiz do disco. \\
+    \hline
+    \$BITMAP & 6 & Contém um mapeamento binário de todos os clustes do volume (usados e não usados). \\
+    \hline
+    \$BOOT & 7 & Registro de boot do drive\footnote{Unidade do disco físico presente no equipamento, normalmente sendo primário ou secundário.}. \\
+    \hline
+    \$BADCLUS & 8 & Lista de setores com problemas no drive. \\
+    \hline
+    \$SECURE & 9 & Contém uma única descrição de segurança para todos arquivos do volume. \\
+    \hline
+    \$UPCASE & 10 & Mapeia caracteres em texto minúsculo para texto maiúsculo. \\
+    \hline
+    \$EXTEND & 11 & Extensões opcionais como as quotas\footnote{}, pontos de reanálise de dados e identificador de objetos. \\
+    \hline
+    & 12-15 & Reservado para uso futuro. \\
+    \hline
+  \end{tabular}
+  \caption{Registros reservados do NTFS na Master File Table.}
+  \label{tab:tab02}  
+\end{table}
 
 \section{Alocação de Arquivos}
 ...
