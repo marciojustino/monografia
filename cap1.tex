@@ -1,5 +1,5 @@
 \chapter{NTFS}
-Projetado pela Microsoft, é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT (1993) até as versões mais recentes como o Windows 8 (2012). Sendo o predecessor do antigo sistema FAT, é o sistema mais presente em investigações de sistemas Windows \cite{ForensicAnalysis}.
+Projetado pela Microsoft, é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT (1993) até as versões mais recentes como o Windows8 (2012). Sendo o predecessor do antigo sistema FAT, é o sistema mais presente em investigações de sistemas Windows \cite{ForensicAnalysis}.
 
 \section{Conceito}
 O sistema de arquivos NTFS foi projetado para melhor confiabilidade, segurança e suporte de grandes dispositivos de armazenamento de dados. Dispõe do uso de estruturas genéricas que servem de envoltório para estruturas de dados com conteúdo específico. Desta forma, o NTFS se torna um projeto escalável pois a estrutura interna de dados pode mudar inúmeras vezes enquanto que a sua casca (a estrutura genérica) permanece constante. Um bom exemplo desse modelo é que todos os bytes\footnote{Termo binário que representa 8 unidades da menor unidade de informação (bit) que pode ser armazenada ou transmitida \cite{WikiBytes}.} são alocados em arquivos no sistema \cite{ForensicAnalysis}.
@@ -7,7 +7,7 @@ O sistema de arquivos NTFS foi projetado para melhor confiabilidade, segurança e
 \section{Estrutura de Dados}
 Segundo Carrier (2005, p. 199)\nocite{ForensicAnalysis}, a única estrutura consistente no NTFS está presente nos primeiros setores do disco, contendo os setores de boot e código.
 
-O coração do sistema de arquivos NTFS está na Master File Table (MFT) pois esta contém as informações de todos os diretórios. Todo arquivo e diretório existente possui uma entrada na MFT, sendo que esta é uma estrutura bem simples de 1 KB de tamanho. A Entrada na MFT possui:
+O coração do sistema de arquivos NTFS está na Master File Table (MFT), pois esta contém as informações de todos os diretórios. Todo arquivo e diretório existente possui uma entrada na MFT, sendo que esta é uma estrutura bem simples de 1 KB de tamanho. A Entrada na MFT possui:
 
 \begin{itemize}
  \item Cabeçalho;
@@ -48,7 +48,7 @@ Como pode ser visto na tabela demonstrada por Svensson (2005, p. 25), quanto mai
 Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number (LCN)}. O LCN é um número sequencial que se apresenta na ordem dos clusters, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no disco), multiplicando o identificador LCN com o tamanho do cluster.
 
 \subsection{Master File Table}
-Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao menos uma entrada no registro da Master File Table (MFT)\footnote{Conjunto de registros que são continuamente modificados quando um arquivo ou diretório sofre alteração}. Os primeiros 16 registros da MFT são reservados pelo sistema de arquivos para manter metadados\footnote{Dados que definem ou descrevem uma outra parte dos dados \cite{Metadados}.} específicos do NTFS. A tabela \ref{tab:tab02} detalha os 16 primeiros registros reservados ao NTFS na MFT:
+Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao menos uma entrada no registro da Master File Table (MFT)\footnote{Conjunto de registros que são continuamente modificados quando um arquivo ou diretório sofre alteração}. Os primeiros 16 registros da MFT são reservados pelo sistema de arquivos para manter metadados\footnote{Dados que definem ou descrevem outra parte dos dados \cite{Metadados}.} específicos do NTFS. A tabela \ref{tab:tab02} detalha os 16 primeiros registros reservados ao NTFS na MFT:
 
 \begin{table}[htb]
   \centering  
