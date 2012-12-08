@@ -12,16 +12,16 @@
 \contentsline {section}{\numberline {2.1}Conceito}{6}
 \contentsline {section}{\numberline {2.2}Estrutura de Dados}{6}
 \contentsline {subsection}{\numberline {2.2.1}Cluster}{7}
-\contentsline {section}{\numberline {2.3}Master File Table}{8}
-\contentsline {section}{\numberline {2.4}Aloca\c c\~ao de Arquivos}{8}
-\contentsline {section}{\numberline {2.5}An\'alise NTFS}{8}
+\contentsline {subsection}{\numberline {2.2.2}Master File Table}{7}
+\contentsline {section}{\numberline {2.3}Aloca\c c\~ao de Arquivos}{8}
+\contentsline {section}{\numberline {2.4}An\'alise NTFS}{8}
 \contentsline {chapter}{\numberline {3}File Carving}{9}
 \contentsline {section}{\numberline {3.1}Conceito}{9}
 \contentsline {section}{\numberline {3.2}Assinatura de Arquivo}{9}
 \contentsline {section}{\numberline {3.3}N\'umero M\'agico}{9}
 \contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{10}
 \contentsline {section}{\numberline {4.1}Conceito}{10}
-\contentsline {section}{\numberline {4.2}Funcionamento}{10}
+\contentsline {section}{\numberline {4.2}Diferencia\c c\~ao}{10}
 \contentsline {section}{\numberline {4.3}Fragmenta\c c\~ao}{10}
 \contentsline {section}{\numberline {4.4}Ponto de Fragmenta\c c\~ao}{10}
 \contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{11}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  4 DEC 2012 11:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  7 DEC 2012 22:40
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -439,14 +439,23 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
  [3]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 43.
+<figuras/hipotese.png, id=49, 2699.08376pt x 1308.89pt>
+File: figuras/hipotese.png Graphic file (type png)
 
-(/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
+<use figuras/hipotese.png>
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 57.
+ (/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
-) [4] [5]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
+ [4 <./figuras/hipotese.png (PNG copy)>])
+Overfull \hbox (15.91827pt too wide) in paragraph at lines 68--28
+\OT1/ptm/m/n/12 tema de ar-qui-vos NTFS junto ao cri-a-dor (Mi-cro-soft), pes-q
+ui-sas cor-re-la-tas re-fe-ren-tes []a fragmenta[][]ao
+ []
+
+[5]
 \openout2 = `cap1.aux'.
 
  (./cap1.tex
@@ -455,7 +464,7 @@ Cap\'{\i }tulo 2.
 
 
 
-] <figuras/fig02.png, id=59, 501.875pt x 103.38625pt>
+] <figuras/fig02.png, id=60, 501.875pt x 103.38625pt>
 File: figuras/fig02.png Graphic file (type png)
 
 <use figuras/fig02.png> [7 <./figuras/fig02.png>]
@@ -509,10 +518,10 @@ Cap\'{\i }tulo 5.
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./consideracoes_finais.aux)
 (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2706 strings out of 495041
- 37879 string characters out of 1181897
- 99062 words of memory out of 3000000
- 5692 multiletter control sequences out of 15000+50000
+ 2712 strings out of 495041
+ 38004 string characters out of 1181897
+ 99072 words of memory out of 3000000
+ 5697 multiletter control sequences out of 15000+50000
  52638 words of font info for 105 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  31i,17n,41p,1079b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -522,9 +531,9 @@ xlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts
 /type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utm
 bi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share
 /texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (23 pages, 128427 bytes).
+Output written on principal.pdf (23 pages, 316576 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 107 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
