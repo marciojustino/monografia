@@ -19,11 +19,14 @@
 \contentsline {section}{\numberline {3.1}Conceito}{9}
 \contentsline {section}{\numberline {3.2}Assinatura de Arquivo}{9}
 \contentsline {section}{\numberline {3.3}N\'umero M\'agico}{9}
-\contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{10}
-\contentsline {section}{\numberline {4.1}Conceito}{10}
-\contentsline {section}{\numberline {4.2}Diferencia\c c\~ao}{10}
-\contentsline {section}{\numberline {4.3}Fragmenta\c c\~ao}{10}
-\contentsline {section}{\numberline {4.4}Ponto de Fragmenta\c c\~ao}{10}
-\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{11}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{12}
-\contentsline {chapter}{Anexos}{13}
+\contentsline {section}{\numberline {3.4}Arquivos Fragmentados}{9}
+\contentsline {subsection}{\numberline {3.4.1}Fragmenta\c c\~ao Linear}{10}
+\contentsline {subsection}{\numberline {3.4.2}Fragmenta\c c\~ao N\~ao Linear}{10}
+\contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{11}
+\contentsline {section}{\numberline {4.1}Conceito}{11}
+\contentsline {section}{\numberline {4.2}Diferencia\c c\~ao}{11}
+\contentsline {section}{\numberline {4.3}Fragmenta\c c\~ao}{11}
+\contentsline {section}{\numberline {4.4}Ponto de Fragmenta\c c\~ao}{11}
+\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{12}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{13}
+\contentsline {chapter}{Anexos}{14}

@@ -29,7 +29,7 @@ Kloe (2007, p. 8) referencia a fragmentação linear a arquivos que estão fragment
 \end{figure}
 
 \subsection{Fragmentação Não Linear}
-Conforme Kloe (2007, p. 8), a fragmentação não linear representa os arquivos fragmentados fora da ordem normal de sequência do disco. A figura \ref{fig:fragnaolinear} demonstra como os fragmentos do arquivo F1 estão fora da sequência natural do disco.
+Conforme Kloe (2007, p. 8), a fragmentação não linear representa os arquivos fragmentados fora da ordem normal de sequência do disco. Os fragmentos do arquivo estariam espalhados fora de ordem na sequência do disco, assim como a figura \ref{fig:fragnaolinear} demonstra.
 
 \begin{figure}[htp]
   \centering

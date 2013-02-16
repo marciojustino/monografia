@@ -83,5 +83,15 @@
     title     = "Computer Forensics Applied to Windows NTFS Computers",
     school    = "Stockholm's University / Royal Institute of Technology",
     year      = "2005",
-    month     = "10"
+    month     = "04"
+}
+
+@article{Metadados,
+    author  = "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner",
+    title   = "Metadados",
+    year    = "2012",
+    journal = "OUCH!",
+    volume  = "",
+    number  = "",
+    pages   = ""
 }

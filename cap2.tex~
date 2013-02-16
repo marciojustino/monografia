@@ -9,3 +9,31 @@
 
 \section{Número Mágico}
 ...
+
+\section{Arquivos Fragmentados}
+Segundo Kloe (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente em um mesmo conjunto de dados. Sistemas operacionais modernos, tais como o NTFS, tentam gravar os dados evitando a fragmentação porém, ainda existem algumas situações em que a fragmentação ocorre.
+
+\begin{itemize}
+ \item Quando não há mais espaço de media suficiente continuamente para a gravação de um arquivo, assim para ser alocado no disco ele tem que ser dividido em dois ou mais fragmentos.
+ \item Na sequência de um arquivo o espaço restante não é suficiente para a gravação do arquivo sequencialmente, sendo necessária a divisão do arquivo em dois ou mais fragmentos.
+\end{itemize}
+
+\subsection{Fragmentação Linear}
+Kloe (2007, p. 8) referencia a fragmentação linear a arquivos que estão fragmentados seguindo a sequência original no disco. A figura \ref{fig:fraglinear} demonstra a fragmentação linear na ordem original do disco.
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[scale=0.6]{figuras/fraglinear.png}
+  \caption{Exemplo de Fragmentação Linear}
+  \label{fig:fraglinear}
+\end{figure}
+
+\subsection{Fragmentação Não Linear}
+Conforme Kloe (2007, p. 8), a fragmentação não linear representa os arquivos fragmentados fora da ordem normal de sequência do disco. A figura \ref{fig:fragnaolinear} demonstra como os fragmentos do arquivo F1 estão fora da sequência natural do disco.
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[scale=0.6]{figuras/fragnaolinear.png}
+  \caption{Exemplo de Fragmentação Não Linear}
+  \label{fig:fragnaolinear}
+\end{figure}

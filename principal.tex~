@@ -8,7 +8,7 @@
 \usepackage{psfrag}
 % \usepackage{cite}
 % \usepackage[notintoc,portuguese]{nomencl}
-\usepackage{epigraph}
+% \usepackage{epigraph}
 % \usepackage[center]{caption2}
 
 \begin{document}
