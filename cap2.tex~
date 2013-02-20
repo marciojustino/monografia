@@ -1,4 +1,8 @@
 \chapter{File Carving}
+File Carving é o processo de recuperação de fragmentos de arquivos não mais indexados baseado no seu conteúdo e na ausência de metadados do sistema de arquivos \cite{BinCarver}. 
+
+O processo de File Carving é útil na recuperação de arquivos e amplamente utilizado em investigações digitais (em forense computacional). Devido a isso, esse é um dos processos mais importantes e desafiadores da computação forense \cite{DGI}.
+
 ...
 
 \section{Conceito}
@@ -14,8 +18,8 @@
 Segundo Kloe (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente em um mesmo conjunto de dados. Sistemas operacionais modernos, tais como o NTFS, tentam gravar os dados evitando a fragmentação porém, ainda existem algumas situações em que a fragmentação ocorre.
 
 \begin{itemize}
- \item Quando não há mais espaço de media suficiente continuamente para a gravação de um arquivo, assim para ser alocado no disco ele tem que ser dividido em dois ou mais fragmentos.
- \item Na sequência de um arquivo o espaço restante não é suficiente para a gravação do arquivo sequencialmente, sendo necessária a divisão do arquivo em dois ou mais fragmentos.
+ \item Quando não há mais espaço de mídia suficiente na sequência física para a gravação de um arquivo, assim, para ser alocado no disco ele tem que ser dividido em dois ou mais fragmentos.
+ \item Na sequência de um arquivo já alocado, o espaço restante no cluster não é suficiente para a gravação do arquivo sequencialmente, sendo necessária a divisão do arquivo em dois ou mais fragmentos.
 \end{itemize}
 
 \subsection{Fragmentação Linear}

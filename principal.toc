@@ -23,11 +23,13 @@
 \contentsline {subsection}{\numberline {3.4.1}Fragmenta\c c\~ao Linear}{10}
 \contentsline {subsection}{\numberline {3.4.2}Fragmenta\c c\~ao N\~ao Linear}{10}
 \contentsline {subsection}{\numberline {3.4.3}Arquivo Parcial}{10}
-\contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{11}
-\contentsline {section}{\numberline {4.1}Conceito}{11}
-\contentsline {section}{\numberline {4.2}Diferencia\c c\~ao}{11}
-\contentsline {section}{\numberline {4.3}Fragmenta\c c\~ao}{11}
-\contentsline {section}{\numberline {4.4}Ponto de Fragmenta\c c\~ao}{11}
-\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{12}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{13}
-\contentsline {chapter}{Anexos}{14}
+\contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{12}
+\contentsline {section}{\numberline {4.1}Diferencia\c c\~ao}{12}
+\contentsline {section}{\numberline {4.2}Fragmenta\c c\~ao}{12}
+\contentsline {section}{\numberline {4.3}Ponto de Fragmenta\c c\~ao}{12}
+\contentsline {chapter}{\numberline {5}Ferramentas de File Carving}{13}
+\contentsline {section}{\numberline {5.1}Scalpel}{13}
+\contentsline {section}{\numberline {5.2}Foremost}{13}
+\contentsline {chapter}{\numberline {6}Considera\c c\~oes Finais}{14}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{15}
+\contentsline {chapter}{Anexos}{16}

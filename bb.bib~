@@ -95,3 +95,21 @@
     number  = "",
     pages   = ""
 }
+
+@mastersthesis{Kloet,
+    author    = "S. J. J. Kloet",
+    title     = "Measuring and Improving the Quality of File Carving Methods",
+    school    = "Eindhoven University of Technology",
+    year      = "2007",
+    month     = "10"
+}
+
+@article{BinCarver,
+    author  = "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham",
+    title   = "Bin-Carver: Automatic recovery of binary executable files",
+    year    = "2012",
+    journal = "ELSEVIER",
+    volume  = "",
+    number  = "9",
+    pages   = "S108--S117"
+}

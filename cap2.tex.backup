@@ -1,5 +1,5 @@
 \chapter{File Carving}
-...
+
 
 \section{Conceito}
 ...
@@ -19,7 +19,7 @@ Segundo Kloe (2007, p. 8), um arquivo fragmentado é um arquivo dividido em vária
 \end{itemize}
 
 \subsection{Fragmentação Linear}
-Kloe (2007, p. 8) referencia a fragmentação linear a arquivos que estão fragmentados seguindo a sequência original no disco. A figura \ref{fig:fraglinear} demonstra a fragmentação linear na ordem original do disco.
+Kloe referencia a fragmentação linear a arquivos que estão fragmentados seguindo a sequência original no disco. A figura \ref{fig:fraglinear} demonstra a fragmentação linear na ordem original do disco.
 
 \begin{figure}[htp]
   \centering
@@ -29,7 +29,7 @@ Kloe (2007, p. 8) referencia a fragmentação linear a arquivos que estão fragment
 \end{figure}
 
 \subsection{Fragmentação Não Linear}
-Conforme Kloe (2007, p. 8), a fragmentação não linear representa os arquivos fragmentados fora da ordem normal de sequência do disco. Os fragmentos do arquivo estariam espalhados fora de ordem na sequência do disco, assim como a figura \ref{fig:fragnaolinear} demonstra.
+Conforme Kloe, a fragmentação não linear representa os arquivos fragmentados fora da ordem normal de sequência do disco. A figura \ref{fig:fragnaolinear} demonstra como os fragmentos do arquivo F1 estão fora da sequência natural do disco.
 
 \begin{figure}[htp]
   \centering
@@ -37,3 +37,6 @@ Conforme Kloe (2007, p. 8), a fragmentação não linear representa os arquivos fra
   \caption{Exemplo de Fragmentação Não Linear}
   \label{fig:fragnaolinear}
 \end{figure}
+
+\subsection{Arquivo Parcial}
+A figura \ref{fig:fragnaolinear} demonstra não somente a fragmentação não linear mas também a sobreposição de parte do arquivo. Isso demonstra um arquivo não mais alocado que fora parcialmente sobrescrito. O arquivo pode nunca mais ser totalmente recuperado porém, parte da informação útil do arquivo ainda está presente na área antes alocada para o mesmo. Kloe diz que para o processo de carving não há diferença entre uma informação parcial e um arquivo fragmentado que ainda não tenha sido totalmente recuperado. Um primeiro detalhe sobre a afirmação de Kloe é que um dos arquivos pode ser totalmente recuperado dependendo do tempo e da profundidade de busca da ferramenta de carving (em algum momento conseguiria encontrar as demais partes do arquivo), enquanto um arquivo parcial (sobrescrito) não possui mais suas partes perdidas (por terem sido sobrescritas) no disco e que a ferramenta de carving em algum momento terá que definir se tratar de um arquivo parcial.

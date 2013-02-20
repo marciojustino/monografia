@@ -10,6 +10,7 @@ A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: cap1.aux
 A level-1 auxiliary file: cap2.aux
 A level-1 auxiliary file: cap3.aux
+A level-1 auxiliary file: cap4.aux
 A level-1 auxiliary file: consideracoes_finais.aux
 The style file: abnt-alf.bst
 A level-1 auxiliary file: anexo.aux
@@ -33,6 +34,22 @@ Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spi
 while executing---line 2129 of file abnt-alf.bst
 Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Metadados
 while executing---line 2129 of file abnt-alf.bst
+Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry BinCarver
+while executing---line 2129 of file abnt-alf.bst
+Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry BinCarver
+while executing---line 2129 of file abnt-alf.bst
+Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry BinCarver
+while executing---line 2129 of file abnt-alf.bst
+Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry BinCarver
+while executing---line 2129 of file abnt-alf.bst
+Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry BinCarver
+while executing---line 2129 of file abnt-alf.bst
+Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry BinCarver
+while executing---line 2184 of file abnt-alf.bst
+Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry BinCarver
+while executing---line 2184 of file abnt-alf.bst
+Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry BinCarver
+while executing---line 2184 of file abnt-alf.bst
 Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Metadados
 while executing---line 2184 of file abnt-alf.bst
 Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Metadados
@@ -45,45 +62,45 @@ while executing---line 2184 of file abnt-alf.bst
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 11 entries,
+You've used 12 entries,
             6522 wiz_defined-function locations,
-            1235 strings with 10552 characters,
-and the built_in function-call counts, 7332 in all, are:
-= -- 624
-> -- 153
-< -- 10
-+ -- 93
-- -- 50
-* -- 442
-:= -- 1058
-add.period$ -- 34
-call.type$ -- 12
-change.case$ -- 68
-chr.to.int$ -- 20
-cite$ -- 10
-duplicate$ -- 355
-empty$ -- 664
-format.name$ -- 230
-if$ -- 1743
+            1241 strings with 10703 characters,
+and the built_in function-call counts, 8096 in all, are:
+= -- 680
+> -- 168
+< -- 12
++ -- 98
+- -- 55
+* -- 492
+:= -- 1157
+add.period$ -- 37
+call.type$ -- 13
+change.case$ -- 75
+chr.to.int$ -- 21
+cite$ -- 11
+duplicate$ -- 401
+empty$ -- 729
+format.name$ -- 253
+if$ -- 1922
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 189
-newline$ -- 57
-num.names$ -- 50
-pop$ -- 239
+missing$ -- 207
+newline$ -- 62
+num.names$ -- 55
+pop$ -- 259
 preamble$ -- 1
-purify$ -- 33
+purify$ -- 36
 quote$ -- 0
-skip$ -- 485
+skip$ -- 530
 stack$ -- 1
-substring$ -- 308
-swap$ -- 161
-text.length$ -- 7
+substring$ -- 365
+swap$ -- 187
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 4
 warning$ -- 0
-while$ -- 71
+while$ -- 80
 width$ -- 0
-write$ -- 160
-(There were 8 error messages)
+write$ -- 176
+(There were 16 error messages)
