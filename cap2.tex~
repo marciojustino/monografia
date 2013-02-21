@@ -3,19 +3,16 @@ File Carving é o processo de recuperação de fragmentos de arquivos não mais inde
 
 O processo de File Carving é útil na recuperação de arquivos e amplamente utilizado em investigações digitais (em forense computacional). Devido a isso, esse é um dos processos mais importantes e desafiadores da computação forense \cite{DGI}.
 
-...
-
-\section{Conceito}
-...
+Um dos primeiros desafios do processo de file carving, segundo Memon (2008, p. S2), se encontra na tentativa de se recuperar arquivos fragmentados. Um ponto chave no processo de recuperação desses arquivos fragmentados é encontrar a relação de fragmentação do arquivo que pode beneficiar o processo de recuperação dos arquivos fragmentados. Técnicas tradicionais não conseguem recuperar arquivos quando o sistema de arquivos é ou está corrompido, quando a tabela de alocação não está presente ou possui endereçamentos errados ou incompletos. Assim, a técnica de File Carving apresenta sua capacidade de recuperar arquivos em espaços não alocados do disco (área do disco não apontada pela tabela de partição - no caso do NTFS, a Master File Table).
 
 \section{Assinatura de Arquivo}
-...
+As ferramentas de file carving ainda mais comuns analisam as informações de assinatura do arquivo, através do cabeçalho e do rodapé do arquivo, determinando assim o conteúdo do arquivo entre esses blocos. Infelizmente, ferramentas poderosas de file carving atuais ainda falham na recuperação de arquivos fragmentados.
 
 \section{Número Mágico}
 ...
 
 \section{Arquivos Fragmentados}
-Segundo Kloe (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente em um mesmo conjunto de dados. Sistemas operacionais modernos, tais como o NTFS, tentam gravar os dados evitando a fragmentação porém, ainda existem algumas situações em que a fragmentação ocorre.
+Segundo Kloe (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente em um mesmo conjunto de dados. Sistemas operacionais modernos, tais como o NTFS, tentam gravar os dados evitando a fragmentação porém, ainda existem algumas situações em que a fragmentação ocorre. Já Memon define que um arquivo é dito fragmentado quando o mesmo está armazenado de forma descontinuada nos clusters, e que o maior desafio para o processo de data carving é justamente a recuperação de arquivos quando esses estão fragmentados em duas ou mais partes. Garfinkel (2007, p. S2) tinha a hipótese de que diferentes tipos de arquivos poderiam apresentar diferentes padrões de fragmentação, o que poderia determinar uma fragmentação diferenciada para um tipo de arquivo específico no disco. Arquivos comumente de sistemas, instalados juntamente com a parte do sistema operacional apresentariam um baixo fator de fragmentação enquanto arquivos comuns e altamente importantes na análise forense, por se tratarem de informações do dia a dia tais como documentos (.DOC), arquivos de e-mail armazenados localmente (.PST), planilhas com cálculos e fórmulas (.XLS), arquivos de log e arquivos texto (.TXT), aparentam ter uma tendência a maior fragmentação.
 
 \begin{itemize}
  \item Quando não há mais espaço de mídia suficiente na sequência física para a gravação de um arquivo, assim, para ser alocado no disco ele tem que ser dividido em dois ou mais fragmentos.

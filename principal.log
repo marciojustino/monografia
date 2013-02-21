@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  19 FEB 2013 21:03
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  21 FEB 2013 20:48
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -488,7 +488,7 @@ Cap\'{\i }tulo 3.
 
 
 ]
-Overfull \hbox (10.49266pt too wide) in paragraph at lines 26--27
+Overfull \hbox (10.49266pt too wide) in paragraph at lines 23--24
 []\OT1/ptm/m/n/12 Kloe re-fe-ren-cia a fragmenta[][]ao li-near a ar-qui-vos que
  est[]ao frag-men-ta-dos se-guindo a sequ[]encia
  []
@@ -496,15 +496,15 @@ Overfull \hbox (10.49266pt too wide) in paragraph at lines 26--27
 <figuras/fraglinear.png, id=73, 575.14874pt x 88.83188pt>
 File: figuras/fraglinear.png Graphic file (type png)
 
-<use figuras/fraglinear.png>
-<figuras/fragnaolinear.png, id=74, 560.8453pt x 80.55093pt>
+<use figuras/fraglinear.png> [10 <./figuras/fraglinear.png (PNG copy)>]
+<figuras/fragnaolinear.png, id=77, 560.8453pt x 80.55093pt>
 File: figuras/fragnaolinear.png Graphic file (type png)
 
-<use figuras/fragnaolinear.png>) [10 <./figuras/fraglinear.png (PNG copy)> <./f
-iguras/fragnaolinear.png (PNG copy)>] [11]
+<use figuras/fragnaolinear.png>) [11 <./figuras/fragnaolinear.png (PNG copy)>]
 \openout2 = `cap3.aux'.
 
- (./cap3.tex
+
+(./cap3.tex
 Cap\'{\i }tulo 4.
 ) [12
 
@@ -553,14 +553,14 @@ Here is how much of TeX's memory you used:
  5713 multiletter control sequences out of 15000+50000
  52638 words of font info for 105 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 31i,17n,41p,1079b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,17n,41p,1365b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/s
 hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
 texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (26 pages, 334762 bytes).
+Output written on principal.pdf (26 pages, 336678 bytes).
 PDF statistics:
  119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

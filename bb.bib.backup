@@ -1,4 +1,4 @@
-@article{elsevier,
+@article{Menon,
     author  = "Anandabrata Pal, Husrev T. Sencar, Nasir Memon",
     title   = "Detecting file fragmentation point using sequential hypothesis testing",
     year    = "2008",
@@ -18,7 +18,7 @@
     pages   = "491--497"
 }
 
-@article{DGI,
+@article{Garfinkel,
     author  = "Simson L. Garfinkel",
     title   = "Carving contiguous and fragmented files with fast object validation",
     year    = "2007",
@@ -52,4 +52,64 @@
     publisher="cybercitizenship",
     url={http://www.cybercitizenship.org/crime/crime.html},
     urldate={{N}ovembro de 2012}
+}
+
+@WWW{WikiBytes,
+    author="Wikipédia",
+    title={Byte},
+    year="2012",
+    publisher="Wikipédia",
+    url={http://pt.wikipedia.org/wiki/Bytes},
+    urldate={{N}ovembro de 2012}
+}
+
+@BOOK{ForensicAnalysis,
+   author = "Brian Carrier",
+   title= "File System Forensic Analysis",
+   publisher = "Addison Wesley Professional",
+   year = 2005
+}
+
+@BOOK{Caloyannides,
+   author = "Michael A. Caloyannides",
+   title= "Privacy Protection and Computer Forensics",
+   publisher = "Artech House",
+   edition = "2",
+   year = 2004
+}
+
+@mastersthesis{Svensson,
+    author    = "Anders Svensson",
+    title     = "Computer Forensics Applied to Windows NTFS Computers",
+    school    = "Stockholm's University / Royal Institute of Technology",
+    year      = "2005",
+    month     = "04"
+}
+
+@article{Metadados,
+    author  = "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner",
+    title   = "Metadados",
+    year    = "2012",
+    journal = "OUCH!",
+    volume  = "",
+    number  = "",
+    pages   = ""
+}
+
+@mastersthesis{Kloet,
+    author    = "S. J. J. Kloet",
+    title     = "Measuring and Improving the Quality of File Carving Methods",
+    school    = "Eindhoven University of Technology",
+    year      = "2007",
+    month     = "10"
+}
+
+@article{BinCarver,
+    author  = "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham",
+    title   = "Bin-Carver: Automatic recovery of binary executable files",
+    year    = "2012",
+    journal = "ELSEVIER",
+    volume  = "",
+    number  = "9",
+    pages   = "S108--S117"
 }
