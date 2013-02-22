@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  21 FEB 2013 20:48
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  22 FEB 2013 20:45
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -488,7 +488,7 @@ Cap\'{\i }tulo 3.
 
 
 ]
-Overfull \hbox (10.49266pt too wide) in paragraph at lines 23--24
+Overfull \hbox (10.49266pt too wide) in paragraph at lines 20--21
 []\OT1/ptm/m/n/12 Kloe re-fe-ren-cia a fragmenta[][]ao li-near a ar-qui-vos que
  est[]ao frag-men-ta-dos se-guindo a sequ[]encia
  []
@@ -496,17 +496,17 @@ Overfull \hbox (10.49266pt too wide) in paragraph at lines 23--24
 <figuras/fraglinear.png, id=73, 575.14874pt x 88.83188pt>
 File: figuras/fraglinear.png Graphic file (type png)
 
-<use figuras/fraglinear.png> [10 <./figuras/fraglinear.png (PNG copy)>]
+<use figuras/fraglinear.png> [10]
 <figuras/fragnaolinear.png, id=77, 560.8453pt x 80.55093pt>
 File: figuras/fragnaolinear.png Graphic file (type png)
 
-<use figuras/fragnaolinear.png>) [11 <./figuras/fragnaolinear.png (PNG copy)>]
+<use figuras/fragnaolinear.png> [11 <./figuras/fraglinear.png (PNG copy)> <./fi
+guras/fragnaolinear.png (PNG copy)>]) [12]
 \openout2 = `cap3.aux'.
 
-
-(./cap3.tex
+ (./cap3.tex
 Cap\'{\i }tulo 4.
-) [12
+) [13
 
 
 
@@ -515,7 +515,7 @@ Cap\'{\i }tulo 4.
 
  (./cap4.tex
 Cap\'{\i }tulo 5.
-) [13
+) [14
 
 
 
@@ -524,17 +524,17 @@ Cap\'{\i }tulo 5.
 
  (./consideracoes_finais.tex
 Cap\'{\i }tulo 6.
-) [14
+) [15
 
 
 
-] (./principal.bbl) [15
+] (./principal.bbl) [16
 
 
 ]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex) [16
+ (./anexo.tex) [17
 
 
 ]
@@ -547,22 +547,22 @@ Cap\'{\i }tulo 6.
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
 ) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2737 strings out of 495041
- 38443 string characters out of 1181897
+ 2738 strings out of 495041
+ 38451 string characters out of 1181897
  99444 words of memory out of 3000000
- 5713 multiletter control sequences out of 15000+50000
+ 5714 multiletter control sequences out of 15000+50000
  52638 words of font info for 105 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 31i,17n,41p,1365b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,17n,41p,1706b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/s
 hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
 texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (26 pages, 336678 bytes).
+Output written on principal.pdf (27 pages, 338582 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
+ 122 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
