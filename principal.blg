@@ -23,6 +23,8 @@ Warning--entry type for "CyberCitizen" isn't style-file defined
 --line 48 of file bb.bib
 Warning--entry type for "WikiBytes" isn't style-file defined
 --line 57 of file bb.bib
+Warning--entry type for "PngFileFormat" isn't style-file defined
+--line 66 of file bb.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Metadados
 while executing---line 2129 of file abnt-alf.bst
@@ -62,45 +64,45 @@ while executing---line 2184 of file abnt-alf.bst
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 12 entries,
+You've used 14 entries,
             6522 wiz_defined-function locations,
-            1241 strings with 10703 characters,
-and the built_in function-call counts, 8096 in all, are:
-= -- 680
-> -- 168
+            1250 strings with 10840 characters,
+and the built_in function-call counts, 9230 in all, are:
+= -- 760
+> -- 198
 < -- 12
-+ -- 98
-- -- 55
-* -- 492
-:= -- 1157
-add.period$ -- 37
-call.type$ -- 13
-change.case$ -- 75
-chr.to.int$ -- 21
-cite$ -- 11
-duplicate$ -- 401
-empty$ -- 729
-format.name$ -- 253
-if$ -- 1922
-int.to.chr$ -- 0
++ -- 110
+- -- 65
+* -- 566
+:= -- 1324
+add.period$ -- 44
+call.type$ -- 15
+change.case$ -- 87
+chr.to.int$ -- 22
+cite$ -- 13
+duplicate$ -- 455
+empty$ -- 832
+format.name$ -- 299
+if$ -- 2187
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 207
-newline$ -- 62
-num.names$ -- 55
-pop$ -- 259
+missing$ -- 240
+newline$ -- 73
+num.names$ -- 65
+pop$ -- 295
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 42
 quote$ -- 0
-skip$ -- 530
+skip$ -- 599
 stack$ -- 1
-substring$ -- 365
-swap$ -- 187
+substring$ -- 401
+swap$ -- 209
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 8
 warning$ -- 0
-while$ -- 80
+while$ -- 92
 width$ -- 0
-write$ -- 176
+write$ -- 205
 (There were 16 error messages)

@@ -18,7 +18,7 @@
     pages   = "491--497"
 }
 
-@article{Garfinkel,
+@article{DGI,
     author  = "Simson L. Garfinkel",
     title   = "Carving contiguous and fragmented files with fast object validation",
     year    = "2007",

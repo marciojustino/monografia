@@ -18,7 +18,7 @@
     pages   = "491--497"
 }
 
-@article{Garfinkel,
+@article{DGI,
     author  = "Simson L. Garfinkel",
     title   = "Carving contiguous and fragmented files with fast object validation",
     year    = "2007",
@@ -61,6 +61,15 @@
     publisher="Wikipédia",
     url={http://pt.wikipedia.org/wiki/Bytes},
     urldate={{N}ovembro de 2012}
+}
+
+@WWW{PngFileFormat,
+    author="FileFormat",
+    title={PNG },
+    year="2013",
+    publisher="",
+    url={http://www.fileformat.info/format/png/corion.htm},
+    urldate={{F}evereiro de 2013}
 }
 
 @BOOK{ForensicAnalysis,
