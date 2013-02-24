@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  23 FEB 2013 16:22
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  24 FEB 2013 14:21
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -505,13 +505,18 @@ guras/fragnaolinear.png (PNG copy)>]
 <figuras/png-file-format.png, id=81, 785.93625pt x 599.23875pt>
 File: figuras/png-file-format.png Graphic file (type png)
 
-<use figuras/png-file-format.png> [12 <./figuras/png-file-format.png (PNG copy)
->]) [13]
+<use figuras/png-file-format.png>
+<figuras/png-file-structure-data.png, id=82, 425.59pt x 607.26875pt>
+File: figuras/png-file-structure-data.png Graphic file (type png)
+
+<use figuras/png-file-structure-data.png> [12 <./figuras/png-file-format.png (P
+NG copy)>] [13 <./figuras/png-file-structure-data.png (PNG copy)>]) [14]
 \openout2 = `cap3.aux'.
 
- (./cap3.tex
+
+(./cap3.tex
 Cap\'{\i }tulo 4.
-) [14
+) [15
 
 
 
@@ -520,7 +525,7 @@ Cap\'{\i }tulo 4.
 
  (./cap4.tex
 Cap\'{\i }tulo 5.
-) [15
+) [16
 
 
 
@@ -529,17 +534,17 @@ Cap\'{\i }tulo 5.
 
  (./consideracoes_finais.tex
 Cap\'{\i }tulo 6.
-) [16
+) [17
 
 
 
-] (./principal.bbl) [17
+] (./principal.bbl) [18
 
 
 ]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex) [18
+ (./anexo.tex) [19
 
 
 ]
@@ -552,10 +557,10 @@ Cap\'{\i }tulo 6.
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
 ) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2754 strings out of 495041
- 38782 string characters out of 1181897
- 99544 words of memory out of 3000000
- 5729 multiletter control sequences out of 15000+50000
+ 2761 strings out of 495041
+ 39005 string characters out of 1181897
+ 99555 words of memory out of 3000000
+ 5735 multiletter control sequences out of 15000+50000
  52638 words of font info for 105 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  31i,17n,41p,1411b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -565,9 +570,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (28 pages, 651612 bytes).
+Output written on principal.pdf (29 pages, 671006 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
+ 130 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

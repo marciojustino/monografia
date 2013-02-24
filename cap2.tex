@@ -55,7 +55,24 @@ A análise de cabeçalho e rodapé é a técnica mais básica de carving. A técnica co
   \label{fig:png-file-format}
 \end{figure}
 
-O valor hexadecimal ``89  50  4e  47  0d  0a  1a  0a'' representa os 8 bytes do cabeçalho de arquivos PNG. Cada arquivo PNG é marcado a partir desse cabeçalho. A marca final do arquivo ou o rodapé do arquivo delimita o final do arquivo. O conteúdo entre o cabeçalho do arquivo e o final do arquivo seria a representação da informação do arquivo, a parte de interesse para a análise forense.
+O valor hexadecimal ``89  50  4e  47  0d  0a  1a  0a'' representa os 8 bytes do cabeçalho de arquivos PNG. Cada arquivo PNG é marcado a partir desse cabeçalho. A marca final do arquivo ou o rodapé do arquivo delimita o final do arquivo. O conteúdo entre o cabeçalho do arquivo e o final do arquivo seria a representação da informação do arquivo \ref{fig:png-file-structure-data}.
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[scale=0.6]{figuras/png-file-structure-data.png}
+  \caption{Área de dados de um arquivo do tipo PNG \cite{Kloet}}
+  \label{fig:png-file-structure-data}
+\end{figure}
+
+Segundo Kloet (2007, p. 9), a análise de cabeçalho e rodapé é um método que apresenta alguns problemas relevantes:
+
+\begin{itemize}
+ \item Muitos falsos positivos.
+ \item Incapacidade de detectar arquivos fragmentados e arquivos parciais.
+ \item Alguns arquivos não apresentam cabeçalho fixo, assim como alguns arquivos também apresentam rodapé variável, o que impossibilita sua identificação por esse método.
+\end{itemize}
+
+O mesmo ocorre para o método de cabeçalho com tamanho máximo possível de dados, técnica que visa recuperar os dados pelo comprimento máximo disposto para o tipo de arquivo para sua área de dados. Além desses os problemas da técnica de cabeçalho e rodapé, esta técnica ainda tem outros dois problemas ligados à área de dados. Tendo em vista que a área máxima não é exatamente a área máxima estipulada pela definição do tipo de arquivo e sim uma questão de referência, esses dados podem ser primeiramente coletados além do tamanho real do arquivo no dispositivo de origem como também poderá ser menor que o próprio tamanho dos dados do arquivo no dispositivo de origem.
 
 \section{Número Mágico}
 ...

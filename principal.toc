@@ -23,14 +23,14 @@
 \contentsline {subsection}{\numberline {3.2.3}Arquivo Parcial}{11}
 \contentsline {section}{\numberline {3.3}Aspectos de Carving}{12}
 \contentsline {subsection}{\numberline {3.3.1}Cabe\c calho e Rodap\'e}{12}
-\contentsline {section}{\numberline {3.4}N\'umero M\'agico}{13}
-\contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{14}
-\contentsline {section}{\numberline {4.1}Diferencia\c c\~ao}{14}
-\contentsline {section}{\numberline {4.2}Fragmenta\c c\~ao}{14}
-\contentsline {section}{\numberline {4.3}Ponto de Fragmenta\c c\~ao}{14}
-\contentsline {chapter}{\numberline {5}Ferramentas de File Carving}{15}
-\contentsline {section}{\numberline {5.1}Scalpel}{15}
-\contentsline {section}{\numberline {5.2}Foremost}{15}
-\contentsline {chapter}{\numberline {6}Considera\c c\~oes Finais}{16}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{17}
-\contentsline {chapter}{Anexos}{18}
+\contentsline {section}{\numberline {3.4}N\'umero M\'agico}{14}
+\contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{15}
+\contentsline {section}{\numberline {4.1}Diferencia\c c\~ao}{15}
+\contentsline {section}{\numberline {4.2}Fragmenta\c c\~ao}{15}
+\contentsline {section}{\numberline {4.3}Ponto de Fragmenta\c c\~ao}{15}
+\contentsline {chapter}{\numberline {5}Ferramentas de File Carving}{16}
+\contentsline {section}{\numberline {5.1}Scalpel}{16}
+\contentsline {section}{\numberline {5.2}Foremost}{16}
+\contentsline {chapter}{\numberline {6}Considera\c c\~oes Finais}{17}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{18}
+\contentsline {chapter}{Anexos}{19}
