@@ -21,8 +21,10 @@
 \contentsline {subsection}{\numberline {3.2.1}Fragmenta\c c\~ao Linear}{11}
 \contentsline {subsection}{\numberline {3.2.2}Fragmenta\c c\~ao N\~ao Linear}{11}
 \contentsline {subsection}{\numberline {3.2.3}Arquivo Parcial}{11}
+\contentsline {subsection}{\numberline {3.2.4}Recupera\c c\~ao de Arquivos Fragmentados}{12}
 \contentsline {section}{\numberline {3.3}Aspectos de Carving}{12}
 \contentsline {subsection}{\numberline {3.3.1}Cabe\c calho e Rodap\'e}{12}
+\contentsline {subsection}{\numberline {3.3.2}Carving em Estrutura de Arquivo}{14}
 \contentsline {section}{\numberline {3.4}N\'umero M\'agico}{14}
 \contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{15}
 \contentsline {section}{\numberline {4.1}Diferencia\c c\~ao}{15}
