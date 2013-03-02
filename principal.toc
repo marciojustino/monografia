@@ -13,27 +13,28 @@
 \contentsline {section}{\numberline {2.1}Conceito}{6}
 \contentsline {section}{\numberline {2.2}Estrutura de Dados}{6}
 \contentsline {subsection}{\numberline {2.2.1}Cluster}{7}
-\contentsline {subsection}{\numberline {2.2.2}Master File Table}{7}
-\contentsline {section}{\numberline {2.3}Aloca\c c\~ao de Arquivos}{8}
-\contentsline {section}{\numberline {2.4}An\'alise NTFS}{8}
-\contentsline {chapter}{\numberline {3}File Carving}{9}
-\contentsline {section}{\numberline {3.1}Assinatura de Arquivo}{9}
-\contentsline {section}{\numberline {3.2}Arquivos Fragmentados}{10}
-\contentsline {subsection}{\numberline {3.2.1}Fragmenta\c c\~ao Linear}{11}
-\contentsline {subsection}{\numberline {3.2.2}Fragmenta\c c\~ao N\~ao Linear}{11}
-\contentsline {subsection}{\numberline {3.2.3}Arquivo Parcial}{11}
-\contentsline {subsection}{\numberline {3.2.4}Recupera\c c\~ao de Arquivos Fragmentados}{12}
-\contentsline {section}{\numberline {3.3}Aspectos de Carving}{12}
-\contentsline {subsection}{\numberline {3.3.1}Cabe\c calho e Rodap\'e}{12}
-\contentsline {subsection}{\numberline {3.3.2}Carving em Estrutura de Arquivo}{14}
-\contentsline {section}{\numberline {3.4}N\'umero M\'agico}{14}
-\contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{15}
-\contentsline {section}{\numberline {4.1}Diferencia\c c\~ao}{15}
-\contentsline {section}{\numberline {4.2}Fragmenta\c c\~ao}{15}
-\contentsline {section}{\numberline {4.3}Ponto de Fragmenta\c c\~ao}{15}
-\contentsline {chapter}{\numberline {5}Ferramentas de File Carving}{16}
-\contentsline {section}{\numberline {5.1}Scalpel}{16}
-\contentsline {section}{\numberline {5.2}Foremost}{16}
-\contentsline {chapter}{\numberline {6}Considera\c c\~oes Finais}{17}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{18}
-\contentsline {chapter}{Anexos}{19}
+\contentsline {subsection}{\numberline {2.2.2}Master File Table}{8}
+\contentsline {section}{\numberline {2.3}Aloca\c c\~ao de Arquivos}{9}
+\contentsline {subsection}{\numberline {2.3.1}Registros MFT}{9}
+\contentsline {section}{\numberline {2.4}An\'alise NTFS}{10}
+\contentsline {chapter}{\numberline {3}File Carving}{11}
+\contentsline {section}{\numberline {3.1}Assinatura de Arquivo}{11}
+\contentsline {section}{\numberline {3.2}Arquivos Fragmentados}{12}
+\contentsline {subsection}{\numberline {3.2.1}Fragmenta\c c\~ao Linear}{13}
+\contentsline {subsection}{\numberline {3.2.2}Fragmenta\c c\~ao N\~ao Linear}{13}
+\contentsline {subsection}{\numberline {3.2.3}Arquivo Parcial}{13}
+\contentsline {subsection}{\numberline {3.2.4}Recupera\c c\~ao de Arquivos Fragmentados}{14}
+\contentsline {section}{\numberline {3.3}Aspectos de Carving}{14}
+\contentsline {subsection}{\numberline {3.3.1}Cabe\c calho e Rodap\'e}{14}
+\contentsline {subsection}{\numberline {3.3.2}Carving em Estrutura de Arquivo}{16}
+\contentsline {section}{\numberline {3.4}N\'umero M\'agico}{16}
+\contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{17}
+\contentsline {section}{\numberline {4.1}Diferencia\c c\~ao}{17}
+\contentsline {section}{\numberline {4.2}Fragmenta\c c\~ao}{17}
+\contentsline {section}{\numberline {4.3}Ponto de Fragmenta\c c\~ao}{17}
+\contentsline {chapter}{\numberline {5}Ferramentas de File Carving}{18}
+\contentsline {section}{\numberline {5.1}Scalpel}{18}
+\contentsline {section}{\numberline {5.2}Foremost}{18}
+\contentsline {chapter}{\numberline {6}Considera\c c\~oes Finais}{19}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{20}
+\contentsline {chapter}{Anexos}{21}

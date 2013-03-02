@@ -36,6 +36,14 @@
     month     = "10"
 }
 
+@mastersthesis{Svensson,
+    author    = "Anders Svensson",
+    title     = "Computer Forensics Applied to Windows NTFS Computers",
+    school    = "Stockholm's University / Royal Institute of Technology",
+    year      = "2005",
+    month     = "04"
+}
+
 @WWW{CeticBR,
     author="NetView - IBOPE//NetRatings",
     title={Painel IBOPE/NetRatings},
@@ -65,7 +73,7 @@
 
 @WWW{PngFileFormat,
     author="FileFormat",
-    title={PNG },
+    title={The PNG Image File Format},
     year="2013",
     publisher="",
     url={http://www.fileformat.info/format/png/corion.htm},
@@ -121,4 +129,13 @@
     volume  = "",
     number  = "9",
     pages   = "S108--S117"
+}
+
+@WWW{WikiEFS,
+    author = "Wikipédia",
+    title = {Encrypting File System},
+    year = "2013",
+    publisher = "",
+    url = {http://goo.gl/LTKNI},
+    urldate = {{M}arço de 2013}
 }

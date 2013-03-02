@@ -1,5 +1,5 @@
 \chapter{NTFS}
-Projetado pela Microsoft, é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT (1993) até as versões mais recentes como o Windows 8 (2012). Sendo o predecessor do antigo sistema FAT, é o sistema mais presente em investigações de sistemas Windows \cite{ForensicAnalysis}.
+Projetado pela Microsoft, o NTFS é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT (1993) até as versões mais recentes como o Windows8 (2012), com algumas evoluções ao longo do tempo. Sendo este o predecessor do antigo sistema FAT, é o sistema mais presente em investigações de sistemas devido a superioridade de utilização de sistemas operacionais Windows em todo o mundo \cite{ForensicAnalysis}.
 
 \section{Conceito}
 O sistema de arquivos NTFS foi projetado para melhor confiabilidade, segurança e suporte de grandes dispositivos de armazenamento de dados. Dispõe do uso de estruturas genéricas que servem de envoltório para estruturas de dados com conteúdo específico. Desta forma, o NTFS se torna um projeto escalável pois a estrutura interna de dados pode mudar inúmeras vezes enquanto que a sua casca (a estrutura genérica) permanece constante. Um bom exemplo desse modelo é que todos os bytes\footnote{Termo binário que representa 8 unidades da menor unidade de informação (bit) que pode ser armazenada ou transmitida \cite{WikiBytes}.} são alocados em arquivos no sistema \cite{ForensicAnalysis}.
@@ -7,7 +7,7 @@ O sistema de arquivos NTFS foi projetado para melhor confiabilidade, segurança e
 \section{Estrutura de Dados}
 Segundo Carrier (2005, p. 199)\nocite{ForensicAnalysis}, a única estrutura consistente no NTFS está presente nos primeiros setores do disco, contendo os setores de boot e código.
 
-O coração do sistema de arquivos NTFS está na Master File Table (MFT) pois esta contém as informações de todos os diretórios. Todo arquivo e diretório existente possui uma entrada na MFT, sendo que esta é uma estrutura bem simples de 1 KB de tamanho. A Entrada na MFT possui:
+O coração do sistema de arquivos NTFS está na Master File Table (MFT\footnote{Tabela de alocação de arquivos do sistema NTFS.}), pois esta contém as informações de todos os diretórios. Todo arquivo e diretório existente possui uma entrada na MFT, sendo que esta é uma estrutura bem simples de 1 KB de tamanho. A Entrada na MFT possui:
 
 \begin{itemize}
  \item Cabeçalho;
@@ -25,7 +25,7 @@ A figura \ref{fig:fig02} demonstra um registro de entrada na MFT.
 \end{figure}
 
 \subsection{Cluster}
-De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores sendo que o sistema de arquivos se utiliza de setores para formar um cluster. O tamanho do cluster depende da formatação do disco. A tabela \ref{table:tab01} demonstra tamanhos padrões definidos de cluster para diferentes tamanhos e formas de formatação do disco NTFS:
+De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores sendo que o sistema de arquivos se utiliza de setores para formar um cluster. O tamanho do cluster depende da formatação do disco. A tabela \ref{tab:tab01} demonstra tamanhos padrões definidos de cluster para diferentes tamanhos e formas de formatação do disco NTFS:
 
 \begin{table}[htb]
   \centering  
@@ -39,42 +39,108 @@ De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores send
     acima de 2048 MB & 4 KB \\
     \hline
   \end{tabular}
-  \label{tab01}
   \caption{Tamanho do Cluster Padrão Para Formatos NTFS.}
+  \label{tab:tab01}
 \end{table}
 
 Como pode ser visto na tabela demonstrada por Svensson (2005, p. 25), quanto maior o tamanho do disco maior o tamanho do cluster.
 
 Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number (LCN)}. O LCN é um número sequencial que se apresenta na ordem dos clusters, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no disco), multiplicando o identificador LCN com o tamanho do cluster.
 
-\section{Master File Table}
-Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao menos uma entrada no registro da Master File Table (MFT)\footnote{Conjunto de registros que são continuamente modificados quando um arquivo ou diretório sofre alteração}. Os primeiros 16 registros da MFT são reservados pelo sistema de arquivos para manter metadados\footnote{Dados que definem ou descrevem uma outra parte dos dados \cite{Metadados}.} específicos do NTFS. A tabela \ref{table:tab02}
+\subsection{Master File Table}
+Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao menos uma entrada no registro da Master File Table (MFT)\footnote{Conjunto de registros que são continuamente modificados quando um arquivo ou diretório sofre alteração}. Os primeiros 16 registros da MFT são reservados pelo sistema de arquivos para manter metadados\footnote{Dados que definem ou descrevem outra parte dos dados \cite{Metadados}.} específicos do NTFS. A tabela \ref{tab:tab02} detalha os 16 primeiros registros reservados ao NTFS na MFT:
 
 \begin{table}[htb]
   \centering  
-  \begin{tabular}{ll}
+  \begin{tabular}{|l|c|p{10cm}|}
     \hline
     Nome MTF & Registro & Descrição \\
     \hline
     \$MFT & 0 & NTFS's Master File Table. Contém um arquivo base para cada arquivo ou diretório do disco. \\
+    \hline
     \$MFTMIRR & 1 & Uma cópia parcial da MFT que serve como backup para casos de falhas de um setor. \\
+    \hline
     \$LOGFILE & 2 & Log de transação de arquivos. \\
+    \hline
     \$VOLUME & 3 & Contém o número serial do volume e data de criação. \\
+    \hline
     \$ATTRDEF & 4 & Definição de atributos. \\
     . & 5 & Diretório raiz do disco. \\
+    \hline
     \$BITMAP & 6 & Contém um mapeamento binário de todos os clustes do volume (usados e não usados). \\
+    \hline
     \$BOOT & 7 & Registro de boot do drive\footnote{Unidade do disco físico presente no equipamento, normalmente sendo primário ou secundário.}. \\
+    \hline
     \$BADCLUS & 8 & Lista de setores com problemas no drive. \\
+    \hline
     \$SECURE & 9 & Contém uma única descrição de segurança para todos arquivos do volume. \\
+    \hline
     \$UPCASE & 10 & Mapeia caracteres em texto minúsculo para texto maiúsculo. \\
     \hline
+    \$EXTEND & 11 & Extensões opcionais como as quotas\footnote{}, pontos de reanálise de dados e identificador de objetos. \\
+    \hline
+    & 12-15 & Reservado para uso futuro. \\
+    \hline
   \end{tabular}
-  \label{tab02}
-  \caption{Tamanho do Cluster Padrão Para Formatos NTFS.}
+  \caption{Registros reservados do NTFS na Master File Table.}
+  \label{tab:tab02}
 \end{table}
 
+O primeiro registro da tabela MFT é um registro referente à própria MFT em si. Esse registro é seguido por outro arquivo que representa a cópia parcial da MFT (um espelho da própria master file table, \textbf{\$MFTMIRR}). Esse registro de espelho da MFT funciona como um backup para importantes metadados de arquivos, usado para recuperação da MFT em caso de problemas.
+
+O registro \textbf{\$BITMAP} que contém todo o mapeamento de clusters que estão em uso (alocados por arquivos). Todo cluster é identificado por um bit no registro \$BITMAP, sendo que quando o cluster está sendo usado o bit tem seu valor igual a hum. Esse bit também pode ser encontrado em registros de diretórios com um propósito de manter um registro de quais clusters do buffer de alocação de índices estão em uso e quais não estão.
+
+Já o registro \textbf{\$BADCLUS} é usado para manter uma lista dos clusters que são marcados como defeituosos pelo sistema operacional. Quando o sistema detecta um cluster com defeito ele registra esse cluster no \$BADCLUS e esse cluster passa a não ser mais utilizado pelo sistema.
+
 \section{Alocação de Arquivos}
-...
+\subsection{Registros MFT}
+Os registros da MFT incluem inúmeros atributos e valores, sendo limitado em 1 KB fisicamente. Os atributos de registros são divididos em dois componentes lógicos - cabeçalho e área de dados - sendo que no cabeçalho são armazenados os tipos dos atributos, a localização e o tamanho do valor do atributo \cite{Svensson}.
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[scale=0.5]{figuras/mft-attribute.png}
+  \caption{Registro MFT - Representação de um atributo e o tamanho de dados.}
+  \label{fig:mft-attribute}
+\end{figure}
+
+A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arquivos NTFS.
+
+\begin{table}[htb]
+  \centering
+  \begin{tabular}{|l|l|}
+    \hline
+    Tipo do Atributo & Descrição \\
+    \hline
+    \$VOLUME_INFORMATION & Versão do volume de dados. \\
+    \hline
+    \$VOLUME_NAME & Nome do volume de dados. \\
+    \hline
+    \$FILE_NAME & Nome do arquivo ou do diretório. Um arquivo pode ter múltiplos atributos de \$FILE_NAME. \\
+    \hline
+    \$STANDARD_INFORMATION & Atributos de arquivo (somente leitura, data de criação e de modificação, etc). \\
+    \hline
+    \$SECURITY_DESCRIPTOR & Presente para manter compatibilidade com outras versões do sistema de arquivos. Armazenava informações de segurança dos arquivos e diretórios. \\
+    \$DATA & Dados do arquivo. \\
+    \hline
+    \$INDEX_ROOT & Implementa a alocação do nome do arquivo. \\
+    \hline
+    \$INDEX_ALLOCATION & Implementa a alocação do nome do arquivo. \\
+    \hline
+    \$BITMAP & Índices bitmap para grandes diretórios (somente para diretórios).\\
+    \hline
+    \$OBJECT_ID & Usado pelo serviço de rastreamento de link distribuído. \\
+    \hline
+    \$REPARSE_POINT & Armazena um ponto de reanálise de dados. \\
+    \hline
+    \$ATTRIBUTE_LIST & Lista o local de todos os registros de atributos da MFT que não couberam no registro da MFT. \\
+    \hline
+    \$EA_INFORMATION, \$EA & Atributos extendidos de compatibilidade. \\
+    \hline
+    \$LOGGED_UTILITY_STREAM & A EFS\footnote{Encrypted File System} armazena informações que são usadas na manipulação de arquivos encriptados.
+  \end{tabular}
+  \caption{Registros reservados do NTFS na Master File Table.}
+  \label{tab:tab02}
+\end{table}
 
 \section{Análise NTFS}
 ...
