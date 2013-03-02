@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  2 MAR 2013 12:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  2 MAR 2013 13:10
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -480,7 +480,8 @@ File: figuras/mft-file-format.jpg Graphic file (type jpg)
 <figuras/mft-attribute.png, id=70, 565.11125pt x 371.3875pt>
 File: figuras/mft-attribute.png Graphic file (type png)
 
-<use figuras/mft-attribute.png> [9 <./figuras/mft-file-format.jpg>]
+<use figuras/mft-attribute.png> [9 <./figuras/mft-file-format.jpg> <./figuras/m
+ft-attribute.png (PNG copy)>]
 Underfull \hbox (badness 1092) in paragraph at lines 132--133
 \OT1/ptm/m/n/12 do sis-tema de ar-qui-vos. Ar-ma-ze-nava informa[][]oes de
  []
@@ -490,17 +491,25 @@ Overfull \hbox (13.23068pt too wide) in paragraph at lines 120--153
  [][] 
  []
 
-
-Overfull \hbox (2.77739pt too wide) in paragraph at lines 158--159
+[10]
+Overfull \hbox (2.77739pt too wide) in paragraph at lines 159--160
 []\OT1/ptm/m/n/12 Todo re-gis-tro de ar-quivo con-siste de ao me-nos um par de 
 atri-buto/valor. Se toda a informa[][]ao
  []
 
-<figuras/mft-record.png, id=75, 1181.41376pt x 419.5675pt>
+<figuras/mft-record.png, id=78, 1181.41376pt x 419.5675pt>
 File: figuras/mft-record.png Graphic file (type png)
 
-<use figuras/mft-record.png>) [10 <./figuras/mft-attribute.png (PNG copy)>]
-[11] [12 <./figuras/mft-record.png (PNG copy)>]
+<use figuras/mft-record.png> [11 <./figuras/mft-record.png (PNG copy)>]
+<figuras/ntfs-index.png, id=82, 542.025pt x 271.0125pt>
+File: figuras/ntfs-index.png Graphic file (type png)
+
+<use figuras/ntfs-index.png>
+<figuras/ntfs-index-directory.png, id=83, 916.42375pt x 345.29pt>
+File: figuras/ntfs-index-directory.png Graphic file (type png)
+
+<use figuras/ntfs-index-directory.png>) [12 <./figuras/ntfs-index.png (PNG copy
+)> <./figuras/ntfs-index-directory.png (PNG copy)>]
 \openout2 = `cap2.aux'.
 
  (./cap2.tex
@@ -515,20 +524,20 @@ Overfull \hbox (10.49266pt too wide) in paragraph at lines 23--24
  est[]ao frag-men-ta-dos se-guindo a sequ[]encia
  []
 
-<figuras/fraglinear.png, id=88, 575.14874pt x 88.83188pt>
+<figuras/fraglinear.png, id=91, 575.14874pt x 88.83188pt>
 File: figuras/fraglinear.png Graphic file (type png)
 
 <use figuras/fraglinear.png> [14]
-<figuras/fragnaolinear.png, id=92, 560.8453pt x 80.55093pt>
+<figuras/fragnaolinear.png, id=95, 560.8453pt x 80.55093pt>
 File: figuras/fragnaolinear.png Graphic file (type png)
 
 <use figuras/fragnaolinear.png> [15 <./figuras/fraglinear.png (PNG copy)> <./fi
 guras/fragnaolinear.png (PNG copy)>]
-<figuras/png-file-format.png, id=97, 785.93625pt x 599.23875pt>
+<figuras/png-file-format.png, id=100, 785.93625pt x 599.23875pt>
 File: figuras/png-file-format.png Graphic file (type png)
 
 <use figuras/png-file-format.png>
-<figuras/png-file-structure-data.png, id=98, 425.59pt x 607.26875pt>
+<figuras/png-file-structure-data.png, id=101, 425.59pt x 607.26875pt>
 File: figuras/png-file-structure-data.png Graphic file (type png)
 
 <use figuras/png-file-structure-data.png> [16] [17 <./figuras/png-file-format.p
@@ -585,10 +594,10 @@ tm/m/n/12 . 2013. Dis-pon[]^^Pvel em:
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
 ) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2780 strings out of 495041
- 39494 string characters out of 1181897
- 101722 words of memory out of 3000000
- 5752 multiletter control sequences out of 15000+50000
+ 2792 strings out of 495041
+ 39828 string characters out of 1181897
+ 100743 words of memory out of 3000000
+ 5762 multiletter control sequences out of 15000+50000
  45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  31i,17n,41p,1077b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -598,9 +607,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (33 pages, 881231 bytes).
+Output written on principal.pdf (33 pages, 978042 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
+ 149 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

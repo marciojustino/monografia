@@ -97,8 +97,8 @@ A figura \ref{fig:mft-file-format} demonstra a estrutura e formatação da master 
 \begin{figure}[htp]
   \centering
   \includegraphics[scale=0.6]{figuras/mft-file-format.jpg}
-  \caption{Registro MFT - Representação da estrutura da MFT.}
-  \label{fig:mft-attribute}
+  \caption{Registro MFT - Representação da estrutura da MFT \cite{NTFSUndelete}.}
+  \label{fig:mft-file-format}
 \end{figure}
 
 \section{Alocação de Arquivos}
@@ -107,7 +107,7 @@ Os registros da MFT incluem inúmeros atributos e valores, sendo limitado em 1 KB
 
 \begin{figure}[htp]
   \centering
-  \includegraphics[scale=0.5]{figuras/mft-attribute.png}
+  \includegraphics[scale=0.4]{figuras/mft-attribute.png}
   \caption{Registro MFT - Representação de um atributo e o tamanho de dados.}
   \label{fig:mft-attribute}
 \end{figure}
@@ -154,10 +154,13 @@ A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arq
   \label{tab:mft-attributes}
 \end{table}
 
+\newpage
 \subsection{Registros de Arquivos}
 Todo registro de arquivo consiste de ao menos um par de atributo/valor. Se toda a informação residente no par atributo/valor de um registro de arquivo couber no registro da MFT, nenhum dado adicional é associado no volume, ficando a informação alocada somente no registro da MFT. Por outro lado, um arquivo com uma informação maior, que não cabe somente no registro da MFT, teria seus dados armazenados em clusters em outro lugar do volume de dados. Sendo assim, todo arquivo pode estar associado a múltiplos clusters de dados e a informação de localização dos mesmos é listada na área de dados do registro da MFT. 
 
-Um cluster de dados de um arquivo altamente fragmentado também podem ser muito extenso para ser armazenado nos atributos de um registro de arquivo, assim a lista de atributos do registro de arquivo é usado para direcionar a outro ponto de cabeçalho de dados na MFT que por sua vez direciona para os clusters de dados com as informações restantes referentes ao arquivo \cite{Svensson}. A figura \ref{fig:mft-record} demonstra essa fragmentação de informações do arquivo.
+Um cluster de dados de um arquivo altamente fragmentado também podem ser muito extenso para ser armazenado nos atributos de um registro de arquivo, assim a lista de atributos do registro de arquivo é usado para direcionar a outro ponto de cabeçalho de dados na MFT que por sua vez direciona para os clusters de dados com as informações restantes referentes ao arquivo \cite{Svensson}. 
+
+A figura \ref{fig:mft-record} demonstra essa fragmentação de informações do arquivo.
 
 \begin{figure}[htb]
   \centering

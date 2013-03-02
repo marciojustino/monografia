@@ -107,7 +107,7 @@ Os registros da MFT incluem inúmeros atributos e valores, sendo limitado em 1 KB
 
 \begin{figure}[htp]
   \centering
-  \includegraphics[scale=0.5]{figuras/mft-attribute.png}
+  \includegraphics[scale=0.4]{figuras/mft-attribute.png}
   \caption{Registro MFT - Representação de um atributo e o tamanho de dados.}
   \label{fig:mft-attribute}
 \end{figure}
@@ -154,10 +154,13 @@ A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arq
   \label{tab:mft-attributes}
 \end{table}
 
+\newpage
 \subsection{Registros de Arquivos}
 Todo registro de arquivo consiste de ao menos um par de atributo/valor. Se toda a informação residente no par atributo/valor de um registro de arquivo couber no registro da MFT, nenhum dado adicional é associado no volume, ficando a informação alocada somente no registro da MFT. Por outro lado, um arquivo com uma informação maior, que não cabe somente no registro da MFT, teria seus dados armazenados em clusters em outro lugar do volume de dados. Sendo assim, todo arquivo pode estar associado a múltiplos clusters de dados e a informação de localização dos mesmos é listada na área de dados do registro da MFT. 
 
-Um cluster de dados de um arquivo altamente fragmentado também podem ser muito extenso para ser armazenado nos atributos de um registro de arquivo, assim a lista de atributos do registro de arquivo é usado para direcionar a outro ponto de cabeçalho de dados na MFT que por sua vez direciona para os clusters de dados com as informações restantes referentes ao arquivo \cite{Svensson}. A figura \ref{fig:mft-record} demonstra essa fragmentação de informações do arquivo.
+Um cluster de dados de um arquivo altamente fragmentado também podem ser muito extenso para ser armazenado nos atributos de um registro de arquivo, assim a lista de atributos do registro de arquivo é usado para direcionar a outro ponto de cabeçalho de dados na MFT que por sua vez direciona para os clusters de dados com as informações restantes referentes ao arquivo \cite{Svensson}. 
+
+A figura \ref{fig:mft-record} demonstra essa fragmentação de informações do arquivo.
 
 \begin{figure}[htb]
   \centering
@@ -167,7 +170,28 @@ Um cluster de dados de um arquivo altamente fragmentado também podem ser muito e
 \end{figure}
 
 \subsection{Registros de Diretório}
-Os registros de diretórios possuem um atributo de indexação raíz que aponta para outro atributo de indexação que representa os subdiretórios.
+Os registros de diretórios possuem um atributo de indexação raíz que possui o ponto de entrada de cada arquivo e subdiretório de sua estrutura. 
+
+\newpage
+A figura \ref{fig:ntfs-index} mostra essa indexação.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.5]{figuras/ntfs-index.png}
+  \caption{Registro de diretório .}
+  \label{fig:ntfs-index}
+\end{figure}
+
+As entradas de índice consistem do nome do arquivo e da cópia das informações padrões da entrada de diretório. Como o número de arquivos em diretórios pode crescer, o espaço pode não ser suficiente para armazenar todas as entradas de índice então, os índices adicionais são armazenados na área de alocação conhecida como \emph{``Index Allocation Buffer''}. A área de bitmap também é usada para indicar qual VNCs presente no ``Index Allocation Buffer'' está sendo usado. 
+
+A figura \ref{fig:ntfs-index-directory} demonstra o funcionamento desse processo.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.4]{figuras/ntfs-index-directory.png}
+  \caption{Registro de diretório e a ``Index Allocation Buffer''.}
+  \label{fig:ntfs-index-directory}
+\end{figure}
 
 \section{Análise NTFS}
 ...
