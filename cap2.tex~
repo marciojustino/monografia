@@ -51,7 +51,7 @@ Para recuperar arquivos fragmentados, qualquer ferramenta de file carving precis
  \item Organizar os blocos de forma correta para que se possa reconstruir o arquivo.
 \end{enumerate}
 
-[PAREI AQUI!!!!!!!]
+
 
 \section{Aspectos de Carving}
 
@@ -71,7 +71,7 @@ O valor hexadecimal ``89  50  4e  47  0d  0a  1a  0a'' representa os 8 bytes do 
 
 \begin{figure}[htp]
   \centering
-  \includegraphics[scale=0.6]{figuras/png-file-structure-data.png}
+  \includegraphics[scale=0.5]{figuras/png-file-structure-data.png}
   \caption{Área de dados de um arquivo do tipo PNG \cite{Kloet}}
   \label{fig:png-file-structure-data}
 \end{figure}
