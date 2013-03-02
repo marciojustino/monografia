@@ -92,8 +92,17 @@ O registro \textbf{\$BITMAP} que contém todo o mapeamento de clusters que estão 
 
 Já o registro \textbf{\$BADCLUS} é usado para manter uma lista dos clusters que são marcados como defeituosos pelo sistema operacional. Quando o sistema detecta um cluster com defeito ele registra esse cluster no \$BADCLUS e esse cluster passa a não ser mais utilizado pelo sistema.
 
+A figura \ref{fig:mft-file-format} demonstra a estrutura e formatação da master file table.
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[scale=0.6]{figuras/mft-file-format.jpg}
+  \caption{Registro MFT - Representação da estrutura da MFT.}
+  \label{fig:mft-attribute}
+\end{figure}
+
 \section{Alocação de Arquivos}
-\subsection{Registros MFT}
+\subsection{Registros da MFT}
 Os registros da MFT incluem inúmeros atributos e valores, sendo limitado em 1 KB fisicamente. Os atributos de registros são divididos em dois componentes lógicos - cabeçalho e área de dados - sendo que no cabeçalho são armazenados os tipos dos atributos, a localização e o tamanho do valor do atributo \cite{Svensson}.
 
 \begin{figure}[htp]
@@ -103,44 +112,62 @@ Os registros da MFT incluem inúmeros atributos e valores, sendo limitado em 1 KB
   \label{fig:mft-attribute}
 \end{figure}
 
+\newpage
 A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arquivos NTFS.
 
 \begin{table}[htb]
   \centering
-  \begin{tabular}{|l|l|}
+  \begin{tabular}{|l|p{10cm}|}
     \hline
     Tipo do Atributo & Descrição \\
     \hline
-    \$VOLUME_INFORMATION & Versão do volume de dados. \\
+    \$VOLUME\_INFORMATION & Versão do volume de dados. \\
     \hline
-    \$VOLUME_NAME & Nome do volume de dados. \\
+    \$VOLUME\_NAME & Nome do volume de dados. \\
     \hline
-    \$FILE_NAME & Nome do arquivo ou do diretório. Um arquivo pode ter múltiplos atributos de \$FILE_NAME. \\
+    \$FILE\_NAME & Nome do arquivo ou do diretório. Um arquivo pode ter múltiplos atributos de \$FILE\_NAME. \\
     \hline
-    \$STANDARD_INFORMATION & Atributos de arquivo (somente leitura, data de criação e de modificação, etc). \\
+    \$STANDARD\_INFORMATION & Atributos de arquivo (somente leitura, data de criação e de modificação, etc). \\
     \hline
-    \$SECURITY_DESCRIPTOR & Presente para manter compatibilidade com outras versões do sistema de arquivos. Armazenava informações de segurança dos arquivos e diretórios. \\
+    \$SECURITY\_DESCRIPTOR & Presente para manter compatibilidade com outras versões do sistema de arquivos. Armazenava informações de segurança dos arquivos e diretórios. \\
+    \hline
     \$DATA & Dados do arquivo. \\
     \hline
-    \$INDEX_ROOT & Implementa a alocação do nome do arquivo. \\
+    \$INDEX\_ROOT & Implementa a alocação do nome do arquivo. \\
     \hline
-    \$INDEX_ALLOCATION & Implementa a alocação do nome do arquivo. \\
+    \$INDEX\_ALLOCATION & Implementa a alocação do nome do arquivo. \\
     \hline
     \$BITMAP & Índices bitmap para grandes diretórios (somente para diretórios).\\
     \hline
-    \$OBJECT_ID & Usado pelo serviço de rastreamento de link distribuído. \\
+    \$OBJECT\_ID & Usado pelo serviço de rastreamento de link distribuído. \\
     \hline
-    \$REPARSE_POINT & Armazena um ponto de reanálise de dados. \\
+    \$REPARSE\_POINT & Armazena um ponto de reanálise de dados. \\
     \hline
-    \$ATTRIBUTE_LIST & Lista o local de todos os registros de atributos da MFT que não couberam no registro da MFT. \\
+    \$ATTRIBUTE\_LIST & Lista o local de todos os registros de atributos da MFT que não couberam no registro da MFT. \\
     \hline
-    \$EA_INFORMATION, \$EA & Atributos extendidos de compatibilidade. \\
+    \$EA\_INFORMATION, \$EA & Atributos extendidos de compatibilidade. \\
     \hline
-    \$LOGGED_UTILITY_STREAM & A EFS\footnote{Encrypted File System} armazena informações que são usadas na manipulação de arquivos encriptados.
+    \$LOGGED\_UTILITY\_STREAM & A EFS (Encrypting File System - Essa tecnologia permite a encriptação de arquivos de forma transparente protegendo informações confidenciais de invasores com acesso físico ao computador \cite{WikiEFS}) armazena informações que são usadas na manipulação de arquivos encriptados. \\
+    \hline
   \end{tabular}
   \caption{Registros reservados do NTFS na Master File Table.}
-  \label{tab:tab02}
+  \label{tab:mft-attributes}
 \end{table}
+
+\subsection{Registros de Arquivos}
+Todo registro de arquivo consiste de ao menos um par de atributo/valor. Se toda a informação residente no par atributo/valor de um registro de arquivo couber no registro da MFT, nenhum dado adicional é associado no volume, ficando a informação alocada somente no registro da MFT. Por outro lado, um arquivo com uma informação maior, que não cabe somente no registro da MFT, teria seus dados armazenados em clusters em outro lugar do volume de dados. Sendo assim, todo arquivo pode estar associado a múltiplos clusters de dados e a informação de localização dos mesmos é listada na área de dados do registro da MFT. 
+
+Um cluster de dados de um arquivo altamente fragmentado também podem ser muito extenso para ser armazenado nos atributos de um registro de arquivo, assim a lista de atributos do registro de arquivo é usado para direcionar a outro ponto de cabeçalho de dados na MFT que por sua vez direciona para os clusters de dados com as informações restantes referentes ao arquivo \cite{Svensson}. A figura \ref{fig:mft-record} demonstra essa fragmentação de informações do arquivo.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.3]{figuras/mft-record.png}
+  \caption{Registro de arquivo da MFT \cite{Svensson}.}
+  \label{fig:mft-record}
+\end{figure}
+
+\subsection{Registros de Diretório}
+Os registros de diretórios possuem um atributo de indexação raíz que aponta para outro atributo de indexação que representa os subdiretórios.
 
 \section{Análise NTFS}
 ...

@@ -136,6 +136,15 @@
     title = {Encrypting File System},
     year = "2013",
     publisher = "",
-    url = {http://goo.gl/LTKNI},
+    url = {http://en.wikipedia.org/wiki/Encrypting\_File\_System},
+    urldate = {{M}arço de 2013}
+}
+
+@WWW{NTFSUndelete,
+    author = "Ramanan T.",
+    title = {Undelete a file in NTFS},
+    year = "2013",
+    publisher = "CodeProject",
+    url = {http://www.codeproject.com/Articles/9293/Undelete-a-file-in-NTFS},
     urldate = {{M}arço de 2013}
 }

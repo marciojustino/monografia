@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  2 MAR 2013 11:17
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  2 MAR 2013 12:24
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -473,25 +473,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 []\OT1/ptm/m/n/12 Mapeia ca-rac-te-res em texto min[]usculo para texto
  []
 
-[8] <figuras/mft-attribute.png, id=69, 565.11125pt x 371.3875pt>
+[8] <figuras/mft-file-format.jpg, id=69, 602.25pt x 240.9pt>
+File: figuras/mft-file-format.jpg Graphic file (type jpg)
+
+<use figuras/mft-file-format.jpg>
+<figuras/mft-attribute.png, id=70, 565.11125pt x 371.3875pt>
 File: figuras/mft-attribute.png Graphic file (type png)
 
-<use figuras/mft-attribute.png> [9 <./figuras/mft-attribute.png (PNG copy)>]
-Underfull \hbox (badness 1092) in paragraph at lines 123--124
+<use figuras/mft-attribute.png> [9 <./figuras/mft-file-format.jpg>]
+Underfull \hbox (badness 1092) in paragraph at lines 132--133
 \OT1/ptm/m/n/12 do sis-tema de ar-qui-vos. Ar-ma-ze-nava informa[][]oes de
  []
 
 
-Overfull \hbox (13.23068pt too wide) in paragraph at lines 111--144
+Overfull \hbox (13.23068pt too wide) in paragraph at lines 120--153
  [][] 
  []
 
-) [10]
+
+Overfull \hbox (2.77739pt too wide) in paragraph at lines 158--159
+[]\OT1/ptm/m/n/12 Todo re-gis-tro de ar-quivo con-siste de ao me-nos um par de 
+atri-buto/valor. Se toda a informa[][]ao
+ []
+
+<figuras/mft-record.png, id=75, 1181.41376pt x 419.5675pt>
+File: figuras/mft-record.png Graphic file (type png)
+
+<use figuras/mft-record.png>) [10 <./figuras/mft-attribute.png (PNG copy)>]
+[11] [12 <./figuras/mft-record.png (PNG copy)>]
 \openout2 = `cap2.aux'.
 
  (./cap2.tex
 Cap\'{\i }tulo 3.
-[11
+[13
 
 
 
@@ -501,30 +515,30 @@ Overfull \hbox (10.49266pt too wide) in paragraph at lines 23--24
  est[]ao frag-men-ta-dos se-guindo a sequ[]encia
  []
 
-<figuras/fraglinear.png, id=80, 575.14874pt x 88.83188pt>
+<figuras/fraglinear.png, id=88, 575.14874pt x 88.83188pt>
 File: figuras/fraglinear.png Graphic file (type png)
 
-<use figuras/fraglinear.png> [12]
-<figuras/fragnaolinear.png, id=84, 560.8453pt x 80.55093pt>
+<use figuras/fraglinear.png> [14]
+<figuras/fragnaolinear.png, id=92, 560.8453pt x 80.55093pt>
 File: figuras/fragnaolinear.png Graphic file (type png)
 
-<use figuras/fragnaolinear.png> [13 <./figuras/fraglinear.png (PNG copy)> <./fi
+<use figuras/fragnaolinear.png> [15 <./figuras/fraglinear.png (PNG copy)> <./fi
 guras/fragnaolinear.png (PNG copy)>]
-<figuras/png-file-format.png, id=88, 785.93625pt x 599.23875pt>
+<figuras/png-file-format.png, id=97, 785.93625pt x 599.23875pt>
 File: figuras/png-file-format.png Graphic file (type png)
 
 <use figuras/png-file-format.png>
-<figuras/png-file-structure-data.png, id=89, 425.59pt x 607.26875pt>
+<figuras/png-file-structure-data.png, id=98, 425.59pt x 607.26875pt>
 File: figuras/png-file-structure-data.png Graphic file (type png)
 
-<use figuras/png-file-structure-data.png> [14] [15 <./figuras/png-file-format.p
-ng (PNG copy)> <./figuras/png-file-structure-data.png (PNG copy)>]) [16]
+<use figuras/png-file-structure-data.png> [16] [17 <./figuras/png-file-format.p
+ng (PNG copy)> <./figuras/png-file-structure-data.png (PNG copy)>]) [18]
 \openout2 = `cap3.aux'.
 
 
 (./cap3.tex
 Cap\'{\i }tulo 4.
-) [17
+) [19
 
 
 
@@ -533,7 +547,7 @@ Cap\'{\i }tulo 4.
 
  (./cap4.tex
 Cap\'{\i }tulo 5.
-) [18
+) [20
 
 
 
@@ -542,23 +556,23 @@ Cap\'{\i }tulo 5.
 
  (./consideracoes_finais.tex
 Cap\'{\i }tulo 6.
-) [19
+) [21
 
 
 
 ] (./principal.bbl
-Underfull \hbox (badness 1496) in paragraph at lines 84--87
+Underfull \hbox (badness 1496) in paragraph at lines 90--93
 []\OT1/ptm/m/n/12 WIKIP[]eDIA. \OT1/ptm/m/it/12 En-cryp-ting File Sys-tem\OT1/p
 tm/m/n/12 . 2013. Dis-pon[]^^Pvel em: 
  []
 
-) [20
+) [22
 
 
 ]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex) [21
+ (./anexo.tex) [23
 
 
 ]
@@ -571,10 +585,10 @@ tm/m/n/12 . 2013. Dis-pon[]^^Pvel em:
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
 ) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2762 strings out of 495041
- 39089 string characters out of 1181897
- 100673 words of memory out of 3000000
- 5737 multiletter control sequences out of 15000+50000
+ 2780 strings out of 495041
+ 39494 string characters out of 1181897
+ 101722 words of memory out of 3000000
+ 5752 multiletter control sequences out of 15000+50000
  45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  31i,17n,41p,1077b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -584,9 +598,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (31 pages, 736642 bytes).
+Output written on principal.pdf (33 pages, 881231 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
+ 146 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

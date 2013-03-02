@@ -2,8 +2,10 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Internautas ativos em resid\^encias e no trabalho e horas navegadas - 2012 \cite {CeticBR}}}{1}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Hip\'otese de pesquisa}}{4}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Entrada na MFT - Cabe\c calho e espa\c co reservado aos diferentes tipos de atributos. Para o exemplo, a entrada possui 3 atributos.}}{7}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Registro MFT - Representa\c c\~ao de um atributo e o tamanho de dados.}}{9}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Exemplo de Fragmenta\c c\~ao Linear}}{13}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemplo de Fragmenta\c c\~ao N\~ao Linear}}{13}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Estruda de cabe\c calho de um arquivo do tipo PNG \cite {PngFileFormat}}}{15}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces \'Area de dados de um arquivo do tipo PNG \cite {Kloet}}}{15}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Registro MFT - Representa\c c\~ao da estrutura da MFT \cite {NTFSUndelete}.}}{9}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Registro MFT - Representa\c c\~ao de um atributo e o tamanho de dados.}}{10}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Registro de arquivo da MFT \cite {Svensson}.}}{12}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Exemplo de Fragmenta\c c\~ao Linear}}{15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemplo de Fragmenta\c c\~ao N\~ao Linear}}{15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Estruda de cabe\c calho de um arquivo do tipo PNG \cite {PngFileFormat}}}{17}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces \'Area de dados de um arquivo do tipo PNG \cite {Kloet}}}{17}
