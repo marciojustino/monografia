@@ -193,5 +193,8 @@ A figura \ref{fig:ntfs-index-directory} demonstra o funcionamento desse processo
   \label{fig:ntfs-index-directory}
 \end{figure}
 
+\subsection{Remoção de Arquivos}
+Quando um novo arquivo é criado em um sistema de arquivos NTFS, o arquivo bitmap do registro da MFT precisa ser atualizado pois os clusters anteriormente considerados ``não alocados'' agora estão ocupados por um arquivo. Assim, quando um arquivo é excluído o arquivo bitmap do registro da MFT também precisa ser atualizado. Os bits correspondentes ao cluster anteriormente alocado pelo arquivo removido são zerados (marcados como \emph{``não alocados''}). O arquivo foi então marcado para remoção porém seu conteúdo continua no disco no mesmo lugar que estava anteriormente alocado, até que o mesmo local seja utilizado para armazenar outro arquivo. A entrada do índice do arquivo é também marcada para exclusão porém, a entrada do índice é rapidamente sobrescrita, o que no caso do arquivo pode demorar dependendo do tamanho do volume de dados \cite{Svensson}.
+
 \section{Análise NTFS}
 ...
