@@ -1,11 +1,11 @@
 \chapter{NTFS}
-Projetado pela Microsoft, o NTFS é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT (1993) até as versões mais recentes como o Windows8 (2012), com algumas evoluções ao longo do tempo. Sendo este o predecessor do antigo sistema FAT, é o sistema mais presente em investigações de sistemas devido a superioridade de utilização de sistemas operacionais Windows em todo o mundo \cite{ForensicAnalysis}.
+Projetado pela Microsoft, o NTFS é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT (1993) até as versões mais recentes como o Windows8 (2012), com algumas evoluções ao longo do tempo. Sendo este o predecessor do antigo sistema FAT, é o sistema mais presente em investigações de sistemas devido a superioridade de utilização de sistemas operacionais Windows em todo o mundo \cite{Carrier2005}.
 
 \section{Conceito}
-O sistema de arquivos NTFS foi projetado para melhor confiabilidade, segurança e suporte de grandes dispositivos de armazenamento de dados. Dispõe do uso de estruturas genéricas que servem de envoltório para estruturas de dados com conteúdo específico. Desta forma, o NTFS se torna um projeto escalável pois a estrutura interna de dados pode mudar inúmeras vezes enquanto que a sua casca (a estrutura genérica) permanece constante. Um bom exemplo desse modelo é que todos os bytes\footnote{Termo binário que representa 8 unidades da menor unidade de informação (bit) que pode ser armazenada ou transmitida \cite{WikiBytes}.} são alocados em arquivos no sistema \cite{ForensicAnalysis}.
+O sistema de arquivos NTFS foi projetado para melhor confiabilidade, segurança e suporte de grandes dispositivos de armazenamento de dados. Dispõe do uso de estruturas genéricas que servem de envoltório para estruturas de dados com conteúdo específico. Desta forma, o NTFS se torna um projeto escalável pois a estrutura interna de dados pode mudar inúmeras vezes enquanto que a sua casca (a estrutura genérica) permanece constante. Um bom exemplo desse modelo é que todos os bytes\footnote{Termo binário que representa 8 unidades da menor unidade de informação (bit) que pode ser armazenada ou transmitida \cite{WikiBytes2012}.} são alocados em arquivos no sistema \cite{Carrier2005}.
 
 \section{Estrutura de Dados}
-Segundo Carrier (2005, p. 199)\nocite{ForensicAnalysis}, a única estrutura consistente no NTFS está presente nos primeiros setores do disco, contendo os setores de boot e código.
+Segundo Carrier (2005, p. 199), a única estrutura consistente no NTFS está presente nos primeiros setores do disco, contendo os setores de boot e código.
 
 O coração do sistema de arquivos NTFS está na Master File Table (MFT\footnote{Tabela de alocação de arquivos do sistema NTFS.}), pois esta contém as informações de todos os diretórios. Todo arquivo e diretório existente possui uma entrada na MFT, sendo que esta é uma estrutura bem simples de 1 KB de tamanho. A Entrada na MFT possui:
 
@@ -48,7 +48,7 @@ Como pode ser visto na tabela demonstrada por Svensson (2005, p. 25), quanto mai
 Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number (LCN)}. O LCN é um número sequencial que se apresenta na ordem dos clusters, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no disco), multiplicando o identificador LCN com o tamanho do cluster.
 
 \subsection{Master File Table}
-Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao menos uma entrada no registro da Master File Table (MFT)\footnote{Conjunto de registros que são continuamente modificados quando um arquivo ou diretório sofre alteração}. Os primeiros 16 registros da MFT são reservados pelo sistema de arquivos para manter metadados\footnote{Dados que definem ou descrevem outra parte dos dados \cite{Metadados}.} específicos do NTFS. A tabela \ref{tab:tab02} detalha os 16 primeiros registros reservados ao NTFS na MFT:
+Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao menos uma entrada no registro da Master File Table (MFT)\footnote{Conjunto de registros que são continuamente modificados quando um arquivo ou diretório sofre alteração}. Os primeiros 16 registros da MFT são reservados pelo sistema de arquivos para manter metadados\footnote{Dados que definem ou descrevem outra parte dos dados \cite{Wyman2012}.} específicos do NTFS. A tabela \ref{tab:tab02} detalha os 16 primeiros registros reservados ao NTFS na MFT:
 
 \begin{table}[htb]
   \centering  
@@ -88,22 +88,22 @@ Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao 
 
 O primeiro registro da tabela MFT é um registro referente à própria MFT em si. Esse registro é seguido por outro arquivo que representa a cópia parcial da MFT (um espelho da própria master file table, \textbf{\$MFTMIRR}). Esse registro de espelho da MFT funciona como um backup para importantes metadados de arquivos, usado para recuperação da MFT em caso de problemas.
 
-O registro \textbf{\$BITMAP} que contém todo o mapeamento de clusters que estão em uso (alocados por arquivos). Todo cluster é identificado por um bit no registro \$BITMAP, sendo que quando o cluster está sendo usado o bit tem seu valor igual a hum. Esse bit também pode ser encontrado em registros de diretórios com um propósito de manter um registro de quais clusters do buffer de alocação de índices estão em uso e quais não estão.
+O registro \textbf{\$BITMAP} que contém todo o mapeamento de clusters que estão em uso (alocados por arquivos). Todo cluster é identificado por um bit no registro \textbf{\$BITMAP}, sendo que quando o cluster está sendo usado o bit tem seu valor igual a hum. Esse bit também pode ser encontrado em registros de diretórios com um propósito de manter um registro de quais clusters do buffer de alocação de índices estão em uso e quais não estão.
 
-Já o registro \textbf{\$BADCLUS} é usado para manter uma lista dos clusters que são marcados como defeituosos pelo sistema operacional. Quando o sistema detecta um cluster com defeito ele registra esse cluster no \$BADCLUS e esse cluster passa a não ser mais utilizado pelo sistema.
+Já o registro \textbf{\$BADCLUS} é usado para manter uma lista dos clusters que são marcados como defeituosos pelo sistema operacional. Quando o sistema detecta um cluster com defeito ele registra esse cluster no \textbf{\$BADCLUS} e esse cluster passa a não ser mais utilizado pelo sistema.
 
 A figura \ref{fig:mft-file-format} demonstra a estrutura e formatação da master file table.
 
 \begin{figure}[htp]
   \centering
   \includegraphics[scale=0.6]{figuras/mft-file-format.jpg}
-  \caption{Registro MFT - Representação da estrutura da MFT \cite{NTFSUndelete}.}
+  \caption{Registro MFT - Representação da estrutura da MFT \cite{Ramanan2013}.}
   \label{fig:mft-file-format}
 \end{figure}
 
 \section{Alocação de Arquivos}
 \subsection{Registros da MFT}
-Os registros da MFT incluem inúmeros atributos e valores, sendo limitado em 1 KB fisicamente. Os atributos de registros são divididos em dois componentes lógicos - cabeçalho e área de dados - sendo que no cabeçalho são armazenados os tipos dos atributos, a localização e o tamanho do valor do atributo \cite{Svensson}.
+Os registros da MFT incluem inúmeros atributos e valores, sendo limitado em 1 KB fisicamente. Os atributos de registros são divididos em dois componentes lógicos - cabeçalho e área de dados - sendo que no cabeçalho são armazenados os tipos dos atributos, a localização e o tamanho do valor do atributo \cite{Svensson2005}.
 
 \begin{figure}[htp]
   \centering
@@ -147,7 +147,7 @@ A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arq
     \hline
     \$EA\_INFORMATION, \$EA & Atributos extendidos de compatibilidade. \\
     \hline
-    \$LOGGED\_UTILITY\_STREAM & A EFS (Encrypting File System - Essa tecnologia permite a encriptação de arquivos de forma transparente protegendo informações confidenciais de invasores com acesso físico ao computador \cite{WikiEFS}) armazena informações que são usadas na manipulação de arquivos encriptados. \\
+    \$LOGGED\_UTILITY\_STREAM & A EFS (Encrypting File System - Essa tecnologia permite a encriptação de arquivos de forma transparente protegendo informações confidenciais de invasores com acesso físico ao computador \cite{WikiEFS2013}) armazena informações que são usadas na manipulação de arquivos encriptados. \\
     \hline
   \end{tabular}
   \caption{Registros reservados do NTFS na Master File Table.}
@@ -158,14 +158,14 @@ A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arq
 \subsection{Registros de Arquivos}
 Todo registro de arquivo consiste de ao menos um par de atributo/valor. Se toda a informação residente no par atributo/valor de um registro de arquivo couber no registro da MFT, nenhum dado adicional é associado no volume, ficando a informação alocada somente no registro da MFT. Por outro lado, um arquivo com uma informação maior, que não cabe somente no registro da MFT, teria seus dados armazenados em clusters em outro lugar do volume de dados. Sendo assim, todo arquivo pode estar associado a múltiplos clusters de dados e a informação de localização dos mesmos é listada na área de dados do registro da MFT. 
 
-Um cluster de dados de um arquivo altamente fragmentado também podem ser muito extenso para ser armazenado nos atributos de um registro de arquivo, assim a lista de atributos do registro de arquivo é usado para direcionar a outro ponto de cabeçalho de dados na MFT que por sua vez direciona para os clusters de dados com as informações restantes referentes ao arquivo \cite{Svensson}. 
+Um cluster de dados de um arquivo altamente fragmentado também podem ser muito extenso para ser armazenado nos atributos de um registro de arquivo, assim a lista de atributos do registro de arquivo é usado para direcionar a outro ponto de cabeçalho de dados na MFT que por sua vez direciona para os clusters de dados com as informações restantes referentes ao arquivo \cite{Svensson2005}. 
 
 A figura \ref{fig:mft-record} demonstra essa fragmentação de informações do arquivo.
 
 \begin{figure}[htb]
   \centering
   \includegraphics[scale=0.3]{figuras/mft-record.png}
-  \caption{Registro de arquivo da MFT \cite{Svensson}.}
+  \caption{Registro de arquivo da MFT \cite{Svensson2005}.}
   \label{fig:mft-record}
 \end{figure}
 
@@ -194,7 +194,9 @@ A figura \ref{fig:ntfs-index-directory} demonstra o funcionamento desse processo
 \end{figure}
 
 \subsection{Remoção de Arquivos}
-Quando um novo arquivo é criado em um sistema de arquivos NTFS, o arquivo bitmap do registro da MFT precisa ser atualizado pois os clusters anteriormente considerados ``não alocados'' agora estão ocupados por um arquivo. Assim, quando um arquivo é excluído o arquivo bitmap do registro da MFT também precisa ser atualizado. Os bits correspondentes ao cluster anteriormente alocado pelo arquivo removido são zerados (marcados como \emph{``não alocados''}). O arquivo foi então marcado para remoção porém seu conteúdo continua no disco no mesmo lugar que estava anteriormente alocado, até que o mesmo local seja utilizado para armazenar outro arquivo. A entrada do índice do arquivo é também marcada para exclusão porém, a entrada do índice é rapidamente sobrescrita, o que no caso do arquivo pode demorar dependendo do tamanho do volume de dados \cite{Svensson}.
+Quando um novo arquivo é criado em um sistema de arquivos NTFS, o arquivo bitmap do registro da MFT precisa ser atualizado pois os clusters anteriormente considerados \emph{não alocados} agora estão ocupados por um arquivo. Assim, quando um arquivo é excluído o arquivo bitmap do registro da MFT também precisa ser atualizado. Os bits correspondentes ao cluster anteriormente alocado pelo arquivo removido são zerados (marcados como \emph{não alocados}). O arquivo foi então marcado para remoção porém seu conteúdo continua no disco no mesmo lugar que estava anteriormente alocado, até que o mesmo local seja utilizado para armazenar outro arquivo. A entrada do índice do arquivo é também marcada para exclusão porém, a entrada do índice é rapidamente sobrescrita, o que no caso do arquivo pode demorar dependendo do tamanho do volume de dados \cite{Svensson2005}.
 
 \section{Análise NTFS}
-...
+Svensson (2005, p.33) diz que registro da MFT pertencentes à arquivos já apagados podem ser recuperados pois, como vimos anteriormente, os arquivos não são excluídos do disco e sim deixam de ser referenciados, permanecendo no mesmo lugar até que outro arquivo sobrescreva seu conteúdo. As chances de se recuperar um arquivo excluído, no entando, diminuem com o tempo uma vez que o sistema NTFS sobrescreve arquivos não mais alocados antes de alocar espaço adicional para a MFT. Informações padrões de arquivo, assim como seu nome, estão contidas nesses registros da MFT. Isso pode ser útil para auxiliar a encontrar as partes do arquivo não mais alocado uma vez que as informações de apontamento para as partes do arquivo não mais alocadas e ainda residentes no disco, estão presentes no registro de indexação do arquivo encontrado. Sem esse registro do arquivo ainda seria possível se recuperar um arquivo deletado fazendo uma procura física no disco desde que este arquivo não esteja fragmentado. Arquivos fragmentados são muito difícieis de se recuperar totalmente através de pesquisas físicas no disco.
+
+Tendo isso em vista, Svensson (2005, p.33) relata que o índice pertencente à um arquivo removido pode não mais ser localizado visto que o mesmo pode ser rapidamente sobrescrito, o que já foi visto anteriormente. Essa entrada de arquivo (índice) pode ser muito importante na reconstituição do crime. Quando uma entrada de índice é marcada para remoção, todas as entradas seguintes são movidas para cima sobrescrevendo, portanto, o índice marcado para remoção. Se essa entrada de índice é a última entrada em um registro de diretório ou no buffer de alocação de índices (index allocation buffer) ela pode então não ser sobrescrita podendo assim ser recuperada.

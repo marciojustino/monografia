@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  2 MAR 2013 17:47
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  3 MAR 2013 12:24
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -259,10 +259,16 @@ Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
 \pfg@pcount=\count103
 \pfg@scount=\count104
 \pfg@temp=\write3
-) (./principal.aux
-(./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux) (./dedicatoria.aux)
-(./resumo.aux) (./abstract.aux) (./introducao.aux) (./cap1.aux) (./cap2.aux)
-(./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux) (./anexo.aux))
+)
+(/usr/share/texmf-texlive/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \citen on input line 81.
+LaTeX Info: Redefining \cite on input line 285.
+LaTeX Info: Redefining \nocite on input line 356.
+Package: cite 2009/08/29  v 5.2
+) (./principal.aux (./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux) (./d
+edicatoria.aux) (./resumo.aux) (./abstract.aux) (./introducao.aux) (./cap1.aux)
+ (./cap2.aux) (./cap3.aux)
+(./cap4.aux) (./consideracoes_finais.aux) (./anexo.aux))
 \openout1 = `principal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -432,26 +438,26 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 
  <./figuras/fig01.png (PNG copy)>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
  [2] [3]
 <figuras/hipotese.png, id=49, 2699.08376pt x 1308.89pt>
 File: figuras/hipotese.png Graphic file (type png)
 
 <use figuras/hipotese.png>
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 50.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 56.
  (/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
  [4 <./figuras/hipotese.png (PNG copy)>]
-Overfull \hbox (15.91827pt too wide) in paragraph at lines 62--63
+Overfull \hbox (15.91827pt too wide) in paragraph at lines 68--69
 \OT1/ptm/m/n/12 tema de ar-qui-vos NTFS junto ao cri-a-dor (Mi-cro-soft), pes-q
 ui-sas cor-re-la-tas re-fe-ren-tes []a fragmenta[][]ao
  []
 
 )
-Overfull \hbox (15.57132pt too wide) in paragraph at lines 64--28
+Overfull \hbox (15.57132pt too wide) in paragraph at lines 70--28
 \OT1/ptm/m/n/12 para que se possa con-cre-ti-zar, atrav[]es de da-dos sig-ni-fi
 -ca-ti-vos, a efic[]acia do pro-cesso de identifica[][]ao
  []
@@ -570,7 +576,7 @@ Cap\'{\i }tulo 6.
 
 
 ] (./principal.bbl
-Underfull \hbox (badness 1496) in paragraph at lines 90--93
+Underfull \hbox (badness 1496) in paragraph at lines 73--76
 []\OT1/ptm/m/n/12 WIKIP[]eDIA. \OT1/ptm/m/it/12 En-cryp-ting File Sys-tem\OT1/p
 tm/m/n/12 . 2013. Dis-pon[]^^Pvel em: 
  []
@@ -592,26 +598,22 @@ tm/m/n/12 . 2013. Dis-pon[]^^Pvel em:
 (./principal.aux (./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux)
 (./dedicatoria.aux) (./resumo.aux) (./abstract.aux) (./introducao.aux)
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
-) (./anexo.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2792 strings out of 495041
- 39828 string characters out of 1181897
- 100743 words of memory out of 3000000
- 5762 multiletter control sequences out of 15000+50000
+ 2860 strings out of 495041
+ 40790 string characters out of 1181897
+ 101587 words of memory out of 3000000
+ 5827 multiletter control sequences out of 15000+50000
  45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 31i,17n,41p,1077b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr
-/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive
-/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (34 pages, 979630 bytes).
+ 31i,17n,41p,1147b,344s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
+ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
+tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
+re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on principal.pdf (34 pages, 981093 bytes).
 PDF statistics:
  152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

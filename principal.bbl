@@ -5,95 +5,78 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.53 }
 
-\bibitem[Caloyannides 2004]{Caloyannides}
-\abntrefinfo{Caloyannides}{CALOYANNIDES}{2004}
-{CALOYANNIDES, M.~A. \emph{Privacy Protection and Computer Forensics}. 2. ed.
-  [S.l.]: Artech House, 2004.}
-
-\bibitem[Carrier 2005]{ForensicAnalysis}
+\bibitem[Carrier 2005]{Carrier2005}
 \abntrefinfo{Carrier}{CARRIER}{2005}
 {CARRIER, B. \emph{File System Forensic Analysis}. [S.l.]: Addison Wesley
   Professional, 2005.}
 
-\bibitem[CyberCitizen 2012]{CyberCitizen}
+\bibitem[CyberCitizen 2012]{CyberCitizen2012}
 \abntrefinfo{CyberCitizen}{CYBERCITIZEN}{2012}
 {CYBERCITIZEN. \emph{What is Cyber Crime?} cybercitizenship, 2012.
 Dispon{\'\i}vel em: $<$http://www.cybercitizenship.org/crime/crime.html$>$.}
 
-\bibitem[FileFormat 2013]{PngFileFormat}
+\bibitem[FileFormat 2013]{PngFileFormat2013}
 \abntrefinfo{FileFormat}{FILEFORMAT}{2013}
 {FILEFORMAT. \emph{The PNG Image File Format}. 2013.
 Dispon{\'\i}vel em: $<$http://www.fileformat.info/format/png/corion.htm$>$.}
 
-\bibitem[Garfinkel 2007]{DGI}
+\bibitem[Garfinkel 2007]{Garfinkel2007}
 \abntrefinfo{Garfinkel}{GARFINKEL}{2007}
 {GARFINKEL, S.~L. Carving contiguous and fragmented files with fast object
   validation.
 \emph{ELSEVIER}, v.~4S, p. S2--S12, 2007.}
 
-\bibitem[Hand Zhiqiang~Lin 2012]{BinCarver}
+\bibitem[Hand Zhiqiang~Lin 2012]{Hand2012}
 \abntrefinfo{Hand Zhiqiang~Lin}{HAND ZHIQIANG~LIN}{2012}
 {HAND ZHIQIANG~LIN, G. G. B.~T. S. Bin-carver: Automatic recovery of binary
   executable files.
 \emph{ELSEVIER}, n.~9, p. S108--S117, 2012.}
 
-\bibitem[IBOPE//NetRatings 2012]{CeticBR}
+\bibitem[IBOPE//NetRatings 2012]{CeticBR2012}
 \abntrefinfo{IBOPE//NetRatings}{IBOPE//NETRATINGS}{2012}
 {IBOPE//NETRATINGS, N. \emph{Painel IBOPE/NetRatings}. cetic.br, 2012.
 Dispon{\'\i}vel em:
   $<$http://www.cetic.br/usuarios/ibope/w-tab02-01-cons.htm$>$.}
 
-\bibitem[Kloet 2007]{EINDHOVEN}
-\abntrefinfo{Kloet}{KLOET}{2007a}
+\bibitem[Kloet 2007]{Kloet2007}
+\abntrefinfo{Kloet}{KLOET}{2007}
 {KLOET, S.
 \emph{Measuring and Improving the Quality of File Carving Methods}.
 Disserta\c{c}\~ao (Mestrado) --- Eindhoven University of Technology, 10 2007.}
 
-\bibitem[Kloet 2007]{Kloet}
-\abntrefinfo{Kloet}{KLOET}{2007b}
-{KLOET, S. J.~J.
-\emph{Measuring and Improving the Quality of File Carving Methods}.
-Disserta\c{c}\~ao (Mestrado) --- Eindhoven University of Technology, 10 2007.}
-
-\bibitem[Mahant 2012]{IJCSITS}
+\bibitem[Mahant 2012]{Meshram2012}
 \abntrefinfo{Mahant}{MAHANT}{2012}
 {MAHANT, B. S.~H. Ntfs deleted files recovery - forensics view.
 \emph{IRACST - International Journal of Computer Science and Information
   Technology and Security (IJCSITS)}, v.~2, n.~3, p. 491--497, 2012.}
 
-\bibitem[Pal Husrev T.~Sencar 2008]{Menon}
-\abntrefinfo{Pal Husrev T.~Sencar}{PAL HUSREV T.~SENCAR}{2008}
-{PAL HUSREV T.~SENCAR, N.~M. A. Detecting file fragmentation point using
-  sequential hypothesis testing.
-\emph{ELSEVIER}, n.~5, p. S2--S13, 2008.}
-
-\bibitem[Svensson 2005]{Svensson}
+\bibitem[Svensson 2005]{Svensson2005}
 \abntrefinfo{Svensson}{SVENSSON}{2005}
 {SVENSSON, A.
 \emph{Computer Forensics Applied to Windows NTFS Computers}.
 Disserta\c{c}\~ao (Mestrado) --- Stockholm's University / Royal Institute of
   Technology, 04 2005.}
 
-\bibitem[T. 2013]{NTFSUndelete}
+\bibitem[T. 2013]{Ramanan2013}
 \abntrefinfo{T.}{T.}{2013}
 {T., R. \emph{Undelete a file in NTFS}. CodeProject, 2013.
 Dispon{\'\i}vel em:
   $<$http://www.codeproject.com/Articles/9293/Undelete-a-file-in-NTFS$>$.}
 
-\bibitem[Wikipédia 2012]{WikiBytes}
+\bibitem[Wikipédia 2012]{WikiBytes2012}
 \abntrefinfo{Wikipédia}{WIKIPéDIA}{2012}
 {WIKIPéDIA. \emph{Byte}. Wikipédia, 2012.
 Dispon{\'\i}vel em: $<$http://pt.wikipedia.org/wiki/Bytes$>$.}
 
-\bibitem[Wikipédia 2013]{WikiEFS}
+\bibitem[Wikipédia 2013]{WikiEFS2013}
 \abntrefinfo{Wikipédia}{WIKIPéDIA}{2013}
 {WIKIPéDIA. \emph{Encrypting File System}. 2013.
 Dispon{\'\i}vel em:
   $<$http://en.wikipedia.org/wiki/Encrypting\_File\_System$>$.}
 
-\bibitem[Wyman Walt~Scrivens 2012]{Metadados}
+\bibitem[Wyman Walt~Scrivens 2012]{Wyman2012}
 \abntrefinfo{Wyman Walt~Scrivens}{WYMAN WALT~SCRIVENS}{2012}
-{WYMAN WALT~SCRIVENS, P. H.~L.~S. B. Metadados.
+{WYMAN WALT~SCRIVENS, P. H. L.~S. B. Metadados.
 \emph{OUCH!}, 2012.}
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-@article{Menon,
+@article{Menon2008,
     author  = "Anandabrata Pal, Husrev T. Sencar, Nasir Memon",
     title   = "Detecting file fragmentation point using sequential hypothesis testing",
     year    = "2008",
@@ -8,7 +8,7 @@
     pages   = "S2--S13"
 }
 
-@article{IJCSITS,
+@article{Meshram2012,
     author  = "Sameer H. Mahant, B.B.Meshram",
     title   = "NTFS Deleted Files Recovery - Forensics View",
     year    = "2012",
@@ -18,7 +18,7 @@
     pages   = "491--497"
 }
 
-@article{DGI,
+@article{Garfinkel2007,
     author  = "Simson L. Garfinkel",
     title   = "Carving contiguous and fragmented files with fast object validation",
     year    = "2007",
@@ -28,7 +28,7 @@
     pages   = "S2--S12"
 }
 
-@mastersthesis{EINDHOVEN,
+@mastersthesis{Kloet2007,
     author    = "S.J.J. Kloet",
     title     = "Measuring and Improving the Quality of File Carving Methods",
     school    = "Eindhoven University of Technology",
@@ -36,7 +36,7 @@
     month     = "10"
 }
 
-@mastersthesis{Svensson,
+@mastersthesis{Svensson2005,
     author    = "Anders Svensson",
     title     = "Computer Forensics Applied to Windows NTFS Computers",
     school    = "Stockholm's University / Royal Institute of Technology",
@@ -44,7 +44,7 @@
     month     = "04"
 }
 
-@WWW{CeticBR,
+@WWW{CeticBR2012,
     author="NetView - IBOPE//NetRatings",
     title={Painel IBOPE/NetRatings},
     year="2012",
@@ -53,7 +53,7 @@
     urldate={{N}ovembro de 2012}
 }
 
-@WWW{CyberCitizen,
+@WWW{CyberCitizen2012,
     author="CyberCitizen",
     title={What is Cyber Crime?},
     year="2012",
@@ -62,7 +62,7 @@
     urldate={{N}ovembro de 2012}
 }
 
-@WWW{WikiBytes,
+@WWW{WikiBytes2012,
     author="Wikipédia",
     title={Byte},
     year="2012",
@@ -71,7 +71,7 @@
     urldate={{N}ovembro de 2012}
 }
 
-@WWW{PngFileFormat,
+@WWW{PngFileFormat2013,
     author="FileFormat",
     title={The PNG Image File Format},
     year="2013",
@@ -80,14 +80,14 @@
     urldate={{F}evereiro de 2013}
 }
 
-@BOOK{ForensicAnalysis,
+@BOOK{Carrier2005,
    author = "Brian Carrier",
    title= "File System Forensic Analysis",
    publisher = "Addison Wesley Professional",
    year = 2005
 }
 
-@BOOK{Caloyannides,
+@BOOK{Caloyannides2004,
    author = "Michael A. Caloyannides",
    title= "Privacy Protection and Computer Forensics",
    publisher = "Artech House",
@@ -95,15 +95,7 @@
    year = 2004
 }
 
-@mastersthesis{Svensson,
-    author    = "Anders Svensson",
-    title     = "Computer Forensics Applied to Windows NTFS Computers",
-    school    = "Stockholm's University / Royal Institute of Technology",
-    year      = "2005",
-    month     = "04"
-}
-
-@article{Metadados,
+@article{Wyman2012,
     author  = "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner",
     title   = "Metadados",
     year    = "2012",
@@ -113,15 +105,7 @@
     pages   = ""
 }
 
-@mastersthesis{Kloet,
-    author    = "S. J. J. Kloet",
-    title     = "Measuring and Improving the Quality of File Carving Methods",
-    school    = "Eindhoven University of Technology",
-    year      = "2007",
-    month     = "10"
-}
-
-@article{BinCarver,
+@article{Hand2012,
     author  = "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham",
     title   = "Bin-Carver: Automatic recovery of binary executable files",
     year    = "2012",
@@ -131,7 +115,7 @@
     pages   = "S108--S117"
 }
 
-@WWW{WikiEFS,
+@WWW{WikiEFS2013,
     author = "Wikipédia",
     title = {Encrypting File System},
     year = "2013",
@@ -140,7 +124,7 @@
     urldate = {{M}arço de 2013}
 }
 
-@WWW{NTFSUndelete,
+@WWW{Ramanan2013, NTFSUndelete2013,
     author = "Ramanan T.",
     title = {Undelete a file in NTFS},
     year = "2013",
