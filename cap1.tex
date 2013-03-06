@@ -1,7 +1,19 @@
-\chapter{NTFS}
-Projetado pela Microsoft, o NTFS é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT (1993) até as versões mais recentes como o Windows8 (2012), com algumas evoluções ao longo do tempo. Sendo este o predecessor do antigo sistema FAT, é o sistema mais presente em investigações de sistemas devido a superioridade de utilização de sistemas operacionais Windows em todo o mundo \cite{Carrier2005}.
+\chapter{Sistema de Arquivos}
+\section{Discos Rígidos}
+Os discos rígidos (\textit{HD's}) são usados para armazenar informações \textit{não voláteis}\footnote{Refere-se a informações que permanecem em memória mesmo depois que a energia é cortada do dispositivo ou o mesmo é desligado. Já a informação volátil é armazenada em memória volátil, como a memória RAM, e que são perdidas quando a energia do dispositivo é cortada ou o mesmo é desligado.} como programas, documentos, planilhas, anexos de e-mail, arquivos de sistema e outros criados pelo usuário. 
 
-\section{Conceito}
+Um disco rígido é composto por uma ou mais partições lógicas, representadas por um volume que pode ser formatado utilizando um sistema de arquivo, seja esse um sistema FAT, NTFS (\textit{Computadores que utilizam Windows}), ext3, ext4 (\textit{Computadores que utilizam Linux}), entre outros sistemas existentes atualmente \cite{Svensson2005}.
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[scale=0.5]{figuras/harddisk.jpg}
+  \caption{Disco rígido moderno \cite{WikiHD2013}}
+  \label{fig:harddisk}
+\end{figure}
+
+\section{O Sistema NTFS}
+Projetado pela Microsoft, o NTFS é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT (1993) até as versões mais recentes como o Windows8 (2012), com algumas evoluções ao longo do tempo. Sendo este o predecessor do antigo sistema FAT, é o sistema mais presente em investigações de sistemas devido a superioridade de utilização de sistemas operacionais Windows em todo o mundo.
+
 O sistema de arquivos NTFS foi projetado para melhor confiabilidade, segurança e suporte de grandes dispositivos de armazenamento de dados. Dispõe do uso de estruturas genéricas que servem de envoltório para estruturas de dados com conteúdo específico. Desta forma, o NTFS se torna um projeto escalável pois a estrutura interna de dados pode mudar inúmeras vezes enquanto que a sua casca (a estrutura genérica) permanece constante. Um bom exemplo desse modelo é que todos os bytes\footnote{Termo binário que representa 8 unidades da menor unidade de informação (bit) que pode ser armazenada ou transmitida \cite{WikiBytes2012}.} são alocados em arquivos no sistema \cite{Carrier2005}.
 
 \section{Estrutura de Dados}
@@ -45,10 +57,17 @@ De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores send
 
 Como pode ser visto na tabela demonstrada por Svensson (2005, p. 25), quanto maior o tamanho do disco maior o tamanho do cluster.
 
-Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number (LCN)}. O LCN é um número sequencial que se apresenta na ordem dos clusters, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no disco), multiplicando o identificador LCN com o tamanho do cluster.
+Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number} \textit({LCN}). O LCN é um número sequencial que representa todos os clusters do disco, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no disco), multiplicando o identificador LCN com o tamanho do cluster.
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[scale=0.6]{figuras/estrutura-ntfs.png}
+  \caption{Estrutura do NTFS}
+  \label{fig:estrutura-ntfs}
+\end{figure}
 
 \subsection{Master File Table}
-Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao menos uma entrada no registro da Master File Table (MFT)\footnote{Conjunto de registros que são continuamente modificados quando um arquivo ou diretório sofre alteração}. Os primeiros 16 registros da MFT são reservados pelo sistema de arquivos para manter metadados\footnote{Dados que definem ou descrevem outra parte dos dados \cite{Wyman2012}.} específicos do NTFS. A tabela \ref{tab:tab02} detalha os 16 primeiros registros reservados ao NTFS na MFT:
+Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao menos uma entrada no registro da \emph{Master File Table} (MFT)\footnote{Conjunto de registros que são continuamente modificados quando um arquivo ou diretório sofre alteração}. Os primeiros 16 registros da MFT são reservados pelo sistema de arquivos para manter metadados\footnote{Dados que definem ou descrevem outra parte dos dados \cite{Wyman2012}.} específicos do NTFS. A tabela \ref{tab:tab02} detalha os 16 primeiros registros reservados ao NTFS na MFT:
 
 \begin{table}[htb]
   \centering  
@@ -92,20 +111,20 @@ O registro \textbf{\$BITMAP} que contém todo o mapeamento de clusters que estão 
 
 Já o registro \textbf{\$BADCLUS} é usado para manter uma lista dos clusters que são marcados como defeituosos pelo sistema operacional. Quando o sistema detecta um cluster com defeito ele registra esse cluster no \textbf{\$BADCLUS} e esse cluster passa a não ser mais utilizado pelo sistema.
 
-A figura \ref{fig:mft-file-format} demonstra a estrutura e formatação da master file table.
+A figura \ref{fig:mft} demonstra a estrutura e formatação da \emph{Master File Table}.
 
 \begin{figure}[htp]
   \centering
   \includegraphics[scale=0.6]{figuras/mft-file-format.jpg}
   \caption{Registro MFT - Representação da estrutura da MFT \cite{Ramanan2013}.}
-  \label{fig:mft-file-format}
+  \label{fig:mft}
 \end{figure}
 
 \section{Alocação de Arquivos}
 \subsection{Registros da MFT}
 Os registros da MFT incluem inúmeros atributos e valores, sendo limitado em 1 KB fisicamente. Os atributos de registros são divididos em dois componentes lógicos - cabeçalho e área de dados - sendo que no cabeçalho são armazenados os tipos dos atributos, a localização e o tamanho do valor do atributo \cite{Svensson2005}.
 
-\begin{figure}[htp]
+\begin{figure}[htb]
   \centering
   \includegraphics[scale=0.4]{figuras/mft-attribute.png}
   \caption{Registro MFT - Representação de um atributo e o tamanho de dados.}
@@ -182,7 +201,7 @@ A figura \ref{fig:ntfs-index} mostra essa indexação.
   \label{fig:ntfs-index}
 \end{figure}
 
-As entradas de índice consistem do nome do arquivo e da cópia das informações padrões da entrada de diretório. Como o número de arquivos em diretórios pode crescer, o espaço pode não ser suficiente para armazenar todas as entradas de índice então, os índices adicionais são armazenados na área de alocação conhecida como \emph{``Index Allocation Buffer''}. A área de bitmap também é usada para indicar qual VNCs presente no ``Index Allocation Buffer'' está sendo usado. 
+As entradas de índice consistem do nome do arquivo e da cópia das informações padrões da entrada de diretório. Como o número de arquivos em diretórios pode crescer, o espaço pode não ser suficiente para armazenar todas as entradas de índice então, os índices adicionais são armazenados na área de alocação conhecida como \emph{``Index Allocation Buffer''}. A área de bitmap também é usada para indicar qual VNCs presente no ``Index Allocation Buffer'' estão sendo usados.
 
 A figura \ref{fig:ntfs-index-directory} demonstra o funcionamento desse processo.
 

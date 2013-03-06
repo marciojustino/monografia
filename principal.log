@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  3 MAR 2013 12:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  6 MAR 2013 20:50
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -467,60 +467,68 @@ Overfull \hbox (15.57132pt too wide) in paragraph at lines 70--28
 
  (./cap1.tex
 Cap\'{\i }tulo 2.
-[6
+<figuras/harddisk.jpg, id=57, 652.4375pt x 496.85625pt>
+File: figuras/harddisk.jpg Graphic file (type jpg)
+
+<use figuras/harddisk.jpg> [6
 
 
 
-] <figuras/fig02.png, id=60, 501.875pt x 103.38625pt>
+ <./figuras/harddisk.jpg>]
+<figuras/fig02.png, id=61, 501.875pt x 103.38625pt>
 File: figuras/fig02.png Graphic file (type png)
+ <use figuras/fig02.png>
+[7] <figuras/estrutura-ntfs.png, id=66, 572.1375pt x 131.49126pt>
+File: figuras/estrutura-ntfs.png Graphic file (type png)
 
-<use figuras/fig02.png> [7 <./figuras/fig02.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+<use figuras/estrutura-ntfs.png> [8 <./figuras/fig02.png> <./figuras/estrutura-
+ntfs.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 []\OT1/ptm/m/n/12 Mapeia ca-rac-te-res em texto min[]usculo para texto
  []
 
-[8] <figuras/mft-file-format.jpg, id=69, 602.25pt x 240.9pt>
+[9] <figuras/mft-file-format.jpg, id=75, 602.25pt x 240.9pt>
 File: figuras/mft-file-format.jpg Graphic file (type jpg)
 
 <use figuras/mft-file-format.jpg>
-<figuras/mft-attribute.png, id=70, 565.11125pt x 371.3875pt>
+<figuras/mft-attribute.png, id=76, 565.11125pt x 371.3875pt>
 File: figuras/mft-attribute.png Graphic file (type png)
 
-<use figuras/mft-attribute.png> [9 <./figuras/mft-file-format.jpg> <./figuras/m
-ft-attribute.png (PNG copy)>]
-Underfull \hbox (badness 1092) in paragraph at lines 132--133
+<use figuras/mft-attribute.png> [10 <./figuras/mft-file-format.jpg> <./figuras/
+mft-attribute.png (PNG copy)>]
+Underfull \hbox (badness 1092) in paragraph at lines 151--152
 \OT1/ptm/m/n/12 do sis-tema de ar-qui-vos. Ar-ma-ze-nava informa[][]oes de
  []
 
 
-Overfull \hbox (13.23068pt too wide) in paragraph at lines 120--153
+Overfull \hbox (13.23068pt too wide) in paragraph at lines 139--172
  [][] 
  []
 
-[10]
-Overfull \hbox (2.77739pt too wide) in paragraph at lines 159--160
+[11]
+Overfull \hbox (2.77739pt too wide) in paragraph at lines 178--179
 []\OT1/ptm/m/n/12 Todo re-gis-tro de ar-quivo con-siste de ao me-nos um par de 
 atri-buto/valor. Se toda a informa[][]ao
  []
 
-<figuras/mft-record.png, id=78, 1181.41376pt x 419.5675pt>
+<figuras/mft-record.png, id=83, 1181.41376pt x 419.5675pt>
 File: figuras/mft-record.png Graphic file (type png)
 
-<use figuras/mft-record.png> [11 <./figuras/mft-record.png (PNG copy)>]
-<figuras/ntfs-index.png, id=82, 542.025pt x 271.0125pt>
+<use figuras/mft-record.png> [12 <./figuras/mft-record.png (PNG copy)>]
+<figuras/ntfs-index.png, id=87, 542.025pt x 271.0125pt>
 File: figuras/ntfs-index.png Graphic file (type png)
 
 <use figuras/ntfs-index.png>
-<figuras/ntfs-index-directory.png, id=83, 916.42375pt x 345.29pt>
+<figuras/ntfs-index-directory.png, id=88, 916.42375pt x 345.29pt>
 File: figuras/ntfs-index-directory.png Graphic file (type png)
 
-<use figuras/ntfs-index-directory.png> [12 <./figuras/ntfs-index.png (PNG copy)
-> <./figuras/ntfs-index-directory.png (PNG copy)>]) [13]
+<use figuras/ntfs-index-directory.png> [13 <./figuras/ntfs-index.png (PNG copy)
+> <./figuras/ntfs-index-directory.png (PNG copy)>]) [14]
 \openout2 = `cap2.aux'.
 
  (./cap2.tex
 Cap\'{\i }tulo 3.
-[14
+[15
 
 
 
@@ -530,30 +538,30 @@ Overfull \hbox (10.49266pt too wide) in paragraph at lines 23--24
  est[]ao frag-men-ta-dos se-guindo a sequ[]encia
  []
 
-<figuras/fraglinear.png, id=94, 575.14874pt x 88.83188pt>
+<figuras/fraglinear.png, id=100, 575.14874pt x 88.83188pt>
 File: figuras/fraglinear.png Graphic file (type png)
 
-<use figuras/fraglinear.png> [15]
-<figuras/fragnaolinear.png, id=99, 560.8453pt x 80.55093pt>
+<use figuras/fraglinear.png> [16]
+<figuras/fragnaolinear.png, id=104, 560.8453pt x 80.55093pt>
 File: figuras/fragnaolinear.png Graphic file (type png)
 
-<use figuras/fragnaolinear.png> [16 <./figuras/fraglinear.png (PNG copy)> <./fi
+<use figuras/fragnaolinear.png> [17 <./figuras/fraglinear.png (PNG copy)> <./fi
 guras/fragnaolinear.png (PNG copy)>]
-<figuras/png-file-format.png, id=103, 785.93625pt x 599.23875pt>
+<figuras/png-file-format.png, id=108, 785.93625pt x 599.23875pt>
 File: figuras/png-file-format.png Graphic file (type png)
 
 <use figuras/png-file-format.png>
-<figuras/png-file-structure-data.png, id=104, 425.59pt x 607.26875pt>
+<figuras/png-file-structure-data.png, id=109, 425.59pt x 607.26875pt>
 File: figuras/png-file-structure-data.png Graphic file (type png)
 
-<use figuras/png-file-structure-data.png> [17] [18 <./figuras/png-file-format.p
-ng (PNG copy)> <./figuras/png-file-structure-data.png (PNG copy)>]) [19]
+<use figuras/png-file-structure-data.png> [18] [19 <./figuras/png-file-format.p
+ng (PNG copy)> <./figuras/png-file-structure-data.png (PNG copy)>]) [20]
 \openout2 = `cap3.aux'.
 
 
 (./cap3.tex
 Cap\'{\i }tulo 4.
-) [20
+) [21
 
 
 
@@ -562,7 +570,7 @@ Cap\'{\i }tulo 4.
 
  (./cap4.tex
 Cap\'{\i }tulo 5.
-) [21
+) [22
 
 
 
@@ -571,23 +579,23 @@ Cap\'{\i }tulo 5.
 
  (./consideracoes_finais.tex
 Cap\'{\i }tulo 6.
-) [22
+) [23
 
 
 
 ] (./principal.bbl
-Underfull \hbox (badness 1496) in paragraph at lines 73--76
+Underfull \hbox (badness 1496) in paragraph at lines 78--81
 []\OT1/ptm/m/n/12 WIKIP[]eDIA. \OT1/ptm/m/it/12 En-cryp-ting File Sys-tem\OT1/p
 tm/m/n/12 . 2013. Dis-pon[]^^Pvel em: 
  []
 
-) [23
+) [24
 
 
 ]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex) [24
+ (./anexo.tex) [25
 
 
 ]
@@ -600,10 +608,10 @@ tm/m/n/12 . 2013. Dis-pon[]^^Pvel em:
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
 ) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2860 strings out of 495041
- 40790 string characters out of 1181897
- 101587 words of memory out of 3000000
- 5827 multiletter control sequences out of 15000+50000
+ 2877 strings out of 495041
+ 41151 string characters out of 1181897
+ 102658 words of memory out of 3000000
+ 5842 multiletter control sequences out of 15000+50000
  45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  31i,17n,41p,1147b,344s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -613,9 +621,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (34 pages, 981093 bytes).
+Output written on principal.pdf (35 pages, 1056918 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
+ 157 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

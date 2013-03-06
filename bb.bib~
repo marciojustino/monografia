@@ -124,11 +124,20 @@
     urldate = {{M}arço de 2013}
 }
 
-@WWW{Ramanan2013, NTFSUndelete2013,
+@WWW{Ramanan2013,
     author = "Ramanan T.",
     title = {Undelete a file in NTFS},
     year = "2013",
     publisher = "CodeProject",
     url = {http://www.codeproject.com/Articles/9293/Undelete-a-file-in-NTFS},
+    urldate = {{M}arço de 2013}
+}
+
+@WWW{WikiHD2013,
+    author = "Wikipédia",
+    title = {Disco Rígido},
+    year = "2013",
+    publisher = "Wikipédia",
+    url = {http://goo.gl/RXODS},
     urldate = {{M}arço de 2013}
 }

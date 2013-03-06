@@ -3,7 +3,7 @@ File Carving é o processo de recuperação de fragmentos de arquivos não mais inde
 
 O processo de File Carving é útil na recuperação de arquivos e amplamente utilizado em investigações digitais (em forense computacional). Devido a isso, esse é um dos processos mais importantes e desafiadores da computação forense \cite{Garfinkel2007}.
 
-Um dos primeiros desafios do processo de file carving, segundo Memon (2008, p. S2), se encontra na tentativa de se recuperar arquivos fragmentados. Um ponto chave no processo de recuperação desses arquivos fragmentados é encontrar a relação de fragmentação do arquivo que pode beneficiar o processo de recuperação de dados. Técnicas tradicionais não conseguem recuperar arquivos quando o sistema de arquivos é ou está corrompido, quando a tabela de alocação não está presente ou possui endereçamentos errados ou incompletos. Assim, a técnica de File Carving apresenta sua capacidade de recuperar arquivos em espaços não alocados do disco (área do disco não apontada pela tabela de partição - no caso do NTFS, a Master File Table).
+Um dos primeiros desafios do processo de file carving, segundo Memon (2008, p. S2), se encontra na tentativa de se recuperar arquivos fragmentados. Um ponto chave no processo de recuperação desses arquivos fragmentados é encontrar a relação de fragmentação do arquivo que pode beneficiar o processo de recuperação de dados. Técnicas tradicionais não conseguem recuperar arquivos quando o sistema de arquivos é ou está corrompido, quando a tabela de alocação não está presente ou possui endereçamentos errados ou incompletos. Assim, a técnica de File Carving apresenta sua capacidade de recuperar arquivos em espaços não alocados do disco (\textit{área do disco não apontada pela tabela de partição - no caso do NTFS, a Master File Table}).
 
 \section{Assinatura de Arquivo}
 As ferramentas de file carving mais comuns analisam as informações de assinatura do arquivo, através do cabeçalho e do rodapé do arquivo, determinando assim o conteúdo do arquivo entre esses blocos. Infelizmente, ferramentas poderosas de file carving atuais ainda falham na recuperação de arquivos fragmentados.
@@ -72,7 +72,7 @@ O valor hexadecimal ``89  50  4e  47  0d  0a  1a  0a'' representa os 8 bytes do 
 \begin{figure}[htp]
   \centering
   \includegraphics[scale=0.5]{figuras/png-file-structure-data.png}
-  \caption{Área de dados de um arquivo do tipo PNG \cite{Kloet}}
+  \caption{Área de dados de um arquivo do tipo PNG \cite{Kloet2007}}
   \label{fig:png-file-structure-data}
 \end{figure}
 
