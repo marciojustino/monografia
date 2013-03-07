@@ -19,18 +19,10 @@ Database file #1: abnt-options.bib
 Database file #2: bb.bib
 Warning--entry type for "CeticBR2012" isn't style-file defined
 --line 47 of file bb.bib
-Warning--entry type for "CyberCitizen2012" isn't style-file defined
---line 56 of file bb.bib
-Warning--entry type for "WikiBytes2012" isn't style-file defined
---line 65 of file bb.bib
 Warning--entry type for "PngFileFormat2013" isn't style-file defined
 --line 74 of file bb.bib
-Warning--entry type for "WikiEFS2013" isn't style-file defined
---line 118 of file bb.bib
 Warning--entry type for "Ramanan2013" isn't style-file defined
 --line 127 of file bb.bib
-Warning--entry type for "WikiHD2013" isn't style-file defined
---line 136 of file bb.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Wyman2012
 while executing---line 2129 of file abnt-alf.bst
@@ -70,45 +62,45 @@ while executing---line 2184 of file abnt-alf.bst
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 15 entries,
+You've used 11 entries,
             6522 wiz_defined-function locations,
-            1257 strings with 11069 characters,
-and the built_in function-call counts, 9732 in all, are:
-= -- 800
-> -- 212
+            1238 strings with 10720 characters,
+and the built_in function-call counts, 7257 in all, are:
+= -- 621
+> -- 152
 < -- 9
-+ -- 115
-- -- 70
-* -- 594
-:= -- 1400
-add.period$ -- 49
-call.type$ -- 16
-change.case$ -- 91
-chr.to.int$ -- 20
-cite$ -- 14
-duplicate$ -- 459
-empty$ -- 903
-format.name$ -- 322
-if$ -- 2323
-int.to.chr$ -- 1
++ -- 94
+- -- 50
+* -- 441
+:= -- 1054
+add.period$ -- 33
+call.type$ -- 12
+change.case$ -- 67
+chr.to.int$ -- 17
+cite$ -- 10
+duplicate$ -- 345
+empty$ -- 643
+format.name$ -- 230
+if$ -- 1713
+int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 252
-newline$ -- 79
-num.names$ -- 70
-pop$ -- 318
+missing$ -- 185
+newline$ -- 59
+num.names$ -- 50
+pop$ -- 228
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 33
 quote$ -- 0
-skip$ -- 643
+skip$ -- 485
 stack$ -- 1
-substring$ -- 393
-swap$ -- 204
+substring$ -- 321
+swap$ -- 158
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 8
 warning$ -- 0
-while$ -- 95
+while$ -- 71
 width$ -- 0
-write$ -- 218
+write$ -- 159
 (There were 16 error messages)
