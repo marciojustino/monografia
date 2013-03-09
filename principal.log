@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  6 MAR 2013 22:17
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  9 MAR 2013 10:40
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -474,32 +474,31 @@ File: figuras/fig02.png Graphic file (type png)
 [7] <figuras/estrutura-ntfs.png, id=66, 572.1375pt x 131.49126pt>
 File: figuras/estrutura-ntfs.png Graphic file (type png)
 
-<use figuras/estrutura-ntfs.png>
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+<use figuras/estrutura-ntfs.png> [8 <./figuras/fig02.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 []\OT1/ptm/m/n/12 Mapeia ca-rac-te-res em texto min[]usculo para texto
  []
 
-[8 <./figuras/fig02.png> <./figuras/estrutura-ntfs.png (PNG copy)>]
-<figuras/mft-file-format.jpg, id=71, 602.25pt x 240.9pt>
+[9 <./figuras/estrutura-ntfs.png (PNG copy)>]
+<figuras/mft-file-format.jpg, id=75, 602.25pt x 240.9pt>
 File: figuras/mft-file-format.jpg Graphic file (type jpg)
 
-<use figuras/mft-file-format.jpg> [9]
+<use figuras/mft-file-format.jpg>
 <figuras/mft-attribute.png, id=76, 565.11125pt x 371.3875pt>
 File: figuras/mft-attribute.png Graphic file (type png)
 
-<use figuras/mft-attribute.png> [10 <./figuras/mft-file-format.jpg> <./figuras/
-mft-attribute.png (PNG copy)>]
-Underfull \hbox (badness 1092) in paragraph at lines 151--152
+<use figuras/mft-attribute.png> [10 <./figuras/mft-file-format.jpg>]
+Underfull \hbox (badness 1092) in paragraph at lines 153--154
 \OT1/ptm/m/n/12 do sis-tema de ar-qui-vos. Ar-ma-ze-nava informa[][]oes de
  []
 
 
-Overfull \hbox (13.23068pt too wide) in paragraph at lines 139--172
+Overfull \hbox (13.23068pt too wide) in paragraph at lines 141--174
  [][] 
  []
 
-[11]
-Overfull \hbox (2.77739pt too wide) in paragraph at lines 178--179
+[11 <./figuras/mft-attribute.png (PNG copy)>]
+Overfull \hbox (2.77739pt too wide) in paragraph at lines 180--181
 []\OT1/ptm/m/n/12 Todo re-gis-tro de ar-quivo con-siste de ao me-nos um par de 
 atri-buto/valor. Se toda a informa[][]ao
  []
@@ -525,16 +524,16 @@ Cap\'{\i }tulo 3.
 
 
 
-]
-Overfull \hbox (10.49266pt too wide) in paragraph at lines 23--24
+] [16]
+Overfull \hbox (10.49266pt too wide) in paragraph at lines 48--49
 []\OT1/ptm/m/n/12 Kloe re-fe-ren-cia a fragmenta[][]ao li-near a ar-qui-vos que
  est[]ao frag-men-ta-dos se-guindo a sequ[]encia
  []
 
-<figuras/fraglinear.png, id=100, 575.14874pt x 88.83188pt>
+<figuras/fraglinear.png, id=103, 575.14874pt x 88.83188pt>
 File: figuras/fraglinear.png Graphic file (type png)
 
-<use figuras/fraglinear.png> [16]
+<use figuras/fraglinear.png>
 <figuras/fragnaolinear.png, id=104, 560.8453pt x 80.55093pt>
 File: figuras/fragnaolinear.png Graphic file (type png)
 
@@ -595,10 +594,10 @@ Cap\'{\i }tulo 6.
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
 ) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2774 strings out of 495041
- 39725 string characters out of 1181897
- 100430 words of memory out of 3000000
- 5742 multiletter control sequences out of 15000+50000
+ 2780 strings out of 495041
+ 39872 string characters out of 1181897
+ 100486 words of memory out of 3000000
+ 5748 multiletter control sequences out of 15000+50000
  45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  31i,13n,41p,1462b,340s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -608,7 +607,7 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (35 pages, 1054005 bytes).
+Output written on principal.pdf (35 pages, 1056924 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

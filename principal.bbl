@@ -10,6 +10,11 @@
 {CARRIER, B. \emph{File System Forensic Analysis}. [S.l.]: Addison Wesley
   Professional, 2005.}
 
+\bibitem[Database 2013]{FileSignatures2013}
+\abntrefinfo{Database}{DATABASE}{2013}
+{DATABASE, F. O. F.~S. \emph{File Signatures}. 2013.
+Dispon{\'\i}vel em: $<$http://filesignatures.net/index.php?page=all$>$.}
+
 \bibitem[FileFormat 2013]{PngFileFormat2013}
 \abntrefinfo{FileFormat}{FILEFORMAT}{2013}
 {FILEFORMAT. \emph{The PNG Image File Format}. 2013.

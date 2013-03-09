@@ -6,7 +6,41 @@ O processo de File Carving é útil na recuperação de arquivos e amplamente utiliz
 Um dos primeiros desafios do processo de file carving, segundo Memon (2008, p. S2), se encontra na tentativa de se recuperar arquivos fragmentados. Um ponto chave no processo de recuperação desses arquivos fragmentados é encontrar a relação de fragmentação do arquivo que pode beneficiar o processo de recuperação de dados. Técnicas tradicionais não conseguem recuperar arquivos quando o sistema de arquivos é ou está corrompido, quando a tabela de alocação não está presente ou possui endereçamentos errados ou incompletos. Assim, a técnica de File Carving apresenta sua capacidade de recuperar arquivos em espaços não alocados do disco (\textit{área do disco não apontada pela tabela de partição - no caso do NTFS, a Master File Table}).
 
 \section{Assinatura de Arquivo}
-As ferramentas de file carving mais comuns analisam as informações de assinatura do arquivo, através do cabeçalho e do rodapé do arquivo, determinando assim o conteúdo do arquivo entre esses blocos. Infelizmente, ferramentas poderosas de file carving atuais ainda falham na recuperação de arquivos fragmentados.
+As ferramentas de file carving mais comuns analisam as informações de assinatura do arquivo, através do cabeçalho e do rodapé do arquivo, determinando assim o conteúdo do arquivo entre esses blocos. Infelizmente, ferramentas poderosas de file carving atuais ainda falham na recuperação de arquivos fragmentados pois somente verificam cabeçalhos conhecidos previamente e muitos arquivos podem apresentar o conteúdo que não condiz com sua assinatura ou arquivos dentro de outros arquivos, que seriam falsamente identificados por uma ferramenta que somente identifica arquivos através do cabeçalho.
+
+A assinatura de alguns tipos de arquivos mais comuns pode ser vista na tabela \ref{tab:file-signature}.
+
+\begin{table}[htb]
+  \centering  
+  \begin{tabular}{|c|l|l|}
+    \hline
+    Extensão & Assinatura & Descrição\\
+    \hline
+    EXE & 4D 5A & Arquivo executável (Windows / DOS) \\
+    \hline
+    E01 & 4C 56 46 09 0D 0A FF 00 & Arquivo lógico de evidência \\
+    \hline
+    JPEG & FF D8 FF E0 & Arquivo de imagem compacto \\
+    \hline
+    JPG & FF D8 FF E0 & Arquivo de imagem compacto \\
+    \hline
+    PDF & 25 50 44 46 & Arquivo (Acrobat Reader) \\
+    \hline
+    PNG & 89 50 4E 47 0D 0A 1A 0A & Arquivo de imagem compacto com transparência \\
+    \hline
+  \end{tabular}
+  \caption{Exemplos de assinatura de arquivos pelo cabeçalho \cite{FileSignatures2013}.}
+  \label{tab:file-signature}
+\end{table}
+
+Um exemplo de arquivo PDF aberto pelo WinHex\footnote{} mostrando exatamente a assinatura do arquivo .pdf contido no cabeçalho (Offset = 00000000).
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[scale=0.6]{figuras/pdf-file-signature.png}
+  \caption{WinHex exibindo a assinatura de um arquivo .pdf}
+  \label{fig:pdf-file-signature}
+\end{figure}
 
 \section{Arquivos Fragmentados}
 Segundo Kloe (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente em um mesmo conjunto de dados. Sistemas operacionais modernos, tais como o NTFS, tentam gravar os dados evitando a fragmentação porém, ainda existem algumas situações em que a fragmentação ocorre. Já Memon define que um arquivo é dito fragmentado quando o mesmo está armazenado de forma descontinuada nos clusters, e que o maior desafio para o processo de data carving é justamente a recuperação de arquivos quando esses estão fragmentados em duas ou mais partes. 

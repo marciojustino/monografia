@@ -51,11 +51,13 @@ De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores send
     acima de 2048 MB & 4 KB \\
     \hline
   \end{tabular}
-  \caption{Tamanho do Cluster Padrão Para Formatos NTFS.}
+  \caption{Tamanho do Cluster Padrão Para Formatos NTFS (quanto maior o tamanho do disco maior o tamanho do cluster).}
   \label{tab:tab01}
 \end{table}
 
-Como pode ser visto na tabela demonstrada por Svensson (2005, p. 25), quanto maior o tamanho do disco maior o tamanho do cluster.
+Conforme descrito por Svensson(2005, p. 17), o disco rígido é dividido em \textit{setores} que tem seu tamanho determinado pelo hardware. Por sua vez, os setores, em conjuntos múltiplos, formam um \textit{cluster}. Os arquivos armazenados no disco são divididos pelos clusters, sendo que o cluster somente pode armazenar um único arquivo. Se um arquivo é maior que o tamanho de um cluster, o sistema utiliza novos clusters para suportar todo o tamanho do arquivo. Se um cluster ocupado ainda dispor de espaço disponível para armazenamento ele não é mais utilizado, deixando um espaço entre o final do arquivo e o final do cluster, o que recebe o nome de \textif{slack space}.
+
+O disco também possui espaços chamados de \textit{unallocated space} que são regiões não alocadas do disco e que podem estar vazias ou conter informações de arquivos já apagados anteriormente e que podem ser de grande valor para a análise forense.
 
 Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number} \textit({LCN}). O LCN é um número sequencial que representa todos os clusters do disco, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no disco), multiplicando o identificador LCN com o tamanho do cluster.
 
@@ -201,7 +203,7 @@ A figura \ref{fig:ntfs-index} mostra essa indexação.
   \label{fig:ntfs-index}
 \end{figure}
 
-As entradas de índice consistem do nome do arquivo e da cópia das informações padrões da entrada de diretório. Como o número de arquivos em diretórios pode crescer, o espaço pode não ser suficiente para armazenar todas as entradas de índice então, os índices adicionais são armazenados na área de alocação conhecida como \emph{``Index Allocation Buffer''}. A área de bitmap também é usada para indicar qual VNCs presentes no Index Allocation Buffer estão sendo usados.
+As entradas de índice consistem do nome do arquivo e da cópia das informações padrões da entrada de diretório. Como o número de arquivos em diretórios pode crescer, o espaço pode não ser suficiente para armazenar todas as entradas de índice então, os índices adicionais são armazenados na área de alocação conhecida como \emph{``Index Allocation Buffer''}. A área de bitmap também é usada para indicar qual VNCs presentes no ``Index Allocation Buffer'' estão sendo usados.
 
 A figura \ref{fig:ntfs-index-directory} demonstra o funcionamento desse processo.
 

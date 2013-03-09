@@ -11,6 +11,8 @@ Um disco rígido é composto por uma ou mais partições lógicas, representadas por 
   \label{fig:harddisk}
 \end{figure}
 
+O disco rígido é dividido em \textit{setores} que tem seu tamanho determinado pelo hardware. Por sua vez, os setores em conjuntos múltiplos formam o \textit{cluster}. 
+
 \section{O Sistema NTFS}
 Projetado pela Microsoft, o NTFS é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT (1993) até as versões mais recentes como o Windows8 (2012), com algumas evoluções ao longo do tempo. Sendo este o predecessor do antigo sistema FAT, é o sistema mais presente em investigações de sistemas devido a superioridade de utilização de sistemas operacionais Windows em todo o mundo.
 
@@ -201,7 +203,7 @@ A figura \ref{fig:ntfs-index} mostra essa indexação.
   \label{fig:ntfs-index}
 \end{figure}
 
-As entradas de índice consistem do nome do arquivo e da cópia das informações padrões da entrada de diretório. Como o número de arquivos em diretórios pode crescer, o espaço pode não ser suficiente para armazenar todas as entradas de índice então, os índices adicionais são armazenados na área de alocação conhecida como \emph{``Index Allocation Buffer''}. A área de bitmap também é usada para indicar qual VNCs presente no ``Index Allocation Buffer'' estão sendo usados.
+As entradas de índice consistem do nome do arquivo e da cópia das informações padrões da entrada de diretório. Como o número de arquivos em diretórios pode crescer, o espaço pode não ser suficiente para armazenar todas as entradas de índice então, os índices adicionais são armazenados na área de alocação conhecida como \emph{``Index Allocation Buffer''}. A área de bitmap também é usada para indicar qual VNCs presentes no ``Index Allocation Buffer'' estão sendo usados.
 
 A figura \ref{fig:ntfs-index-directory} demonstra o funcionamento desse processo.
 

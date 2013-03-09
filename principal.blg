@@ -23,6 +23,8 @@ Warning--entry type for "PngFileFormat2013" isn't style-file defined
 --line 74 of file bb.bib
 Warning--entry type for "Ramanan2013" isn't style-file defined
 --line 127 of file bb.bib
+Warning--entry type for "FileSignatures2013" isn't style-file defined
+--line 136 of file bb.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Wyman2012
 while executing---line 2129 of file abnt-alf.bst
@@ -62,45 +64,45 @@ while executing---line 2184 of file abnt-alf.bst
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 11 entries,
+You've used 12 entries,
             6522 wiz_defined-function locations,
-            1238 strings with 10720 characters,
-and the built_in function-call counts, 7257 in all, are:
-= -- 621
-> -- 152
+            1243 strings with 10851 characters,
+and the built_in function-call counts, 7851 in all, are:
+= -- 665
+> -- 167
 < -- 9
-+ -- 94
-- -- 50
-* -- 441
-:= -- 1054
-add.period$ -- 33
-call.type$ -- 12
-change.case$ -- 67
-chr.to.int$ -- 17
-cite$ -- 10
-duplicate$ -- 345
-empty$ -- 643
-format.name$ -- 230
-if$ -- 1713
++ -- 99
+- -- 55
+* -- 477
+:= -- 1139
+add.period$ -- 37
+call.type$ -- 13
+change.case$ -- 73
+chr.to.int$ -- 18
+cite$ -- 11
+duplicate$ -- 372
+empty$ -- 702
+format.name$ -- 253
+if$ -- 1858
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 185
-newline$ -- 59
-num.names$ -- 50
-pop$ -- 228
+missing$ -- 201
+newline$ -- 64
+num.names$ -- 55
+pop$ -- 249
 preamble$ -- 1
-purify$ -- 33
+purify$ -- 36
 quote$ -- 0
-skip$ -- 485
+skip$ -- 524
 stack$ -- 1
-substring$ -- 321
-swap$ -- 158
+substring$ -- 339
+swap$ -- 168
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 8
 warning$ -- 0
-while$ -- 71
+while$ -- 77
 width$ -- 0
-write$ -- 159
+write$ -- 173
 (There were 16 error messages)

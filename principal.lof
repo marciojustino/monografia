@@ -3,9 +3,9 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Hip\'otese de pesquisa}}{4}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Disco r\IeC {\'\i }gido moderno}}{6}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Entrada na MFT - Cabe\c calho e espa\c co reservado aos diferentes tipos de atributos. Para o exemplo, a entrada possui 3 atributos.}}{8}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Estrutura do NTFS}}{8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Estrutura do NTFS}}{9}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Registro MFT - Representa\c c\~ao da estrutura da MFT \cite {Ramanan2013}.}}{10}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Registro MFT - Representa\c c\~ao de um atributo e o tamanho de dados.}}{10}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Registro MFT - Representa\c c\~ao de um atributo e o tamanho de dados.}}{11}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Registro de arquivo da MFT \cite {Svensson2005}.}}{12}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Registro de diret\'orio .}}{13}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Registro de diret\'orio e a ``Index Allocation Buffer''.}}{13}
