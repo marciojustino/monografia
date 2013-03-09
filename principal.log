@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  9 MAR 2013 10:40
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  9 MAR 2013 14:48
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -524,30 +524,37 @@ Cap\'{\i }tulo 3.
 
 
 
-] [16]
-Overfull \hbox (10.49266pt too wide) in paragraph at lines 48--49
+] <figuras/pdf-file-signature.png, id=100, 674.52pt x 132.495pt>
+File: figuras/pdf-file-signature.png Graphic file (type png)
+
+<use figuras/pdf-file-signature.png>
+<figuras/png-file-signature.png, id=101, 680.5425pt x 161.85469pt>
+File: figuras/png-file-signature.png Graphic file (type png)
+
+<use figuras/png-file-signature.png> [16 <./figuras/pdf-file-signature.png (PNG
+ copy)> <./figuras/png-file-signature.png (PNG copy)>]
+Overfull \hbox (10.49266pt too wide) in paragraph at lines 64--65
 []\OT1/ptm/m/n/12 Kloe re-fe-ren-cia a fragmenta[][]ao li-near a ar-qui-vos que
  est[]ao frag-men-ta-dos se-guindo a sequ[]encia
  []
 
-<figuras/fraglinear.png, id=103, 575.14874pt x 88.83188pt>
+<figuras/fraglinear.png, id=105, 575.14874pt x 88.83188pt>
 File: figuras/fraglinear.png Graphic file (type png)
 
-<use figuras/fraglinear.png>
-<figuras/fragnaolinear.png, id=104, 560.8453pt x 80.55093pt>
+<use figuras/fraglinear.png> [17 <./figuras/fraglinear.png (PNG copy)>]
+<figuras/fragnaolinear.png, id=109, 560.8453pt x 80.55093pt>
 File: figuras/fragnaolinear.png Graphic file (type png)
 
-<use figuras/fragnaolinear.png> [17 <./figuras/fraglinear.png (PNG copy)> <./fi
-guras/fragnaolinear.png (PNG copy)>]
-<figuras/png-file-format.png, id=108, 785.93625pt x 599.23875pt>
-File: figuras/png-file-format.png Graphic file (type png)
+<use figuras/fragnaolinear.png> [18 <./figuras/fragnaolinear.png (PNG copy)>]
+<figuras/exe-file-signature.png, id=113, 679.78969pt x 178.41656pt>
+File: figuras/exe-file-signature.png Graphic file (type png)
 
-<use figuras/png-file-format.png>
-<figuras/png-file-structure-data.png, id=109, 425.59pt x 607.26875pt>
+<use figuras/exe-file-signature.png>
+<figuras/png-file-structure-data.png, id=114, 425.59pt x 607.26875pt>
 File: figuras/png-file-structure-data.png Graphic file (type png)
 
-<use figuras/png-file-structure-data.png> [18] [19 <./figuras/png-file-format.p
-ng (PNG copy)> <./figuras/png-file-structure-data.png (PNG copy)>]) [20]
+<use figuras/png-file-structure-data.png> [19 <./figuras/exe-file-signature.png
+ (PNG copy)>]) [20 <./figuras/png-file-structure-data.png (PNG copy)>]
 \openout2 = `cap3.aux'.
 
 
@@ -594,10 +601,10 @@ Cap\'{\i }tulo 6.
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
 ) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2780 strings out of 495041
- 39872 string characters out of 1181897
- 100486 words of memory out of 3000000
- 5748 multiletter control sequences out of 15000+50000
+ 2787 strings out of 495041
+ 40138 string characters out of 1181897
+ 100457 words of memory out of 3000000
+ 5753 multiletter control sequences out of 15000+50000
  45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  31i,13n,41p,1462b,340s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -607,9 +614,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (35 pages, 1056924 bytes).
+Output written on principal.pdf (35 pages, 798383 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
+ 159 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

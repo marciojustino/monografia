@@ -43,7 +43,7 @@ De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores send
   \centering  
   \begin{tabular}{ll}
     \hline
-    Tamanho do Disco & Tamanho do Cluster Padrão \\
+    \textbf{Tamanho do Disco} & \textbf{Tamanho do Cluster Padrão} \\
     \hline
     até 512 MB & 512 bytes \\
     513 MB - 1024 MB & 1 KB \\
@@ -55,7 +55,7 @@ De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores send
   \label{tab:tab01}
 \end{table}
 
-Conforme descrito por Svensson(2005, p. 17), o disco rígido é dividido em \textit{setores} que tem seu tamanho determinado pelo hardware. Por sua vez, os setores, em conjuntos múltiplos, formam um \textit{cluster}. Os arquivos armazenados no disco são divididos pelos clusters, sendo que o cluster somente pode armazenar um único arquivo. Se um arquivo é maior que o tamanho de um cluster, o sistema utiliza novos clusters para suportar todo o tamanho do arquivo. Se um cluster ocupado ainda dispor de espaço disponível para armazenamento ele não é mais utilizado, deixando um espaço entre o final do arquivo e o final do cluster, o que recebe o nome de \textif{slack space}.
+Conforme descrito por Svensson(2005, p. 17), o disco rígido é dividido em \textit{setores} que tem seu tamanho determinado pelo hardware. Por sua vez, os setores, em conjuntos múltiplos, formam um \textit{cluster}. Os arquivos armazenados no disco são divididos pelos clusters, sendo que o cluster somente pode armazenar um único arquivo. Se um arquivo é maior que o tamanho de um cluster, o sistema utiliza novos clusters para suportar todo o tamanho do arquivo. Se um cluster ocupado ainda dispor de espaço disponível para armazenamento ele não é mais utilizado, deixando um espaço entre o final do arquivo e o final do cluster, o que recebe o nome de \textit{slack space}.
 
 O disco também possui espaços chamados de \textit{unallocated space} que são regiões não alocadas do disco e que podem estar vazias ou conter informações de arquivos já apagados anteriormente e que podem ser de grande valor para a análise forense.
 
@@ -75,7 +75,7 @@ Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao 
   \centering  
   \begin{tabular}{|l|c|p{10cm}|}
     \hline
-    Nome MTF & Registro & Descrição \\
+    \textbf{Nome} MTF & \textbf{Registro} & \textbf{Descrição} \\
     \hline
     \$MFT & 0 & NTFS's Master File Table. Contém um arquivo base para cada arquivo ou diretório do disco. \\
     \hline

@@ -14,7 +14,7 @@ A assinatura de alguns tipos de arquivos mais comuns pode ser vista na tabela \r
   \centering  
   \begin{tabular}{|c|l|l|}
     \hline
-    Extensão & Assinatura & Descrição\\
+    \textbf{Extensão} & \textbf{Assinatura} & \textbf{Descrição} \\
     \hline
     EXE & 4D 5A & Arquivo executável (Windows / DOS) \\
     \hline
@@ -33,13 +33,20 @@ A assinatura de alguns tipos de arquivos mais comuns pode ser vista na tabela \r
   \label{tab:file-signature}
 \end{table}
 
-Um exemplo de arquivo PDF aberto pelo WinHex\footnote{} mostrando exatamente a assinatura do arquivo .pdf contido no cabeçalho (Offset = 00000000).
+Um exemplo de arquivo PDF e um PNG abertos pelo WinHex\footnote{Editor hexadecimal particularmente muito útil na recuperação de dados e verificação de arquivos em computação forense.} mostrando exatamente a assinatura do arquivo .pdf contido no cabeçalho (Offset = 00000000).
 
-\begin{figure}[htp]
+\begin{figure}[htb]
   \centering
   \includegraphics[scale=0.6]{figuras/pdf-file-signature.png}
   \caption{WinHex exibindo a assinatura de um arquivo .pdf}
   \label{fig:pdf-file-signature}
+\end{figure}
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.6]{figuras/png-file-signature.png}
+  \caption{WinHex exibindo a assinatura de um arquivo .png}
+  \label{fig:png-file-signature}
 \end{figure}
 
 \section{Arquivos Fragmentados}
@@ -92,18 +99,18 @@ Para recuperar arquivos fragmentados, qualquer ferramenta de file carving precis
 \subsection{Cabeçalho e Rodapé}
 Atualmente a simples comparação byte por byte é uma operação muito rápida que computadores atuais podem processar com facilidade. Sendo assim, a verificação de cabeçalhos e rodapés estáticos de tipos de arquivos se torna um dos primeiros passos que um algoritmo de recuperação pode seguir. Com base nas informações contidas no cabeçalho e rodapé de um arquivo pode-se determinar o tipo do arquivo em questão e até mesmo, em alguns casos, informações mais específicas referentes ao arquivo (metadados) \cite{Garfinkel2007}.
 
-A análise de cabeçalho e rodapé é a técnica mais básica de carving. A técnica consiste em procurar no conjunto de dados por padrões que definem o início do bloco de um arquivo, como por exemplo o cabeçalho de um arquivo de imagem (.png) demonstrado pela figura \ref{fig:png-file-format} \cite{Kloet2007}.
+Como já visto no ítem 3.1, a análise de cabeçalho e rodapé é a técnica mais básica de carving. A técnica consiste em procurar no conjunto de dados por padrões que definem o início do bloco de um arquivo, como por exemplo o cabeçalho de um arquivo executável (.exe) demonstrado pela figura \ref{fig:exe-file-signature} \cite{Kloet2007}.
 
-\begin{figure}[htp]
+\begin{figure}[htb]
   \centering
-  \includegraphics[scale=0.5]{figuras/png-file-format.png}
-  \caption{Estruda de cabeçalho de um arquivo do tipo PNG \cite{PngFileFormat2013}}
-  \label{fig:png-file-format}
+  \includegraphics[scale=0.6]{figuras/exe-file-signature.png}
+  \caption{Estruda de cabeçalho de um arquivo do tipo EXE}
+  \label{fig:exe-file-signature}
 \end{figure}
 
-O valor hexadecimal ``89  50  4e  47  0d  0a  1a  0a'' representa os 8 bytes do cabeçalho de arquivos PNG. Cada arquivo PNG é marcado a partir desse cabeçalho. A marca final do arquivo ou o rodapé do arquivo delimita o final do arquivo. O conteúdo entre o cabeçalho do arquivo e o final do arquivo seria a representação da informação do arquivo como pode ser visto pela figura \ref{fig:png-file-structure-data}.
+O valor hexadecimal \emph{``4D 5A''} representa os bytes do cabeçalho do arquivo EXE que o identificam como sendo um arquivo EXE. Cada arquivo EXE é marcado a partir desse cabeçalho. A marca final do arquivo ou o rodapé do arquivo delimita o final do arquivo. O conteúdo entre o cabeçalho do arquivo e o final do arquivo seria a representação da informação do arquivo como pode ser visto pela figura \ref{fig:png-file-structure-data}.
 
-\begin{figure}[htp]
+\begin{figure}[htb]
   \centering
   \includegraphics[scale=0.5]{figuras/png-file-structure-data.png}
   \caption{Área de dados de um arquivo do tipo PNG \cite{Kloet2007}}

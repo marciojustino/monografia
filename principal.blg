@@ -19,8 +19,6 @@ Database file #1: abnt-options.bib
 Database file #2: bb.bib
 Warning--entry type for "CeticBR2012" isn't style-file defined
 --line 47 of file bb.bib
-Warning--entry type for "PngFileFormat2013" isn't style-file defined
---line 74 of file bb.bib
 Warning--entry type for "Ramanan2013" isn't style-file defined
 --line 127 of file bb.bib
 Warning--entry type for "FileSignatures2013" isn't style-file defined
@@ -64,45 +62,45 @@ while executing---line 2184 of file abnt-alf.bst
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 12 entries,
+You've used 11 entries,
             6522 wiz_defined-function locations,
-            1243 strings with 10851 characters,
-and the built_in function-call counts, 7851 in all, are:
-= -- 665
-> -- 167
+            1238 strings with 10734 characters,
+and the built_in function-call counts, 7255 in all, are:
+= -- 621
+> -- 152
 < -- 9
-+ -- 99
-- -- 55
-* -- 477
-:= -- 1139
-add.period$ -- 37
-call.type$ -- 13
-change.case$ -- 73
-chr.to.int$ -- 18
-cite$ -- 11
-duplicate$ -- 372
-empty$ -- 702
-format.name$ -- 253
-if$ -- 1858
++ -- 93
+- -- 50
+* -- 441
+:= -- 1054
+add.period$ -- 33
+call.type$ -- 12
+change.case$ -- 67
+chr.to.int$ -- 17
+cite$ -- 10
+duplicate$ -- 345
+empty$ -- 643
+format.name$ -- 230
+if$ -- 1713
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 201
-newline$ -- 64
-num.names$ -- 55
-pop$ -- 249
+missing$ -- 185
+newline$ -- 59
+num.names$ -- 50
+pop$ -- 228
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 33
 quote$ -- 0
-skip$ -- 524
+skip$ -- 485
 stack$ -- 1
-substring$ -- 339
-swap$ -- 168
+substring$ -- 320
+swap$ -- 158
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 8
 warning$ -- 0
-while$ -- 77
+while$ -- 71
 width$ -- 0
-write$ -- 173
+write$ -- 159
 (There were 16 error messages)

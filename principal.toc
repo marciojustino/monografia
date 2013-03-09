@@ -25,11 +25,11 @@
 \contentsline {section}{\numberline {3.1}Assinatura de Arquivo}{15}
 \contentsline {section}{\numberline {3.2}Arquivos Fragmentados}{16}
 \contentsline {subsection}{\numberline {3.2.1}Fragmenta\c c\~ao Linear}{17}
-\contentsline {subsection}{\numberline {3.2.2}Fragmenta\c c\~ao N\~ao Linear}{17}
-\contentsline {subsection}{\numberline {3.2.3}Arquivo Parcial}{17}
+\contentsline {subsection}{\numberline {3.2.2}Fragmenta\c c\~ao N\~ao Linear}{18}
+\contentsline {subsection}{\numberline {3.2.3}Arquivo Parcial}{18}
 \contentsline {subsection}{\numberline {3.2.4}Recupera\c c\~ao de Arquivos Fragmentados}{18}
-\contentsline {section}{\numberline {3.3}Aspectos de Carving}{18}
-\contentsline {subsection}{\numberline {3.3.1}Cabe\c calho e Rodap\'e}{18}
+\contentsline {section}{\numberline {3.3}Aspectos de Carving}{19}
+\contentsline {subsection}{\numberline {3.3.1}Cabe\c calho e Rodap\'e}{19}
 \contentsline {subsection}{\numberline {3.3.2}Carving em Estrutura de Arquivo}{20}
 \contentsline {section}{\numberline {3.4}N\'umero M\'agico}{20}
 \contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{21}

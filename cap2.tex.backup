@@ -12,19 +12,42 @@ A assinatura de alguns tipos de arquivos mais comuns pode ser vista na tabela \r
 
 \begin{table}[htb]
   \centering  
-  \begin{tabular}{ll}
+  \begin{tabular}{|c|l|l|}
     \hline
-    Extensão & Assinatura & Descrição\\
+    \textbf{Extensão} & \textbf{Assinatura} & \textbf{Descrição} \\
     \hline
-    EXE & 4D 5A & Arquivos executáveis Windows / DOS \\
-    513 MB - 1024 MB & 1 KB \\
-    1025 MB - 2048 MB & 2 KB \\
-    acima de 2048 MB & 4 KB \\
+    EXE & 4D 5A & Arquivo executável (Windows / DOS) \\
+    \hline
+    E01 & 4C 56 46 09 0D 0A FF 00 & Arquivo lógico de evidência \\
+    \hline
+    JPEG & FF D8 FF E0 & Arquivo de imagem compacto \\
+    \hline
+    JPG & FF D8 FF E0 & Arquivo de imagem compacto \\
+    \hline
+    PDF & 25 50 44 46 & Arquivo (Acrobat Reader) \\
+    \hline
+    PNG & 89 50 4E 47 0D 0A 1A 0A & Arquivo de imagem compacto com transparência \\
     \hline
   \end{tabular}
-  \caption{Tamanho do Cluster Padrão Para Formatos NTFS (quanto maior o tamanho do disco maior o tamanho do cluster).}
-  \label{tab:tab01}
+  \caption{Exemplos de assinatura de arquivos pelo cabeçalho \cite{FileSignatures2013}.}
+  \label{tab:file-signature}
 \end{table}
+
+Um exemplo de arquivo PDF e um PNG abertos pelo WinHex\footnote{Editor hexadecimal particularmente muito útil na recuperação de dados e verificação de arquivos em computação forense.} mostrando exatamente a assinatura do arquivo .pdf contido no cabeçalho (Offset = 00000000).
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.6]{figuras/pdf-file-signature.png}
+  \caption{WinHex exibindo a assinatura de um arquivo .pdf}
+  \label{fig:pdf-file-signature}
+\end{figure}
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.6]{figuras/png-file-signature.png}
+  \caption{WinHex exibindo a assinatura de um arquivo .png}
+  \label{fig:png-file-signature}
+\end{figure}
 
 \section{Arquivos Fragmentados}
 Segundo Kloe (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente em um mesmo conjunto de dados. Sistemas operacionais modernos, tais como o NTFS, tentam gravar os dados evitando a fragmentação porém, ainda existem algumas situações em que a fragmentação ocorre. Já Memon define que um arquivo é dito fragmentado quando o mesmo está armazenado de forma descontinuada nos clusters, e que o maior desafio para o processo de data carving é justamente a recuperação de arquivos quando esses estão fragmentados em duas ou mais partes. 

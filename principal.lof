@@ -9,7 +9,9 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Registro de arquivo da MFT \cite {Svensson2005}.}}{12}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Registro de diret\'orio .}}{13}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Registro de diret\'orio e a ``Index Allocation Buffer''.}}{13}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Exemplo de Fragmenta\c c\~ao Linear}}{17}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemplo de Fragmenta\c c\~ao N\~ao Linear}}{17}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Estruda de cabe\c calho de um arquivo do tipo PNG \cite {PngFileFormat2013}}}{19}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces \'Area de dados de um arquivo do tipo PNG \cite {Kloet2007}}}{19}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces WinHex exibindo a assinatura de um arquivo .pdf}}{16}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces WinHex exibindo a assinatura de um arquivo .png}}{16}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Exemplo de Fragmenta\c c\~ao Linear}}{17}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Exemplo de Fragmenta\c c\~ao N\~ao Linear}}{18}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Estruda de cabe\c calho de um arquivo do tipo EXE}}{19}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces \'Area de dados de um arquivo do tipo PNG \cite {Kloet2007}}}{20}
