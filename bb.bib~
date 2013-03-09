@@ -141,3 +141,13 @@
     url = {http://filesignatures.net/index.php?page=all},
     urldate = {{M}arço de 2013}
 }
+
+@article{DataRecovery2010,
+    author  = "Data Recovery Systems Ltd.",
+    title   = "How File Recovery Works",
+    year    = "2010",
+    journal = "",
+    volume  = "",
+    number  = "",
+    pages   = "10"
+}

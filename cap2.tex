@@ -52,6 +52,13 @@ Um exemplo de arquivo PDF e um PNG abertos pelo WinHex\footnote{Editor hexadecim
 \section{Arquivos Fragmentados}
 Segundo Kloe (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente em um mesmo conjunto de dados. Sistemas operacionais modernos, tais como o NTFS, tentam gravar os dados evitando a fragmentação porém, ainda existem algumas situações em que a fragmentação ocorre. Já Memon define que um arquivo é dito fragmentado quando o mesmo está armazenado de forma descontinuada nos clusters, e que o maior desafio para o processo de data carving é justamente a recuperação de arquivos quando esses estão fragmentados em duas ou mais partes. 
 
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.4]{figuras/fragmented-files.png}
+  \caption{Demonstração de fragmentação de arquivos nos clusters do disco rígido \cite{DataRecovery2010}.}
+  \label{fig:fragmented-files}
+\end{figure}
+
 Garfinkel (2007, p. S4) defendia a hipótese de que diferentes tipos de arquivos poderiam apresentar diferentes padrões de fragmentação, o que poderia determinar uma fragmentação diferenciada para um tipo de arquivo específico no disco. Arquivos comumente de sistemas, instalados juntamente com a parte do sistema operacional apresentariam um baixo fator de fragmentação enquanto arquivos comuns e altamente importantes na análise forense, por se tratarem de informações do dia a dia tais como documentos (.doc), mídias (.avi, .jpeg), arquivos de correio eletrônico armazenados (.pst), planilhas com cálculos e fórmulas (.xls), arquivos de log e arquivos texto (.txt), aparentam ter uma tendência a maior fragmentação se comparados à arquivos menos significativos para o processo forense. Garfinkel (2007, p. S2) então chegou a uma das principais conclusões, que até 42\% de arquivos de e-mail (.pst), 17\% de arquivos microsoft word (.doc) e 16\% de arquivos de imagem (.jpeg) são fragmentados, deixando bem claro que a 
 recuperação de arquivos fragmentados é um problema crítico para a análise forense. Outro fator importante que tem influencia a fragmentação, que pode ser percebido por Garfinkel (2007, p. S6), é que em dispositivos com maior capacidade de armazenamento o fator de fragmentação é menor se comparado a dispositivos de menor capacidade de armazenamento.
 
@@ -128,7 +135,16 @@ Segundo Kloet (2007, p. 9), a análise de cabeçalho e rodapé é um método que apre
 O mesmo ocorre para o método de cabeçalho com tamanho máximo possível de dados, técnica que visa recuperar os dados pelo comprimento máximo disposto para o tipo de arquivo para sua área de dados. Além desses os problemas da técnica de cabeçalho e rodapé, esta técnica ainda tem outros dois problemas ligados à área de dados. Tendo em vista que a área máxima não é exatamente a área máxima estipulada pela definição do tipo de arquivo e sim uma questão de referência, esses dados podem ser primeiramente coletados além do tamanho real do arquivo no dispositivo de origem como também poderá ser menor que o próprio tamanho dos dados do arquivo no dispositivo de origem.
 
 \subsection{Carving em Estrutura de Arquivo}
-...
+A metodologia de carving em estrutura de arquivo se baseia no uso do layout interno do arquivo (área de dados) para identificar se uma determinada informação pertence ou não a um determinado arquivo. As informações do layout do arquivo normalmente são derivadas de especificações dos formatos de arquivos, responsáveis pela criação daquele tipo de arquivo específico. Conforme Kloet, essa técnica é utilizada, em alguns casos, para a identificação de arquivos corrompidos ou fragmentados, se a estrutura de dados é bem detalhada e extensa o suficiente para seu entendimento. Se esta técnica se depara com um arquivo fragmentado que não pode ser recuperado, ela se utiliza de outras maneiras para lidar com esse tipo de informação.
+
+\begin{itemize}
+ \item A informação pode ser descartada, levando a não compreensão de uma informação que na realidade pode fazer parte do arquivo, gerando assim um \emph{falso negativo}.
+ \item A informação pode ser considerada, mesmo não sendo parte da informação de um determinado arquivo, levando a interpretação de um \emph{falso positivo}. O processo ainda pode entender que essa informação foi ``considerada'' e marcá-la como um \emph{falso positivo conhecido}.
+\end{itemize}
+
+Kloet demonstra então que com uso dessa técnica por si só não deve ser utilizada para recuperar todos os fragmentos ou partes de um arquivo. Isso porque quando um arquivo é fragmentado ou parcialmente substituído em uma posição em que a estrutura de dados restante não está mais presente ou pouca parte dela está presente, a técnica não é capaz de determinar com precisão a informação do fragmento ou da parte de um arquivo. O tipo de arquivo de imagem PNG é um bom exemplo dessa ocorrência, a área de dados da estrutura do arquivo PNG possui uma pequena estrutura, gerando o problema da identificação de fragmentos ou partes desse tipo de arquivo.
+
+[PAREI AQUI!!!!!!!]
 
 \section{Número Mágico}
 ...

@@ -29,11 +29,20 @@ O coração do sistema de arquivos NTFS está na Master File Table (MFT), pois esta
 
 A figura \ref{fig:fig02} demonstra um registro de entrada na MFT.
 
-\begin{figure}[htp]
+\begin{figure}[htb]
   \centering
   \includegraphics[scale=0.6]{figuras/fig02.png}
   \caption{Entrada na MFT - Cabeçalho e espaço reservado aos diferentes tipos de atributos. Para o exemplo, a entrada possui 3 atributos.}
   \label{fig:fig02}
+\end{figure}
+
+A figura \ref{fig:hard-disk-structure} mostra como é distribuída a estrutura de um disco.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.6]{figuras/hard-disk-structure.png}
+  \caption{Estrutura física de um disco rígido \cite{DataRecovery2010}.}
+  \label{fig:hard-disk-structure}
 \end{figure}
 
 \subsection{Cluster}
@@ -140,7 +149,7 @@ A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arq
   \centering
   \begin{tabular}{|l|p{10cm}|}
     \hline
-    Tipo do Atributo & Descrição \\
+    \textbf{Tipo do Atributo} & \textbf{Descrição} \\
     \hline
     \$VOLUME\_INFORMATION & Versão do volume de dados. \\
     \hline

@@ -30,15 +30,15 @@
 \contentsline {subsection}{\numberline {3.2.4}Recupera\c c\~ao de Arquivos Fragmentados}{18}
 \contentsline {section}{\numberline {3.3}Aspectos de Carving}{19}
 \contentsline {subsection}{\numberline {3.3.1}Cabe\c calho e Rodap\'e}{19}
-\contentsline {subsection}{\numberline {3.3.2}Carving em Estrutura de Arquivo}{20}
-\contentsline {section}{\numberline {3.4}N\'umero M\'agico}{20}
-\contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{21}
-\contentsline {section}{\numberline {4.1}Diferencia\c c\~ao}{21}
-\contentsline {section}{\numberline {4.2}Fragmenta\c c\~ao}{21}
-\contentsline {section}{\numberline {4.3}Ponto de Fragmenta\c c\~ao}{21}
-\contentsline {chapter}{\numberline {5}Ferramentas de File Carving}{22}
-\contentsline {section}{\numberline {5.1}Scalpel}{22}
-\contentsline {section}{\numberline {5.2}Foremost}{22}
-\contentsline {chapter}{\numberline {6}Considera\c c\~oes Finais}{23}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{24}
-\contentsline {chapter}{Anexos}{25}
+\contentsline {subsection}{\numberline {3.3.2}Carving em Estrutura de Arquivo}{21}
+\contentsline {section}{\numberline {3.4}N\'umero M\'agico}{21}
+\contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{22}
+\contentsline {section}{\numberline {4.1}Diferencia\c c\~ao}{22}
+\contentsline {section}{\numberline {4.2}Fragmenta\c c\~ao}{22}
+\contentsline {section}{\numberline {4.3}Ponto de Fragmenta\c c\~ao}{22}
+\contentsline {chapter}{\numberline {5}Ferramentas de File Carving}{23}
+\contentsline {section}{\numberline {5.1}Scalpel}{23}
+\contentsline {section}{\numberline {5.2}Foremost}{23}
+\contentsline {chapter}{\numberline {6}Considera\c c\~oes Finais}{24}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{25}
+\contentsline {chapter}{Anexos}{26}
