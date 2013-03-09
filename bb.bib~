@@ -133,11 +133,11 @@
     urldate = {{M}arço de 2013}
 }
 
-@WWW{WikiHD2013,
-    author = "Wikipédia",
-    title = {Disco Rígido},
+@WWW{FileSignatures2013,
+    author = "Free Online File Signatures Database",
+    title = {File Signatures},
     year = "2013",
-    publisher = "Wikipédia",
-    url = {http://goo.gl/RXODS},
+    publisher = "",
+    url = {http://filesignatures.net/index.php?page=all},
     urldate = {{M}arço de 2013}
 }

@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {2.2}O Sistema NTFS}{7}
 \contentsline {section}{\numberline {2.3}Estrutura de Dados}{7}
 \contentsline {subsection}{\numberline {2.3.1}Cluster}{7}
-\contentsline {subsection}{\numberline {2.3.2}Master File Table}{8}
+\contentsline {subsection}{\numberline {2.3.2}Master File Table}{9}
 \contentsline {section}{\numberline {2.4}Aloca\c c\~ao de Arquivos}{10}
 \contentsline {subsection}{\numberline {2.4.1}Registros da MFT}{10}
 \contentsline {subsection}{\numberline {2.4.2}Registros de Arquivos}{12}
