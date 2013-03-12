@@ -80,7 +80,7 @@ Kloe referencia a fragmentação linear a arquivos que estão fragmentados seguindo
 \subsection{Fragmentação Não Linear}
 Conforme Kloe, a fragmentação não linear representa os arquivos fragmentados fora da ordem normal de sequência do disco. A figura \ref{fig:fragnaolinear} demonstra como os fragmentos do arquivo F1 estão fora da sequência natural do disco.
 
-\begin{figure}[htp]
+\begin{figure}[htb]
   \centering
   \includegraphics[scale=0.6]{figuras/fragnaolinear.png}
   \caption{Exemplo de Fragmentação Não Linear}
@@ -99,7 +99,7 @@ Para recuperar arquivos fragmentados, qualquer ferramenta de file carving precis
  \item Organizar os blocos de forma correta para que se possa reconstruir o arquivo.
 \end{enumerate}
 
-[PAREI AQUI!!!!!!!]
+%[CONTINUAR ESTE CAPÍTULO] **********************************
 
 \section{Aspectos de Carving}
 
@@ -144,7 +144,10 @@ A metodologia de carving em estrutura de arquivo se baseia no uso do layout inte
 
 Kloet demonstra então que com uso dessa técnica por si só não deve ser utilizada para recuperar todos os fragmentos ou partes de um arquivo. Isso porque quando um arquivo é fragmentado ou parcialmente substituído em uma posição em que a estrutura de dados restante não está mais presente ou pouca parte dela está presente, a técnica não é capaz de determinar com precisão a informação do fragmento ou da parte de um arquivo. O tipo de arquivo de imagem PNG é um bom exemplo dessa ocorrência, a área de dados da estrutura do arquivo PNG possui uma pequena estrutura, gerando o problema da identificação de fragmentos ou partes desse tipo de arquivo.
 
-[PAREI AQUI!!!!!!!]
+Para capacitar a detecção de fragmentação, outra técnica surge buscando mitigar os problemas da técnica de carving em estrutura de arquivo. A técnica de carving baseada no conteúdo do bloco de dados se baseia no princípio utilizado pelos discos rígidos para armazenar os dados em setores, onde a fragmentação somente ocorre sobre os limites setoriais. Assim, essa abordagem se utiliza desse conhecimento para checar cada bloco de dado e verificar se o mesmo faz parte do arquivo. Como descreve Kloet, uma forma básica de determinar o tipo de caracter presente no bloco é identificar o tipo de informação contida no mesmo, como exemplo, um bloco que possui uma parte dos dados caracteres texto e outra parte de dados sendo zeros, levando a conclusão que o bloco de dados pertence à um tipo de texto unicode.
+
+\subsection{Entropia de Dados}
+%[PAREI AQUI!!!!!!!!!] ****** PÁGINA 13 DO ARQUIVO ``KLOET_2007''
 
 \section{Número Mágico}
 ...

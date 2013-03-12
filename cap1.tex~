@@ -27,30 +27,31 @@ O coração do sistema de arquivos NTFS está na Master File Table (MFT), pois esta
  \item Espaço não utilizado.
 \end{itemize}
 
-A figura \ref{fig:fig02} demonstra um registro de entrada na MFT.
+A figura \ref{fig:hard-disk-structure} mostra como é distribuída a estrutura de um disco.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.4]{figuras/hard-disk-structure.png}
+  \caption{Estrutura física de um disco rígido \cite{DataRecovery2010}.}
+  \label{fig:hard-disk-structure}
+\end{figure}
+
+A figura \ref{fig:mft-entrada} demonstra um registro de entrada na MFT.
 
 \begin{figure}[htb]
   \centering
   \includegraphics[scale=0.6]{figuras/fig02.png}
   \caption{Entrada na MFT - Cabeçalho e espaço reservado aos diferentes tipos de atributos. Para o exemplo, a entrada possui 3 atributos.}
-  \label{fig:fig02}
+  \label{fig:mft-entrada}
 \end{figure}
 
-A figura \ref{fig:hard-disk-structure} mostra como é distribuída a estrutura de um disco.
-
-\begin{figure}[htb]
-  \centering
-  \includegraphics[scale=0.6]{figuras/hard-disk-structure.png}
-  \caption{Estrutura física de um disco rígido \cite{DataRecovery2010}.}
-  \label{fig:hard-disk-structure}
-\end{figure}
-
+\newpage
 \subsection{Cluster}
-De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores sendo que o sistema de arquivos se utiliza de setores para formar um cluster. O tamanho do cluster depende da formatação do disco. A tabela \ref{tab:tab01} demonstra tamanhos padrões definidos de cluster para diferentes tamanhos e formas de formatação do disco NTFS:
+De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores sendo que o sistema de arquivos se utiliza de setores para formar um cluster. O tamanho do cluster depende da formatação do disco. A tabela \ref{tab:cluster-tamanho} demonstra tamanhos padrões definidos de cluster para diferentes tamanhos e formas de formatação do disco NTFS:
 
 \begin{table}[htb]
   \centering  
-  \begin{tabular}{ll}
+  \begin{tabular}{lc}
     \hline
     \textbf{Tamanho do Disco} & \textbf{Tamanho do Cluster Padrão} \\
     \hline
@@ -61,21 +62,23 @@ De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores send
     \hline
   \end{tabular}
   \caption{Tamanho do Cluster Padrão Para Formatos NTFS (quanto maior o tamanho do disco maior o tamanho do cluster).}
-  \label{tab:tab01}
+  \label{tab:cluster-tamanho}
 \end{table}
 
-Conforme descrito por Svensson(2005, p. 17), o disco rígido é dividido em \textit{setores} que tem seu tamanho determinado pelo hardware. Por sua vez, os setores, em conjuntos múltiplos, formam um \textit{cluster}. Os arquivos armazenados no disco são divididos pelos clusters, sendo que o cluster somente pode armazenar um único arquivo. Se um arquivo é maior que o tamanho de um cluster, o sistema utiliza novos clusters para suportar todo o tamanho do arquivo. Se um cluster ocupado ainda dispor de espaço disponível para armazenamento ele não é mais utilizado, deixando um espaço entre o final do arquivo e o final do cluster, o que recebe o nome de \textit{slack space}.
+Conforme descrito por Svensson(2005, p. 17), o disco rígido é dividido em \emph{setores} que tem seu tamanho determinado pelo hardware. Por sua vez, os setores, em conjuntos múltiplos, formam um \emph{cluster}. Os arquivos armazenados no disco são divididos pelos clusters, sendo que o cluster somente pode armazenar um único arquivo. Se um arquivo é maior que o tamanho de um cluster, o sistema utiliza novos clusters para suportar todo o tamanho do arquivo. Se um cluster ocupado ainda dispor de espaço disponível para armazenamento ele não é mais utilizado, deixando um espaço entre o final do arquivo e o final do cluster, o que recebe o nome de \emph{slack space}.
 
-O disco também possui espaços chamados de \textit{unallocated space} que são regiões não alocadas do disco e que podem estar vazias ou conter informações de arquivos já apagados anteriormente e que podem ser de grande valor para a análise forense.
+O disco também possui espaços chamados de \emph{unallocated space} que se trata de regiões não alocadas do disco podendo estas estarem vazias ou conter informações de arquivos já apagados anteriormente e que podem ser de grande valor para a análise forense.
 
-Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number} \textit({LCN}). O LCN é um número sequencial que representa todos os clusters do disco, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no disco), multiplicando o identificador LCN com o tamanho do cluster.
+Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number} (LCN). O LCN é um número sequencial que representa todos os clusters do disco, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no disco), multiplicando o identificador LCN com o tamanho do cluster.
 
-\begin{figure}[htp]
+\begin{figure}[htb]
   \centering
   \includegraphics[scale=0.6]{figuras/estrutura-ntfs.png}
   \caption{Estrutura do NTFS}
   \label{fig:estrutura-ntfs}
 \end{figure}
+
+Os clusters de um mesmo arquivo também recebem um identificador chamado de \emph{Virtual Cluster Number} (VNC). O VNC representa a ordem física dos clusters no arquivo, não sendo necessário, portanto, que a ordem física no disco seja contínua \cite{Svensson2005}. 
 
 \subsection{Master File Table}
 Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao menos uma entrada no registro da \emph{Master File Table} (MFT). Os primeiros 16 registros da MFT são reservados pelo sistema de arquivos para manter metadados\footnote{Dados que definem ou descrevem outra parte dos dados \cite{Wyman2012}.} específicos do NTFS. A tabela \ref{tab:tab02} detalha os 16 primeiros registros reservados ao NTFS na MFT:
@@ -142,7 +145,6 @@ Os registros da MFT incluem inúmeros atributos e valores, sendo limitado em 1 KB
   \label{fig:mft-attribute}
 \end{figure}
 
-\newpage
 A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arquivos NTFS.
 
 \begin{table}[htb]
@@ -184,7 +186,6 @@ A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arq
   \label{tab:mft-attributes}
 \end{table}
 
-\newpage
 \subsection{Registros de Arquivos}
 Todo registro de arquivo consiste de ao menos um par de atributo/valor. Se toda a informação residente no par atributo/valor de um registro de arquivo couber no registro da MFT, nenhum dado adicional é associado no volume, ficando a informação alocada somente no registro da MFT. Por outro lado, um arquivo com uma informação maior, que não cabe somente no registro da MFT, teria seus dados armazenados em clusters em outro lugar do volume de dados. Sendo assim, todo arquivo pode estar associado a múltiplos clusters de dados e a informação de localização dos mesmos é listada na área de dados do registro da MFT. 
 
@@ -202,7 +203,6 @@ A figura \ref{fig:mft-record} demonstra essa fragmentação de informações do arqu
 \subsection{Registros de Diretório}
 Os registros de diretórios possuem um atributo de indexação raíz que possui o ponto de entrada de cada arquivo e subdiretório de sua estrutura. 
 
-\newpage
 A figura \ref{fig:ntfs-index} mostra essa indexação.
 
 \begin{figure}[htb]

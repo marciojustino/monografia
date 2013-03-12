@@ -11,8 +11,6 @@ Um disco rígido é composto por uma ou mais partições lógicas, representadas por 
   \label{fig:harddisk}
 \end{figure}
 
-O disco rígido é dividido em \textit{setores} que tem seu tamanho determinado pelo hardware. Por sua vez, os setores em conjuntos múltiplos formam o \textit{cluster}. 
-
 \section{O Sistema NTFS}
 Projetado pela Microsoft, o NTFS é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT (1993) até as versões mais recentes como o Windows8 (2012), com algumas evoluções ao longo do tempo. Sendo este o predecessor do antigo sistema FAT, é o sistema mais presente em investigações de sistemas devido a superioridade de utilização de sistemas operacionais Windows em todo o mundo.
 
@@ -31,11 +29,20 @@ O coração do sistema de arquivos NTFS está na Master File Table (MFT), pois esta
 
 A figura \ref{fig:fig02} demonstra um registro de entrada na MFT.
 
-\begin{figure}[htp]
+\begin{figure}[htb]
   \centering
   \includegraphics[scale=0.6]{figuras/fig02.png}
   \caption{Entrada na MFT - Cabeçalho e espaço reservado aos diferentes tipos de atributos. Para o exemplo, a entrada possui 3 atributos.}
   \label{fig:fig02}
+\end{figure}
+
+A figura \ref{fig:hard-disk-structure} mostra como é distribuída a estrutura de um disco.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.4]{figuras/hard-disk-structure.png}
+  \caption{Estrutura física de um disco rígido \cite{DataRecovery2010}.}
+  \label{fig:hard-disk-structure}
 \end{figure}
 
 \subsection{Cluster}
@@ -45,7 +52,7 @@ De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores send
   \centering  
   \begin{tabular}{ll}
     \hline
-    Tamanho do Disco & Tamanho do Cluster Padrão \\
+    \textbf{Tamanho do Disco} & \textbf{Tamanho do Cluster Padrão} \\
     \hline
     até 512 MB & 512 bytes \\
     513 MB - 1024 MB & 1 KB \\
@@ -53,13 +60,15 @@ De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores send
     acima de 2048 MB & 4 KB \\
     \hline
   \end{tabular}
-  \caption{Tamanho do Cluster Padrão Para Formatos NTFS.}
+  \caption{Tamanho do Cluster Padrão Para Formatos NTFS (quanto maior o tamanho do disco maior o tamanho do cluster).}
   \label{tab:tab01}
 \end{table}
 
-Como pode ser visto na tabela demonstrada por Svensson (2005, p. 25), quanto maior o tamanho do disco maior o tamanho do cluster.
+Conforme descrito por Svensson(2005, p. 17), o disco rígido é dividido em \textit{setores} que tem seu tamanho determinado pelo hardware. Por sua vez, os setores, em conjuntos múltiplos, formam um \textit{cluster}. Os arquivos armazenados no disco são divididos pelos clusters, sendo que o cluster somente pode armazenar um único arquivo. Se um arquivo é maior que o tamanho de um cluster, o sistema utiliza novos clusters para suportar todo o tamanho do arquivo. Se um cluster ocupado ainda dispor de espaço disponível para armazenamento ele não é mais utilizado, deixando um espaço entre o final do arquivo e o final do cluster, o que recebe o nome de \textit{slack space}.
 
-Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number} \textit({LCN}). O LCN é um número sequencial que representa todos os clusters do disco, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no disco), multiplicando o identificador LCN com o tamanho do cluster.
+O disco também possui espaços chamados de \textit{unallocated space} que são regiões não alocadas do disco e que podem estar vazias ou conter informações de arquivos já apagados anteriormente e que podem ser de grande valor para a análise forense.
+
+Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number} (LCN). O LCN é um número sequencial que representa todos os clusters do disco, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no disco), multiplicando o identificador LCN com o tamanho do cluster.
 
 \begin{figure}[htp]
   \centering
@@ -68,6 +77,8 @@ Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamad
   \label{fig:estrutura-ntfs}
 \end{figure}
 
+Os clusters de um mesmo arquivo também recebem um identificador chamado de \emph{Virtual Cluster Number} (VNC).
+
 \subsection{Master File Table}
 Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao menos uma entrada no registro da \emph{Master File Table} (MFT). Os primeiros 16 registros da MFT são reservados pelo sistema de arquivos para manter metadados\footnote{Dados que definem ou descrevem outra parte dos dados \cite{Wyman2012}.} específicos do NTFS. A tabela \ref{tab:tab02} detalha os 16 primeiros registros reservados ao NTFS na MFT:
 
@@ -75,7 +86,7 @@ Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao 
   \centering  
   \begin{tabular}{|l|c|p{10cm}|}
     \hline
-    Nome MTF & Registro & Descrição \\
+    \textbf{Nome} MTF & \textbf{Registro} & \textbf{Descrição} \\
     \hline
     \$MFT & 0 & NTFS's Master File Table. Contém um arquivo base para cada arquivo ou diretório do disco. \\
     \hline
@@ -140,7 +151,7 @@ A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arq
   \centering
   \begin{tabular}{|l|p{10cm}|}
     \hline
-    Tipo do Atributo & Descrição \\
+    \textbf{Tipo do Atributo} & \textbf{Descrição} \\
     \hline
     \$VOLUME\_INFORMATION & Versão do volume de dados. \\
     \hline

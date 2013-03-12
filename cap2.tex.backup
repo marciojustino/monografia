@@ -80,7 +80,7 @@ Kloe referencia a fragmentação linear a arquivos que estão fragmentados seguindo
 \subsection{Fragmentação Não Linear}
 Conforme Kloe, a fragmentação não linear representa os arquivos fragmentados fora da ordem normal de sequência do disco. A figura \ref{fig:fragnaolinear} demonstra como os fragmentos do arquivo F1 estão fora da sequência natural do disco.
 
-\begin{figure}[htp]
+\begin{figure}[htb]
   \centering
   \includegraphics[scale=0.6]{figuras/fragnaolinear.png}
   \caption{Exemplo de Fragmentação Não Linear}
@@ -139,9 +139,12 @@ A metodologia de carving em estrutura de arquivo se baseia no uso do layout inte
 
 \begin{itemize}
  \item A informação pode ser descartada, levando a não compreensão de uma informação que na realidade pode fazer parte do arquivo, gerando assim um \emph{falso negativo}.
- \item A informação pode ser considerada, mesmo não sendo parte da informação de um determinado arquivo, levando a interpretação de um \emph{falso positivo}.
+ \item A informação pode ser considerada, mesmo não sendo parte da informação de um determinado arquivo, levando a interpretação de um \emph{falso positivo}. O processo ainda pode entender que essa informação foi ``considerada'' e marcá-la como um \emph{falso positivo conhecido}.
 \end{itemize}
 
+Kloet demonstra então que com uso dessa técnica por si só não deve ser utilizada para recuperar todos os fragmentos ou partes de um arquivo. Isso porque quando um arquivo é fragmentado ou parcialmente substituído em uma posição em que a estrutura de dados restante não está mais presente ou pouca parte dela está presente, a técnica não é capaz de determinar com precisão a informação do fragmento ou da parte de um arquivo. O tipo de arquivo de imagem PNG é um bom exemplo dessa ocorrência, a área de dados da estrutura do arquivo PNG possui uma pequena estrutura, gerando o problema da identificação de fragmentos ou partes desse tipo de arquivo.
+
+Para capacitar a detecção de fragmentação outra técnica surge buscando mitigar os problemas da técnica de carving em estrutura de arquivo. A técnica de carving baseada no conteúdo do bloco de dados. Esta técnica se baseia no princípio utilizado pelos discos rígidos para armazenar os dados em setores, onde a fragmentação somente ocorre sobre os limites setoriais. Assim, essa abordagem se utiliza do conhecimento para checar cada bloco de dado e verificar se o mesmo faz parte do arquivo.
 
 \section{Número Mágico}
 ...
