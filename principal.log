@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  11 MAR 2013 21:32
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  12 MAR 2013 00:59
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -265,19 +265,19 @@ Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
 (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux) (./anexo.aux))
 \openout1 = `principal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 15.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -436,32 +436,32 @@ File: figuras/fig01.png Graphic file (type png)
 
  <./figuras/fig01.png (PNG copy)>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
  [2] [3]
 <figuras/hipotese.png, id=55, 2699.08376pt x 1308.89pt>
 File: figuras/hipotese.png Graphic file (type png)
 
 <use figuras/hipotese.png>
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 55.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 56.
  (/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
  [4 <./figuras/hipotese.png (PNG copy)>]
-Overfull \hbox (15.91827pt too wide) in paragraph at lines 67--68
+Overfull \hbox (15.91827pt too wide) in paragraph at lines 68--69
 \OT1/ptm/m/n/12 tema de ar-qui-vos NTFS junto ao cri-a-dor (Mi-cro-soft), pes-q
 ui-sas cor-re-la-tas re-fe-ren-tes []a fragmenta[][]ao
  []
 
 )
-Overfull \hbox (15.57132pt too wide) in paragraph at lines 69--28
+Overfull \hbox (15.57132pt too wide) in paragraph at lines 70--29
 \OT1/ptm/m/n/12 para que se possa con-cre-ti-zar, atrav[]es de da-dos sig-ni-fi
 -ca-ti-vos, a efic[]acia do pro-cesso de identifica[][]ao
  []
@@ -636,14 +636,14 @@ Here is how much of TeX's memory you used:
  5781 multiletter control sequences out of 15000+50000
  46075 words of font info for 91 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 31i,13n,41p,1462b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,13n,41p,1281b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/s
 hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
 texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (39 pages, 855776 bytes).
+Output written on principal.pdf (39 pages, 855865 bytes).
 PDF statistics:
  178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
