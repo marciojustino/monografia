@@ -21,10 +21,9 @@ Dispon{\'\i}vel em: $<$http://filesignatures.net/index.php?page=all$>$.}
   validation.
 \emph{ELSEVIER}, v.~4S, p. S2--S12, 2007.}
 
-\bibitem[Hand Zhiqiang~Lin 2012]{Hand2012}
-\abntrefinfo{Hand Zhiqiang~Lin}{HAND ZHIQIANG~LIN}{2012}
-{HAND ZHIQIANG~LIN, G. G. B.~T. S. Bin-carver: Automatic recovery of binary
-  executable files.
+\bibitem[Hand et al. 2012]{Hand2012}
+\abntrefinfo{Hand et al.}{HAND et al.}{2012}
+{HAND, S. et al. Bin-carver: Automatic recovery of binary executable files.
 \emph{ELSEVIER}, n.~9, p. S108--S117, 2012.}
 
 \bibitem[IBOPE//NetRatings 2012]{CeticBR2012}
@@ -44,9 +43,9 @@ Disserta\c{c}\~ao (Mestrado) --- Eindhoven University of Technology, 10 2007.}
 {LTD., D. R.~S. How file recovery works.
 p.~10, 2010.}
 
-\bibitem[Mahant 2012]{Meshram2012}
-\abntrefinfo{Mahant}{MAHANT}{2012}
-{MAHANT, B. S.~H. Ntfs deleted files recovery - forensics view.
+\bibitem[Mahant e B.B.Meshram 2012]{Meshram2012}
+\abntrefinfo{Mahant e B.B.Meshram}{MAHANT; B.B.MESHRAM}{2012}
+{MAHANT, S.~H.; B.B.MESHRAM. Ntfs deleted files recovery: Forensics view.
 \emph{IRACST - International Journal of Computer Science and Information
   Technology and Security (IJCSITS)}, v.~2, n.~3, p. 491--497, 2012.}
 
@@ -63,9 +62,9 @@ Disserta\c{c}\~ao (Mestrado) --- Stockholm's University / Royal Institute of
 Dispon{\'\i}vel em:
   $<$http://www.codeproject.com/Articles/9293/Undelete-a-file-in-NTFS$>$.}
 
-\bibitem[Wyman Walt~Scrivens 2012]{Wyman2012}
-\abntrefinfo{Wyman Walt~Scrivens}{WYMAN WALT~SCRIVENS}{2012}
-{WYMAN WALT~SCRIVENS, P. H. L.~S. B. Metadados.
+\bibitem[Wyman et al. 2012]{Wyman2012}
+\abntrefinfo{Wyman et al.}{WYMAN et al.}{2012}
+{WYMAN, B. et al. Metadados.
 \emph{OUCH!}, 2012.}
 
 \end{thebibliography}

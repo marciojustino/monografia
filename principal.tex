@@ -1,16 +1,15 @@
-\documentclass[dvips,ruledheader,pnumromarab]{abnt}
-% \documentclass[dvips,ruledheader]{abnt}
-\usepackage[brazil]{babel}
+% \documentclass[dvips,ruledheader,pnumromarab]{abnt} % o campo pnumromarab registra as páginas sem numeração com numeração romana
+\documentclass[dvips,ruledheader]{abnt}
 \usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}
 \usepackage[pdftex]{graphicx}
 \usepackage{abnt-alf}
-% \usepackage[alf]{abntcite}
 \usepackage{latexsym}
 \usepackage{psfrag}
 % \usepackage{cite}
-% \usepackage[notintoc,portuguese]{nomencl}
-% \usepackage{epigraph}
-% \usepackage[center]{caption2}
+\usepackage[notintoc,portuguese]{nomencl}
+\usepackage{nomencl}
+\makenomenclature
 
 \begin{document}
 
@@ -25,7 +24,8 @@
 \tableofcontents
 \listoffigures
 \listoftables
-% \printnomenclature
+\printnomenclature
+
 \include{introducao}
 % \include{levantamento_bibliografico}
 \include{cap1}
@@ -33,8 +33,8 @@
 \include{cap3}
 \include{cap4}
 \include{consideracoes_finais}
-\bibliography{bb}
 \bibliographystyle{abnt-alf}
+\bibliography{bb}
 \include{anexo}
 
 \end{document}

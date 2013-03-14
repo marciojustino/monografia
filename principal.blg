@@ -24,38 +24,6 @@ Warning--entry type for "Ramanan2013" isn't style-file defined
 Warning--entry type for "FileSignatures2013" isn't style-file defined
 --line 136 of file bb.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Wyman2012
-while executing---line 2129 of file abnt-alf.bst
-Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Wyman2012
-while executing---line 2129 of file abnt-alf.bst
-Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Wyman2012
-while executing---line 2129 of file abnt-alf.bst
-Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Wyman2012
-while executing---line 2129 of file abnt-alf.bst
-Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Wyman2012
-while executing---line 2129 of file abnt-alf.bst
-Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry Hand2012
-while executing---line 2129 of file abnt-alf.bst
-Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry Hand2012
-while executing---line 2129 of file abnt-alf.bst
-Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry Hand2012
-while executing---line 2129 of file abnt-alf.bst
-Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry Hand2012
-while executing---line 2129 of file abnt-alf.bst
-Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry Hand2012
-while executing---line 2129 of file abnt-alf.bst
-Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry Hand2012
-while executing---line 2184 of file abnt-alf.bst
-Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry Hand2012
-while executing---line 2184 of file abnt-alf.bst
-Too many commas in name 1 of "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham" for entry Hand2012
-while executing---line 2184 of file abnt-alf.bst
-Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Wyman2012
-while executing---line 2184 of file abnt-alf.bst
-Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Wyman2012
-while executing---line 2184 of file abnt-alf.bst
-Too many commas in name 1 of "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner" for entry Wyman2012
-while executing---line 2184 of file abnt-alf.bst
 +---------------------------------------------------------+
 | Estilo bibliografico abnt-alf.bst versao 1.53           |
 | Implementa a NBR6023, NBR10520 e NBR10523               |
@@ -64,37 +32,37 @@ while executing---line 2184 of file abnt-alf.bst
 +---------------------------------------------------------+
 You've used 12 entries,
             6522 wiz_defined-function locations,
-            1243 strings with 10819 characters,
-and the built_in function-call counts, 7843 in all, are:
-= -- 653
-> -- 167
+            1243 strings with 10839 characters,
+and the built_in function-call counts, 8520 in all, are:
+= -- 709
+> -- 236
 < -- 10
-+ -- 98
-- -- 55
-* -- 474
-:= -- 1137
++ -- 127
+- -- 74
+* -- 553
+:= -- 1218
 add.period$ -- 36
 call.type$ -- 13
-change.case$ -- 74
+change.case$ -- 92
 chr.to.int$ -- 18
 cite$ -- 11
-duplicate$ -- 384
-empty$ -- 695
-format.name$ -- 253
-if$ -- 1849
+duplicate$ -- 393
+empty$ -- 698
+format.name$ -- 353
+if$ -- 2012
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 203
+missing$ -- 206
 newline$ -- 64
 num.names$ -- 55
-pop$ -- 252
+pop$ -- 265
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 41
 quote$ -- 0
-skip$ -- 521
+skip$ -- 545
 stack$ -- 1
 substring$ -- 341
-swap$ -- 175
+swap$ -- 181
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
@@ -103,4 +71,4 @@ warning$ -- 0
 while$ -- 78
 width$ -- 0
 write$ -- 173
-(There were 16 error messages)
+(There were 3 warnings)

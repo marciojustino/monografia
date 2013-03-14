@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  12 MAR 2013 00:59
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  13 MAR 2013 21:04
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -183,6 +183,14 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 (/usr/share/texmf-texlive/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+(/usr/share/texmf-texlive/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
 (/usr/share/texmf-texlive/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
@@ -196,14 +204,6 @@ File: babel.def 2008/07/06 v3.8l Babel common definitions
 )
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
-))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
-
-(/usr/share/texmf-texlive/tex/latex/base/latin1.def
-File: latin1.def 2008/03/30 v1.1d Input encoding file
 ))
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -259,41 +259,52 @@ Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
 \pfg@pcount=\count103
 \pfg@scount=\count104
 \pfg@temp=\write3
-) (./principal.aux
-(./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux) (./dedicatoria.aux)
-(./resumo.aux) (./abstract.aux) (./introducao.aux) (./cap1.aux) (./cap2.aux)
-(./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux) (./anexo.aux))
+)
+(/usr/share/texmf-texlive/tex/latex/nomencl/nomencl.sty
+Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
+\nomlabelwidth=\dimen116
+\nom@tempdim=\dimen117
+\nomitemsep=\skip55
+)
+\@nomenclaturefile=\write4
+\openout4 = `principal.nlo'.
+
+
+Writing nomenclature file principal.nlo
+(./principal.aux (./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux)
+(./dedicatoria.aux) (./resumo.aux) (./abstract.aux) (./introducao.aux)
+(./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
+) (./anexo.aux))
 \openout1 = `principal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 15.
-
-(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 14.
+ (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-\big@size=\dimen116
+\big@size=\dimen118
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
-\scratchdimen=\dimen117
+\scratchdimen=\dimen119
 \scratchbox=\box52
 \nofMPsegments=\count106
 \nofMParguments=\count107
 \everyMPshowfont=\toks18
 \MPscratchCnt=\count108
-\MPscratchDim=\dimen118
+\MPscratchDim=\dimen120
 \MPnumerator=\count109
 \everyMPtoPDFconversion=\toks19
 )
@@ -354,14 +365,14 @@ Non-PDF special ignored!
 ])
 \openout2 = `folha_aprovacao.aux'.
 
- (./folha_aprovacao.tex [1
+ (./folha_aprovacao.tex [2
 
 
 
 ])
 \openout2 = `dedicatoria.aux'.
 
- (./dedicatoria.tex [2
+ (./dedicatoria.tex [3
 
 
 
@@ -374,7 +385,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1.
- [3
+ [4
 
 
 
@@ -383,7 +394,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24.88> not available
 ])
 \openout2 = `abstract.aux'.
 
- (./abstract.tex [4
+ (./abstract.tex [5
 
 
 
@@ -391,19 +402,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24.88> not available
 ]) (./principal.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 2.
- [5
+ [6
 
 
-]
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 45.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 45.
- [6])
-\tf@toc=\write4
-\openout4 = `principal.toc'.
+] [7])
+\tf@toc=\write5
+\openout5 = `principal.toc'.
 
- [7]
+ [8]
 (./principal.lof
 Overfull \hbox (4.76086pt too wide) in paragraph at lines 15--15
  [][] []\OT1/ptm/m/n/12 Demonstra[][]ao de fragmenta[][]ao de ar-qui-vos nos cl
@@ -411,17 +417,19 @@ us-ters do disco r[]^^Pgido (LTD.,
  []
 
 )
-\tf@lof=\write5
-\openout5 = `principal.lof'.
+\tf@lof=\write6
+\openout6 = `principal.lof'.
 
- [8
+ [9
 
 
-] [9] (./principal.lot)
-\tf@lot=\write6
-\openout6 = `principal.lot'.
+] [10] (./principal.lot)
+\tf@lot=\write7
+\openout7 = `principal.lot'.
 
- [10
+
+No file principal.nls.
+[11
 
 ]
 \openout2 = `introducao.aux'.
@@ -431,42 +439,30 @@ Cap\'{\i }tulo 1.
 <figuras/fig01.png, id=43, 604.2575pt x 344.28625pt>
 File: figuras/fig01.png Graphic file (type png)
  <use figuras/fig01.png>
-[1
+[12
 
 
  <./figuras/fig01.png (PNG copy)>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
- [2] [3]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+ [13] [14]
 <figuras/hipotese.png, id=55, 2699.08376pt x 1308.89pt>
 File: figuras/hipotese.png Graphic file (type png)
 
 <use figuras/hipotese.png>
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 56.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 67.
  (/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
- [4 <./figuras/hipotese.png (PNG copy)>]
-Overfull \hbox (15.91827pt too wide) in paragraph at lines 68--69
-\OT1/ptm/m/n/12 tema de ar-qui-vos NTFS junto ao cri-a-dor (Mi-cro-soft), pes-q
-ui-sas cor-re-la-tas re-fe-ren-tes []a fragmenta[][]ao
- []
-
-)
-Overfull \hbox (15.57132pt too wide) in paragraph at lines 70--29
-\OT1/ptm/m/n/12 para que se possa con-cre-ti-zar, atrav[]es de da-dos sig-ni-fi
--ca-ti-vos, a efic[]acia do pro-cesso de identifica[][]ao
- []
-
-[5]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
+ [15 <./figuras/hipotese.png (PNG copy)>]) [16]
 \openout2 = `cap1.aux'.
 
  (./cap1.tex
@@ -474,11 +470,11 @@ Cap\'{\i }tulo 2.
 <figuras/harddisk.jpg, id=63, 652.4375pt x 496.85625pt>
 File: figuras/harddisk.jpg Graphic file (type jpg)
 
-<use figuras/harddisk.jpg> [6
+<use figuras/harddisk.jpg> [17
 
 
 
- <./figuras/harddisk.jpg>] [7]
+ <./figuras/harddisk.jpg>] [18]
 <figuras/hard-disk-structure.png, id=71, 978.65625pt x 157.58875pt>
 File: figuras/hard-disk-structure.png Graphic file (type png)
 
@@ -486,35 +482,45 @@ File: figuras/hard-disk-structure.png Graphic file (type png)
 <figuras/fig02.png, id=72, 501.875pt x 103.38625pt>
 File: figuras/fig02.png Graphic file (type png)
  <use figuras/fig02.png>
-[8 <./figuras/hard-disk-structure.png (PNG copy)> <./figuras/fig02.png>]
+[19 <./figuras/hard-disk-structure.png (PNG copy)> <./figuras/fig02.png>]
 <figuras/estrutura-ntfs.png, id=78, 572.1375pt x 131.49126pt>
 File: figuras/estrutura-ntfs.png Graphic file (type png)
 
 <use figuras/estrutura-ntfs.png>
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 []\OT1/ptm/m/n/12 Mapeia ca-rac-te-res em texto min[]usculo para texto
  []
 
-[9 <./figuras/estrutura-ntfs.png (PNG copy)>]
+[20 <./figuras/estrutura-ntfs.png (PNG copy)>]
 <figuras/mft-file-format.jpg, id=82, 602.25pt x 240.9pt>
 File: figuras/mft-file-format.jpg Graphic file (type jpg)
 
-<use figuras/mft-file-format.jpg> [10 <./figuras/mft-file-format.jpg>]
+<use figuras/mft-file-format.jpg> [21 <./figuras/mft-file-format.jpg>]
 <figuras/mft-attribute.png, id=86, 565.11125pt x 371.3875pt>
 File: figuras/mft-attribute.png Graphic file (type png)
 
 <use figuras/mft-attribute.png>
-Underfull \hbox (badness 1092) in paragraph at lines 164--165
-\OT1/ptm/m/n/12 do sis-tema de ar-qui-vos. Ar-ma-ze-nava informa[][]oes de
+Underfull \hbox (badness 3525) in paragraph at lines 172--173
+\OT1/ptm/m/n/12 vers[]oes do sis-tema de ar-qui-vos. Ar-ma-ze-nava
  []
 
 
-Overfull \hbox (13.23068pt too wide) in paragraph at lines 152--185
- [][] 
+Underfull \hbox (badness 1072) in paragraph at lines 182--183
+[]\OT1/ptm/m/n/12 Usado pelo servi[]o de ras-tre-a-mento de link dis-
  []
 
 
-Overfull \hbox (2.77739pt too wide) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+[]\OT1/ptm/m/n/12 A EFS (En-cryp-ting File Sys-tem) ar-ma-zena
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 190--191
+\OT1/ptm/m/n/12 informa[][]oes que s[]ao usa-das na manipula[][]ao de
+ []
+
+
+Overfull \hbox (2.77739pt too wide) in paragraph at lines 199--200
 []\OT1/ptm/m/n/12 Todo re-gis-tro de ar-quivo con-siste de ao me-nos um par de 
 atri-buto/valor. Se toda a informa[][]ao
  []
@@ -522,21 +528,22 @@ atri-buto/valor. Se toda a informa[][]ao
 <figuras/mft-record.png, id=87, 1181.41376pt x 419.5675pt>
 File: figuras/mft-record.png Graphic file (type png)
 
-<use figuras/mft-record.png> [11 <./figuras/mft-attribute.png (PNG copy)>]
+<use figuras/mft-record.png> [22 <./figuras/mft-attribute.png (PNG copy)>]
 <figuras/ntfs-index.png, id=91, 542.025pt x 271.0125pt>
 File: figuras/ntfs-index.png Graphic file (type png)
 
-<use figuras/ntfs-index.png> [12 <./figuras/mft-record.png (PNG copy)>]
-<figuras/ntfs-index-directory.png, id=95, 916.42375pt x 345.29pt>
+<use figuras/ntfs-index.png>
+<figuras/ntfs-index-directory.png, id=92, 916.42375pt x 345.29pt>
 File: figuras/ntfs-index-directory.png Graphic file (type png)
 
-<use figuras/ntfs-index-directory.png> [13 <./figuras/ntfs-index.png (PNG copy)
-> <./figuras/ntfs-index-directory.png (PNG copy)>]) [14]
+<use figuras/ntfs-index-directory.png> [23] [24 <./figuras/mft-record.png (PNG 
+copy)> <./figuras/ntfs-index.png (PNG copy)> <./figuras/ntfs-index-directory.pn
+g (PNG copy)>]) [25]
 \openout2 = `cap2.aux'.
 
  (./cap2.tex
 Cap\'{\i }tulo 3.
-[15
+[26
 
 
 
@@ -547,25 +554,20 @@ File: figuras/pdf-file-signature.png Graphic file (type png)
 <figuras/png-file-signature.png, id=108, 680.5425pt x 161.85469pt>
 File: figuras/png-file-signature.png Graphic file (type png)
 
-<use figuras/png-file-signature.png>
-<figuras/fragmented-files.png, id=109, 1003.75pt x 181.67876pt>
+<use figuras/png-file-signature.png> [27 <./figuras/pdf-file-signature.png (PNG
+ copy)> <./figuras/png-file-signature.png (PNG copy)>]
+<figuras/fragmented-files.png, id=112, 1003.75pt x 181.67876pt>
 File: figuras/fragmented-files.png Graphic file (type png)
 
-<use figuras/fragmented-files.png> [16 <./figuras/pdf-file-signature.png (PNG c
-opy)> <./figuras/png-file-signature.png (PNG copy)>]
-Overfull \hbox (10.49266pt too wide) in paragraph at lines 71--72
-[]\OT1/ptm/m/n/12 Kloe re-fe-ren-cia a fragmenta[][]ao li-near a ar-qui-vos que
- est[]ao frag-men-ta-dos se-guindo a sequ[]encia
- []
-
-<figuras/fraglinear.png, id=113, 575.14874pt x 88.83188pt>
+<use figuras/fragmented-files.png> [28 <./figuras/fragmented-files.png (PNG cop
+y)>] <figuras/fraglinear.png, id=116, 575.14874pt x 88.83188pt>
 File: figuras/fraglinear.png Graphic file (type png)
 
-<use figuras/fraglinear.png> [17 <./figuras/fragmented-files.png (PNG copy)>]
+<use figuras/fraglinear.png>
 <figuras/fragnaolinear.png, id=117, 560.8453pt x 80.55093pt>
 File: figuras/fragnaolinear.png Graphic file (type png)
 
-<use figuras/fragnaolinear.png> [18 <./figuras/fraglinear.png (PNG copy)> <./fi
+<use figuras/fragnaolinear.png> [29 <./figuras/fraglinear.png (PNG copy)> <./fi
 guras/fragnaolinear.png (PNG copy)>]
 <figuras/exe-file-signature.png, id=121, 679.78969pt x 178.41656pt>
 File: figuras/exe-file-signature.png Graphic file (type png)
@@ -574,22 +576,28 @@ File: figuras/exe-file-signature.png Graphic file (type png)
 <figuras/png-file-structure-data.png, id=122, 425.59pt x 607.26875pt>
 File: figuras/png-file-structure-data.png Graphic file (type png)
 
-<use figuras/png-file-structure-data.png> [19 <./figuras/exe-file-signature.png
- (PNG copy)>] [20 <./figuras/png-file-structure-data.png (PNG copy)>]
-<figuras/setor-borda.png, id=130, 779.16093pt x 176.15813pt>
+<use figuras/png-file-structure-data.png> [30]
+Overfull \hbox (11.0086pt too wide) in paragraph at lines 151--152
+[]\OT1/ptm/m/n/12 Se uti-liza da interpreta[][]ao do ta-ma-nho m[]aximo poss[]^
+^Pvel do bloco de da-dos ap[]os a identifica[][]ao
+ []
+
+[31 <./figuras/exe-file-signature.png (PNG copy)> <./figuras/png-file-structure
+-data.png (PNG copy)>] [32]
+<figuras/setor-borda.png, id=133, 779.16093pt x 176.15813pt>
 File: figuras/setor-borda.png Graphic file (type png)
 
 <use figuras/setor-borda.png>
-<figuras/setor-borda-fragmentado.png, id=131, 778.40813pt x 174.6525pt>
+<figuras/setor-borda-fragmentado.png, id=134, 778.40813pt x 174.6525pt>
 File: figuras/setor-borda-fragmentado.png Graphic file (type png)
 
-<use figuras/setor-borda-fragmentado.png>) [21] [22 <./figuras/setor-borda.png 
-(PNG copy)> <./figuras/setor-borda-fragmentado.png (PNG copy)>]
+<use figuras/setor-borda-fragmentado.png>) [33 <./figuras/setor-borda.png (PNG 
+copy)> <./figuras/setor-borda-fragmentado.png (PNG copy)>]
 \openout2 = `cap3.aux'.
 
  (./cap3.tex
 Cap\'{\i }tulo 4.
-) [23
+) [34
 
 
 
@@ -598,7 +606,7 @@ Cap\'{\i }tulo 4.
 
  (./cap4.tex
 Cap\'{\i }tulo 5.
-) [24
+) [35
 
 
 
@@ -607,17 +615,17 @@ Cap\'{\i }tulo 5.
 
  (./consideracoes_finais.tex
 Cap\'{\i }tulo 6.
-) [25
+) [36
 
 
 
-] (./principal.bbl) [26
+] (./principal.bbl) [37
 
 
 ]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex) [27
+ (./anexo.tex) [38
 
 
 ]
@@ -630,20 +638,20 @@ Cap\'{\i }tulo 6.
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
 ) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2820 strings out of 495041
- 41037 string characters out of 1181897
- 101534 words of memory out of 3000000
- 5781 multiletter control sequences out of 15000+50000
- 46075 words of font info for 91 fonts, out of 3000000 for 9000
+ 2907 strings out of 495041
+ 42061 string characters out of 1181897
+ 102017 words of memory out of 3000000
+ 5863 multiletter control sequences out of 15000+50000
+ 45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 31i,13n,41p,1281b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,13n,41p,1420b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/s
 hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
 texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (39 pages, 855865 bytes).
+Output written on principal.pdf (39 pages, 856367 bytes).
 PDF statistics:
  178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

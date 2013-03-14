@@ -1,5 +1,5 @@
 \select@language {brazil}
-\contentsline {table}{\numberline {2.1}{\ignorespaces Tamanho do Cluster Padr\~ao Para Formatos NTFS (quanto maior o tamanho do disco maior o tamanho do cluster).}}{8}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Registros reservados do NTFS na Master File Table.}}{10}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Registros reservados do NTFS na Master File Table.}}{12}
-\contentsline {table}{\numberline {3.1}{\ignorespaces Exemplos de assinatura de arquivos pelo cabe\c calho \cite {FileSignatures2013}.}}{16}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Tamanho do Cluster Padr\~ao Para Formatos NTFS (quanto maior o tamanho do disco maior o tamanho do cluster).}}{19}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Registros reservados do NTFS na Master File Table.}}{21}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Registros reservados do NTFS na Master File Table.}}{23}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Exemplos de assinatura de arquivos pelo cabe\c calho \cite {FileSignatures2013}.}}{27}
