@@ -15,16 +15,21 @@
 {DATABASE, F. O. F.~S. \emph{File Signatures}. 2013.
 Dispon{\'\i}vel em: $<$http://filesignatures.net/index.php?page=all$>$.}
 
+\bibitem[Fitzgerald et al. 2012]{Zhulyn2012}
+\abntrefinfo{Fitzgerald et al.}{FITZGERALD et al.}{2012}
+{FITZGERALD, S. et al. Using nlp techniques for file fragment classification.
+\emph{Digital Investigation}, v.~9, p. S44--S49, 2012.}
+
 \bibitem[Garfinkel 2007]{Garfinkel2007}
 \abntrefinfo{Garfinkel}{GARFINKEL}{2007}
 {GARFINKEL, S.~L. Carving contiguous and fragmented files with fast object
   validation.
-\emph{ELSEVIER}, v.~4S, p. S2--S12, 2007.}
+\emph{Digital Investigation}, v.~4S, p. S2--S12, 2007.}
 
 \bibitem[Hand et al. 2012]{Hand2012}
 \abntrefinfo{Hand et al.}{HAND et al.}{2012}
 {HAND, S. et al. Bin-carver: Automatic recovery of binary executable files.
-\emph{ELSEVIER}, n.~9, p. S108--S117, 2012.}
+\emph{Digital Investigation}, v.~9, p. S108--S117, 2012.}
 
 \bibitem[IBOPE//NetRatings 2012]{CeticBR2012}
 \abntrefinfo{IBOPE//NetRatings}{IBOPE//NETRATINGS}{2012}

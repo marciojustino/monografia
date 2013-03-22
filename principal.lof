@@ -10,8 +10,8 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Registro de arquivo da MFT \cite {Svensson2005}.}}{24}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Registro de diret\'orio .}}{24}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Registro de diret\'orio e a ``Index Allocation Buffer''.}}{24}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces WinHex exibindo a assinatura de um arquivo .pdf}}{27}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces WinHex exibindo a assinatura de um arquivo .png}}{27}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces WinHex exibindo a assinatura de um arquivo PDF.}}{27}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces WinHex exibindo a assinatura de um arquivo PNG.}}{27}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Demonstra\c c\~ao de fragmenta\c c\~ao de arquivos nos clusters do disco r\IeC {\'\i }gido \cite {DataRecovery2010}.}}{28}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Exemplo de Fragmenta\c c\~ao Linear}}{29}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Exemplo de Fragmenta\c c\~ao N\~ao Linear}}{29}

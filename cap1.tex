@@ -2,9 +2,12 @@
 
 \section{Discos Rígidos}
 
-Os discos rígidos são usados para armazenar informações \textit{não voláteis} como programas, documentos, planilhas, anexos de e-mail, arquivos de sistema e outros criados pelo usuário.
+Os discos rígidos são usados para armazenar informações \textit{não voláteis} como programas, documentos, planilhas, anexos de e-mail, arquivos de
+sistema e outros criados pelo usuário.
 
-Um disco rígido é composto por uma ou mais partições lógicas, representadas por um volume que pode ser formatado utilizando um sistema de arquivo, seja esse um sistema FAT, NTFS (\textit{Computadores que utilizam Windows}), ext3, ext4 (\textit{Computadores que utilizam Linux}), entre outros sistemas existentes atualmente \cite{Svensson2005}.
+Um disco rígido é composto por uma ou mais partições lógicas, representadas por um volume que pode ser formatado utilizando um sistema de arquivo,
+seja esse um sistema FAT, NTFS (\textit{Computadores que utilizam Windows}), ext3, ext4 (\textit{Computadores que utilizam Linux}), entre outros
+sistemas existentes atualmente \cite{Svensson2005}.
 
 \begin{figure}[htb]
   \centering
@@ -15,15 +18,22 @@ Um disco rígido é composto por uma ou mais partições lógicas, representadas por 
 
 \section{O Sistema NTFS}
 
-Projetado pela Microsoft, o NTFS é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT (1993) até as versões mais recentes como o Windows8 (2012), com algumas evoluções ao longo do tempo. Sendo este o predecessor do antigo sistema FAT, é o sistema mais presente em investigações de sistemas devido a superioridade de utilização de sistemas operacionais Windows em todo o mundo.
+Projetado pela Microsoft, o NTFS é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT
+(1993) até as versões mais recentes como o Windows8 (2012), com algumas evoluções ao longo do tempo. Sendo este o predecessor do antigo sistema FAT,
+é o sistema mais presente em investigações de sistemas devido a superioridade de utilização de sistemas operacionais Windows em todo o mundo.
 
-O sistema de arquivos NTFS foi projetado para melhor confiabilidade, segurança e suporte de grandes dispositivos de armazenamento de dados. Dispõe do uso de estruturas genéricas que servem de envoltório para estruturas de dados com conteúdo específico. Desta forma, o NTFS se torna um projeto escalável pois a estrutura interna de dados pode mudar inúmeras vezes enquanto que a sua casca (a estrutura genérica) permanece constante. Um bom exemplo desse modelo é que todos os bytes são alocados em arquivos no sistema \cite{Carrier2005}.
+O sistema de arquivos NTFS foi projetado para melhor confiabilidade, segurança e suporte de grandes dispositivos de armazenamento de dados. Dispõe
+do uso de estruturas genéricas que servem de envoltório para estruturas de dados com conteúdo específico. Desta forma, o NTFS se torna um
+projeto escalável pois a estrutura interna de dados pode mudar inúmeras vezes enquanto que a sua casca (a estrutura genérica) permanece constante. Um
+bom exemplo desse modelo é que todos os bytes são alocados em arquivos no sistema \cite{Carrier2005}.
 
 \section{Estrutura de Dados}
 
-Segundo Carrier (2005, p. 199), a única estrutura consistente no NTFS está presente nos primeiros setores do disco, contendo os setores de boot e código.
+Segundo um dos pesquisadores da estrutura de dados do sistema de arquivos NTFS, Carrier (2005, p. 199), a única estrutura consistente no NTFS
+está presente nos primeiros setores do disco, contendo os setores de boot e código.
 
-O coração do sistema de arquivos NTFS está na Master File Table (MFT), pois esta contém as informações de todos os diretórios. Todo arquivo e diretório existente possui uma entrada na MFT, sendo que esta é uma estrutura bem simples de 1 KB de tamanho. A Entrada na MFT possui:
+O coração do sistema de arquivos NTFS está na Master File Table (MFT), pois esta contém as informações de todos os diretórios. Todo arquivo e
+diretório existente possui uma entrada na MFT, sendo que esta é uma estrutura bem simples de 1 KB de tamanho. A Entrada na MFT possui:
 
 \begin{itemize}
  \item Cabeçalho;
@@ -52,7 +62,9 @@ A figura \ref{fig:mft-entrada} demonstra um registro de entrada na MFT.
 
 \subsection{Cluster}
 
-De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores sendo que o sistema de arquivos se utiliza de setores para formar um cluster. O tamanho do cluster depende da formatação do disco. A tabela \ref{tab:cluster-tamanho} demonstra tamanhos padrões definidos de cluster para diferentes tamanhos e formas de formatação do disco NTFS:
+De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores sendo que o sistema de arquivos se utiliza de setores para formar
+um cluster. O tamanho do cluster depende da formatação do disco. A tabela \ref{tab:cluster-tamanho} demonstra tamanhos padrões definidos de
+cluster para diferentes tamanhos e formas de formatação do disco NTFS:
 
 \begin{table}[htb]
   \centering  
@@ -70,11 +82,19 @@ De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores send
   \label{tab:cluster-tamanho}
 \end{table}
 
-Conforme descrito por Svensson(2005, p. 17), o disco rígido é dividido em \emph{setores} que tem seu tamanho determinado pelo hardware. Por sua vez, os setores, em conjuntos múltiplos, formam um \emph{cluster}. Os arquivos armazenados no disco são divididos pelos clusters, sendo que o cluster somente pode armazenar um único arquivo. Se um arquivo é maior que o tamanho de um cluster, o sistema utiliza novos clusters para suportar todo o tamanho do arquivo. Se um cluster ocupado ainda dispor de espaço disponível para armazenamento ele não é mais utilizado, deixando um espaço entre o final do arquivo e o final do cluster, o que recebe o nome de \emph{slack space}.
+Conforme descrito por Svensson(2005, p. 17), o disco rígido é dividido em \emph{setores} que tem seu tamanho determinado pelo hardware. Por sua vez,
+os setores, em conjuntos múltiplos, formam um \emph{cluster}. Os arquivos armazenados no disco são divididos pelos clusters, sendo que o cluster
+somente pode armazenar um único arquivo. Se um arquivo é maior que o tamanho de um cluster, o sistema utiliza novos clusters para suportar todo o
+tamanho do arquivo. Se um cluster ocupado ainda dispor de espaço disponível para armazenamento ele não é mais utilizado, deixando um espaço entre o
+final do arquivo e o final do cluster, o que recebe o nome de \emph{slack space}.
 
-O disco também possui espaços chamados de \emph{unallocated space} que se trata de regiões não alocadas do disco podendo estas estarem vazias ou conter informações de arquivos já apagados anteriormente e que podem ser de grande valor para a análise forense.
+O disco também possui espaços chamados de \emph{unallocated space} que se trata de regiões não alocadas do disco podendo estas estarem vazias ou
+conter informações de arquivos já apagados anteriormente e que podem ser de grande valor para a análise forense.
 
-Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number} (LCN). O LCN é um número sequencial que representa todos os clusters do disco, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no disco), multiplicando o identificador LCN com o tamanho do cluster.
+Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number} (LCN). O LCN é um número sequencial
+que representa todos os clusters do disco, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de
+arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no
+disco), multiplicando o identificador LCN com o tamanho do cluster.
 
 \begin{figure}[htb]
   \centering
@@ -83,7 +103,8 @@ Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamad
   \label{fig:estrutura-ntfs}
 \end{figure}
 
-Os clusters de um mesmo arquivo também recebem um identificador chamado de \emph{Virtual Cluster Number} (VNC). O VNC representa a ordem física dos clusters no arquivo, não sendo necessário, portanto, que a ordem física no disco seja contínua \cite{Svensson2005}. 
+Os clusters de um mesmo arquivo também recebem um identificador chamado de \emph{Virtual Cluster Number} (VNC). O VNC representa a ordem física dos
+clusters no arquivo, não sendo necessário, portanto, que a ordem física no disco seja contínua \cite{Svensson2005}.
 
 \subsection{Master File Table}
 
@@ -239,6 +260,17 @@ Quando um novo arquivo é criado em um sistema de arquivos NTFS, o arquivo bitmap
 
 \section{Análise NTFS}
 
-Svensson (2005, p.33) diz que registro da MFT pertencentes à arquivos já apagados podem ser recuperados pois, como vimos anteriormente, os arquivos não são excluídos do disco e sim deixam de ser referenciados, permanecendo no mesmo lugar até que outro arquivo sobrescreva seu conteúdo. As chances de se recuperar um arquivo excluído, no entando, diminuem com o tempo uma vez que o sistema NTFS sobrescreve arquivos não mais alocados antes de alocar espaço adicional para a MFT. Informações padrões de arquivo, assim como seu nome, estão contidas nesses registros da MFT. Isso pode ser útil para auxiliar a encontrar as partes do arquivo não mais alocado uma vez que as informações de apontamento para as partes do arquivo não mais alocadas e ainda residentes no disco, estão presentes no registro de indexação do arquivo encontrado. Sem esse registro do arquivo ainda seria possível se recuperar um arquivo deletado fazendo uma procura física no disco desde que este arquivo não esteja fragmentado. Arquivos fragmentados são muito difícieis de se recuperar totalmente através de pesquisas físicas no disco.
+Svensson (2005, p.33) diz que registro da MFT pertencentes à arquivos já apagados podem ser recuperados pois, como vimos anteriormente, os arquivos
+não são excluídos do disco e sim deixam de ser referenciados, permanecendo no mesmo lugar até que outro arquivo sobrescreva seu conteúdo. As chances
+de se recuperar um arquivo excluído, no entando, diminuem com o tempo uma vez que o sistema NTFS sobrescreve arquivos não mais alocados antes de
+alocar espaço adicional para a MFT. Informações padrões de arquivo, assim como seu nome, estão contidas nesses registros da MFT. Isso pode ser útil
+para auxiliar a encontrar as partes do arquivo não mais alocado uma vez que as informações de apontamento para as partes do arquivo não mais alocadas
+e ainda residentes no disco, estão presentes no registro de indexação do arquivo encontrado. Sem esse registro do arquivo ainda seria possível se
+recuperar um arquivo deletado fazendo uma procura física no disco desde que este arquivo não esteja fragmentado. Arquivos fragmentados são muito
+difícieis de se recuperar totalmente através de pesquisas físicas no disco.
 
-Tendo isso em vista, Svensson (2005, p.33) relata que o índice pertencente à um arquivo removido pode não mais ser localizado visto que o mesmo pode ser rapidamente sobrescrito, o que já foi visto anteriormente. Essa entrada de arquivo (índice) pode ser muito importante na reconstituição do crime. Quando uma entrada de índice é marcada para remoção, todas as entradas seguintes são movidas para cima sobrescrevendo, portanto, o índice marcado para remoção. Se essa entrada de índice é a última entrada em um registro de diretório ou no buffer de alocação de índices (index allocation buffer) ela pode então não ser sobrescrita podendo assim ser recuperada.
+Tendo isso em vista, Svensson relata que o índice pertencente à um arquivo removido pode não mais ser localizado visto que o mesmo pode ser
+rapidamente sobrescrito, o que já foi visto anteriormente. Essa entrada de arquivo (índice) pode ser muito importante na reconstituição do crime.
+Quando uma entrada de índice é marcada para remoção, todas as entradas seguintes são movidas para cima sobrescrevendo, portanto, o índice marcado para
+remoção. Se essa entrada de índice é a última entrada em um registro de diretório ou no buffer de alocação de índices (index allocation buffer) ela
+pode então não ser sobrescrita podendo assim ser recuperada.

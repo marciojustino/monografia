@@ -34,15 +34,16 @@
 \contentsline {subsection}{\numberline {3.4.1}Carving - Cabe\c calho e Rodap\'e}{30}
 \contentsline {subsection}{\numberline {3.4.2}Carving - Cabe\c calho / M\'aximo Bloco de Dados}{32}
 \contentsline {subsection}{\numberline {3.4.3}Carving - Estrutura de Arquivo}{32}
-\contentsline {subsection}{\numberline {3.4.4}Entropia de Dados}{33}
-\contentsline {section}{\numberline {3.5}N\'umero M\'agico}{33}
-\contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{34}
-\contentsline {section}{\numberline {4.1}Diferencia\c c\~ao}{34}
-\contentsline {section}{\numberline {4.2}Fragmenta\c c\~ao}{34}
-\contentsline {section}{\numberline {4.3}Ponto de Fragmenta\c c\~ao}{34}
-\contentsline {chapter}{\numberline {5}Ferramentas de File Carving}{35}
-\contentsline {section}{\numberline {5.1}Scalpel}{35}
-\contentsline {section}{\numberline {5.2}Foremost}{35}
-\contentsline {chapter}{\numberline {6}Considera\c c\~oes Finais}{36}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{37}
-\contentsline {chapter}{Anexos}{38}
+\contentsline {subsection}{\numberline {3.4.4}Classifica\c c\~ao de Fragmentos de Arquivos}{33}
+\contentsline {subsection}{\numberline {3.4.5}Entropia e Identifica\c c\~ao de Fragmentos}{34}
+\contentsline {section}{\numberline {3.5}N\'umero M\'agico}{34}
+\contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{35}
+\contentsline {section}{\numberline {4.1}Diferencia\c c\~ao}{35}
+\contentsline {section}{\numberline {4.2}Fragmenta\c c\~ao}{35}
+\contentsline {section}{\numberline {4.3}Ponto de Fragmenta\c c\~ao}{35}
+\contentsline {chapter}{\numberline {5}Ferramentas de File Carving}{36}
+\contentsline {section}{\numberline {5.1}Scalpel}{36}
+\contentsline {section}{\numberline {5.2}Foremost}{36}
+\contentsline {chapter}{\numberline {6}Considera\c c\~oes Finais}{37}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{38}
+\contentsline {chapter}{Anexos}{39}

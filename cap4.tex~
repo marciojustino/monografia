@@ -1,9 +1,11 @@
-\chapter{Ferramentas de File Carving}
-Scalpel
-Foremost
-....
-
-\section{Scalpel}
+\chapter{File Carving Avançado}
 ...
 
-\section{Foremost}
+\section{Diferenciação}
+...
+
+\section{Fragmentação}
+...
+
+\section{Ponto de Fragmentação}
+...aqui serão incluídos também algoritmos de detecção de pontos de fragmentação como listado no mind map (Sequential Hypothesis Testing)...

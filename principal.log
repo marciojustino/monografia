@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  13 MAR 2013 21:04
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  22 MAR 2013 16:10
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -444,24 +444,25 @@ File: figuras/fig01.png Graphic file (type png)
 
  <./figuras/fig01.png (PNG copy)>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
  [13] [14]
 <figuras/hipotese.png, id=55, 2699.08376pt x 1308.89pt>
 File: figuras/hipotese.png Graphic file (type png)
 
 <use figuras/hipotese.png>
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 67.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 105.
+
  (/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
  [15 <./figuras/hipotese.png (PNG copy)>]) [16]
 \openout2 = `cap1.aux'.
 
@@ -487,7 +488,7 @@ File: figuras/fig02.png Graphic file (type png)
 File: figuras/estrutura-ntfs.png Graphic file (type png)
 
 <use figuras/estrutura-ntfs.png>
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 []\OT1/ptm/m/n/12 Mapeia ca-rac-te-res em texto min[]usculo para texto
  []
 
@@ -500,27 +501,27 @@ File: figuras/mft-file-format.jpg Graphic file (type jpg)
 File: figuras/mft-attribute.png Graphic file (type png)
 
 <use figuras/mft-attribute.png>
-Underfull \hbox (badness 3525) in paragraph at lines 172--173
+Underfull \hbox (badness 3525) in paragraph at lines 193--194
 \OT1/ptm/m/n/12 vers[]oes do sis-tema de ar-qui-vos. Ar-ma-ze-nava
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 182--183
+Underfull \hbox (badness 1072) in paragraph at lines 203--204
 []\OT1/ptm/m/n/12 Usado pelo servi[]o de ras-tre-a-mento de link dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 []\OT1/ptm/m/n/12 A EFS (En-cryp-ting File Sys-tem) ar-ma-zena
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 190--191
+Underfull \hbox (badness 2027) in paragraph at lines 211--212
 \OT1/ptm/m/n/12 informa[][]oes que s[]ao usa-das na manipula[][]ao de
  []
 
 
-Overfull \hbox (2.77739pt too wide) in paragraph at lines 199--200
+Overfull \hbox (2.77739pt too wide) in paragraph at lines 220--221
 []\OT1/ptm/m/n/12 Todo re-gis-tro de ar-quivo con-siste de ao me-nos um par de 
 atri-buto/valor. Se toda a informa[][]ao
  []
@@ -577,7 +578,7 @@ File: figuras/exe-file-signature.png Graphic file (type png)
 File: figuras/png-file-structure-data.png Graphic file (type png)
 
 <use figuras/png-file-structure-data.png> [30]
-Overfull \hbox (11.0086pt too wide) in paragraph at lines 151--152
+Overfull \hbox (11.0086pt too wide) in paragraph at lines 193--196
 []\OT1/ptm/m/n/12 Se uti-liza da interpreta[][]ao do ta-ma-nho m[]aximo poss[]^
 ^Pvel do bloco de da-dos ap[]os a identifica[][]ao
  []
@@ -591,13 +592,13 @@ File: figuras/setor-borda.png Graphic file (type png)
 <figuras/setor-borda-fragmentado.png, id=134, 778.40813pt x 174.6525pt>
 File: figuras/setor-borda-fragmentado.png Graphic file (type png)
 
-<use figuras/setor-borda-fragmentado.png>) [33 <./figuras/setor-borda.png (PNG 
-copy)> <./figuras/setor-borda-fragmentado.png (PNG copy)>]
+<use figuras/setor-borda-fragmentado.png> [33 <./figuras/setor-borda.png (PNG c
+opy)> <./figuras/setor-borda-fragmentado.png (PNG copy)>]) [34]
 \openout2 = `cap3.aux'.
 
  (./cap3.tex
 Cap\'{\i }tulo 4.
-) [34
+) [35
 
 
 
@@ -606,7 +607,7 @@ Cap\'{\i }tulo 4.
 
  (./cap4.tex
 Cap\'{\i }tulo 5.
-) [35
+) [36
 
 
 
@@ -615,17 +616,17 @@ Cap\'{\i }tulo 5.
 
  (./consideracoes_finais.tex
 Cap\'{\i }tulo 6.
-) [36
+) [37
 
 
 
-] (./principal.bbl) [37
+] (./principal.bbl) [38
 
 
 ]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex) [38
+ (./anexo.tex) [39
 
 
 ]
@@ -638,22 +639,22 @@ Cap\'{\i }tulo 6.
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
 ) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2907 strings out of 495041
- 42061 string characters out of 1181897
- 102017 words of memory out of 3000000
- 5863 multiletter control sequences out of 15000+50000
+ 2912 strings out of 495041
+ 42148 string characters out of 1181897
+ 103089 words of memory out of 3000000
+ 5868 multiletter control sequences out of 15000+50000
  45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 31i,13n,41p,1420b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,13n,41p,916b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/s
 hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
 texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (39 pages, 856367 bytes).
+Output written on principal.pdf (40 pages, 857788 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
+ 181 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
