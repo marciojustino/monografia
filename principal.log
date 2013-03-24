@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  22 MAR 2013 16:10
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  24 MAR 2013 17:09
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -416,14 +416,14 @@ Overfull \hbox (4.76086pt too wide) in paragraph at lines 15--15
 us-ters do disco r[]^^Pgido (LTD., 
  []
 
-)
+[9
+
+
+])
 \tf@lof=\write6
 \openout6 = `principal.lof'.
 
- [9
-
-
-] [10] (./principal.lot)
+ [10] (./principal.lot)
 \tf@lot=\write7
 \openout7 = `principal.lot'.
 
@@ -488,7 +488,7 @@ File: figuras/fig02.png Graphic file (type png)
 File: figuras/estrutura-ntfs.png Graphic file (type png)
 
 <use figuras/estrutura-ntfs.png>
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 []\OT1/ptm/m/n/12 Mapeia ca-rac-te-res em texto min[]usculo para texto
  []
 
@@ -501,27 +501,27 @@ File: figuras/mft-file-format.jpg Graphic file (type jpg)
 File: figuras/mft-attribute.png Graphic file (type png)
 
 <use figuras/mft-attribute.png>
-Underfull \hbox (badness 3525) in paragraph at lines 193--194
+Underfull \hbox (badness 3525) in paragraph at lines 194--195
 \OT1/ptm/m/n/12 vers[]oes do sis-tema de ar-qui-vos. Ar-ma-ze-nava
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 203--204
+Underfull \hbox (badness 1072) in paragraph at lines 204--205
 []\OT1/ptm/m/n/12 Usado pelo servi[]o de ras-tre-a-mento de link dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 []\OT1/ptm/m/n/12 A EFS (En-cryp-ting File Sys-tem) ar-ma-zena
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 211--212
+Underfull \hbox (badness 2027) in paragraph at lines 212--213
 \OT1/ptm/m/n/12 informa[][]oes que s[]ao usa-das na manipula[][]ao de
  []
 
 
-Overfull \hbox (2.77739pt too wide) in paragraph at lines 220--221
+Overfull \hbox (2.77739pt too wide) in paragraph at lines 221--222
 []\OT1/ptm/m/n/12 Todo re-gis-tro de ar-quivo con-siste de ao me-nos um par de 
 atri-buto/valor. Se toda a informa[][]ao
  []
@@ -578,7 +578,7 @@ File: figuras/exe-file-signature.png Graphic file (type png)
 File: figuras/png-file-structure-data.png Graphic file (type png)
 
 <use figuras/png-file-structure-data.png> [30]
-Overfull \hbox (11.0086pt too wide) in paragraph at lines 193--196
+Overfull \hbox (11.0086pt too wide) in paragraph at lines 192--195
 []\OT1/ptm/m/n/12 Se uti-liza da interpreta[][]ao do ta-ma-nho m[]aximo poss[]^
 ^Pvel do bloco de da-dos ap[]os a identifica[][]ao
  []
@@ -598,16 +598,19 @@ opy)> <./figuras/setor-borda-fragmentado.png (PNG copy)>]) [34]
 
  (./cap3.tex
 Cap\'{\i }tulo 4.
-) [35
+<figuras/file-fragment-block1.png, id=141, 830.10126pt x 98.3675pt>
+File: figuras/file-fragment-block1.png Graphic file (type png)
+
+<use figuras/file-fragment-block1.png> [35
 
 
 
-]
+ <./figuras/file-fragment-block1.png (PNG copy)>]) [36]
 \openout2 = `cap4.aux'.
 
  (./cap4.tex
 Cap\'{\i }tulo 5.
-) [36
+) [37
 
 
 
@@ -616,17 +619,17 @@ Cap\'{\i }tulo 5.
 
  (./consideracoes_finais.tex
 Cap\'{\i }tulo 6.
-) [37
+) [38
 
 
 
-] (./principal.bbl) [38
+] (./principal.bbl) [39
 
 
 ]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex) [39
+ (./anexo.tex) [40
 
 
 ]
@@ -639,10 +642,10 @@ Cap\'{\i }tulo 6.
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
 ) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2912 strings out of 495041
- 42148 string characters out of 1181897
- 103089 words of memory out of 3000000
- 5868 multiletter control sequences out of 15000+50000
+ 2918 strings out of 495041
+ 42345 string characters out of 1181897
+ 102100 words of memory out of 3000000
+ 5873 multiletter control sequences out of 15000+50000
  45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  31i,13n,41p,916b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -652,9 +655,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (40 pages, 857788 bytes).
+Output written on principal.pdf (41 pages, 864798 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
+ 185 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,11 +1,46 @@
 \chapter{File Carving Avançado}
-...
+% desenvolver
 
 \section{Diferenciação}
-...
+% desenvolver
 
 \section{Fragmentação}
-...
 
-\section{Ponto de Fragmentação}
-...aqui serão incluídos também algoritmos de detecção de pontos de fragmentação como listado no mind map (Sequential Hypothesis Testing)...
+\subsection{Ponto de Fragmentação}
+
+Conforme Menon (2008, p. S6), os arquivos fragmentados em mais de duas partes são extremamente raros porém, se um arquivo é fragmentado em mais de
+duas partes irão existir múltiplos pontos de fragmentação para o arquivo. A identificação do primeiro ponto de fragmentação não difere da localização
+dos demais fragmentos para arquivos com mais de duas partes de fragmentação.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.5]{figuras/file-fragment-block1.png}
+  \caption{Fragmentos do arquivo \emph{F} fictício.}
+  \label{fig:file-fragment-block1}
+\end{figure}
+
+A informação contida entre o final do fragmento e o início de outro fragmento pertencente ao arquivo, contém informações não pertencentes ao
+arquivo, o que pode ser visto na figura \ref{fig:file-fragment-block1} entre o bloco \textbf{4} (final do primeiro fragmento) e o bloco \textbf{8}
+(início do próximo fragmento do arquivo \emph{F}).
+
+Sendo assim, Menon se utiliza de uma abordagem de métodos para identificar se um bloco contém informações pertencentes ao arquivo ou não, e assim,
+decidir se o fragmento realmente faz parte do arquivo analisado.
+
+Um dos métodos é o uso de palavras-chave e assinatura de arquivo para determinar se a informação contida no bloco tem relação com o mesmo tipo do
+arquivo analisado, havendo divergência nesse ponto, determina-se então um ponto de fragmentação do arquivo. Se um arquivo analisado do tipo
+executável (.exe) contém em um de seus blocos o cabeçalho de um arquivo de imagem (.jpeg) pode-se então considerar um ponto de entrada de
+fragmentação nesse bloco. De forma similar, o uso de palavras-chave pode ser usado para identificar entradas inválidas e não suportadas para
+determinados tipos de arquivos, o que também se pode considerar como um ponto de entrada de fragmentação.
+
+A análise de conteúdo do bloco também é um outro método eficiente na localização de fragmentos de arquivos sendo que uma mudança drástica
+nas características dos dados de um arquivo pode indicar uma mudança estrutural, em consequência determinar que este fragmento não faz parte do
+arquivo em análise.
+
+\subsection{Entropia na Identificação de Fragmentos}
+
+Com base na ideia de um dos métodos do ponto de fragmentação, o de análise de conteúdo, surge então a necessidade de aplicação de uma metodologia
+capaz de analisar os blocos de arquivos em busca de divergências e características dos dados contidos nos mesmos.
+
+A análise de conteúdo por entropia já foi estudada e utilizada por pesquisadores e estudiosos da área forense com o objetivo de identificar conteúdo
+oculto em um determinado arquivo, atribuído a uma técnica anti-forense comumente usada conhecida como \emph{Esteganografia}.
+%[PAREI AQUI!!!!!!!!!] ****** PÁGINA 13 DO ARQUIVO ``KLOET_2007''

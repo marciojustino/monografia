@@ -19,7 +19,7 @@ sistemas existentes atualmente \cite{Svensson2005}.
 \section{O Sistema NTFS}
 
 Projetado pela Microsoft, o NTFS é o sistema de arquivos padrão de vários sistemas operacionais Microsoft desde a versão do Microsoft Windows NT
-(1993) até as versões mais recentes como o Windows8 (2012), com algumas evoluções ao longo do tempo. Sendo este o predecessor do antigo sistema FAT,
+(1993) até as versões mais recentes como o Windows 8 (2012), com algumas evoluções ao longo do tempo. Sendo este o predecessor do antigo sistema FAT,
 é o sistema mais presente em investigações de sistemas devido a superioridade de utilização de sistemas operacionais Windows em todo o mundo.
 
 O sistema de arquivos NTFS foi projetado para melhor confiabilidade, segurança e suporte de grandes dispositivos de armazenamento de dados. Dispõe
@@ -62,7 +62,7 @@ A figura \ref{fig:mft-entrada} demonstra um registro de entrada na MFT.
 
 \subsection{Cluster}
 
-De acordo com Svensson (2005, p. 25), um disco rídigo é dividido em setores sendo que o sistema de arquivos se utiliza de setores para formar
+De acordo com Svensson (2005, p. 25), um disco rígido é dividido em setores sendo que o sistema de arquivos se utiliza de setores para formar
 um cluster. O tamanho do cluster depende da formatação do disco. A tabela \ref{tab:cluster-tamanho} demonstra tamanhos padrões definidos de
 cluster para diferentes tamanhos e formas de formatação do disco NTFS:
 
@@ -88,7 +88,8 @@ somente pode armazenar um único arquivo. Se um arquivo é maior que o tamanho de 
 tamanho do arquivo. Se um cluster ocupado ainda dispor de espaço disponível para armazenamento ele não é mais utilizado, deixando um espaço entre o
 final do arquivo e o final do cluster, o que recebe o nome de \emph{slack space}.
 
-O disco também possui espaços chamados de \emph{unallocated space} que se trata de regiões não alocadas do disco podendo estas estarem vazias ou
+O disco também possui espaços chamados de espaço não alocado (unallocated space) que se trata de regiões não alocadas do disco podendo estas
+estarem vazias ou
 conter informações de arquivos já apagados anteriormente e que podem ser de grande valor para a análise forense.
 
 Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number} (LCN). O LCN é um número sequencial
@@ -232,7 +233,7 @@ A figura \ref{fig:mft-record} demonstra essa fragmentação de informações do arqu
 
 \subsection{Registros de Diretório}
 
-Os registros de diretórios possuem um atributo de indexação raíz que possui o ponto de entrada de cada arquivo e subdiretório de sua estrutura. 
+Os registros de diretórios possuem um atributo de indexação raiz que possui o ponto de entrada de cada arquivo e subdiretório de sua estrutura. 
 
 A figura \ref{fig:ntfs-index} mostra essa indexação.
 
@@ -243,7 +244,10 @@ A figura \ref{fig:ntfs-index} mostra essa indexação.
   \label{fig:ntfs-index}
 \end{figure}
 
-As entradas de índice consistem do nome do arquivo e da cópia das informações padrões da entrada de diretório. Como o número de arquivos em diretórios pode crescer, o espaço pode não ser suficiente para armazenar todas as entradas de índice então, os índices adicionais são armazenados na área de alocação conhecida como \emph{``Index Allocation Buffer''}. A área de bitmap também é usada para indicar qual VNCs presentes no ``Index Allocation Buffer'' estão sendo usados.
+As entradas de índice consistem do nome do arquivo e da cópia das informações padrões da entrada de diretório. Como o número de arquivos em diretórios
+pode crescer, o espaço pode não ser suficiente para armazenar todas as entradas de índice então, os índices adicionais são armazenados na área de
+alocação conhecida como \emph{``Index Allocation Buffer''}. A área de bitmap também é usada para indicar qual VNC's presentes no ``Index Allocation
+Buffer'' estão sendo usados.
 
 A figura \ref{fig:ntfs-index-directory} demonstra o funcionamento desse processo.
 

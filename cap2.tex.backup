@@ -1,16 +1,24 @@
 \chapter{File Carving}
+File Carving é o processo de recuperação de fragmentos de arquivos não mais indexados baseado no seu conteúdo e na ausência de metadados do sistema de
+arquivos \cite{Hand2012}.
+
+O processo de file carving é útil na recuperação de arquivos e amplamente utilizado em investigações digitais (\textit{em forense computacional}).
+Devido a isso, esse é um dos processos mais importantes e desafiadores da computação forense \cite{Garfinkel2007}.
 
 \section{Desafio}
 
-File Carving é o processo de recuperação de fragmentos de arquivos não mais indexados baseado no seu conteúdo e na ausência de metadados do sistema de arquivos \cite{Hand2012}. 
-
-O processo de file carving é útil na recuperação de arquivos e amplamente utilizado em investigações digitais (\textit{em forense computacional}). Devido a isso, esse é um dos processos mais importantes e desafiadores da computação forense \cite{Garfinkel2007}.
-
-Um dos primeiros desafios do processo de file carving, segundo Memon (2008, p. S2), se encontra na tentativa de se recuperar arquivos fragmentados. Um ponto chave no processo de recuperação desses arquivos fragmentados é encontrar a relação de fragmentação do arquivo que pode beneficiar o processo de recuperação de dados. Técnicas tradicionais não conseguem recuperar arquivos quando o sistema de arquivos é ou está corrompido, quando a tabela de alocação não está presente ou possui endereçamentos errados ou incompletos. Assim, a técnica de File Carving apresenta sua capacidade de recuperar arquivos em espaços não alocados do disco (\textit{área do disco não apontada pela tabela de partição - no caso do NTFS, a Master File Table}).
+Um dos primeiros desafios do processo de file carving, segundo Memon (2008, p. S2), se encontra na tentativa de se recuperar arquivos fragmentados. Um
+ponto chave no processo de recuperação desses arquivos fragmentados é encontrar a relação de fragmentação do arquivo que pode beneficiar o processo de
+recuperação de dados. Técnicas tradicionais não conseguem recuperar arquivos quando o sistema de arquivos é ou está corrompido, quando a tabela de
+alocação não está presente ou possui endereçamentos errados ou incompletos. Assim, a técnica de File Carving apresenta sua capacidade de recuperar
+arquivos em espaços não alocados do disco (\textit{área do disco não apontada pela tabela de partição - no caso do NTFS, a Master File Table}).
 
 \section{Assinatura de Arquivo}
 
-As ferramentas de file carving mais comuns analisam as informações de assinatura do arquivo, através do cabeçalho e do rodapé do arquivo, determinando assim o conteúdo do arquivo entre esses blocos. Infelizmente, ferramentas poderosas de file carving atuais ainda falham na recuperação de arquivos fragmentados pois somente verificam cabeçalhos conhecidos previamente e muitos arquivos podem apresentar o conteúdo que não condiz com sua assinatura ou arquivos dentro de outros arquivos, que seriam falsamente identificados por uma ferramenta que somente identifica arquivos através do cabeçalho.
+As ferramentas de file carving mais comuns analisam as informações de assinatura do arquivo, através do cabeçalho e do rodapé do arquivo, determinando
+assim o conteúdo do arquivo entre esses blocos. Infelizmente, ferramentas poderosas de file carving atuais ainda falham na recuperação de arquivos
+fragmentados pois somente verificam cabeçalhos conhecidos previamente e muitos arquivos podem apresentar o conteúdo que não condiz com sua assinatura
+ou arquivos dentro de outros arquivos, que seriam falsamente identificados por uma ferramenta que somente identifica arquivos através do cabeçalho.
 
 A assinatura de alguns tipos de arquivos mais comuns pode ser vista na tabela \ref{tab:file-signature}.
 
@@ -37,25 +45,30 @@ A assinatura de alguns tipos de arquivos mais comuns pode ser vista na tabela \r
   \label{tab:file-signature}
 \end{table}
 
-Um exemplo de arquivo PDF e um PNG abertos pelo WinHex\footnote{Editor hexadecimal particularmente muito útil na recuperação de dados e verificação de arquivos em computação forense.} mostrando exatamente a assinatura do arquivo .pdf contido no cabeçalho (Offset = 00000000).
+Um exemplo de arquivo PDF e um PNG abertos pelo WinHex\footnote{Editor hexadecimal particularmente muito útil na recuperação de dados e verificação de
+arquivos em computação forense.} mostrando exatamente a assinatura do arquivo PDF contido no cabeçalho (Offset = 00000000).
 
 \begin{figure}[htb]
   \centering
   \includegraphics[scale=0.6]{figuras/pdf-file-signature.png}
-  \caption{WinHex exibindo a assinatura de um arquivo .pdf}
+  \caption{WinHex exibindo a assinatura de um arquivo PDF.}
   \label{fig:pdf-file-signature}
 \end{figure}
 
 \begin{figure}[htb]
   \centering
   \includegraphics[scale=0.6]{figuras/png-file-signature.png}
-  \caption{WinHex exibindo a assinatura de um arquivo .png}
+  \caption{WinHex exibindo a assinatura de um arquivo PNG.}
   \label{fig:png-file-signature}
 \end{figure}
 
 \section{Arquivos Fragmentados}
 
-Segundo Kloe (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente em um mesmo conjunto de dados. Sistemas operacionais modernos, tais como o NTFS, tentam gravar os dados evitando a fragmentação porém, ainda existem algumas situações em que a fragmentação ocorre. Já Memon define que um arquivo é dito fragmentado quando o mesmo está armazenado de forma descontinuada nos clusters, e que o maior desafio para o processo de data carving é justamente a recuperação de arquivos quando esses estão fragmentados em duas ou mais partes. 
+Segundo Kloe (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente
+em um mesmo conjunto de dados. Sistemas operacionais modernos, tais como o NTFS, tentam gravar os dados evitando a fragmentação porém, ainda existem
+algumas situações em que a fragmentação ocorre. Memon (2008, p.S3) define que um arquivo é dito fragmentado quando o mesmo está armazenado de forma
+descontinuada nos clusters, e que o maior desafio para o processo de data carving é justamente a recuperação de arquivos quando esses estão
+fragmentados em duas ou mais partes.
 
 \begin{figure}[htb]
   \centering
@@ -64,18 +77,30 @@ Segundo Kloe (2007, p. 8), um arquivo fragmentado é um arquivo dividido em vária
   \label{fig:fragmented-files}
 \end{figure}
 
-Garfinkel (2007, p. S4) defendia a hipótese de que diferentes tipos de arquivos poderiam apresentar diferentes padrões de fragmentação, o que poderia determinar uma fragmentação diferenciada para um tipo de arquivo específico no disco. Arquivos comumente de sistemas, instalados juntamente com a parte do sistema operacional apresentariam um baixo fator de fragmentação enquanto arquivos comuns e altamente importantes na análise forense, por se tratarem de informações do dia a dia tais como documentos (.doc), mídias (.avi, .jpeg), arquivos de correio eletrônico armazenados (.pst), planilhas com cálculos e fórmulas (.xls), arquivos de log e arquivos texto (.txt), aparentam ter uma tendência a maior fragmentação se comparados à arquivos menos significativos para o processo forense. Garfinkel (2007, p. S2) então chegou a uma de suas principais conclusões, de que até 42\% de arquivos de e-mail (.pst), 17\% de arquivos microsoft word (.doc) e 16\% de arquivos de imagem (.jpeg) são fragmentados, deixando bem claro que a recuperação de arquivos fragmentados é um problema crítico para a análise forense. Outro fator importante que tem influência na fragmentação, que pode ser percebido por Garfinkel (2007, p. S6), é que em dispositivos com maior capacidade de armazenamento, o fator de fragmentação é menor se comparado a dispositivos de menor capacidade de armazenamento.
+Garfinkel (2007, p. S4) defendia a hipótese de que diferentes tipos de arquivos poderiam apresentar diferentes padrões de fragmentação, o que poderia
+determinar uma fragmentação diferenciada para um tipo de arquivo específico no disco. Arquivos comumente de sistemas, instalados juntamente com a
+parte do sistema operacional apresentariam um baixo fator de fragmentação enquanto arquivos comuns e altamente importantes na análise forense, por se
+tratarem de informações do dia a dia tais como documentos (.doc), mídias (.avi, .jpeg), arquivos de correio eletrônico armazenados (.pst),
+planilhas com cálculos e fórmulas (.xls), arquivos de log e arquivos texto (.txt), aparentam ter uma tendência a maior fragmentação se comparados à
+arquivos menos significativos para o processo forense. Garfinkel (2007, p. S2) então chegou a uma de suas principais conclusões, de que até 42\% de
+arquivos de e-mail (.pst), 17\% de arquivos microsoft word (.doc) e 16\% de arquivos de imagem (.jpeg) são fragmentados, deixando bem claro que a
+recuperação de arquivos fragmentados é um problema crítico para a análise forense. Outro fator importante que tem influência na fragmentação, que pode
+ser percebido por Garfinkel (2007, p. S6), é que em dispositivos com maior capacidade de armazenamento, o fator de fragmentação é menor se comparado a
+dispositivos de menor capacidade de armazenamento.
 
 Alguns fatores que motivam a fragmentação de arquivos são citados:
 
 \begin{itemize}
- \item Quando não há mais espaço de mídia suficiente na sequência física para a gravação de um arquivo, assim, para ser alocado no dispositivo ele tem que ser dividido em dois ou mais fragmentos.
- \item Na sequência de um arquivo já alocado, o espaço restante no cluster não é suficiente para a gravação do arquivo de forma sequencial, sendo necessária a divisão do arquivo em dois ou mais fragmentos.
+ \item Quando não há mais espaço de mídia suficiente na sequência física para a gravação de um arquivo, assim, para ser alocado no dispositivo ele tem
+que ser dividido em dois ou mais fragmentos.
+ \item Na sequência de um arquivo já alocado, o espaço restante no cluster não é suficiente para a gravação do arquivo de forma sequencial, sendo
+necessária a divisão do arquivo em dois ou mais fragmentos.
 \end{itemize}
 
 \subsection{Fragmentação Linear}
 
-Kloet referencia a fragmentação linear a arquivos que estão fragmentados, seguindo a mesma sequência física do dispositivo.
+% REVISAR ESTA REFERÊCIA
+Kloet (2007, p.S4) referencia a fragmentação linear a arquivos que estão fragmentados, seguindo a mesma sequência física do dispositivo.
 
 A figura \ref{fig:fraglinear} demonstra a fragmentação linear na ordem original e física do dispositivo.
 
@@ -88,7 +113,8 @@ A figura \ref{fig:fraglinear} demonstra a fragmentação linear na ordem original 
 
 \subsection{Fragmentação Não Linear}
 
-Conforme Kloet, a fragmentação não linear representa os arquivos fragmentados fora da ordem normal de sequência do disco. A figura \ref{fig:fragnaolinear} demonstra como os fragmentos do arquivo F1 estão fora da sequência natural do disco.
+Conforme Kloet, a fragmentação não linear representa os arquivos fragmentados fora da ordem normal de sequência do disco. A figura
+\ref{fig:fragnaolinear} demonstra como os fragmentos do arquivo F1 estão fora da sequência natural do disco.
 
 \begin{figure}[htb]
   \centering
@@ -99,11 +125,18 @@ Conforme Kloet, a fragmentação não linear representa os arquivos fragmentados fo
 
 \subsection{Arquivo Parcial}
 
-A figura \ref{fig:fragnaolinear} demonstra não somente a fragmentação não linear mas também a sobreposição de parte do arquivo. Isso demonstra um arquivo não mais alocado que fora parcialmente sobrescrito. Um arquivo removido pode nunca mais ser totalmente recuperado porém, parte da informação útil do arquivo ainda pode estar presente na área antes alocada para o mesmo. Kloe diz que para o processo de carving não há diferença entre uma informação parcial e um arquivo fragmentado que ainda não tenha sido totalmente recuperado. Um primeiro detalhe sobre a afirmação de Kloe é que um dos arquivos pode ser totalmente recuperado dependendo do tempo e da profundidade de busca da ferramenta de carving utilizada (em algum momento conseguiria encontrar as demais partes do arquivo), enquanto um arquivo parcial (sobrescrito) não possui mais suas partes perdidas (por terem sido sobrescritas) no dispositivo e que a ferramenta de carving em algum momento terá que definir se tratar de um arquivo parcial.
+A figura \ref{fig:fragnaolinear} demonstra não somente a fragmentação não linear mas também a sobreposição de parte do arquivo. Isso demonstra um
+arquivo não mais alocado que fora parcialmente sobrescrito. Um arquivo removido pode nunca mais ser totalmente recuperado porém, parte da informação
+útil do arquivo ainda pode estar presente na área antes alocada para o mesmo. Kloet ainda diz que para o processo de carving não há diferença entre
+uma informação parcial e um arquivo fragmentado que ainda não tenha sido totalmente recuperado. Um primeiro detalhe sobre a afirmação de Kloet é que,
+um dos arquivos pode ser totalmente recuperado dependendo do tempo e da profundidade de busca da ferramenta de carving utilizada (em algum momento
+conseguiria encontrar as demais partes do arquivo), enquanto um arquivo parcial (sobrescrito) não possui mais suas partes perdidas (por terem sido
+sobrescritas) no dispositivo e que a ferramenta de carving em algum momento terá que definir se tratar de um arquivo parcial.
 
 \subsection{Recuperação de Arquivos Fragmentados}
 
-Para recuperar arquivos fragmentados, qualquer ferramenta de file carving precisa ser capaz de identificar o ponto de início do arquivo e os blocos necessários para reconstruir o arquivo. Segundo Memon (2008, p. S4), há basicamente três pontos a se seguir no processo de carving:
+Para recuperar arquivos fragmentados, qualquer ferramenta de file carving precisa ser capaz de identificar o ponto de início do arquivo e os blocos
+necessários para reconstruir o arquivo. Segundo Memon (2008, p. S4), há basicamente três pontos a se seguir no processo de carving:
 
 \begin{enumerate}
  \item Identificar o ponto inicial do arquivo.
@@ -111,15 +144,21 @@ Para recuperar arquivos fragmentados, qualquer ferramenta de file carving precis
  \item Organizar os blocos de forma correta para que se possa reconstruir o arquivo.
 \end{enumerate}
 
-Garfinkel (2007, p. S10) havia dito que as ferramentas de carving implementam uma variedade de otimizações para validação de objetos. Essas otimizações por sua vez, dependentes de cada propriedade do validador.
+Garfinkel (2007, p. S10) havia dito que as ferramentas de carving implementam uma variedade de otimizações para validação de objetos. Essas
+otimizações por sua vez, dependentes de cada propriedade do validador.
 
 \section{Aspectos de Carving}
 
 \subsection{Carving - Cabeçalho e Rodapé}
 
-Atualmente a simples comparação byte por byte é uma operação muito rápida que computadores atuais podem processar com facilidade. Sendo assim, a verificação de cabeçalhos e rodapés estáticos de tipos de arquivos se torna um dos primeiros passos que um algoritmo de recuperação pode seguir. Com base nas informações contidas no cabeçalho e rodapé de um arquivo pode-se determinar o tipo do arquivo em questão e até mesmo, em alguns casos, informações mais específicas referentes ao arquivo (metadados) \cite{Garfinkel2007}.
+Atualmente a simples comparação byte por byte é uma operação muito rápida que computadores atuais podem processar com facilidade. Sendo assim, a
+verificação de cabeçalhos e rodapés estáticos de tipos de arquivos se torna um dos primeiros passos que um algoritmo de recuperação pode seguir. Com
+base nas informações contidas no cabeçalho e rodapé de um arquivo pode-se determinar o tipo do arquivo em questão e até mesmo, em alguns casos,
+informações mais específicas referentes ao arquivo (metadados) \cite{Garfinkel2007}.
 
-Como já visto no ítem 3.1, a análise de cabeçalho e rodapé é a técnica mais básica de carving. A técnica consiste em procurar no conjunto de dados por padrões que definem o início do bloco de um arquivo, como por exemplo o cabeçalho de um arquivo executável (.exe) demonstrado pela figura \ref{fig:exe-file-signature} \cite{Kloet2007}.
+Como já visto no item 3.1, a análise de cabeçalho e rodapé é a técnica mais básica de carving. A técnica consiste em procurar no conjunto de dados por
+padrões que definem o início do bloco de um arquivo, como por exemplo o cabeçalho de um arquivo executável (.exe) demonstrado pela figura
+\ref{fig:exe-file-signature} \cite{Kloet2007}.
 
 \begin{figure}[htb]
   \centering
@@ -128,7 +167,9 @@ Como já visto no ítem 3.1, a análise de cabeçalho e rodapé é a técnica mais bási
   \label{fig:exe-file-signature}
 \end{figure}
 
-O valor hexadecimal \emph{``4D 5A''} representa os bytes do cabeçalho do arquivo EXE que o identificam como sendo um arquivo EXE. Cada arquivo EXE é marcado a partir desse cabeçalho. A marca final do arquivo ou o rodapé do arquivo delimita o final do arquivo. O conteúdo entre o cabeçalho do arquivo e o final do arquivo seria a representação da informação do arquivo como pode ser visto pela figura \ref{fig:png-file-structure-data}.
+O valor hexadecimal \emph{``4D 5A''} representa os bytes do cabeçalho do arquivo EXE que o identificam como sendo um arquivo EXE. Cada arquivo EXE é
+marcado a partir desse cabeçalho. A marca final do arquivo ou o rodapé do arquivo delimita o final do arquivo. O conteúdo entre o cabeçalho do arquivo
+e o final do arquivo representa informação do arquivo como pode ser visto pela figura \ref{fig:png-file-structure-data}.
 
 \begin{figure}[htb]
   \centering
@@ -137,32 +178,54 @@ O valor hexadecimal \emph{``4D 5A''} representa os bytes do cabeçalho do arquivo
   \label{fig:png-file-structure-data}
 \end{figure}
 
-Segundo Kloet (2007, p. 9), a análise de cabeçalho e rodapé é um método que apresenta alguns problemas relevantes:
+Segundo Kloet (2007, p. S9), a análise de cabeçalho e rodapé é um método que apresenta alguns problemas relevantes:
 
 \begin{itemize}
  \item Muitos falsos positivos.
  \item Incapacidade de detectar arquivos fragmentados e arquivos parciais.
- \item Alguns arquivos não apresentam cabeçalho fixo, assim como alguns arquivos também apresentam rodapé variável, o que impossibilita sua identificação por esse método.
+ \item Alguns arquivos não apresentam cabeçalho fixo, assim como alguns arquivos também apresentam rodapé variável, o que impossibilita sua
+identificação por esse método.
 \end{itemize}
 
 \subsection{Carving - Cabeçalho / Máximo Bloco de Dados}
 
-Se utiliza da interpretação do tamanho máximo possível do bloco de dados após a identificação do cabeçalho do arquivo. Esta se torna possível e funcional uma vez que alguns tipos de arquivos não sofrem influência na interpretação dos seus dados se alguma outra informação estiver presente além do final dos dados válidos do arquivo, tais como arquivos de imagem (.JPEG) e arquivos de áudio (.MP3) \cite[p.~S10]{Garfinkel2007}.
+Se utiliza da interpretação do tamanho máximo possível do bloco de dados após a identificação do cabeçalho do arquivo. Esta se torna possível e
+funcional uma vez que alguns tipos de arquivos não sofrem influência na interpretação dos seus dados se alguma outra informação estiver presente além
+do final dos dados válidos do arquivo, tais como arquivos de imagem (JPEG) e arquivos de áudio (MP3)\cite[p.~S10]{Garfinkel2007}.
 
-O mesmo problema se repete com método de cabeçalho com tamanho máximo possível de dados, técnica que visa recuperar os dados pelo comprimento máximo disposto para o tipo de arquivo para sua área de dados. Além desses os problemas da técnica de cabeçalho e rodapé, esta técnica ainda tem outros dois problemas ligados à área de dados. Tendo em vista que a área máxima não é exatamente a área máxima estipulada pela definição do tipo de arquivo e sim uma questão de referência, esses dados podem ser primeiramente coletados além do tamanho real do arquivo no dispositivo de origem como também poderá ser menor que o próprio tamanho dos dados do arquivo no dispositivo de origem.
+O mesmo problema se repete com método de cabeçalho com tamanho máximo possível de dados, técnica que visa recuperar os dados pelo comprimento máximo
+disposto para o tipo de arquivo para sua área de dados. Além desses os problemas da técnica de cabeçalho e rodapé, esta técnica ainda tem outros dois
+problemas ligados à área de dados. Tendo em vista que a área máxima não é exatamente a área máxima estipulada pela definição do tipo de arquivo e sim
+uma questão de referência, esses dados podem ser primeiramente coletados além do tamanho real do arquivo no dispositivo de origem como também poderá
+ser menor que o próprio tamanho dos dados do arquivo no dispositivo de origem.
 
 \subsection{Carving - Estrutura de Arquivo}
 
-A metodologia de carving em estrutura de arquivo se baseia no uso do layout interno do arquivo (área de dados) para identificar se uma determinada informação pertence ou não a um determinado arquivo. As informações do layout do arquivo normalmente são derivadas de especificações dos formatos de arquivos, responsáveis pela criação daquele tipo de arquivo específico. Conforme Kloet, essa técnica é utilizada, em alguns casos, para a identificação de arquivos corrompidos ou fragmentados, se a estrutura de dados é bem detalhada e extensa o suficiente para seu entendimento. Se esta técnica se depara com um arquivo fragmentado que não pode ser recuperado, ela se utiliza de outras maneiras para lidar com esse tipo de informação.
+A metodologia de carving em estrutura de arquivo se baseia no uso do layout interno do arquivo (área de dados) para identificar se uma determinada
+informação pertence ou não a um determinado arquivo. As informações do layout do arquivo normalmente são derivadas de especificações dos formatos de
+arquivos, responsáveis pela criação daquele tipo de arquivo específico. Conforme Kloet, essa técnica é utilizada, em alguns casos, para a
+identificação de arquivos corrompidos ou fragmentados, se a estrutura de dados é bem detalhada e extensa o suficiente para seu entendimento. Se esta
+técnica se depara com um arquivo fragmentado que não pode ser recuperado, ela se utiliza de outras maneiras para lidar com esse tipo de informação.
 
 \begin{itemize}
- \item A informação pode ser descartada, levando a não compreensão de uma informação que na realidade pode fazer parte do arquivo, gerando assim um \emph{falso negativo}.
- \item A informação pode ser considerada, mesmo não sendo parte da informação de um determinado arquivo, levando a interpretação de um \emph{falso positivo}. O processo ainda pode entender que essa informação foi ``considerada'' e marcá-la como um \emph{falso positivo conhecido}.
+ \item A informação pode ser descartada, levando a não compreensão de uma informação que na realidade pode fazer parte do arquivo, gerando assim um
+\emph{falso negativo}.
+ \item A informação pode ser considerada, mesmo não sendo parte da informação de um determinado arquivo, levando a interpretação de um \emph{falso
+positivo}. O processo ainda pode entender que essa informação foi ``considerada'' e marcá-la como um \emph{falso positivo conhecido}.
 \end{itemize}
 
-Kloet demonstra então que com uso dessa técnica por si só não deve ser utilizada para recuperar todos os fragmentos ou partes de um arquivo. Isso porque quando um arquivo é fragmentado ou parcialmente substituído em uma posição em que a estrutura de dados restante não está mais presente ou pouca parte dela está presente, a técnica não é capaz de determinar com precisão a informação do fragmento ou da parte de um arquivo. O tipo de arquivo de imagem PNG é um bom exemplo dessa ocorrência, a área de dados da estrutura do arquivo PNG possui uma pequena estrutura, gerando o problema da identificação de fragmentos ou partes desse tipo de arquivo.
+Kloet demonstra então que com uso dessa técnica por si só não deve ser utilizada para recuperar todos os fragmentos ou partes de um arquivo. Isso
+porque quando um arquivo é fragmentado ou parcialmente substituído em uma posição em que a estrutura de dados restante não está mais presente ou pouca
+parte dela está presente, a técnica não é capaz de determinar com precisão a informação do fragmento ou da parte de um arquivo. O tipo de arquivo de
+imagem PNG é um bom exemplo dessa ocorrência, a área de dados da estrutura do arquivo PNG possui uma pequena estrutura, gerando o problema da
+identificação de fragmentos ou partes desse tipo de arquivo.
 
-Para capacitar a detecção de fragmentação, outra técnica surge buscando mitigar os problemas da técnica de carving em estrutura de arquivo. A técnica de carving baseada no conteúdo do \emph{bloco de dados} se baseia no princípio utilizado pelos discos rígidos para armazenar os dados em setores, onde a fragmentação somente ocorre sobre os limites setoriais. Assim, essa abordagem se utiliza desse conhecimento para checar cada bloco de dado e verificar se o mesmo faz parte do arquivo. Como descreve Kloet, uma forma básica de determinar o tipo de caracter presente no bloco é identificar o tipo de informação contida no mesmo, como exemplo, um bloco que possui uma parte dos dados caracteres texto e outra parte de dados sendo zeros, levando a conclusão que o bloco de dados pertence à um tipo de texto unicode.
+Para capacitar a detecção de fragmentação, outra técnica surge buscando mitigar os problemas da técnica de carving em estrutura de arquivo. A técnica
+de carving baseada no conteúdo do \emph{bloco de dados} se baseia no princípio utilizado pelos discos rígidos para armazenar os dados em setores, onde
+a fragmentação somente ocorre sobre os limites setoriais. Assim, essa abordagem se utiliza desse conhecimento para checar cada bloco de dado e
+verificar se o mesmo faz parte do arquivo. Como descreve Kloet, uma forma básica de determinar o tipo de caractere presente no bloco é identificar o
+tipo de informação contida no mesmo, como exemplo, um bloco que possui uma parte dos dados caracteres texto e outra parte de dados sendo zeros,
+levando a conclusão que o bloco de dados pertence à um tipo de texto unicode.
 
 As imagens \ref{fig:setor-borda} e \ref{fig:setor-borda-fragmentado} demonstram a abordagem dessa técnica.
 
@@ -180,7 +243,14 @@ As imagens \ref{fig:setor-borda} e \ref{fig:setor-borda-fragmentado} demonstram 
   \label{fig:setor-borda-fragmentado}
 \end{figure}
 
-\subsection{Entropia de Dados}
+\subsection{Classificação de Fragmentos de Arquivos}
+
+Outra necessidade não menos importante no processo de forense de arquivos fragmentados é a classificação dos fragmentos. A pesquisa pelas partes de
+um determinado arquivo podem levar a buscas infindáveis se o arquivo é muito extenso, faz-se necessário qualificar os fragmentos do arquivo de forma
+a identificar que um fragmento possa ou não fazer parte do arquivo em questão. O fragmento de um arquivo do tipo TXT, servindo de exemplo, não
+poderia fazer parte de área de metadados de um arquivo de imagem do tipo JPEG (comprimido) \cite[p.~S44]{Zhulyn2012}.
+
+\subsection{Entropia e Identificação de Fragmentos}
 %[PAREI AQUI!!!!!!!!!] ****** PÁGINA 13 DO ARQUIVO ``KLOET_2007''
 
 \section{Número Mágico}
