@@ -64,7 +64,7 @@ arquivos em computação forense.} mostrando exatamente a assinatura do arquivo PD
 
 \section{Arquivos Fragmentados}
 
-Segundo Kloe (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente
+Segundo Kloet (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente
 em um mesmo conjunto de dados. Sistemas operacionais modernos, tais como o NTFS, tentam gravar os dados evitando a fragmentação porém, ainda existem
 algumas situações em que a fragmentação ocorre. Memon (2008, p.S3) define que um arquivo é dito fragmentado quando o mesmo está armazenado de forma
 descontinuada nos clusters, e que o maior desafio para o processo de data carving é justamente a recuperação de arquivos quando esses estão
@@ -99,7 +99,6 @@ necessária a divisão do arquivo em dois ou mais fragmentos.
 
 \subsection{Fragmentação Linear}
 
-% REVISAR ESTA REFERÊCIA
 Kloet (2007, p.S4) referencia a fragmentação linear a arquivos que estão fragmentados, seguindo a mesma sequência física do dispositivo.
 
 A figura \ref{fig:fraglinear} demonstra a fragmentação linear na ordem original e física do dispositivo.
@@ -110,6 +109,10 @@ A figura \ref{fig:fraglinear} demonstra a fragmentação linear na ordem original 
   \caption{Exemplo de Fragmentação Linear}
   \label{fig:fraglinear}
 \end{figure}
+
+A fragmentação linear é um dos pilares para desenvolvimento de algoritmos de identificação de fragmentos devido ao problema da fragmentação ser muito
+complexo, necessitando de uma identificação passo a passo, assim esse é o ponto inicial de análise, a forma mais simples de iniciar a identificação
+do problema.
 
 \subsection{Fragmentação Não Linear}
 
@@ -187,25 +190,31 @@ Segundo Kloet (2007, p. S9), a análise de cabeçalho e rodapé é um método que apr
 identificação por esse método.
 \end{itemize}
 
+O uso desse tipo de análise (cabeçalho e rodapé) por si só não é suficiente para identificar com exatidão os fragmentos de arquivos encontrados no
+processo, uma vez que muito do conteúdo do arquivo é ignorado por esta técnica. Setores adicionados, removidos ou modificados no espaço de dados
+situado entre o cabeçalho e o rodapé de um arquivo nunca serão examinados, assim, o uso desse tipo de análise deve ser utilizado somente para
+rejeitar um objeto de dados, sendo necessária a utilização exaustiva de outros processos (algoritmos) no processamento dos fragmentos que são
+aprovados por esta análise \cite[p.~S7]{Garfinkel2007}.
+
 \subsection{Carving - Cabeçalho / Máximo Bloco de Dados}
 
 Se utiliza da interpretação do tamanho máximo possível do bloco de dados após a identificação do cabeçalho do arquivo. Esta se torna possível e
 funcional uma vez que alguns tipos de arquivos não sofrem influência na interpretação dos seus dados se alguma outra informação estiver presente além
-do final dos dados válidos do arquivo, tais como arquivos de imagem (JPEG) e arquivos de áudio (MP3)\cite[p.~S10]{Garfinkel2007}.
+do final dos dados válidos do arquivo, tais como arquivos de imagem (JPEG) e arquivos de áudio (MP3).
 
 O mesmo problema se repete com método de cabeçalho com tamanho máximo possível de dados, técnica que visa recuperar os dados pelo comprimento máximo
 disposto para o tipo de arquivo para sua área de dados. Além desses os problemas da técnica de cabeçalho e rodapé, esta técnica ainda tem outros dois
 problemas ligados à área de dados. Tendo em vista que a área máxima não é exatamente a área máxima estipulada pela definição do tipo de arquivo e sim
 uma questão de referência, esses dados podem ser primeiramente coletados além do tamanho real do arquivo no dispositivo de origem como também poderá
-ser menor que o próprio tamanho dos dados do arquivo no dispositivo de origem.
+ser menor que o próprio tamanho dos dados do arquivo no dispositivo de origem \cite[p.~S10]{Garfinkel2007}.
 
 \subsection{Carving - Estrutura de Arquivo}
 
 A metodologia de carving em estrutura de arquivo se baseia no uso do layout interno do arquivo (área de dados) para identificar se uma determinada
 informação pertence ou não a um determinado arquivo. As informações do layout do arquivo normalmente são derivadas de especificações dos formatos de
-arquivos, responsáveis pela criação daquele tipo de arquivo específico. Conforme Kloet, essa técnica é utilizada, em alguns casos, para a
-identificação de arquivos corrompidos ou fragmentados, se a estrutura de dados é bem detalhada e extensa o suficiente para seu entendimento. Se esta
-técnica se depara com um arquivo fragmentado que não pode ser recuperado, ela se utiliza de outras maneiras para lidar com esse tipo de informação.
+arquivos, responsáveis pela criação daquele tipo de arquivo específico. Esta técnica é utilizada, em alguns casos, para a identificação de arquivos
+corrompidos ou fragmentados, se a estrutura de dados é bem detalhada e extensa o suficiente para seu entendimento. Se esta técnica se depara com um
+arquivo fragmentado que não pode ser recuperado, ela se utiliza de outras maneiras para lidar com esse tipo de informação \cite{Kloet2007}.
 
 \begin{itemize}
  \item A informação pode ser descartada, levando a não compreensão de uma informação que na realidade pode fazer parte do arquivo, gerando assim um
@@ -246,9 +255,11 @@ As imagens \ref{fig:setor-borda} e \ref{fig:setor-borda-fragmentado} demonstram 
 \subsection{Classificação de Fragmentos de Arquivos}
 
 Outra necessidade não menos importante no processo de forense de arquivos fragmentados é a classificação dos fragmentos. A pesquisa pelas partes de
-um determinado arquivo podem levar a buscas infindáveis se o arquivo é muito extenso, faz-se necessário qualificar os fragmentos do arquivo de forma
-a identificar que um fragmento possa ou não fazer parte do arquivo em questão. O fragmento de um arquivo do tipo TXT, servindo de exemplo, não
-poderia fazer parte de área de metadados de um arquivo de imagem do tipo JPEG (comprimido) \cite[p.~S44]{Zhulyn2012}.
+um determinado arquivo podem levar a buscas infindáveis se o arquivo for muito extenso, faz-se necessário qualificar os fragmentos do arquivo de forma
+a identificar que um fragmento possa ou não fazer parte do arquivo em questão. 
+
+O fragmento de um arquivo do tipo TXT, servindo de exemplo, não poderia fazer parte de área de metadados de um arquivo de imagem do tipo
+JPEG (comprimido) pois a estrutura dos dados de um tipo de arquivo se diferem muito \cite[p.~S44]{Zhulyn2012}.
 
 \section{Número Mágico}
 % desenvolver
