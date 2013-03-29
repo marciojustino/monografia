@@ -64,7 +64,7 @@ arquivos em computação forense.} mostrando exatamente a assinatura do arquivo PD
 
 \section{Arquivos Fragmentados}
 
-Segundo Kloe (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente
+Segundo Kloet (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente
 em um mesmo conjunto de dados. Sistemas operacionais modernos, tais como o NTFS, tentam gravar os dados evitando a fragmentação porém, ainda existem
 algumas situações em que a fragmentação ocorre. Memon (2008, p.S3) define que um arquivo é dito fragmentado quando o mesmo está armazenado de forma
 descontinuada nos clusters, e que o maior desafio para o processo de data carving é justamente a recuperação de arquivos quando esses estão
@@ -99,7 +99,6 @@ necessária a divisão do arquivo em dois ou mais fragmentos.
 
 \subsection{Fragmentação Linear}
 
-% REVISAR ESTA REFERÊCIA
 Kloet (2007, p.S4) referencia a fragmentação linear a arquivos que estão fragmentados, seguindo a mesma sequência física do dispositivo.
 
 A figura \ref{fig:fraglinear} demonstra a fragmentação linear na ordem original e física do dispositivo.
@@ -111,10 +110,14 @@ A figura \ref{fig:fraglinear} demonstra a fragmentação linear na ordem original 
   \label{fig:fraglinear}
 \end{figure}
 
+A fragmentação linear é um dos pilares para desenvolvimento de algoritmos de identificação de fragmentos devido ao problema da fragmentação ser muito
+complexo, necessitando de uma identificação passo a passo, assim esse é o ponto inicial de análise, a forma mais simples de iniciar a identificação
+do problema.
+
 \subsection{Fragmentação Não Linear}
 
 Conforme Kloet, a fragmentação não linear representa os arquivos fragmentados fora da ordem normal de sequência do disco. A figura
-\ref{fig:fragnaolinear} demonstra como os fragmentos do arquivo F1 estão fora da sequência natural do disco.
+\ref{fig:fragnaolinear} demonstra como os fragmentos do arquivo \emph{F1} estão fora da sequência natural do disco.
 
 \begin{figure}[htb]
   \centering
@@ -127,7 +130,7 @@ Conforme Kloet, a fragmentação não linear representa os arquivos fragmentados fo
 
 A figura \ref{fig:fragnaolinear} demonstra não somente a fragmentação não linear mas também a sobreposição de parte do arquivo. Isso demonstra um
 arquivo não mais alocado que fora parcialmente sobrescrito. Um arquivo removido pode nunca mais ser totalmente recuperado porém, parte da informação
-útil do arquivo ainda pode estar presente na área antes alocada para o mesmo. Kloet ainda diz que para o processo de carving não há diferença entre
+útil do arquivo ainda pode estar presente na área antes alocada para o mesmo. Kloet diz ainda que para o processo de carving não há diferença entre
 uma informação parcial e um arquivo fragmentado que ainda não tenha sido totalmente recuperado. Um primeiro detalhe sobre a afirmação de Kloet é que,
 um dos arquivos pode ser totalmente recuperado dependendo do tempo e da profundidade de busca da ferramenta de carving utilizada (em algum momento
 conseguiria encontrar as demais partes do arquivo), enquanto um arquivo parcial (sobrescrito) não possui mais suas partes perdidas (por terem sido
@@ -209,9 +212,9 @@ ser menor que o próprio tamanho dos dados do arquivo no dispositivo de origem \c
 
 A metodologia de carving em estrutura de arquivo se baseia no uso do layout interno do arquivo (área de dados) para identificar se uma determinada
 informação pertence ou não a um determinado arquivo. As informações do layout do arquivo normalmente são derivadas de especificações dos formatos de
-arquivos, responsáveis pela criação daquele tipo de arquivo específico. Conforme Kloet, essa técnica é utilizada, em alguns casos, para a
-identificação de arquivos corrompidos ou fragmentados, se a estrutura de dados é bem detalhada e extensa o suficiente para seu entendimento. Se esta
-técnica se depara com um arquivo fragmentado que não pode ser recuperado, ela se utiliza de outras maneiras para lidar com esse tipo de informação.
+arquivos, responsáveis pela criação daquele tipo de arquivo específico. Esta técnica é utilizada, em alguns casos, para a identificação de arquivos
+corrompidos ou fragmentados, se a estrutura de dados é bem detalhada e extensa o suficiente para seu entendimento. Se esta técnica se depara com um
+arquivo fragmentado que não pode ser recuperado, ela se utiliza de outras maneiras para lidar com esse tipo de informação \cite{Kloet2007}.
 
 \begin{itemize}
  \item A informação pode ser descartada, levando a não compreensão de uma informação que na realidade pode fazer parte do arquivo, gerando assim um
