@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  24 MAR 2013 17:09
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  28 MAR 2013 21:53
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -573,27 +573,26 @@ guras/fragnaolinear.png (PNG copy)>]
 <figuras/exe-file-signature.png, id=121, 679.78969pt x 178.41656pt>
 File: figuras/exe-file-signature.png Graphic file (type png)
 
-<use figuras/exe-file-signature.png>
-<figuras/png-file-structure-data.png, id=122, 425.59pt x 607.26875pt>
+<use figuras/exe-file-signature.png> [30]
+<figuras/png-file-structure-data.png, id=126, 425.59pt x 607.26875pt>
 File: figuras/png-file-structure-data.png Graphic file (type png)
 
-<use figuras/png-file-structure-data.png> [30]
-Overfull \hbox (11.0086pt too wide) in paragraph at lines 192--195
+<use figuras/png-file-structure-data.png> [31 <./figuras/exe-file-signature.png
+ (PNG copy)> <./figuras/png-file-structure-data.png (PNG copy)>]
+Overfull \hbox (11.0086pt too wide) in paragraph at lines 201--204
 []\OT1/ptm/m/n/12 Se uti-liza da interpreta[][]ao do ta-ma-nho m[]aximo poss[]^
 ^Pvel do bloco de da-dos ap[]os a identifica[][]ao
  []
 
-[31 <./figuras/exe-file-signature.png (PNG copy)> <./figuras/png-file-structure
--data.png (PNG copy)>] [32]
-<figuras/setor-borda.png, id=133, 779.16093pt x 176.15813pt>
+[32] <figuras/setor-borda.png, id=133, 779.16093pt x 176.15813pt>
 File: figuras/setor-borda.png Graphic file (type png)
 
 <use figuras/setor-borda.png>
 <figuras/setor-borda-fragmentado.png, id=134, 778.40813pt x 174.6525pt>
 File: figuras/setor-borda-fragmentado.png Graphic file (type png)
 
-<use figuras/setor-borda-fragmentado.png> [33 <./figuras/setor-borda.png (PNG c
-opy)> <./figuras/setor-borda-fragmentado.png (PNG copy)>]) [34]
+<use figuras/setor-borda-fragmentado.png> [33]) [34 <./figuras/setor-borda.png 
+(PNG copy)> <./figuras/setor-borda-fragmentado.png (PNG copy)>]
 \openout2 = `cap3.aux'.
 
  (./cap3.tex
@@ -655,7 +654,7 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (41 pages, 864798 bytes).
+Output written on principal.pdf (41 pages, 865871 bytes).
 PDF statistics:
  185 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
