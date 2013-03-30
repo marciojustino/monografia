@@ -1,5 +1,12 @@
 \begin{abstract}
 
-...
+%*****************************************************************************************************
+% Apresentação concisa dos pontos relevantes, dando uma visao rapida e clara do conteúdo do trabalho.
+%*****************************************************************************************************
+The pourpose of this research is to explain and determine a better way to locating fragments of unallocated files during the file carving on digital
+forensics addressing the concept methodology for identification of fragments of files and the benefits it provides for analysis in a investigation of
+a digital image evidence when possible to locate parts, thus allowing their identification.
+
+\textbf{Key-words:} NTFS, fragmentation, carving, file, entropy.
 
 \end{abstract}

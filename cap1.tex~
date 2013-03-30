@@ -92,7 +92,8 @@ O disco também possui espaços chamados de espaço não alocado (unallocated space)
 estarem vazias ou
 conter informações de arquivos já apagados anteriormente e que podem ser de grande valor para a análise forense.
 
-Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \emph{Logical Cluster Number} (LCN). O LCN é um número sequencial
+Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \textbf{Logical Cluster Number} (LCN). O LCN é um número
+sequencial
 que representa todos os clusters do disco, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de
 arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no
 disco), multiplicando o identificador LCN com o tamanho do cluster.
@@ -104,7 +105,7 @@ disco), multiplicando o identificador LCN com o tamanho do cluster.
   \label{fig:estrutura-ntfs}
 \end{figure}
 
-Os clusters de um mesmo arquivo também recebem um identificador chamado de \emph{Virtual Cluster Number} (VNC). O VNC representa a ordem física dos
+Os clusters de um mesmo arquivo também recebem um identificador chamado de \textbf{Virtual Cluster Number} (VNC). O VNC representa a ordem física dos
 clusters no arquivo, não sendo necessário, portanto, que a ordem física no disco seja contínua \cite{Svensson2005}.
 
 \subsection{Master File Table}
@@ -128,7 +129,7 @@ Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao 
     \$ATTRDEF & 4 & Definição de atributos. \\
     . & 5 & Diretório raiz do disco. \\
     \hline
-    \$BITMAP & 6 & Contém um mapeamento binário de todos os clustes do volume (usados e não usados). \\
+    \$BITMAP & 6 & Contém um mapeamento binário de todos os clusters do volume (usados e não usados). \\
     \hline
     \$BOOT & 7 & Registro de boot do drive. \\
     \hline
@@ -199,7 +200,7 @@ A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arq
     \hline
     \$INDEX\_ALLOCATION & Implementa a alocação do nome do arquivo. \\
     \hline
-    \$BITMAP & Índices bitmap para grandes diretórios (somente para diretórios).\\
+    \$BITMAP & Índices para grandes diretórios (somente para diretórios).\\
     \hline
     \$OBJECT\_ID & Usado pelo serviço de rastreamento de link distribuído. \\
     \hline
@@ -207,9 +208,9 @@ A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arq
     \hline
     \$ATTRIBUTE\_LIST & Lista o local de todos os registros de atributos da MFT que não couberam no registro da MFT. \\
     \hline
-    \$EA\_INFORMATION, \$EA & Atributos extendidos de compatibilidade. \\
+    \$EA\_INFORMATION, \$EA & Atributos estendidos de compatibilidade. \\
     \hline
-    \$LOGGED\_UTILITY\_STREAM & A EFS (Encrypting File System) armazena informações que são usadas na manipulação de arquivos encriptados. \\
+    \$LOGGED\_UTILITY\_STREAM & A \textbf{EFS} (Encrypting File System) armazena informações que são usadas na manipulação de arquivos encriptados. \\
     \hline
   \end{tabular}
   \caption{Registros reservados do NTFS na Master File Table.}
@@ -246,7 +247,7 @@ A figura \ref{fig:ntfs-index} mostra essa indexação.
 
 As entradas de índice consistem do nome do arquivo e da cópia das informações padrões da entrada de diretório. Como o número de arquivos em diretórios
 pode crescer, o espaço pode não ser suficiente para armazenar todas as entradas de índice então, os índices adicionais são armazenados na área de
-alocação conhecida como \emph{``Index Allocation Buffer''}. A área de bitmap também é usada para indicar qual VNC's presentes no ``Index Allocation
+alocação conhecida como \emph{``Index Allocation Buffer''}. A área de \$BITMAP também é usada para indicar quais VNC's presentes no ``Index Allocation
 Buffer'' estão sendo usados.
 
 A figura \ref{fig:ntfs-index-directory} demonstra o funcionamento desse processo.
@@ -260,21 +261,26 @@ A figura \ref{fig:ntfs-index-directory} demonstra o funcionamento desse processo
 
 \subsection{Remoção de Arquivos}
 
-Quando um novo arquivo é criado em um sistema de arquivos NTFS, o arquivo bitmap do registro da MFT precisa ser atualizado pois os clusters anteriormente considerados \emph{não alocados} agora estão ocupados por um arquivo. Assim, quando um arquivo é excluído o arquivo bitmap do registro da MFT também precisa ser atualizado. Os bits correspondentes ao cluster anteriormente alocado pelo arquivo removido são zerados (marcados como \emph{não alocados}). O arquivo foi então marcado para remoção porém seu conteúdo continua no disco no mesmo lugar que estava anteriormente alocado, até que o mesmo local seja utilizado para armazenar outro arquivo. A entrada do índice do arquivo é também marcada para exclusão porém, a entrada do índice é rapidamente sobrescrita, o que no caso do arquivo pode demorar dependendo do tamanho do volume de dados \cite{Svensson2005}.
+Quando um novo arquivo é criado em um sistema de arquivos NTFS, o arquivo \textbf{\$BITMAP} do registro da MFT precisa ser atualizado pois os clusters
+anteriormente considerados \emph{não alocados} agora estão ocupados por um arquivo. Assim, quando um arquivo é excluído o arquivo \textbf{\$BITMAP} do
+registro da MFT também precisa ser atualizado. Os bits correspondentes ao cluster anteriormente alocado pelo arquivo removido são zerados (marcados
+como \emph{ ão alocados}). O arquivo foi então marcado para remoção porém seu conteúdo continua no disco no mesmo lugar que estava anteriormente
+alocado até que o mesmo local seja utilizado para armazenar outro arquivo. A entrada do índice do arquivo é também marcada para exclusão porém, a
+entrada do índice é rapidamente sobrescrita, o que no caso do arquivo pode demorar dependendo do tamanho do volume de dados \cite{Svensson2005}.
 
 \section{Análise NTFS}
 
 Svensson (2005, p.33) diz que registro da MFT pertencentes à arquivos já apagados podem ser recuperados pois, como vimos anteriormente, os arquivos
 não são excluídos do disco e sim deixam de ser referenciados, permanecendo no mesmo lugar até que outro arquivo sobrescreva seu conteúdo. As chances
-de se recuperar um arquivo excluído, no entando, diminuem com o tempo uma vez que o sistema NTFS sobrescreve arquivos não mais alocados antes de
+de se recuperar um arquivo excluído, no entanto, diminuem com o tempo uma vez que o sistema NTFS sobrescreve arquivos não mais alocados antes de
 alocar espaço adicional para a MFT. Informações padrões de arquivo, assim como seu nome, estão contidas nesses registros da MFT. Isso pode ser útil
 para auxiliar a encontrar as partes do arquivo não mais alocado uma vez que as informações de apontamento para as partes do arquivo não mais alocadas
 e ainda residentes no disco, estão presentes no registro de indexação do arquivo encontrado. Sem esse registro do arquivo ainda seria possível se
 recuperar um arquivo deletado fazendo uma procura física no disco desde que este arquivo não esteja fragmentado. Arquivos fragmentados são muito
-difícieis de se recuperar totalmente através de pesquisas físicas no disco.
+difíceis de se recuperar totalmente através de pesquisas físicas no disco.
 
 Tendo isso em vista, Svensson relata que o índice pertencente à um arquivo removido pode não mais ser localizado visto que o mesmo pode ser
 rapidamente sobrescrito, o que já foi visto anteriormente. Essa entrada de arquivo (índice) pode ser muito importante na reconstituição do crime.
 Quando uma entrada de índice é marcada para remoção, todas as entradas seguintes são movidas para cima sobrescrevendo, portanto, o índice marcado para
-remoção. Se essa entrada de índice é a última entrada em um registro de diretório ou no buffer de alocação de índices (index allocation buffer) ela
-pode então não ser sobrescrita podendo assim ser recuperada.
+remoção. Se essa entrada de índice é a última entrada em um registro de diretório ou no buffer de alocação de índices ela pode então não
+ser sobrescrita podendo assim ser recuperada.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  28 MAR 2013 21:53
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  29 MAR 2013 22:12
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -488,7 +488,7 @@ File: figuras/fig02.png Graphic file (type png)
 File: figuras/estrutura-ntfs.png Graphic file (type png)
 
 <use figuras/estrutura-ntfs.png>
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 []\OT1/ptm/m/n/12 Mapeia ca-rac-te-res em texto min[]usculo para texto
  []
 
@@ -501,27 +501,28 @@ File: figuras/mft-file-format.jpg Graphic file (type jpg)
 File: figuras/mft-attribute.png Graphic file (type png)
 
 <use figuras/mft-attribute.png>
-Underfull \hbox (badness 3525) in paragraph at lines 194--195
+Underfull \hbox (badness 3525) in paragraph at lines 195--196
 \OT1/ptm/m/n/12 vers[]oes do sis-tema de ar-qui-vos. Ar-ma-ze-nava
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 204--205
+Underfull \hbox (badness 1072) in paragraph at lines 205--206
 []\OT1/ptm/m/n/12 Usado pelo servi[]o de ras-tre-a-mento de link dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-[]\OT1/ptm/m/n/12 A EFS (En-cryp-ting File Sys-tem) ar-ma-zena
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+[]\OT1/ptm/m/n/12 A \OT1/ptm/b/n/12 EFS \OT1/ptm/m/n/12 (En-cryp-ting File Sys-
+tem) ar-ma-zena
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 212--213
+Underfull \hbox (badness 2027) in paragraph at lines 213--214
 \OT1/ptm/m/n/12 informa[][]oes que s[]ao usa-das na manipula[][]ao de
  []
 
 
-Overfull \hbox (2.77739pt too wide) in paragraph at lines 221--222
+Overfull \hbox (2.77739pt too wide) in paragraph at lines 222--223
 []\OT1/ptm/m/n/12 Todo re-gis-tro de ar-quivo con-siste de ao me-nos um par de 
 atri-buto/valor. Se toda a informa[][]ao
  []
@@ -647,14 +648,14 @@ Here is how much of TeX's memory you used:
  5873 multiletter control sequences out of 15000+50000
  45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 31i,13n,41p,916b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,13n,41p,654b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/s
 hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
 texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (41 pages, 865871 bytes).
+Output written on principal.pdf (41 pages, 867459 bytes).
 PDF statistics:
  185 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
