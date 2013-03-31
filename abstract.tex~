@@ -3,10 +3,15 @@
 %*****************************************************************************************************
 % Apresentação concisa dos pontos relevantes, dando uma visao rapida e clara do conteúdo do trabalho.
 %*****************************************************************************************************
-The pourpose of this research is to explain and determine a better way to locating fragments of unallocated files during the file carving on digital
-forensics addressing the concept methodology for identification of fragments of files and the benefits it provides for analysis in a investigation of
-a digital image evidence when possible to locate parts, thus allowing their identification.
+% A fragmentação de arquivos tem sido o calcanhar de aquiles dos processos investigativos e perícias forenses envolvendo a recuperação de arquivos e,
+% principalmente, de arquivos não mais alocados, removidos ou corrompidos. A abordagem do tema tem caminhado para um avanço nos processos de localização
+% dos fragmentos de arquivos e seus diferentes tipos de técnicas, possibilitando que as ferramentas evoluam cada vez mais no processo de
+% identificação e localização de arquivos fragmentados, auxiliando assim na investigação mais robusta e eficiente de evidências digitais.
+The file fragmentation has been the Achilles heel of investigative processes and skills involving forensic file recovery and
+mainly unallocated, removed or corrupted files. The theme has moved towards a breakthrough in the localization processes
+fragments of files and their different types of techniques, enabling the tools evolve increasingly in process
+identification and location of fragmented files, thus assisting in the investigation of more robust and efficient digital evidence.
 
-\textbf{Key-words:} NTFS, fragmentation, carving, file, entropy.
+\textbf{Key-words:} Fragmentation, investigation, files, techniques, evidence.
 
 \end{abstract}

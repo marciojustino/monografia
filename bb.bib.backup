@@ -1,16 +1,16 @@
-@article{Menon,
-    author  = "Anandabrata Pal, Husrev T. Sencar, Nasir Memon",
-    title   = "Detecting file fragmentation point using sequential hypothesis testing",
-    year    = "2008",
-    journal = "ELSEVIER",
-    volume  = "",
-    number  = "5",
-    pages   = "S2--S13"
+@inproceedings{Menon2008,
+    author    = "Anandabrata Pal and Husrev T. Sencar and Nasir Memon",
+    title     = "Detecting File Fragmentation Point Using Sequential Hypothesis Testing",
+    booktitle = "Digital Investigation",
+    year      = "2008",
+    volume    = "5",
+    number    = "",
+    pages     = "S2--S13"
 }
 
-@article{IJCSITS,
-    author  = "Sameer H. Mahant, B.B.Meshram",
-    title   = "NTFS Deleted Files Recovery - Forensics View",
+@article{Meshram2012,
+    author  = "Sameer H. Mahant and B.B.Meshram",
+    title   = "NTFS Deleted Files Recovery: Forensics View",
     year    = "2012",
     journal = "IRACST - International Journal of Computer Science and Information Technology and Security (IJCSITS)",
     volume  = "2",
@@ -18,17 +18,17 @@
     pages   = "491--497"
 }
 
-@article{DGI,
-    author  = "Simson L. Garfinkel",
-    title   = "Carving contiguous and fragmented files with fast object validation",
-    year    = "2007",
-    journal = "ELSEVIER",
-    volume  = "4S",
-    number  = "",
-    pages   = "S2--S12"
+@inproceedings{Garfinkel2007,
+    author    = "Simson L. Garfinkel",
+    title     = "Carving contiguous and fragmented files with fast object validation",
+    booktitle = "Digital Investigation",
+    year      = "2007",
+    volume    = "4S",
+    number    = "",
+    pages     = "S2--S12"
 }
 
-@mastersthesis{EINDHOVEN,
+@mastersthesis{Kloet2007,
     author    = "S.J.J. Kloet",
     title     = "Measuring and Improving the Quality of File Carving Methods",
     school    = "Eindhoven University of Technology",
@@ -36,7 +36,15 @@
     month     = "10"
 }
 
-@WWW{CeticBR,
+@mastersthesis{Svensson2005,
+    author    = "Anders Svensson",
+    title     = "Computer Forensics Applied to Windows NTFS Computers",
+    school    = "Stockholm's University / Royal Institute of Technology",
+    year      = "2005",
+    month     = "04"
+}
+
+@WWW{CeticBR2012,
     author="NetView - IBOPE//NetRatings",
     title={Painel IBOPE/NetRatings},
     year="2012",
@@ -45,7 +53,7 @@
     urldate={{N}ovembro de 2012}
 }
 
-@WWW{CyberCitizen,
+@WWW{CyberCitizen2012,
     author="CyberCitizen",
     title={What is Cyber Crime?},
     year="2012",
@@ -54,7 +62,7 @@
     urldate={{N}ovembro de 2012}
 }
 
-@WWW{WikiBytes,
+@WWW{WikiBytes2012,
     author="Wikipédia",
     title={Byte},
     year="2012",
@@ -63,14 +71,36 @@
     urldate={{N}ovembro de 2012}
 }
 
-@BOOK{ForensicAnalysis,
+@WWW{PngFileFormat2013,
+    author="FileFormat",
+    title={The PNG Image File Format},
+    year="2013",
+    publisher="",
+    url={http://www.fileformat.info/format/png/corion.htm},
+    urldate={{F}evereiro de 2013}
+}
+
+@book{Carrier2005,
+    author    = "Brian Carrier",
+    title     = "File System Forensic Analysis",
+    publisher = "Addison Wesley Professional",
+    %volume   = "",
+    %number   = "",
+    %series   = "",
+    %address  = "",
+    %edition  = "",
+    year      = "2005",
+    month    = "03",
+    %note     = "",
+}
+@BOOK{Carrier2005,
    author = "Brian Carrier",
    title= "File System Forensic Analysis",
    publisher = "Addison Wesley Professional",
    year = 2005
 }
 
-@BOOK{Caloyannides,
+@BOOK{Caloyannides2004,
    author = "Michael A. Caloyannides",
    title= "Privacy Protection and Computer Forensics",
    publisher = "Artech House",
@@ -78,16 +108,8 @@
    year = 2004
 }
 
-@mastersthesis{Svensson,
-    author    = "Anders Svensson",
-    title     = "Computer Forensics Applied to Windows NTFS Computers",
-    school    = "Stockholm's University / Royal Institute of Technology",
-    year      = "2005",
-    month     = "04"
-}
-
-@article{Metadados,
-    author  = "Bill Wyman, Walt Scrivens, Phil Hoffman, Lance Spitzner",
+@article{Wyman2012,
+    author  = "Bill Wyman and Walt Scrivens and Phil Hoffman and Lance Spitzner",
     title   = "Metadados",
     year    = "2012",
     journal = "OUCH!",
@@ -96,20 +118,60 @@
     pages   = ""
 }
 
-@mastersthesis{Kloet,
-    author    = "S. J. J. Kloet",
-    title     = "Measuring and Improving the Quality of File Carving Methods",
-    school    = "Eindhoven University of Technology",
-    year      = "2007",
-    month     = "10"
-}
-
-@article{BinCarver,
-    author  = "Scott Hand, Zhiqiang Lin, Guofei Gu, Bhavani Thuraisingham",
-    title   = "Bin-Carver: Automatic recovery of binary executable files",
+@article{Hand2012,
+    author  = "Scott Hand and Zhiqiang Lin and Guofei Gu and Bhavani Thuraisingham",
+    title   = "Bin-Carver: Automatic Recovery of Binary Executable Files",
     year    = "2012",
-    journal = "ELSEVIER",
-    volume  = "",
-    number  = "9",
+    journal = "Digital Investigation",
+    volume  = "9",
+    number  = "",
     pages   = "S108--S117"
 }
+
+@WWW{WikiEFS2013,
+    author = "Wikipédia",
+    title = {Encrypting File System},
+    year = "2013",
+    publisher = "",
+    url = {http://en.wikipedia.org/wiki/Encrypting\_File\_System},
+    urldate = {{M}arço de 2013}
+}
+
+@WWW{Ramanan2013,
+    author = "Ramanan T.",
+    title = {Undelete a file in NTFS},
+    year = "2013",
+    publisher = "CodeProject",
+    url = {http://www.codeproject.com/Articles/9293/Undelete-a-file-in-NTFS},
+    urldate = {{M}arço de 2013}
+}
+
+@WWW{FileSignatures2013,
+    author = "Free Online File Signatures Database",
+    title = {File Signatures},
+    year = "2013",
+    publisher = "",
+    url = {http://filesignatures.net/index.php?page=all},
+    urldate = {{M}arço de 2013}
+}
+
+@article{DataRecovery2010,
+    author  = "Data Recovery Systems Ltd.",
+    title   = "How File Recovery Works",
+    year    = "2010",
+    journal = "",
+    volume  = "",
+    number  = "",
+    pages   = "10"
+}
+
+@article{Zhulyn2012,
+    author  = "Simran Fitzgerald and George Mathews and Colin Morris and Oles Zhulyn",
+    title   = "Using NLP techniques for file fragment classification",
+    year    = "2012",
+    journal = "Digital Investigation",
+    volume  = "9",
+    number  = "",
+    pages   = "S44-S49"
+}
+

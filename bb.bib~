@@ -1,11 +1,11 @@
-@article{Menon2008,
-    author  = "Anandabrata Pal and Husrev T. Sencar and Nasir Memon",
-    title   = "Detecting File Fragmentation Point Using Sequential Hypothesis Testing",
-    year    = "2008",
-    journal = "Digital Investigation",
-    volume  = "5",
-    number  = "",
-    pages   = "S2--S13"
+@inproceedings{Menon2008,
+    author    = "Anandabrata Pal and Husrev T. Sencar and Nasir Memon",
+    title     = "Detecting File Fragmentation Point Using Sequential Hypothesis Testing",
+    booktitle = "Digital Investigation",
+    year      = "2008",
+    volume    = "5",
+    number    = "",
+    pages     = "S2--S13"
 }
 
 @article{Meshram2012,
@@ -18,14 +18,14 @@
     pages   = "491--497"
 }
 
-@article{Garfinkel2007,
-    author  = "Simson L. Garfinkel",
-    title   = "Carving contiguous and fragmented files with fast object validation",
-    year    = "2007",
-    journal = "Digital Investigation",
-    volume  = "4S",
-    number  = "",
-    pages   = "S2--S12"
+@inproceedings{Garfinkel2007,
+    author    = "Simson L. Garfinkel",
+    title     = "Carving contiguous and fragmented files with fast object validation",
+    booktitle = "Digital Investigation",
+    year      = "2007",
+    volume    = "4S",
+    number    = "",
+    pages     = "S2--S12"
 }
 
 @mastersthesis{Kloet2007,
@@ -44,7 +44,7 @@
     month     = "04"
 }
 
-@WWW{CeticBR2012,
+@www{CeticBR2012,
     author="NetView - IBOPE//NetRatings",
     title={Painel IBOPE/NetRatings},
     year="2012",
@@ -53,7 +53,7 @@
     urldate={{N}ovembro de 2012}
 }
 
-@WWW{CyberCitizen2012,
+@www{CyberCitizen2012,
     author="CyberCitizen",
     title={What is Cyber Crime?},
     year="2012",
@@ -62,7 +62,7 @@
     urldate={{N}ovembro de 2012}
 }
 
-@WWW{WikiBytes2012,
+@www{WikiBytes2012,
     author="Wikipédia",
     title={Byte},
     year="2012",
@@ -71,7 +71,7 @@
     urldate={{N}ovembro de 2012}
 }
 
-@WWW{PngFileFormat2013,
+@www{PngFileFormat2013,
     author="FileFormat",
     title={The PNG Image File Format},
     year="2013",
@@ -80,19 +80,20 @@
     urldate={{F}evereiro de 2013}
 }
 
-@BOOK{Carrier2005,
-   author = "Brian Carrier",
-   title= "File System Forensic Analysis",
-   publisher = "Addison Wesley Professional",
-   year = 2005
+@book{Carrier2005,
+    author    = "Brian Carrier",
+    title     = "File System Forensic Analysis",
+    publisher = "Addison Wesley Professional",
+    year      = "2005",
+    month     = "03"
 }
 
-@BOOK{Caloyannides2004,
-   author = "Michael A. Caloyannides",
-   title= "Privacy Protection and Computer Forensics",
-   publisher = "Artech House",
-   edition = "2",
-   year = 2004
+@book{Caloyannides2004,
+   author     = "Michael A. Caloyannides",
+   title      = "Privacy Protection and Computer Forensics",
+   publisher  = "Artech House",
+   edition    = "2",
+   year       = 2004
 }
 
 @article{Wyman2012,
@@ -115,7 +116,7 @@
     pages   = "S108--S117"
 }
 
-@WWW{WikiEFS2013,
+@www{WikiEFS2013,
     author = "Wikipédia",
     title = {Encrypting File System},
     year = "2013",
@@ -124,7 +125,7 @@
     urldate = {{M}arço de 2013}
 }
 
-@WWW{Ramanan2013,
+@www{Ramanan2013,
     author = "Ramanan T.",
     title = {Undelete a file in NTFS},
     year = "2013",
@@ -133,7 +134,7 @@
     urldate = {{M}arço de 2013}
 }
 
-@WWW{FileSignatures2013,
+@www{FileSignatures2013,
     author = "Free Online File Signatures Database",
     title = {File Signatures},
     year = "2013",

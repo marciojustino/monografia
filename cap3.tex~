@@ -44,14 +44,13 @@ capaz de analisar os blocos de arquivos em busca de divergências e característic
 Conceito originado da teoria da termodinâmica, a entropia está presente também no mundo da informação digital. Enquanto na termodinâmica se torna
 impossível determinar os estados possíveis da matéria, utiliza-se então uma aproximação, na entropia da informação digital, por se tratar de arquivos
 digitais, a probabilidade de cada estado é conhecida com precisão, já que se tem conhecimento exato do conteúdo do arquivo. Na análise de
-informações a preocupação recai sobre os bytes de dados, representado por até 256 valores possíveis.
+informações a preocupação recai sobre os bytes de dados, representado por até 256 valores possíveis. Podemos então pensar em entropia como o grau em
+que o bloco de dados encontra-se desordenado.
 
 A análise de conteúdo por entropia já foi estudada e utilizada por pesquisadores e estudiosos da área forense com o objetivo de identificar conteúdo
-oculto em um determinado arquivo, atribuído a uma técnica anti-forense comumente usada, conhecida como \emph{Esteganografia}. Quando aplicada na
-identificação de conteúdo oculto ou modificado, tem apresentado excelentes resultados por determinar alterações bruscas nas características dos dados
-de blocos de arquivos, principalmente arquivos de imagem.
+oculto em arquivos, atribuído a uma técnica anti-forense comumente usada, conhecida como \emph{Esteganografia}. Quando aplicada na identificação de
+conteúdo oculto ou modificado, tem apresentado excelentes resultados por determinar alterações na estrutura digital, nas características dos dados.
 
 % incluir a análise de entropia sobre o aspecto de um arquivo de imagem representado em binário.
-
 
 %[PAREI AQUI!!!!!!!!!] ****** PÁGINA 13 DO ARQUIVO ``KLOET_2007''

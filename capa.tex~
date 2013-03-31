@@ -1,10 +1,19 @@
-\titulo{Fragmenta√ß√£o de Arquivos em File Carving em Sistemas de Arquivos NTFS}
-\autor{M√°rcio Fernandes Justino}
-\orientador[Orientadora:\\]{Ivete Irene dos Santos}
-\comentario{Projeto de pesquisa apresentado como requisito parcial para a aprova√ß√£o na disciplina Metodologia do Trabalho Cient√≠fico do Curso de Computa√ß√£o Forense da Universidade Presbiteriana Mackenzie.}
+\titulo{FragmentaÁ„o de Arquivos em File Carving em Sistemas de Arquivos NTFS}
+
+\autor{M·rcio Fernandes Justino}
+
+% \orientador[Orientadora:\\]{Ivete Irene dos Santos}
+\orientador[Orientadora:\\]{Ana Cristina Azevedo}
+
+\comentario{Pesquisa apresentada como requisito para conclus„o do curso de PÛs GraduaÁ„o em ComputaÁ„o Forense da Universidade Presbiteriana
+Mackenzie de S„o Paulo.}
+
 \instituicao{Universidade Presbiteriana Mackenzie \par
-Instituto de Computa√ß√£o \par
-P√≥s Gradua√ß√£o em Computa√ß√£o Forense}
-\local{S√£o Paulo -- SP}
+Instituto de ComputaÁ„o \par
+PÛs GraduaÁ„o em ComputaÁ„o Forense}
+
+\local{S„o Paulo -- SP}
+
 \data{Maio / 2013}
+
 \capa

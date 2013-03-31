@@ -20,9 +20,9 @@ Database file #2: bb.bib
 Warning--entry type for "CeticBR2012" isn't style-file defined
 --line 47 of file bb.bib
 Warning--entry type for "Ramanan2013" isn't style-file defined
---line 127 of file bb.bib
+--line 128 of file bb.bib
 Warning--entry type for "FileSignatures2013" isn't style-file defined
---line 136 of file bb.bib
+--line 137 of file bb.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 +---------------------------------------------------------+
 | Estilo bibliografico abnt-alf.bst versao 1.53           |
@@ -32,43 +32,43 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 +---------------------------------------------------------+
 You've used 13 entries,
             6522 wiz_defined-function locations,
-            1248 strings with 11001 characters,
-and the built_in function-call counts, 9515 in all, are:
-= -- 776
+            1249 strings with 11003 characters,
+and the built_in function-call counts, 9614 in all, are:
+= -- 791
 > -- 279
 < -- 14
 + -- 143
 - -- 86
-* -- 630
-:= -- 1345
-add.period$ -- 39
+* -- 634
+:= -- 1352
+add.period$ -- 41
 call.type$ -- 14
 change.case$ -- 106
 chr.to.int$ -- 25
 cite$ -- 12
-duplicate$ -- 442
-empty$ -- 761
+duplicate$ -- 445
+empty$ -- 781
 format.name$ -- 414
-if$ -- 2250
+if$ -- 2286
 int.to.chr$ -- 0
 int.to.str$ -- 0
 missing$ -- 225
-newline$ -- 69
+newline$ -- 68
 num.names$ -- 60
-pop$ -- 289
+pop$ -- 291
 preamble$ -- 1
 purify$ -- 46
 quote$ -- 0
-skip$ -- 598
+skip$ -- 605
 stack$ -- 1
 substring$ -- 388
-swap$ -- 209
+swap$ -- 211
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
+type$ -- 9
 warning$ -- 0
 while$ -- 86
 width$ -- 0
-write$ -- 189
+write$ -- 190
 (There were 3 warnings)

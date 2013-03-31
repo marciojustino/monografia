@@ -1,10 +1,13 @@
 \begin{resumo}
 
 %*****************************************************************************************************
-% Apresentação concisa dos pontos relevantes, dando uma visao rapida e clara do conteúdo do trabalho.
+% Apresentação concisa dos pontos relevantes, dando uma visão rápida e clara do conteúdo do trabalho.
 %*****************************************************************************************************
-A proposta desta pesquisa é explanar e determinar uma melhor forma de localização de fragmentos de arquivos não alocados durante o processo de file carving em uma perícia forense digital abordando o conceito da metodologia de identificação de fragmentos de arquivos e os benefícios que o mesmo proporciona para a análise em uma investigação de uma imagem digital quando possível localizar suas partes, permitindo assim sua identificação.
+A fragmentação de arquivos tem sido o calcanhar de aquiles dos processos investigativos e perícias forenses envolvendo a recuperação de arquivos e,
+principalmente, de arquivos não mais alocados, removidos ou corrompidos. A abordagem do tema tem caminhado para um avanço nos processos de localização
+dos fragmentos de arquivos e seus diferentes tipos de técnicas, possibilitando que as ferramentas evoluam cada vez mais no processo de
+identificação e localização de arquivos fragmentados, auxiliando assim na investigação mais robusta e eficiente de evidências digitais.
 
-\textbf{Palavras-chave:} NTFS, fragmentação, carving, arquivo, entropia.
+\textbf{Palavras-chave:} Fragmentação, investigação, arquivos, técnicas, evidências.
 
 \end{resumo}

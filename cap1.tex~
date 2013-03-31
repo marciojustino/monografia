@@ -268,6 +268,10 @@ como \emph{ ão alocados}). O arquivo foi então marcado para remoção porém seu co
 alocado até que o mesmo local seja utilizado para armazenar outro arquivo. A entrada do índice do arquivo é também marcada para exclusão porém, a
 entrada do índice é rapidamente sobrescrita, o que no caso do arquivo pode demorar dependendo do tamanho do volume de dados \cite{Svensson2005}.
 
+\subsection{Slack Space}
+
+
+
 \section{Análise NTFS}
 
 Svensson (2005, p.33) diz que registro da MFT pertencentes à arquivos já apagados podem ser recuperados pois, como vimos anteriormente, os arquivos
