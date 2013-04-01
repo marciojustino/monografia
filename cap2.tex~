@@ -261,7 +261,7 @@ a identificar que um fragmento possa ou não fazer parte do arquivo em questão.
 O fragmento de um arquivo do tipo TXT, servindo de exemplo, não poderia fazer parte de área de metadados de um arquivo de imagem do tipo
 JPEG (comprimido) pois a estrutura dos dados de um tipo de arquivo se diferem muito \cite[p.~S44]{Zhulyn2012}.
 
-\subsection{Função de Mapeamento}
+\subsection{Ponto de Fragmentação}
 
 Pode-se dizer que a essência do processo de file carving é a extração de todos os bytes que pertencem ao arquivo dada uma imagem (evidência)
 investigada. Esse processo de extração é possível pela função de mapeamento, que mapeia os bytes da imagem nos bytes do arquivo \cite{Cohen2007}.
@@ -280,7 +280,7 @@ Uma das propriedades interessantes da função de mapeamento é a capacidade de dem
 bytes da imagem extraída. Na imagem \ref{fig:mapping-function} nota-se que há uma descontinuidade no conjunto de bytes relativos da imagem que está
 sendo extraída em um determinado momento. A interseção desse ponto de descontinuidade na função de mapeamento é conhecida como ponto de 
 fragmentação. Um ponto de fragmentação presente em planos diferentes pode representar uma sequência de arquivos descontinuados, demonstrado pelos
-pontos \textbf{P1} e \textbf{P2} na figura \ref{fig:mapping-function-multiple}.
+pontos \textbf{P1} e \textbf{P2} na figura \ref{fig:mapping-function2}.
 
 \begin{figure}[htb]
   \centering
