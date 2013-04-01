@@ -19,4 +19,6 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces \'Area de dados de um arquivo do tipo PNG \cite {Kloet2007}}}{31}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Arquivos n\~ao fragmentados distribu\IeC {\'\i }dos nos clusters.}}{34}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Arquivos fragmentados distribu\IeC {\'\i }dos nos clusters.}}{34}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Fragmentos do arquivo \emph {F} fict\IeC {\'\i }cio.}}{35}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Fun\c c\~ao de mapeamento de processo de file carving.}}{35}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Descontinuidade m\'ultipla, indica\c c\~ao de poss\IeC {\'\i }vel fragmenta\c c\~ao de m\'ultiplos arquivos.}}{36}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Fragmentos do arquivo \emph {F} fict\IeC {\'\i }cio.}}{37}
