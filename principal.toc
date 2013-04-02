@@ -35,12 +35,13 @@
 \contentsline {subsection}{\numberline {3.4.2}Carving - Cabe\c calho / M\'aximo Bloco de Dados}{32}
 \contentsline {subsection}{\numberline {3.4.3}Carving - Estrutura de Arquivo}{32}
 \contentsline {subsection}{\numberline {3.4.4}Classifica\c c\~ao de Fragmentos de Arquivos}{33}
-\contentsline {subsection}{\numberline {3.4.5}Ponto de Fragmenta\c c\~ao}{34}
+\contentsline {subsection}{\numberline {3.4.5}Aprendizagem de M\'aquina}{34}
+\contentsline {subsection}{\numberline {3.4.6}Ponto de Fragmenta\c c\~ao}{35}
 \contentsline {chapter}{\numberline {4}File Carving Avan\c cado}{37}
 \contentsline {section}{\numberline {4.1}Diferencia\c c\~ao}{37}
 \contentsline {section}{\numberline {4.2}Fragmenta\c c\~ao}{37}
 \contentsline {subsection}{\numberline {4.2.1}Ponto de Fragmenta\c c\~ao}{37}
-\contentsline {subsection}{\numberline {4.2.2}Entropia}{38}
+\contentsline {subsection}{\numberline {4.2.2}Entropia da Informa\c c\~ao}{38}
 \contentsline {chapter}{\numberline {5}Ferramentas de File Carving}{39}
 \contentsline {section}{\numberline {5.1}Scalpel}{39}
 \contentsline {section}{\numberline {5.2}Foremost}{39}

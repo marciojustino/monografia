@@ -1,11 +1,17 @@
-\chapter{File Carving Avançado}
+\chapter{Entropia da Informação Digital}
+
+Como visto no final do capítulo anterior, a ideia de analisar o comportamento binário do arquivo podendo representar alterações do arquivo pode
+de alguma forma significar que o conteúdo não pertence ao arquivo em questão, induzindo ao entendimento de que há um ponto de fragmentação
+nessa discrepância da estrutura binária do arquivo.
+
+
+\chapter{Ferramentas de File Carving}
+Scalpel
+Foremost
+....
+
+\section{Scalpel}
 ...
 
-\section{Diferenciação}
+\section{Foremost}
 ...
-
-\section{Fragmentação}
-...
-
-\section{Ponto de Fragmentação}
-...aqui serão incluídos também algoritmos de detecção de pontos de fragmentação como listado no mind map (Sequential Hypothesis Testing)...

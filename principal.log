@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  31 MAR 2013 21:11
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  1 APR 2013 23:51
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -624,7 +624,7 @@ File: figuras/file-fragment-block1.png Graphic file (type png)
 
 
  <./figuras/file-fragment-block1.png (PNG copy)>]
-Overfull \hbox (14.02336pt too wide) in paragraph at lines 50--53
+Overfull \hbox (14.02336pt too wide) in paragraph at lines 46--49
 \OT1/ptm/m/n/12 de conte[]udo oculto ou mo-di-fi-cado, tem apre-sen-tado ex-ce-
 len-tes re-sul-ta-dos por de-ter-mi-nar altera[][]oes
  []
@@ -666,10 +666,10 @@ Cap\'{\i }tulo 6.
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
 ) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2935 strings out of 495041
- 42779 string characters out of 1181897
- 102161 words of memory out of 3000000
- 5888 multiletter control sequences out of 15000+50000
+ 2940 strings out of 495041
+ 42881 string characters out of 1181897
+ 102209 words of memory out of 3000000
+ 5893 multiletter control sequences out of 15000+50000
  45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  31i,13n,41p,654b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -679,7 +679,7 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (43 pages, 923805 bytes).
+Output written on principal.pdf (43 pages, 925481 bytes).
 PDF statistics:
  194 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

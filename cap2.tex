@@ -261,17 +261,27 @@ a identificar que um fragmento possa ou não fazer parte do arquivo em questão.
 O fragmento de um arquivo do tipo TXT, servindo de exemplo, não poderia fazer parte de área de metadados de um arquivo de imagem do tipo
 JPEG (comprimido) pois a estrutura dos dados de um tipo de arquivo se diferem muito \cite[p.~S44]{Zhulyn2012}.
 
+\subsection{Aprendizagem de Máquina}
+
+Alguns métodos de inteligência artificial, aplicados ao aprendizado computacional também conhecido como \emph{Machine Learning}, tem sido explorados
+para tratar o problema de classificação dos fragmentos de arquivos. Alguns desses métodos, explorados recentemente, são os \emph{Support Vector
+Machines} (SVM's) - ferramentas muito úteis no aprendizado supervisionado. Segundo Li et al. (2010), uma das maiores vantagens das SVM's é sua
+possibilidade de explorar padrões em espaços de elevadas dimensões, o que com métodos convencionais estatísticos se torna muito difícil ou
+insuficiente para ser aplicado. Seu uso se baseia no tratamento vetorial do histograma de fragmentos de dados, uma vez que o histograma tem custo
+computacional baixo, tornando o uso das SVM's um método rápido, preciso, simples e ainda assim eficiente e poderoso.
+
+% ADICIONAR CONTEÚDO PÁG: 238 DO ARQUIVO ``[SUGANTHAN] A NOVEL SUPPORT VECTOR MACHINE APPROACH TO HIGH ENTROPY DATA FRAGMENT CLASSIFICATION''
+
 \subsection{Ponto de Fragmentação}
 
 Pode-se dizer que a essência do processo de file carving é a extração de todos os bytes que pertencem ao arquivo dada uma imagem (evidência)
 investigada. Esse processo de extração é possível pela função de mapeamento, que mapeia os bytes da imagem nos bytes do arquivo \cite{Cohen2007}.
 
-\newpage
 Cohen (2007, p. 2) demonstra um exemplo de função de mapeamento através da figura \ref{fig:mapping-function}:
 
 \begin{figure}[htb]
   \centering
-  \includegraphics[scale=0.7]{figuras/mapping-function.png}
+  \includegraphics[scale=0.6]{figuras/mapping-function.png}
   \caption{Função de mapeamento de processo de file carving.}
   \label{fig:mapping-function}
 \end{figure}
@@ -284,7 +294,7 @@ pontos \textbf{P1} e \textbf{P2} na figura \ref{fig:mapping-function2}.
 
 \begin{figure}[htb]
   \centering
-  \includegraphics[scale=0.7]{figuras/mapping-function2.png}
+  \includegraphics[scale=0.6]{figuras/mapping-function2.png}
   \caption{Descontinuidade múltipla, indicação de possível fragmentação de múltiplos arquivos.}
   \label{fig:mapping-function2}
 \end{figure}

@@ -1,8 +1,10 @@
 \chapter{File Carving Avançado}
 % desenvolver
+????
 
 \section{Diferenciação}
 % desenvolver
+????
 
 \section{Fragmentação}
 
@@ -36,21 +38,23 @@ A análise de conteúdo do bloco também é um outro método eficiente na localização
 nas características dos dados de um arquivo pode indicar uma mudança estrutural, em consequência determinar que este fragmento não faz parte do
 arquivo em análise.
 
-\subsection{Entropia}
+\subsection{Entropia da Informação}
 
 Com base na ideia de um dos métodos do ponto de fragmentação, o de análise de conteúdo, surge então a necessidade de aplicação de uma metodologia
 capaz de analisar os blocos de arquivos em busca de divergências e características dos dados contidos nos mesmos.
+
+A análise de conteúdo por entropia tem sido utilizada por pesquisadores e estudiosos da área forense com o objetivo de identificar conteúdo
+oculto em arquivos, atribuído a uma técnica anti-forense comumente usada, conhecida como \emph{Esteganografia}. Quando aplicada na identificação de
+conteúdo oculto ou modificado, tem apresentado excelentes resultados por determinar alterações na estrutura digital e nas características dos dados.
 
 Conceito originado da teoria da termodinâmica, a entropia está presente também no mundo da informação digital. Enquanto na termodinâmica se torna
 impossível determinar os estados possíveis da matéria, utiliza-se então uma aproximação, na entropia da informação digital, por se tratar de arquivos
 digitais, a probabilidade de cada estado é conhecida com precisão, já que se tem conhecimento exato do conteúdo do arquivo. Na análise de
 informações a preocupação recai sobre os bytes de dados, representado por até 256 valores possíveis. Podemos então pensar em entropia como o grau em
-que o bloco de dados encontra-se desordenado.
+que o bloco de dados encontra-se desordenado \cite[p.~13]{Kloet2007}.
 
-A análise de conteúdo por entropia já foi estudada e utilizada por pesquisadores e estudiosos da área forense com o objetivo de identificar conteúdo
-oculto em arquivos, atribuído a uma técnica anti-forense comumente usada, conhecida como \emph{Esteganografia}. Quando aplicada na identificação de
-conteúdo oculto ou modificado, tem apresentado excelentes resultados por determinar alterações na estrutura digital, nas características dos dados.
+Muito embora a entropia, juntamente com a abordagem estatística dos dados funcione para tipos de arquivos que apresentam um padrão definido,
+significativamente, esta não funciona tão bem quando o padrão de dados não tão óbvios \cite[p.~237]{Suganthan2010}.
 
 % incluir a análise de entropia sobre o aspecto de um arquivo de imagem representado em binário.
-
-%[PAREI AQUI!!!!!!!!!] ****** PÁGINA 13 DO ARQUIVO ``KLOET_2007''
+% PÁG: 13 DO ARQUIVO ``KLOET_2007''
