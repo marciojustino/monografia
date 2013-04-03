@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  31 MAR 2013 08:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  31 MAR 2013 21:11
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -601,16 +601,25 @@ File: figuras/setor-borda.png Graphic file (type png)
 <figuras/setor-borda-fragmentado.png, id=134, 778.40813pt x 174.6525pt>
 File: figuras/setor-borda-fragmentado.png Graphic file (type png)
 
-<use figuras/setor-borda-fragmentado.png> [33]) [34 <./figuras/setor-borda.png 
-(PNG copy)> <./figuras/setor-borda-fragmentado.png (PNG copy)>]
+<use figuras/setor-borda-fragmentado.png> [33] [34 <./figuras/setor-borda.png (
+PNG copy)> <./figuras/setor-borda-fragmentado.png (PNG copy)>]
+<figuras/mapping-function.png, id=141, 344.28625pt x 355.3275pt>
+File: figuras/mapping-function.png Graphic file (type png)
+
+<use figuras/mapping-function.png>
+<figuras/mapping-function2.png, id=142, 362.35374pt x 382.42876pt>
+File: figuras/mapping-function2.png Graphic file (type png)
+
+<use figuras/mapping-function2.png>) [35 <./figuras/mapping-function.png (PNG c
+opy)>] [36 <./figuras/mapping-function2.png (PNG copy)>]
 \openout2 = `cap3.aux'.
 
  (./cap3.tex
 Cap\'{\i }tulo 4.
-<figuras/file-fragment-block1.png, id=141, 830.10126pt x 98.3675pt>
+<figuras/file-fragment-block1.png, id=150, 830.10126pt x 98.3675pt>
 File: figuras/file-fragment-block1.png Graphic file (type png)
 
-<use figuras/file-fragment-block1.png> [35
+<use figuras/file-fragment-block1.png> [37
 
 
 
@@ -620,12 +629,12 @@ Overfull \hbox (14.02336pt too wide) in paragraph at lines 50--53
 len-tes re-sul-ta-dos por de-ter-mi-nar altera[][]oes
  []
 
-) [36]
+) [38]
 \openout2 = `cap4.aux'.
 
  (./cap4.tex
 Cap\'{\i }tulo 5.
-) [37
+) [39
 
 
 
@@ -634,17 +643,17 @@ Cap\'{\i }tulo 5.
 
  (./consideracoes_finais.tex
 Cap\'{\i }tulo 6.
-) [38
+) [40
 
 
 
-] (./principal.bbl) [39
+] (./principal.bbl) [41
 
 
 ]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex) [40
+ (./anexo.tex) [42
 
 
 ]
@@ -657,10 +666,10 @@ Cap\'{\i }tulo 6.
 (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
 ) (./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2918 strings out of 495041
- 42345 string characters out of 1181897
- 102100 words of memory out of 3000000
- 5873 multiletter control sequences out of 15000+50000
+ 2935 strings out of 495041
+ 42779 string characters out of 1181897
+ 102161 words of memory out of 3000000
+ 5888 multiletter control sequences out of 15000+50000
  45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  31i,13n,41p,654b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -670,9 +679,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (41 pages, 868001 bytes).
+Output written on principal.pdf (43 pages, 923805 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
+ 194 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

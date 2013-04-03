@@ -18,11 +18,11 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: abnt-options.bib
 Database file #2: bb.bib
 Warning--entry type for "CeticBR2012" isn't style-file defined
---line 47 of file bb.bib
+--line 45 of file bb.bib
 Warning--entry type for "Ramanan2013" isn't style-file defined
---line 128 of file bb.bib
+--line 121 of file bb.bib
 Warning--entry type for "FileSignatures2013" isn't style-file defined
---line 137 of file bb.bib
+--line 130 of file bb.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 +---------------------------------------------------------+
 | Estilo bibliografico abnt-alf.bst versao 1.53           |
@@ -30,45 +30,45 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 13 entries,
+You've used 14 entries,
             6522 wiz_defined-function locations,
-            1249 strings with 11003 characters,
-and the built_in function-call counts, 9614 in all, are:
-= -- 791
-> -- 279
-< -- 14
-+ -- 143
-- -- 86
-* -- 634
-:= -- 1352
-add.period$ -- 41
-call.type$ -- 14
-change.case$ -- 106
-chr.to.int$ -- 25
-cite$ -- 12
-duplicate$ -- 445
-empty$ -- 781
-format.name$ -- 414
-if$ -- 2286
+            1255 strings with 11068 characters,
+and the built_in function-call counts, 10291 in all, are:
+= -- 839
+> -- 294
+< -- 15
++ -- 148
+- -- 91
+* -- 675
+:= -- 1443
+add.period$ -- 46
+call.type$ -- 15
+change.case$ -- 113
+chr.to.int$ -- 26
+cite$ -- 13
+duplicate$ -- 484
+empty$ -- 850
+format.name$ -- 437
+if$ -- 2455
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 225
-newline$ -- 68
-num.names$ -- 60
-pop$ -- 291
+missing$ -- 242
+newline$ -- 72
+num.names$ -- 65
+pop$ -- 311
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 49
 quote$ -- 0
-skip$ -- 605
+skip$ -- 647
 stack$ -- 1
-substring$ -- 388
-swap$ -- 211
-text.length$ -- 10
+substring$ -- 409
+swap$ -- 230
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 9
+type$ -- 10
 warning$ -- 0
-while$ -- 86
+while$ -- 93
 width$ -- 0
-write$ -- 190
+write$ -- 206
 (There were 3 warnings)

@@ -10,6 +10,11 @@
 {CARRIER, B. \emph{File System Forensic Analysis}. [S.l.]: Addison Wesley
   Professional, 2005.}
 
+\bibitem[Cohen 2007]{Cohen2007}
+\abntrefinfo{Cohen}{COHEN}{2007}
+{COHEN, M. Advanced carving techniques. In:  \emph{DFRWS}. [S.l.: s.n.], 2007.
+  p.~32.}
+
 \bibitem[Database 2013]{FileSignatures2013}
 \abntrefinfo{Database}{DATABASE}{2013}
 {DATABASE, F. O. F.~S. \emph{File Signatures}. 2013.
