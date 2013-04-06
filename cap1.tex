@@ -110,7 +110,9 @@ clusters no arquivo, não sendo necessário, portanto, que a ordem física no disco
 
 \subsection{Master File Table}
 
-Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao menos uma entrada no registro da \emph{Master File Table} (MFT). Os primeiros 16 registros da MFT são reservados pelo sistema de arquivos para manter metadados\footnote{Dados que definem ou descrevem outra parte dos dados \cite{Wyman2012}.} específicos do NTFS. A tabela \ref{tab:tab02} detalha os 16 primeiros registros reservados ao NTFS na MFT:
+Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao menos uma entrada no registro da \emph{Master File Table} (MFT). Os
+primeiros 16 registros da MFT são reservados pelo sistema de arquivos para manter metadados\footnote{Dados que definem ou descrevem outra parte dos
+dados \cite{Wyman2012}.} específicos do NTFS. A tabela \ref{tab:tab02} detalha os 16 primeiros registros reservados ao NTFS na MFT:
 
 \begin{table}[htb]
   \centering  
@@ -148,11 +150,16 @@ Segundo Svensson (2005, p. 26), todos os arquivos no sistema NTFS apresentam ao 
   \label{tab:tab02}
 \end{table}
 
-O primeiro registro da tabela MFT é um registro referente à própria MFT em si. Esse registro é seguido por outro arquivo que representa a cópia parcial da MFT (um espelho da própria master file table, \textbf{\$MFTMIRR}). Esse registro de espelho da MFT funciona como um backup para importantes metadados de arquivos, usado para recuperação da MFT em caso de problemas.
+O primeiro registro da tabela MFT é um registro referente à própria MFT em si. Esse registro é seguido por outro arquivo que representa a cópia
+parcial da MFT (um espelho da própria master file table, \textbf{\$MFTMIRR}). Esse registro de espelho da MFT funciona como um backup para importantes
+metadados de arquivos, usado para recuperação da MFT em caso de problemas.
 
-O registro \textbf{\$BITMAP} que contém todo o mapeamento de clusters que estão em uso (alocados por arquivos). Todo cluster é identificado por um bit no registro \textbf{\$BITMAP}, sendo que quando o cluster está sendo usado o bit tem seu valor igual a hum. Esse bit também pode ser encontrado em registros de diretórios com um propósito de manter um registro de quais clusters do buffer de alocação de índices estão em uso e quais não estão.
+O registro \textbf{\$BITMAP} que contém todo o mapeamento de clusters que estão em uso (alocados por arquivos). Todo cluster é identificado por um bit
+no registro \textbf{\$BITMAP}, sendo que quando o cluster está sendo usado o bit tem seu valor igual a hum. Esse bit também pode ser encontrado em
+registros de diretórios com um propósito de manter um registro de quais clusters do buffer de alocação de índices estão em uso e quais não estão.
 
-Já o registro \textbf{\$BADCLUS} é usado para manter uma lista dos clusters que são marcados como defeituosos pelo sistema operacional. Quando o sistema detecta um cluster com defeito ele registra esse cluster no \textbf{\$BADCLUS} e esse cluster passa a não ser mais utilizado pelo sistema.
+Já o registro \textbf{\$BADCLUS} é usado para manter uma lista dos clusters que são marcados como defeituosos pelo sistema operacional. Quando o
+sistema detecta um cluster com defeito ele registra esse cluster no \textbf{\$BADCLUS} e esse cluster passa a não ser mais utilizado pelo sistema.
 
 A figura \ref{fig:mft} demonstra a estrutura e formatação da \emph{Master File Table}.
 
@@ -167,7 +174,9 @@ A figura \ref{fig:mft} demonstra a estrutura e formatação da \emph{Master File T
 
 \subsection{Registros da MFT}
 
-Os registros da MFT incluem inúmeros atributos e valores, sendo limitado em 1 KB fisicamente. Os atributos de registros são divididos em dois componentes lógicos - cabeçalho e área de dados - sendo que no cabeçalho são armazenados os tipos dos atributos, a localização e o tamanho do valor do atributo \cite{Svensson2005}.
+Os registros da MFT incluem inúmeros atributos e valores, sendo limitado em 1 KB fisicamente. Os atributos de registros são divididos em dois
+componentes lógicos - cabeçalho e área de dados - sendo que no cabeçalho são armazenados os tipos dos atributos, a localização e o tamanho do valor do
+atributo \cite{Svensson2005}.
 
 \begin{figure}[htb]
   \centering
@@ -192,7 +201,8 @@ A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arq
     \hline
     \$STANDARD\_INFORMATION & Atributos de arquivo (somente leitura, data de criação e de modificação, etc). \\
     \hline
-    \$SECURITY\_DESCRIPTOR & Presente para manter compatibilidade com outras versões do sistema de arquivos. Armazenava informações de segurança dos arquivos e diretórios. \\
+    \$SECURITY\_DESCRIPTOR & Presente para manter compatibilidade com outras versões do sistema de arquivos. Armazenava informações de segurança dos
+arquivos e diretórios. \\
     \hline
     \$DATA & Dados do arquivo. \\
     \hline
@@ -219,9 +229,15 @@ A tabela \ref{tab:mft-attributes} define os inúmeros atributos do sistema de arq
 
 \subsection{Registros de Arquivos}
 
-Todo registro de arquivo consiste de ao menos um par de atributo/valor. Se toda a informação residente no par atributo/valor de um registro de arquivo couber no registro da MFT, nenhum dado adicional é associado no volume, ficando a informação alocada somente no registro da MFT. Por outro lado, um arquivo com uma informação maior, que não cabe somente no registro da MFT, teria seus dados armazenados em clusters em outro lugar do volume de dados. Sendo assim, todo arquivo pode estar associado a múltiplos clusters de dados e a informação de localização dos mesmos é listada na área de dados do registro da MFT. 
+Todo registro de arquivo consiste de ao menos um par de atributo/valor. Se toda a informação residente no par atributo/valor de um registro de arquivo
+couber no registro da MFT, nenhum dado adicional é associado no volume, ficando a informação alocada somente no registro da MFT. Por outro lado, um
+arquivo com uma informação maior, que não cabe somente no registro da MFT, teria seus dados armazenados em clusters em outro lugar do volume de dados.
+Sendo assim, todo arquivo pode estar associado a múltiplos clusters de dados e a informação de localização dos mesmos é listada na área de dados do
+registro da MFT. 
 
-Um cluster de dados de um arquivo altamente fragmentado também podem ser muito extenso para ser armazenado nos atributos de um registro de arquivo, assim a lista de atributos do registro de arquivo é usado para direcionar a outro ponto de cabeçalho de dados na MFT que por sua vez direciona para os clusters de dados com as informações restantes referentes ao arquivo \cite{Svensson2005}. 
+Um cluster de dados de um arquivo altamente fragmentado também podem ser muito extenso para ser armazenado nos atributos de um registro de arquivo,
+assim a lista de atributos do registro de arquivo é usado para direcionar a outro ponto de cabeçalho de dados na MFT que por sua vez direciona para os
+clusters de dados com as informações restantes referentes ao arquivo \cite{Svensson2005}. 
 
 A figura \ref{fig:mft-record} demonstra essa fragmentação de informações do arquivo.
 
@@ -264,7 +280,7 @@ A figura \ref{fig:ntfs-index-directory} demonstra o funcionamento desse processo
 Quando um novo arquivo é criado em um sistema de arquivos NTFS, o arquivo \textbf{\$BITMAP} do registro da MFT precisa ser atualizado pois os clusters
 anteriormente considerados \emph{não alocados} agora estão ocupados por um arquivo. Assim, quando um arquivo é excluído o arquivo \textbf{\$BITMAP} do
 registro da MFT também precisa ser atualizado. Os bits correspondentes ao cluster anteriormente alocado pelo arquivo removido são zerados (marcados
-como \emph{ ão alocados}). O arquivo foi então marcado para remoção porém seu conteúdo continua no disco no mesmo lugar que estava anteriormente
+como \emph{não alocados}). O arquivo foi então marcado para remoção porém seu conteúdo continua no disco no mesmo lugar que estava anteriormente
 alocado até que o mesmo local seja utilizado para armazenar outro arquivo. A entrada do índice do arquivo é também marcada para exclusão porém, a
 entrada do índice é rapidamente sobrescrita, o que no caso do arquivo pode demorar dependendo do tamanho do volume de dados \cite{Svensson2005}.
 

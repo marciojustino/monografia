@@ -53,8 +53,8 @@ digitais, a probabilidade de cada estado é conhecida com precisão, já que se tem
 informações a preocupação recai sobre os bytes de dados, representado por até 256 valores possíveis. Podemos então pensar em entropia como o grau em
 que o bloco de dados encontra-se desordenado \cite[p.~13]{Kloet2007}.
 
-Muito embora a entropia, juntamente com a abordagem estatística dos dados funcione para tipos de arquivos que apresentam um padrão definido,
-significativamente, esta não funciona tão bem quando o padrão de dados não tão óbvios \cite[p.~237]{Suganthan2010}.
+Muito embora a entropia, juntamente com a abordagem estatística dos dados funcione para tipos de arquivos que apresentam um padrão
+significativamente definido, esta não funciona tão bem quando os padrões de dados não são tão óbvios  \cite[p.~237]{Suganthan2010}.
 
 % incluir a análise de entropia sobre o aspecto de um arquivo de imagem representado em binário.
 % PÁG: 13 DO ARQUIVO ``KLOET_2007''
