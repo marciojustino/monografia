@@ -161,9 +161,19 @@
 }
 
 @conference{Suganthan2010,
-    author    = "Qiming Li and Alvin Y. Ong and P. Suganthan and V. Thing",
+    author    = "Qiming Li and Alvin Y. Ong and Ponnuthurai N. Suganthan and Vrizlynn L. L. Thing",
     title     = "A Novel Support Vector Machine Approach to High Entropy Data Fragment Classification",
     booktitle = "Proceedings of the South African Information Security",
     pages     = "236--247",
     year      = "2010"
+}
+
+@article{Machta1999,
+    author  = "Simran Fitzgerald and George Mathews and Colin Morris and Oles Zhulyn",
+    title   = "Using NLP techniques for file fragment classification",
+    year    = "2012",
+    journal = "Digital Investigation",
+    volume  = "9",
+    number  = "",
+    pages   = "S44-S49"
 }

@@ -10,7 +10,6 @@ A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: cap1.aux
 A level-1 auxiliary file: cap2.aux
 A level-1 auxiliary file: cap3.aux
-A level-1 auxiliary file: cap4.aux
 A level-1 auxiliary file: consideracoes_finais.aux
 The style file: abnt-alf.bst
 A level-1 auxiliary file: anexo.aux
@@ -32,7 +31,7 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 +---------------------------------------------------------+
 You've used 15 entries,
             6522 wiz_defined-function locations,
-            1261 strings with 11319 characters,
+            1260 strings with 11311 characters,
 and the built_in function-call counts, 11342 in all, are:
 = -- 923
 > -- 335

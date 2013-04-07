@@ -12,12 +12,6 @@ Sendo assim, a escolha da abordagem ideal para localização dos fragmentos depend
 o tipo de sistema de arquivo, os tipos de arquivos mais comuns presentes na imagem investigada e os mais possíveis de se apresentar provas concretas,
 a situação do nível de fragmentação desses arquivos, as condições dessas informações presentes em slack space. Em grandes volumes de dados, analisar
 esses quesitos baseado nas informações de dados presentes é uma tarefa muito complexa e custosa. Algumas ferramentas forenses tem voltado seus
-olhos e estudos para a recuperação de dados, tais como \emph{Foremost} e \emph{Scalpel}, que fazem uso de algumas destas técnicas para aproximar
+olhos e estudos para a recuperação de dados, tais como \emph{Foremost} e \emph{Scalpel} que fazem uso de algumas destas técnicas para aproximar
 cada vez mais as condições de recuperação dos arquivos, conseguindo assim um resultado mais eficaz e satisfatório, o que não seria garantido
-se utilizada uma ou outra abordagem.
-
-A análise de entropia ainda está sendo estudada com sua abordagem direcionada ao comportamento de divergência dos dados. Muito embora essa técnica
-ainda apresente falhas nos processos de identificação de fragmentos, essa é uma das abordagens mais promissoras de melhoria de eficácia no processo de
-identificação e classificação de fragmentos de dados por sua eficácia na aplicação de dados de arquivos de figuras, na identificação de divergências
-presentes em seus dados, que para esse caso é um sinal de que a figura fora modificada ou possui informações não pertencentes ao tipo de arquivo
-designado.
+utilizando-se somente uma ou outra técnica.

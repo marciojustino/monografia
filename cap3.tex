@@ -1,12 +1,31 @@
 \chapter{File Carving Avançado}
-% desenvolver
-????
 
-\section{Diferenciação}
-% desenvolver
-????
+Com os sistemas de arquivos mais modernos e a dificuldade de se utilizar técnicas tradicionais para recuperar arquivos, faz-se
+necessária a utilização de técnicas mais avançadas e automáticas para possibilitar a operação de carving em volumes grandes de dados, mesmo que os
+dados tenham informações no sistema de arquivos. Nesse contexto, diversas ferramentas de file carving foram criadas para automatizar o processo de
+recuperação \cite{Cohen2007}.
 
 \section{Fragmentação}
+
+\subsection{Classificação de Fragmentos de Arquivos}
+
+Outra necessidade não menos importante no processo de forense de arquivos fragmentados é a classificação dos fragmentos. A pesquisa pelas partes de
+um determinado arquivo podem levar a buscas infindáveis se o arquivo for muito extenso, faz-se necessário qualificar os fragmentos do arquivo de forma
+a identificar que um fragmento possa ou não fazer parte do arquivo em questão. 
+
+O fragmento de um arquivo do tipo TXT, servindo de exemplo, não poderia fazer parte de área de metadados de um arquivo de imagem do tipo
+JPEG (comprimido) pois a estrutura dos dados de um tipo de arquivo se diferem muito \cite[p.~S44]{Zhulyn2012}.
+
+\subsection{Aprendizagem de Máquina}
+
+Alguns métodos de inteligência artificial, aplicados ao aprendizado computacional (\emph{Machine Learning}), tem sido explorados
+para tratar o problema da classificação dos fragmentos de arquivos. Alguns desses métodos, explorados recentemente, são os \emph{Support Vector
+Machines} (SVM's) - ferramentas muito úteis no aprendizado supervisionado. Segundo Li et al. (2010), uma das maiores vantagens das SVM's é sua
+possibilidade de explorar padrões em espaços de elevadas dimensões, o que com métodos convencionais estatísticos se torna muito difícil ou
+insuficiente para ser aplicado. Seu uso se baseia no tratamento vetorial do histograma de fragmentos de dados, uma vez que o histograma tem custo
+computacional baixo, tornando o uso das SVM's um método extremamente rápido e eficiente.
+
+% ADICIONAR CONTEÚDO PÁG: 238 DO ARQUIVO ``[SUGANTHAN] A NOVEL SUPPORT VECTOR MACHINE APPROACH TO HIGH ENTROPY DATA FRAGMENT CLASSIFICATION''
 
 \subsection{Ponto de Fragmentação}
 
@@ -28,8 +47,8 @@ arquivo, o que pode ser visto na figura \ref{fig:file-fragment-block1} entre o b
 Sendo assim, Menon se utiliza de uma abordagem de métodos para identificar se um bloco contém informações pertencentes ao arquivo ou não, e assim,
 decidir se o fragmento realmente faz parte do arquivo analisado.
 
-Um dos métodos é o uso de palavras-chave e assinatura de arquivo para determinar se a informação contida no bloco tem relação com o mesmo tipo do
-arquivo analisado, havendo divergência nesse ponto, determina-se então um ponto de fragmentação do arquivo. Se um arquivo analisado do tipo
+Um dos métodos abordado é o de uso de palavras-chave e assinatura de arquivo para determinar se a informação contida no bloco tem relação com o mesmo
+tipo do arquivo analisado, havendo divergência nesse ponto, determina-se então um ponto de fragmentação do arquivo. Se um arquivo analisado do tipo
 executável (.exe) contém em um de seus blocos o cabeçalho de um arquivo de imagem (.jpeg) pode-se então considerar um ponto de entrada de
 fragmentação nesse bloco. De forma similar, o uso de palavras-chave pode ser usado para identificar entradas inválidas e não suportadas para
 determinados tipos de arquivos, o que também se pode considerar como um ponto de entrada de fragmentação.
@@ -38,7 +57,37 @@ A análise de conteúdo do bloco também é um outro método eficiente na localização
 nas características dos dados de um arquivo pode indicar uma mudança estrutural, em consequência determinar que este fragmento não faz parte do
 arquivo em análise.
 
-\subsection{Entropia da Informação}
+Pode-se dizer que a essência do processo de file carving é a extração de todos os bytes que pertencem ao arquivo dada uma imagem (evidência)
+investigada. Esse processo de extração é possível pela função de mapeamento, que mapeia os bytes da imagem nos bytes do arquivo \cite{Cohen2007}.
+
+Cohen (2007, p. 2) demonstra um exemplo de função de mapeamento através da figura \ref{fig:mapping-function}:
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.6]{figuras/mapping-function.png}
+  \caption{Função de mapeamento de processo de file carving.}
+  \label{fig:mapping-function}
+\end{figure}
+
+Uma das propriedades interessantes da função de mapeamento é a capacidade de demonstrar as descontinuidades (possíveis fragmentações) ao longo dos
+bytes da imagem extraída. Na imagem \ref{fig:mapping-function} nota-se que há uma descontinuidade no conjunto de bytes relativos da imagem que está
+sendo extraída em um determinado momento. A interseção desse ponto de descontinuidade na função de mapeamento é conhecida como ponto de 
+fragmentação. Um ponto de fragmentação presente em planos diferentes pode representar uma sequência de arquivos descontinuados, demonstrado pelos
+pontos \textbf{P1} e \textbf{P2} na figura \ref{fig:mapping-function2}.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.6]{figuras/mapping-function2.png}
+  \caption{Descontinuidade múltipla, indicação de possível fragmentação de múltiplos arquivos.}
+  \label{fig:mapping-function2}
+\end{figure}
+
+Inicialmente essa teoria pode levar ao entendimento de que possam existir inúmeras descontinuidades entre os trechos de dados (pontos P1 e
+P2) mas na realidade, em sistemas operacionais modernos, os índices de fragmentação se mantém relativamente baixos. Como resultado, Cohen descreve
+que quanto menor for a distância entre os pontos P1 e P2 (região descontinua do arquivo) maior a probabilidade da fragmentação se enquadrar no nível
+1.
+
+\subsection{Análise de Entropia}
 
 Com base na ideia de um dos métodos do ponto de fragmentação, o de análise de conteúdo, surge então a necessidade de aplicação de uma metodologia
 capaz de analisar os blocos de arquivos em busca de divergências e características dos dados contidos nos mesmos.
@@ -56,5 +105,7 @@ que o bloco de dados encontra-se desordenado \cite[p.~13]{Kloet2007}.
 Muito embora a entropia, juntamente com a abordagem estatística dos dados funcione para tipos de arquivos que apresentam um padrão
 significativamente definido, esta não funciona tão bem quando os padrões de dados não são tão óbvios \cite[p.~237]{Suganthan2010}.
 
-% incluir a análise de entropia sobre o aspecto de um arquivo de imagem representado em binário.
-% PÁG: 13 DO ARQUIVO ``KLOET_2007''
+% incluir a análise de entropia sobre o aspecto de um arquivo de imagem representado em binário - PÁG: 13 DO ARQUIVO ``KLOET_2007''
+
+Machta (1999) e Kloet (2007) levaram a conclusões semelhantes sobre o uso da entropia. A abordagem dos algoritmos para entropia não resolvem questões
+fundamentais da ``segunda lei'' de Gibbs, que diz para processos irreversíveis, a entropia de um sistema isolado nunca pode diminuir.

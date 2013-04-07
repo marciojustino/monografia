@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  1 APR 2013 23:51
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  7 APR 2013 04:19
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -273,8 +273,8 @@ Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 Writing nomenclature file principal.nlo
 (./principal.aux (./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux)
 (./dedicatoria.aux) (./resumo.aux) (./abstract.aux) (./introducao.aux)
-(./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
-) (./anexo.aux))
+(./cap1.aux) (./cap2.aux) (./cap3.aux) (./consideracoes_finais.aux)
+(./anexo.aux))
 \openout1 = `principal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -415,40 +415,40 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
  [6
 
 
-] [7])
+])
 \tf@toc=\write5
 \openout5 = `principal.toc'.
 
- [8] (./principal.lof
+ [7] (./principal.lof
 Overfull \hbox (4.76086pt too wide) in paragraph at lines 15--15
  [][] []\OT1/ptm/m/n/12 Demonstra[][]ao de fragmenta[][]ao de ar-qui-vos nos cl
 us-ters do disco r[]^^Pgido (LTD., 
  []
 
-[9
+[8
 
 
 ])
 \tf@lof=\write6
 \openout6 = `principal.lof'.
 
- [10] (./principal.lot)
+ [9] (./principal.lot)
 \tf@lot=\write7
 \openout7 = `principal.lot'.
 
 
 No file principal.nls.
-[11
+[10
 
 ]
 \openout2 = `introducao.aux'.
 
  (./introducao.tex
 Cap\'{\i }tulo 1.
-<figuras/fig01.png, id=43, 604.2575pt x 344.28625pt>
+<figuras/fig01.png, id=40, 604.2575pt x 344.28625pt>
 File: figuras/fig01.png Graphic file (type png)
  <use figuras/fig01.png>
-[12
+[11
 
 
  <./figuras/fig01.png (PNG copy)>]
@@ -460,8 +460,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
- [13] [14]
-<figuras/hipotese.png, id=55, 2699.08376pt x 1308.89pt>
+ [12] [13]
+<figuras/hipotese.png, id=52, 2699.08376pt x 1308.89pt>
 File: figuras/hipotese.png Graphic file (type png)
 
 <use figuras/hipotese.png>
@@ -472,188 +472,180 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
- [15 <./figuras/hipotese.png (PNG copy)>]) [16]
+ [14 <./figuras/hipotese.png (PNG copy)>]) [15]
 \openout2 = `cap1.aux'.
 
  (./cap1.tex
 Cap\'{\i }tulo 2.
-<figuras/harddisk.jpg, id=63, 652.4375pt x 496.85625pt>
+<figuras/harddisk.jpg, id=60, 652.4375pt x 496.85625pt>
 File: figuras/harddisk.jpg Graphic file (type jpg)
 
-<use figuras/harddisk.jpg> [17
+<use figuras/harddisk.jpg> [16
 
 
 
- <./figuras/harddisk.jpg>] [18]
-<figuras/hard-disk-structure.png, id=71, 978.65625pt x 157.58875pt>
+ <./figuras/harddisk.jpg>] [17]
+<figuras/hard-disk-structure.png, id=67, 978.65625pt x 157.58875pt>
 File: figuras/hard-disk-structure.png Graphic file (type png)
 
 <use figuras/hard-disk-structure.png>
-<figuras/fig02.png, id=72, 501.875pt x 103.38625pt>
+<figuras/fig02.png, id=68, 501.875pt x 103.38625pt>
 File: figuras/fig02.png Graphic file (type png)
  <use figuras/fig02.png>
-[19 <./figuras/hard-disk-structure.png (PNG copy)> <./figuras/fig02.png>]
-<figuras/estrutura-ntfs.png, id=78, 572.1375pt x 131.49126pt>
+[18 <./figuras/hard-disk-structure.png (PNG copy)> <./figuras/fig02.png>]
+<figuras/estrutura-ntfs.png, id=75, 572.1375pt x 131.49126pt>
 File: figuras/estrutura-ntfs.png Graphic file (type png)
 
 <use figuras/estrutura-ntfs.png>
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 []\OT1/ptm/m/n/12 Mapeia ca-rac-te-res em texto min[]usculo para texto
  []
 
-[20 <./figuras/estrutura-ntfs.png (PNG copy)>]
-<figuras/mft-file-format.jpg, id=82, 602.25pt x 240.9pt>
+[19 <./figuras/estrutura-ntfs.png (PNG copy)>]
+<figuras/mft-file-format.jpg, id=79, 602.25pt x 240.9pt>
 File: figuras/mft-file-format.jpg Graphic file (type jpg)
 
-<use figuras/mft-file-format.jpg> [21 <./figuras/mft-file-format.jpg>]
-<figuras/mft-attribute.png, id=86, 565.11125pt x 371.3875pt>
+<use figuras/mft-file-format.jpg> [20 <./figuras/mft-file-format.jpg>]
+<figuras/mft-attribute.png, id=83, 565.11125pt x 371.3875pt>
 File: figuras/mft-attribute.png Graphic file (type png)
 
 <use figuras/mft-attribute.png>
-Underfull \hbox (badness 3525) in paragraph at lines 195--196
+Underfull \hbox (badness 3525) in paragraph at lines 204--206
 \OT1/ptm/m/n/12 vers[]oes do sis-tema de ar-qui-vos. Ar-ma-ze-nava
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 205--206
+Underfull \hbox (badness 1072) in paragraph at lines 215--216
 []\OT1/ptm/m/n/12 Usado pelo servi[]o de ras-tre-a-mento de link dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 []\OT1/ptm/m/n/12 A \OT1/ptm/b/n/12 EFS \OT1/ptm/m/n/12 (En-cryp-ting File Sys-
 tem) ar-ma-zena
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 213--214
+Underfull \hbox (badness 2027) in paragraph at lines 223--224
 \OT1/ptm/m/n/12 informa[][]oes que s[]ao usa-das na manipula[][]ao de
  []
 
 
-Overfull \hbox (2.77739pt too wide) in paragraph at lines 222--223
+Overfull \hbox (2.77739pt too wide) in paragraph at lines 232--237
 []\OT1/ptm/m/n/12 Todo re-gis-tro de ar-quivo con-siste de ao me-nos um par de 
 atri-buto/valor. Se toda a informa[][]ao
  []
 
-<figuras/mft-record.png, id=87, 1181.41376pt x 419.5675pt>
+<figuras/mft-record.png, id=84, 1181.41376pt x 419.5675pt>
 File: figuras/mft-record.png Graphic file (type png)
 
-<use figuras/mft-record.png> [22 <./figuras/mft-attribute.png (PNG copy)>]
-<figuras/ntfs-index.png, id=91, 542.025pt x 271.0125pt>
+<use figuras/mft-record.png> [21 <./figuras/mft-attribute.png (PNG copy)>]
+<figuras/ntfs-index.png, id=88, 542.025pt x 271.0125pt>
 File: figuras/ntfs-index.png Graphic file (type png)
 
 <use figuras/ntfs-index.png>
-<figuras/ntfs-index-directory.png, id=92, 916.42375pt x 345.29pt>
+<figuras/ntfs-index-directory.png, id=89, 916.42375pt x 345.29pt>
 File: figuras/ntfs-index-directory.png Graphic file (type png)
 
-<use figuras/ntfs-index-directory.png> [23] [24 <./figuras/mft-record.png (PNG 
+<use figuras/ntfs-index-directory.png> [22] [23 <./figuras/mft-record.png (PNG 
 copy)> <./figuras/ntfs-index.png (PNG copy)> <./figuras/ntfs-index-directory.pn
-g (PNG copy)>]) [25]
+g (PNG copy)>]) [24]
 \openout2 = `cap2.aux'.
 
  (./cap2.tex
 Cap\'{\i }tulo 3.
-[26
+[25
 
 
 
-] <figuras/pdf-file-signature.png, id=107, 674.52pt x 132.495pt>
+] <figuras/pdf-file-signature.png, id=104, 674.52pt x 132.495pt>
 File: figuras/pdf-file-signature.png Graphic file (type png)
 
 <use figuras/pdf-file-signature.png>
-<figuras/png-file-signature.png, id=108, 680.5425pt x 161.85469pt>
+<figuras/png-file-signature.png, id=105, 680.5425pt x 161.85469pt>
 File: figuras/png-file-signature.png Graphic file (type png)
 
-<use figuras/png-file-signature.png> [27 <./figuras/pdf-file-signature.png (PNG
+<use figuras/png-file-signature.png> [26 <./figuras/pdf-file-signature.png (PNG
  copy)> <./figuras/png-file-signature.png (PNG copy)>]
-<figuras/fragmented-files.png, id=112, 1003.75pt x 181.67876pt>
+<figuras/fragmented-files.png, id=109, 1003.75pt x 181.67876pt>
 File: figuras/fragmented-files.png Graphic file (type png)
 
-<use figuras/fragmented-files.png> [28 <./figuras/fragmented-files.png (PNG cop
-y)>] <figuras/fraglinear.png, id=116, 575.14874pt x 88.83188pt>
+<use figuras/fragmented-files.png> [27 <./figuras/fragmented-files.png (PNG cop
+y)>] <figuras/fraglinear.png, id=113, 575.14874pt x 88.83188pt>
 File: figuras/fraglinear.png Graphic file (type png)
 
 <use figuras/fraglinear.png>
-<figuras/fragnaolinear.png, id=117, 560.8453pt x 80.55093pt>
+<figuras/fragnaolinear.png, id=114, 560.8453pt x 80.55093pt>
 File: figuras/fragnaolinear.png Graphic file (type png)
 
-<use figuras/fragnaolinear.png> [29 <./figuras/fraglinear.png (PNG copy)> <./fi
-guras/fragnaolinear.png (PNG copy)>]
+<use figuras/fragnaolinear.png> [28 <./figuras/fraglinear.png (PNG copy)> <./fi
+guras/fragnaolinear.png (PNG copy)>] [29]
 <figuras/exe-file-signature.png, id=121, 679.78969pt x 178.41656pt>
 File: figuras/exe-file-signature.png Graphic file (type png)
 
-<use figuras/exe-file-signature.png> [30]
-<figuras/png-file-structure-data.png, id=126, 425.59pt x 607.26875pt>
+<use figuras/exe-file-signature.png>
+<figuras/png-file-structure-data.png, id=122, 425.59pt x 607.26875pt>
 File: figuras/png-file-structure-data.png Graphic file (type png)
 
-<use figuras/png-file-structure-data.png> [31 <./figuras/exe-file-signature.png
+<use figuras/png-file-structure-data.png> [30 <./figuras/exe-file-signature.png
  (PNG copy)> <./figuras/png-file-structure-data.png (PNG copy)>]
-Overfull \hbox (11.0086pt too wide) in paragraph at lines 201--204
+Overfull \hbox (11.0086pt too wide) in paragraph at lines 207--210
 []\OT1/ptm/m/n/12 Se uti-liza da interpreta[][]ao do ta-ma-nho m[]aximo poss[]^
 ^Pvel do bloco de da-dos ap[]os a identifica[][]ao
  []
 
-[32] <figuras/setor-borda.png, id=133, 779.16093pt x 176.15813pt>
+[31] <figuras/setor-borda.png, id=130, 779.16093pt x 176.15813pt>
 File: figuras/setor-borda.png Graphic file (type png)
 
 <use figuras/setor-borda.png>
-<figuras/setor-borda-fragmentado.png, id=134, 778.40813pt x 174.6525pt>
+<figuras/setor-borda-fragmentado.png, id=131, 778.40813pt x 174.6525pt>
 File: figuras/setor-borda-fragmentado.png Graphic file (type png)
 
-<use figuras/setor-borda-fragmentado.png> [33] [34 <./figuras/setor-borda.png (
-PNG copy)> <./figuras/setor-borda-fragmentado.png (PNG copy)>]
-<figuras/mapping-function.png, id=141, 344.28625pt x 355.3275pt>
-File: figuras/mapping-function.png Graphic file (type png)
-
-<use figuras/mapping-function.png>
-<figuras/mapping-function2.png, id=142, 362.35374pt x 382.42876pt>
-File: figuras/mapping-function2.png Graphic file (type png)
-
-<use figuras/mapping-function2.png>) [35 <./figuras/mapping-function.png (PNG c
-opy)>] [36 <./figuras/mapping-function2.png (PNG copy)>]
+<use figuras/setor-borda-fragmentado.png>) [32] [33 <./figuras/setor-borda.png 
+(PNG copy)> <./figuras/setor-borda-fragmentado.png (PNG copy)>]
 \openout2 = `cap3.aux'.
 
  (./cap3.tex
 Cap\'{\i }tulo 4.
-<figuras/file-fragment-block1.png, id=150, 830.10126pt x 98.3675pt>
+[34
+
+
+
+] <figuras/file-fragment-block1.png, id=141, 830.10126pt x 98.3675pt>
 File: figuras/file-fragment-block1.png Graphic file (type png)
 
-<use figuras/file-fragment-block1.png> [37
+<use figuras/file-fragment-block1.png> [35 <./figuras/file-fragment-block1.png 
+(PNG copy)>] <figuras/mapping-function.png, id=145, 344.28625pt x 355.3275pt>
+File: figuras/mapping-function.png Graphic file (type png)
 
+<use figuras/mapping-function.png>
+<figuras/mapping-function2.png, id=146, 362.35374pt x 382.42876pt>
+File: figuras/mapping-function2.png Graphic file (type png)
 
-
- <./figuras/file-fragment-block1.png (PNG copy)>]
-Overfull \hbox (14.02336pt too wide) in paragraph at lines 46--49
+<use figuras/mapping-function2.png> [36 <./figuras/mapping-function.png (PNG co
+py)>]
+Overfull \hbox (14.02336pt too wide) in paragraph at lines 95--98
 \OT1/ptm/m/n/12 de conte[]udo oculto ou mo-di-fi-cado, tem apre-sen-tado ex-ce-
 len-tes re-sul-ta-dos por de-ter-mi-nar altera[][]oes
  []
 
-) [38]
-\openout2 = `cap4.aux'.
+) [37 <./figuras/mapping-function2.png (PNG copy)>] [38]
+\openout2 = `consideracoes_finais.aux'.
 
- (./cap4.tex
+
+(./consideracoes_finais.tex
 Cap\'{\i }tulo 5.
 ) [39
 
 
 
-]
-\openout2 = `consideracoes_finais.aux'.
-
- (./consideracoes_finais.tex
-Cap\'{\i }tulo 6.
-) [40
-
-
-
-] (./principal.bbl) [41
+] (./principal.bbl) [40
 
 
 ]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex) [42
+ (./anexo.tex) [41
 
 
 ]
@@ -663,25 +655,25 @@ Cap\'{\i }tulo 6.
 +-------------------------------------------------------------------+
 (./principal.aux (./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux)
 (./dedicatoria.aux) (./resumo.aux) (./abstract.aux) (./introducao.aux)
-(./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux) (./consideracoes_finais.aux
-) (./anexo.aux)) ) 
+(./cap1.aux) (./cap2.aux) (./cap3.aux) (./consideracoes_finais.aux)
+(./anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 2940 strings out of 495041
- 42881 string characters out of 1181897
- 102209 words of memory out of 3000000
- 5893 multiletter control sequences out of 15000+50000
+ 2932 strings out of 495041
+ 42816 string characters out of 1181897
+ 101928 words of memory out of 3000000
+ 5892 multiletter control sequences out of 15000+50000
  45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 31i,13n,41p,654b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/s
-hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
-ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
-tmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
-re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (43 pages, 925481 bytes).
+ 31i,13n,41p,366b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts
+/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utm
+bi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share
+/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on principal.pdf (42 pages, 928889 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
+ 190 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,6 +5,12 @@ arquivos \cite{Hand2012}.
 O processo de file carving é útil na recuperação de arquivos e amplamente utilizado em investigações digitais (\textit{em forense computacional}).
 Devido a isso, esse é um dos processos mais importantes e desafiadores da computação forense \cite{Garfinkel2007}.
 
+O termo ``Carving'', definido por Cohen (2007, p. 1), é comumente utilizado para indicar a recuperação de arquivos em imagens de dados
+desestruturados, imagens que não contem as informações úteis do sistema de arquivos, informações estas que são utilizadas para auxiliar na recuperação
+do arquivo. Muitos analistas forenses se utilizam de técnicas de escultura como um último recurso devido à dificuldade das técnicas atuais. Diversas
+técnicas atuais utilizam técnicas de inspeção manual para recuperar arquivos, utilizando-se da tentativa e erro. Atualmente essa técnica tem se
+tornado impraticável devido ao grande volume de dados dos dispositivos de armazenamento de informações.
+
 \section{Desafio}
 
 Um dos primeiros desafios do processo de file carving, segundo Memon (2008, p. S2), se encontra na tentativa de se recuperar arquivos fragmentados. Um
@@ -62,7 +68,7 @@ arquivos em computação forense.} mostrando exatamente a assinatura do arquivo PD
   \label{fig:png-file-signature}
 \end{figure}
 
-\section{Arquivos Fragmentados}
+\section{Fragmentação de Arquivos}
 
 Segundo Kloet (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente
 em um mesmo conjunto de dados. Sistemas operacionais modernos, tais como o NTFS, tentam gravar os dados evitando a fragmentação porém, ainda existem
@@ -304,3 +310,4 @@ P2) mas na realidade, em sistemas operacionais modernos, os índices de fragmenta
 que quanto menor for a distância entre os pontos P1 e P2 (região descontinua do arquivo) maior a probabilidade da fragmentação se enquadrar no nível
 1.
 
+% VERIFICAR RESTO DO CONTEÚDO DO ARQUIVO ``ADVANCED CARVING TECHNIQUES'' - PÁG: 6.
