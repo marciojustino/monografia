@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  7 APR 2013 04:19
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  10 APR 2013 22:22
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -629,23 +629,22 @@ Overfull \hbox (14.02336pt too wide) in paragraph at lines 95--98
 len-tes re-sul-ta-dos por de-ter-mi-nar altera[][]oes
  []
 
-) [37 <./figuras/mapping-function2.png (PNG copy)>] [38]
+) [37 <./figuras/mapping-function2.png (PNG copy)>]
 \openout2 = `consideracoes_finais.aux'.
 
-
-(./consideracoes_finais.tex
+ (./consideracoes_finais.tex
 Cap\'{\i }tulo 5.
-) [39
+) [38
 
 
 
-] (./principal.bbl) [40
+] (./principal.bbl) [39
 
 
 ]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex) [41
+ (./anexo.tex) [40
 
 
 ]
@@ -671,9 +670,9 @@ xlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts
 /type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utm
 bi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share
 /texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (42 pages, 928889 bytes).
+Output written on principal.pdf (41 pages, 928004 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
+ 187 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
