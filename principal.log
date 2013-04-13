@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  10 APR 2013 22:22
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  13 APR 2013 08:41
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -273,8 +273,7 @@ Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 Writing nomenclature file principal.nlo
 (./principal.aux (./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux)
 (./dedicatoria.aux) (./resumo.aux) (./abstract.aux) (./introducao.aux)
-(./cap1.aux) (./cap2.aux) (./cap3.aux) (./consideracoes_finais.aux)
-(./anexo.aux))
+(./cap1.aux) (./cap2.aux) (./cap3.aux) (./consideracoes_finais.aux))
 \openout1 = `principal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -290,7 +289,8 @@ LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 14.
- (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \big@size=\dimen118
@@ -312,45 +312,45 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 
  (./capa.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 19
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 20
 .
  (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 19
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 20
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 19
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 20
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 19
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 20
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 20.
 
 (/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 20.
  [0
 Non-PDF special ignored!
 
@@ -623,56 +623,45 @@ File: figuras/mapping-function.png Graphic file (type png)
 File: figuras/mapping-function2.png Graphic file (type png)
 
 <use figuras/mapping-function2.png> [36 <./figuras/mapping-function.png (PNG co
-py)>]
-Overfull \hbox (14.02336pt too wide) in paragraph at lines 95--98
-\OT1/ptm/m/n/12 de conte[]udo oculto ou mo-di-fi-cado, tem apre-sen-tado ex-ce-
-len-tes re-sul-ta-dos por de-ter-mi-nar altera[][]oes
- []
-
-) [37 <./figuras/mapping-function2.png (PNG copy)>]
+py)>] [37 <./figuras/mapping-function2.png (PNG copy)>]) [38]
 \openout2 = `consideracoes_finais.aux'.
 
- (./consideracoes_finais.tex
+
+(./consideracoes_finais.tex
 Cap\'{\i }tulo 5.
-) [38
+) [39
 
 
 
-] (./principal.bbl) [39
-
-
-]
-\openout2 = `anexo.aux'.
-
- (./anexo.tex) [40
-
-
-]
+] [40] (./principal.bbl)
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-(./principal.aux (./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux)
+[41
+
+
+] (./principal.aux (./capa.aux) (./folharosto.aux) (./folha_aprovacao.aux)
 (./dedicatoria.aux) (./resumo.aux) (./abstract.aux) (./introducao.aux)
-(./cap1.aux) (./cap2.aux) (./cap3.aux) (./consideracoes_finais.aux)
-(./anexo.aux)) ) 
+(./cap1.aux) (./cap2.aux) (./cap3.aux) (./consideracoes_finais.aux)) ) 
 Here is how much of TeX's memory you used:
- 2932 strings out of 495041
- 42816 string characters out of 1181897
- 101928 words of memory out of 3000000
- 5892 multiletter control sequences out of 15000+50000
+ 2925 strings out of 495041
+ 42748 string characters out of 1181897
+ 101650 words of memory out of 3000000
+ 5891 multiletter control sequences out of 15000+50000
  45969 words of font info for 90 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  31i,13n,41p,366b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts
-/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utm
-bi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share
-/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (41 pages, 928004 bytes).
+{/usr/sha
+re/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.p
+fb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texm
+f-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type
+1/urw/times/utmri8a.pfb>
+Output written on principal.pdf (42 pages, 930104 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
+ 190 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

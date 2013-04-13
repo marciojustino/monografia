@@ -2,12 +2,14 @@
 File Carving é o processo de recuperação de fragmentos de arquivos não mais indexados baseado no seu conteúdo e na ausência de metadados do sistema de
 arquivos \cite{Hand2012}.
 
-O termo ``Carving'' é comumente utilizado para indicar a recuperação de arquivos em imagens de dados desestruturados, imagens que não contem as
-informações úteis do sistema de arquivos, informações estas que são utilizadas para auxiliar na recuperação do arquivo. Muitos analistas forenses se
-utilizam de técnicas de escultura como um último recurso devido à dificuldade das técnicas atuais.
-
 O processo de file carving é útil na recuperação de arquivos e amplamente utilizado em investigações digitais (\textit{em forense computacional}).
 Devido a isso, esse é um dos processos mais importantes e desafiadores da computação forense \cite{Garfinkel2007}.
+
+O termo ``Carving'', definido por Cohen (2007, p. 1), é comumente utilizado para indicar a recuperação de arquivos em imagens de dados
+desestruturados, imagens que não contem as informações úteis do sistema de arquivos, informações estas que são utilizadas para auxiliar na recuperação
+do arquivo. Muitos analistas forenses se utilizam de técnicas de escultura como um último recurso devido à dificuldade das técnicas atuais. Diversas
+técnicas atuais utilizam técnicas de inspeção manual para recuperar arquivos, utilizando-se da tentativa e erro. Atualmente essa técnica tem se
+tornado impraticável devido ao grande volume de dados dos dispositivos de armazenamento de informações.
 
 \section{Desafio}
 
@@ -66,7 +68,7 @@ arquivos em computação forense.} mostrando exatamente a assinatura do arquivo PD
   \label{fig:png-file-signature}
 \end{figure}
 
-\section{Arquivos Fragmentados}
+\section{Fragmentação de Arquivos}
 
 Segundo Kloet (2007, p. 8), um arquivo fragmentado é um arquivo dividido em várias partes onde cada parte pode estar localizada em um lugar diferente
 em um mesmo conjunto de dados. Sistemas operacionais modernos, tais como o NTFS, tentam gravar os dados evitando a fragmentação porém, ainda existem
@@ -255,57 +257,3 @@ As imagens \ref{fig:setor-borda} e \ref{fig:setor-borda-fragmentado} demonstram 
   \caption{Arquivos fragmentados distribuídos nos clusters.}
   \label{fig:setor-borda-fragmentado}
 \end{figure}
-
-\subsection{Classificação de Fragmentos de Arquivos}
-
-Outra necessidade não menos importante no processo de forense de arquivos fragmentados é a classificação dos fragmentos. A pesquisa pelas partes de
-um determinado arquivo podem levar a buscas infindáveis se o arquivo for muito extenso, faz-se necessário qualificar os fragmentos do arquivo de forma
-a identificar que um fragmento possa ou não fazer parte do arquivo em questão. 
-
-O fragmento de um arquivo do tipo TXT, servindo de exemplo, não poderia fazer parte de área de metadados de um arquivo de imagem do tipo
-JPEG (comprimido) pois a estrutura dos dados de um tipo de arquivo se diferem muito \cite[p.~S44]{Zhulyn2012}.
-
-\subsection{Aprendizagem de Máquina}
-
-Alguns métodos de inteligência artificial, aplicados ao aprendizado computacional (\emph{Machine Learning}), tem sido explorados
-para tratar o problema da classificação dos fragmentos de arquivos. Alguns desses métodos, explorados recentemente, são os \emph{Support Vector
-Machines} (SVM's) - ferramentas muito úteis no aprendizado supervisionado. Segundo Li et al. (2010), uma das maiores vantagens das SVM's é sua
-possibilidade de explorar padrões em espaços de elevadas dimensões, o que com métodos convencionais estatísticos se torna muito difícil ou
-insuficiente para ser aplicado. Seu uso se baseia no tratamento vetorial do histograma de fragmentos de dados, uma vez que o histograma tem custo
-computacional baixo, tornando o uso das SVM's um método extremamente rápido e eficiente.
-
-% ADICIONAR CONTEÚDO PÁG: 238 DO ARQUIVO ``[SUGANTHAN] A NOVEL SUPPORT VECTOR MACHINE APPROACH TO HIGH ENTROPY DATA FRAGMENT CLASSIFICATION''
-
-\subsection{Ponto de Fragmentação}
-
-Pode-se dizer que a essência do processo de file carving é a extração de todos os bytes que pertencem ao arquivo dada uma imagem (evidência)
-investigada. Esse processo de extração é possível pela função de mapeamento, que mapeia os bytes da imagem nos bytes do arquivo \cite{Cohen2007}.
-
-Cohen (2007, p. 2) demonstra um exemplo de função de mapeamento através da figura \ref{fig:mapping-function}:
-
-\begin{figure}[htb]
-  \centering
-  \includegraphics[scale=0.6]{figuras/mapping-function.png}
-  \caption{Função de mapeamento de processo de file carving.}
-  \label{fig:mapping-function}
-\end{figure}
-
-Uma das propriedades interessantes da função de mapeamento é a capacidade de demonstrar as descontinuidades (possíveis fragmentações) ao longo dos
-bytes da imagem extraída. Na imagem \ref{fig:mapping-function} nota-se que há uma descontinuidade no conjunto de bytes relativos da imagem que está
-sendo extraída em um determinado momento. A interseção desse ponto de descontinuidade na função de mapeamento é conhecida como ponto de 
-fragmentação. Um ponto de fragmentação presente em planos diferentes pode representar uma sequência de arquivos descontinuados, demonstrado pelos
-pontos \textbf{P1} e \textbf{P2} na figura \ref{fig:mapping-function2}.
-
-\begin{figure}[htb]
-  \centering
-  \includegraphics[scale=0.6]{figuras/mapping-function2.png}
-  \caption{Descontinuidade múltipla, indicação de possível fragmentação de múltiplos arquivos.}
-  \label{fig:mapping-function2}
-\end{figure}
-
-Inicialmente essa teoria pode levar ao entendimento de que possam existir inúmeras descontinuidades entre os trechos de dados (pontos P1 e
-P2) mas na realidade, em sistemas operacionais modernos, os índices de fragmentação se mantém relativamente baixos. Como resultado, Cohen descreve
-que quanto menor for a distância entre os pontos P1 e P2 (região descontinua do arquivo) maior a probabilidade da fragmentação se enquadrar no nível
-1.
-
-% VERIFICAR RESTO DO CONTEÚDO DO ARQUIVO ``ADVANCED CARVING TECHNIQUES'' - PÁG: 6.

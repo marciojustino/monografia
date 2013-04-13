@@ -94,7 +94,8 @@ capaz de analisar os blocos de arquivos em busca de divergências e característic
 
 A análise de conteúdo por entropia tem sido utilizada por pesquisadores e estudiosos da área forense com o objetivo de identificar conteúdo
 oculto em arquivos, atribuído a uma técnica anti-forense comumente usada, conhecida como \emph{Esteganografia}. Quando aplicada na identificação de
-conteúdo oculto ou modificado, tem apresentado excelentes resultados por determinar alterações na estrutura digital e nas características dos dados.
+conteúdo oculto ou modificado, tem apresentado excelentes resultados por determinar altera-\\ções na estrutura digital e nas características dos
+dados.
 
 Conceito originado da teoria da termodinâmica, a entropia está presente também no mundo da informação digital. Enquanto na termodinâmica se torna
 impossível determinar os estados possíveis da matéria, utiliza-se então uma aproximação, na entropia da informação digital, por se tratar de arquivos
@@ -102,10 +103,17 @@ digitais, a probabilidade de cada estado é conhecida com precisão, já que se tem
 informações a preocupação recai sobre os bytes de dados, representado por até 256 valores possíveis. Podemos então pensar em entropia como o grau em
 que o bloco de dados encontra-se desordenado \cite[p.~13]{Kloet2007}.
 
-Muito embora a entropia, juntamente com a abordagem estatística dos dados funcione para tipos de arquivos que apresentam um padrão
-significativamente definido, esta não funciona tão bem quando os padrões de dados não são tão óbvios \cite[p.~237]{Suganthan2010}.
+Em 2006, a abordagem estatística da entropia sobre conteúdo de arquivo foi a campeã no desafio de técnicas de file carving. Uma das técnicas usadas
+nessa abordagem foi a utilização do cálculo de entropia do bloco de dados.
 
-% incluir a análise de entropia sobre o aspecto de um arquivo de imagem representado em binário - PÁG: 13 DO ARQUIVO ``KLOET_2007''
+Kloet cita um exemplo para exemplificar o uso da entropia. Tomando como exemplo um arquivo PNG com grande área de dados, vários blocos seriam vários
+blocos de dados que uma técnica de file carving baseada em estrutura não seria capaz de identificar possíveis fragmentos, porém, esses blocos
+apresentam praticamente o mesmo tipo de dados compactados (comum em conteúdo de um arquivo de imagem), o que significa que a entropia desses blocos
+deve permanecer estável entre eles. Quando ocorre uma mudança muito súbita da entropia nesses blocos, surge então um forte indício de que isso possa
+se tratar de um ponto de fragmentação. Isso faz a técnica de entropia, em conjunto com técnicas de inspeção manual, principalmente em tipo de
+arquivos que apresentam uma pequena área de estrutura de dados e blocos de dados mais comprimidos, como o arquivo PNG citado. O principal problema da
+técnica de entropia está no cálculo de blocos que pertencem ao arquivo de blocos que não pertencem ao arquivo, causando falsos positivos se utilizada
+com nesse cenário.
 
-% Machta (1999) e Kloet (2007) chegaram a conclusões semelhantes sobre o uso da entropia. A abordagem dos algoritmos para entropia não resolvem questões
-% fundamentais da ``segunda lei'' de Gibbs, que diz para processos irreversíveis, a entropia de um sistema isolado nunca pode diminuir.
+Muito embora a entropia, juntamente com a abordagem estatística dos dados funcione para tipos de arquivos que apresentam um padrão significativamente
+definido, esta não funciona tão bem quando os padrões de dados não são tão óbvios \cite[p.~237]{Suganthan2010}.
