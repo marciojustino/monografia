@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  13 APR 2013 08:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  14 APR 2013 11:50
 entering extended mode
  %&-line parsing enabled.
 **principal.tex
@@ -588,13 +588,8 @@ File: figuras/exe-file-signature.png Graphic file (type png)
 File: figuras/png-file-structure-data.png Graphic file (type png)
 
 <use figuras/png-file-structure-data.png> [30 <./figuras/exe-file-signature.png
- (PNG copy)> <./figuras/png-file-structure-data.png (PNG copy)>]
-Overfull \hbox (11.0086pt too wide) in paragraph at lines 207--210
-[]\OT1/ptm/m/n/12 Se uti-liza da interpreta[][]ao do ta-ma-nho m[]aximo poss[]^
-^Pvel do bloco de da-dos ap[]os a identifica[][]ao
- []
-
-[31] <figuras/setor-borda.png, id=130, 779.16093pt x 176.15813pt>
+ (PNG copy)> <./figuras/png-file-structure-data.png (PNG copy)>] [31]
+<figuras/setor-borda.png, id=130, 779.16093pt x 176.15813pt>
 File: figuras/setor-borda.png Graphic file (type png)
 
 <use figuras/setor-borda.png>
@@ -659,7 +654,7 @@ amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.p
 fb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texm
 f-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on principal.pdf (42 pages, 930104 bytes).
+Output written on principal.pdf (42 pages, 930122 bytes).
 PDF statistics:
  190 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

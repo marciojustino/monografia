@@ -7,10 +7,9 @@ Devido a isso, esse é um dos processos mais importantes e desafiadores da comput
 
 O termo ``Carving'', definido por Cohen (2007, p. 1), é comumente utilizado para indicar a recuperação de arquivos em imagens de dados
 desestruturados, imagens que não contem as informações úteis do sistema de arquivos, informações estas que são utilizadas para
-auxiliar na recuperação
-do arquivo. Muitos analistas forenses se utilizam de técnicas de escultura como um último recurso devido à dificuldade das técnicas atuais. Diversas
-técnicas atuais utilizam técnicas de inspeção manual para recuperar arquivos, utilizando-se da tentativa e erro. Atualmente essa técnica tem se
-tornado impraticável devido ao grande volume de dados dos dispositivos de armazenamento de informações.
+auxiliar na recuperação do arquivo. Muitos analistas forenses se utilizam de técnicas de escultura como um último recurso devido à dificuldade das
+técnicas atuais. Diversas técnicas atuais utilizam técnicas de inspeção manual para recuperar arquivos, utilizando-se da tentativa e erro. Atualmente
+essa técnica tem se tornado impraticável devido ao grande volume de dados dos dispositivos de armazenamento de informações.
 
 \section{Desafio}
 
