@@ -226,6 +226,7 @@ arquivos e diretórios. \\
   \label{tab:mft-attributes}
 \end{table}
 
+\newpage
 \subsection{Registros de Arquivos}
 
 Todo registro de arquivo consiste de ao menos um par de atributo/valor. Se toda a informação residente no par atributo/valor de um registro de arquivo
