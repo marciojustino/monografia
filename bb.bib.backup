@@ -1,28 +1,29 @@
-@inproceedings{Menon2008,
+@article{Memon2008,
     author    = "Anandabrata Pal and Husrev T. Sencar and Nasir Memon",
     title     = "Detecting File Fragmentation Point Using Sequential Hypothesis Testing",
-    booktitle = "Digital Investigation",
+    journal   = "Digital Investigation",
     year      = "2008",
-    volume    = "5",
+    number    = "5",
     pages     = "S2--S13"
 }
 
 @article{Meshram2012,
-    author  = "Sameer H. Mahant and B.B.Meshram",
-    title   = "NTFS Deleted Files Recovery: Forensics View",
-    year    = "2012",
-    journal = "IRACST - International Journal of Computer Science and Information Technology and Security (IJCSITS)",
-    volume  = "2",
-    number  = "3",
-    pages   = "491--497"
+    author    = "Sameer H. Mahant and B.B.Meshram",
+    title     = "{NTFS} Deleted Files Recovery: Forensics View",
+    year      = "2012",
+    journal   = "IRACST - International Journal of Computer Science and Information Technology and Security (IJCSITS)",
+    volume    = "2",
+    number    = "3",
+    pages     = "491--497",
+    month     = "Junho"
 }
 
-@inproceedings{Garfinkel2007,
-    author    = "Simson L. Garfinkel",
+@article{Garfinkel2007,
+    author    = "Simson Garfinkel",
     title     = "Carving contiguous and fragmented files with fast object validation",
-    booktitle = "Digital Investigation",
     year      = "2007",
-    volume    = "4S",
+    journal   = "Digital Investigation",
+    number    = "4S",
     pages     = "S2--S12"
 }
 
@@ -31,51 +32,51 @@
     title     = "Measuring and Improving the Quality of File Carving Methods",
     school    = "Eindhoven University of Technology",
     year      = "2007",
-    month     = "10"
+    month     = "Outubro"
 }
 
 @mastersthesis{Svensson2005,
     author    = "Anders Svensson",
     title     = "Computer Forensics Applied to Windows NTFS Computers",
-    school    = "Stockholm's University / Royal Institute of Technology",
+    school    = "Royal Institute of Technology of Stockholm's University",
     year      = "2005",
-    month     = "04"
+    month     = "Abril"
 }
 
 @www{CeticBR2012,
-    author="NetView - IBOPE//NetRatings",
-    title={Painel IBOPE/NetRatings},
-    year="2012",
-    publisher="cetic.br",
-    url={http://www.cetic.br/usuarios/ibope/w-tab02-01-cons.htm},
-    urldate={{N}ovembro de 2012}
+    author    = "{IBOPE}",
+    title     = "Painel {IBOPE}/NetRatings",
+    year      = "2012",
+    publisher = "cetic.br",
+    url       = {http://www.cetic.br/usuarios/ibope/w-tab02-01-cons.htm},
+    urldate   = "{N}ovembro de 2012"
 }
 
 @www{CyberCitizen2012,
-    author="CyberCitizen",
-    title={What is Cyber Crime?},
-    year="2012",
-    publisher="cybercitizenship",
-    url={http://www.cybercitizenship.org/crime/crime.html},
-    urldate={{N}ovembro de 2012}
+    author    = "CyberCitizen",
+    title     = "What is Cyber Crime?",
+    year      = "2012",
+    publisher = "cybercitizenship",
+    url       = {http://www.cybercitizenship.org/crime/crime.html},
+    urldate   = "{N}ovembro de 2012"
 }
 
 @www{WikiBytes2012,
-    author="Wikipédia",
-    title={Byte},
-    year="2012",
-    publisher="Wikipédia",
-    url={http://pt.wikipedia.org/wiki/Bytes},
-    urldate={{N}ovembro de 2012}
+    author    = "Wikipédia",
+    title     = "Byte",
+    year      = "2012",
+    publisher = "Wikipédia",
+    url       = {http://pt.wikipedia.org/wiki/Bytes},
+    urldate   = "{N}ovembro de 2012"
 }
 
 @www{PngFileFormat2013,
-    author="FileFormat",
-    title={The PNG Image File Format},
-    year="2013",
-    publisher="",
-    url={http://www.fileformat.info/format/png/corion.htm},
-    urldate={{F}evereiro de 2013}
+    author    = "FileFormat",
+    title     = "The {PNG} Image File Format",
+    year      = "2013",
+    publisher = "",
+    url       = {http://www.fileformat.info/format/png/corion.htm},
+    urldate   = "{F}evereiro de 2013"
 }
 
 @book{Carrier2005,
@@ -83,7 +84,7 @@
     title     = "File System Forensic Analysis",
     publisher = "Addison Wesley Professional",
     year      = "2005",
-    month     = "03"
+    month     = "Março"
 }
 
 @book{Caloyannides2004,
@@ -91,14 +92,15 @@
    title      = "Privacy Protection and Computer Forensics",
    publisher  = "Artech House",
    edition    = "2",
-   year       = 2004
+   year       = "2004",
+   pages      = "335"
 }
 
 @article{Wyman2012,
-    author  = "Bill Wyman and Walt Scrivens and Phil Hoffman and Lance Spitzner",
-    title   = "Metadados",
-    year    = "2012",
-    journal = "OUCH!"
+    author    = "Bill Wyman and Walt Scrivens and Phil Hoffman and Lance Spitzner",
+    title     = "Metadados",
+    year      = "2012",
+    journal   = "{OUCH!}"
 }
 
 @article{Hand2012,
@@ -168,12 +170,11 @@
     year      = "2010"
 }
 
-@article{Machta1999,
-    author  = "Simran Fitzgerald and George Mathews and Colin Morris and Oles Zhulyn",
-    title   = "Using NLP techniques for file fragment classification",
-    year    = "2012",
-    journal = "Digital Investigation",
-    volume  = "9",
-    number  = "",
-    pages   = "S44-S49"
+@mastersthesis{Machta1999,
+    author    = "J. Machta",
+    title     = "Entropy, information, and computation",
+    school    = "University of Massachusetts",
+    year      = "1999",
+    month     = "5",
+    address   = "Amherst, Massachusetts 01003-3720"
 }

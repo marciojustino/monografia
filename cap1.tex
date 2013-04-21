@@ -62,9 +62,9 @@ A figura \ref{fig:mft-entrada} demonstra um registro de entrada na MFT.
 
 \subsection{Cluster}
 
-De acordo com Svensson (2005, p. 25), um disco rígido é dividido em setores sendo que o sistema de arquivos se utiliza de setores para formar
-um cluster. O tamanho do cluster depende da formatação do disco. A tabela \ref{tab:cluster-tamanho} demonstra tamanhos padrões definidos de
-cluster para diferentes tamanhos e formas de formatação do disco NTFS:
+De acordo com Svensson (2005, p. 25), um disco rígido é dividido em setores sendo que o sistema de arquivos se utiliza de setores para formar um
+cluster. O tamanho do cluster depende da formatação do disco. A tabela \ref{tab:cluster-tamanho} demonstra tamanhos padrões definidos de cluster para
+diferentes tamanhos e formas de formatação do disco NTFS:
 
 \begin{table}[htb]
   \centering  
@@ -93,10 +93,9 @@ estarem vazias ou
 conter informações de arquivos já apagados anteriormente e que podem ser de grande valor para a análise forense.
 
 Nos sistemas de arquivos NTFS, todos os clusters possuem um identificador chamado de \textbf{Logical Cluster Number} (LCN). O LCN é um número
-sequencial
-que representa todos os clusters do disco, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do sistema de
-arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está localizado no
-disco), multiplicando o identificador LCN com o tamanho do cluster.
+sequencial que representa todos os clusters do disco, do começo do disco até o seu final, iniciando-se em 0 (zero), referindo ao setor de boot do
+sistema de arquivos. O sistema de arquivo converte o identificador LCN em um endereço físico de disco (posição dos bytes onde o cluster está
+localizado no disco), multiplicando o identificador LCN com o tamanho do cluster.
 
 \begin{figure}[htb]
   \centering

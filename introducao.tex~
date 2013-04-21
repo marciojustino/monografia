@@ -35,7 +35,7 @@ sistema de arquivos, mas mantendo os dados intactos em seu sistema. Caloyannides
 unidades mínimas chamadas clusters. Se o sistema de arquivos não necessita de todo o cluster para armazenar as informações do arquivo, este irá marcar
 o final do arquivo na porção final de seus dados dentro do cluster, deixando uma porção do cluster com dados considerados como sendo lixo, não
 sobrescritos pelo sistema. Essa situação gera o que é chamado de \emph{slack space}\footnote{Espaço não alocado em um cluster que pode conter
-informações de outros arquivos que não foram sobrescritas.}.
+informações de outros arquivos que não foram sobrescritas.} \nocite{Caloyannides2004}.
 
 Por fim, o processo de formatação e remoção de um arquivo, juntamente com as áreas de slack space do disco, provoca o surgimento de áreas não
 alocadas, o que caracteriza o processo de file carving.
@@ -45,7 +45,7 @@ alocadas, o que caracteriza o processo de file carving.
 Segundo Memon (2011, p. S2), um dos primeiros desafios em file carving pode ser encontrado na tentativa de se recuperar arquivos fragmentados. O
 processo de file carving é de suma importância para a investigação forense computacional e envolve a identificação de arquivos perdidos, corrompidos
 ou removidos do equipamento investigado. A dispersão desses arquivos não mais indexados pela tabela de alocação de arquivos do sistema de arquivos
-NTFS torna o processo de identificação dos arquivos um desafio para a investigação e identificação de ilícitos.
+NTFS torna o processo de identificação dos arquivos um desafio para a investigação e identificação de ilícitos \nocite{Memon2008}.
 
 \begin{citacao}
 Durante uma investigação forense digital, muitas peças diferentes de dados são preservadas para investigação, das quais imagens de discos rígidos
@@ -63,9 +63,12 @@ A técnica de file carving é frequentemente utilizada durante investigações digit
 visando a recuperação de vestígios e provas digitais. Conforme Memon (2011, p. S2), essa é uma técnica em que arquivos de dados são extraídos de um
 dispositivo digital sem o auxílio de tabelas de arquivo ou outros meta-dados do disco.
 
-Um estudo de Garfinkel (2007, p.S2) descreve a importância do processo de file carving ``na pratica forense, o processo de file carving pode recuperar arquivos que foram removidos e que tiveram sua entrada de diretório realocada para outros arquivos, desde que seus setores de dados ainda não tenham sido sobrescritos''.
+Um estudo de Garfinkel (2007, p.S2) descreve a importância do processo de file carving ``na pratica forense, o processo de file carving pode recuperar
+arquivos que foram removidos e que tiveram sua entrada de diretório realocada para outros arquivos, desde que seus setores de dados ainda não tenham
+sido sobrescritos'' \nocite{Garfinkel2007}.
 
-Deste modo, a intenção da utilização do processo de file carving está na recuperação de informações já perdidas pelo processo de indexação comumente conhecido dos sistemas de arquivos, assunto que será tratado mais detalhadamente nos próximos capítulos.
+Deste modo, a intenção da utilização do processo de file carving está na recuperação de informações, já perdidas pelo processo de indexação comumente
+conhecido dos sistemas de arquivos, assunto que será tratado mais detalhadamente nos próximos capítulos.
 
 \section{Fragmentação de Arquivos}
 
@@ -127,8 +130,3 @@ carving.
 O método de pesquisa utilizado é baseado nas definições de documentação do sistema de arquivos NTFS, junto ao seu criador (Microsoft), pesquisas
 correlatas referentes à fragmentação de arquivos e sua forma de identificação, pesquisar a ligação entre os fragmentos de dados para entender o ponto
 de fragmentação e identificar se há um padrão nessa relação de fragmentos de arquivos.
-
-% ************************ VALIDAR ESTA PARTE PARA VER SE SERÁ INCLUÍDA NO PROJETO FINAL ****************************************************
-% Para fins comprobatórios, serão utilizados dois softwares amplamente utilizados com a finalidade de identificação de arquivos não alocados que serão
-% testados sobre os mesmos parâmetros para que se possa concretizar, através de dados significativos, a eficácia do processo de file carving e de
-% identificação de fragmentos de arquivos não alocados. As ferramentas em questão utilizadas são o Foremost e Scalpel.

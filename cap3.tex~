@@ -20,10 +20,10 @@ JPEG (comprimido) pois a estrutura dos dados de um tipo de arquivo se diferem mu
 
 Alguns métodos de inteligência artificial, aplicados ao aprendizado computacional (\emph{Machine Learning}), tem sido explorados
 para tratar o problema da classificação dos fragmentos de arquivos. Alguns desses métodos, explorados recentemente, são os \emph{Support Vector
-Machines} (SVM's) - ferramentas muito úteis no aprendizado supervisionado. Segundo Li et al. (2010), uma das maiores vantagens das SVM's é sua
+Machines} (SVM's) - ferramentas muito úteis no aprendizado supervisionado. Segundo Hand et al. (2010), uma das maiores vantagens das SVM's é sua
 possibilidade de explorar padrões em espaços de elevadas dimensões, o que com métodos convencionais estatísticos se torna muito difícil ou
 insuficiente para ser aplicado. Seu uso se baseia no tratamento vetorial do histograma de fragmentos de dados, uma vez que o histograma tem custo
-computacional baixo, tornando o uso das SVM's um método extremamente rápido e eficiente.
+computacional baixo, tornando o uso das SVM's um método extremamente rápido e eficiente\nocite{Hand2012}.
 
 % ADICIONAR CONTEÚDO PÁG: 238 DO ARQUIVO ``[SUGANTHAN] A NOVEL SUPPORT VECTOR MACHINE APPROACH TO HIGH ENTROPY DATA FRAGMENT CLASSIFICATION''
 
@@ -94,7 +94,7 @@ capaz de analisar os blocos de arquivos em busca de divergências e característic
 
 A análise de conteúdo por entropia tem sido utilizada por pesquisadores e estudiosos da área forense com o objetivo de identificar conteúdo
 oculto em arquivos, atribuído a uma técnica anti-forense comumente usada, conhecida como \emph{Esteganografia}. Quando aplicada na identificação de
-conteúdo oculto ou modificado, tem apresentado excelentes resultados por determinar altera\\ções na estrutura digital e nas características dos
+conteúdo oculto ou modificado, tem apresentado excelentes resultados por determinar altera-\\ções na estrutura digital e nas características dos
 dados.
 
 Conceito originado da teoria da termodinâmica, a entropia está presente também no mundo da informação digital. Enquanto na termodinâmica se torna
